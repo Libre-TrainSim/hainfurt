@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_wolfsfurt.ogg-ca7345705a746262ae8e6070b38a69ee.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_wolfsfurt.ogg"
+dest_files=[ "res://.import/next_station_wolfsfurt.ogg-ca7345705a746262ae8e6070b38a69ee.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_goldensee.ogg-b1e242de34c84ad18085c0d84ebd8768.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_goldensee.ogg"
+dest_files=[ "res://.import/next_station_goldensee.ogg-b1e242de34c84ad18085c0d84ebd8768.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

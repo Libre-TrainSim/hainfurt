@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/train_to_wolfsfurt.ogg-f28db88efcbebd77b7c4246e0bea72b6.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+dest_files=[ "res://.import/train_to_wolfsfurt.ogg-f28db88efcbebd77b7c4246e0bea72b6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

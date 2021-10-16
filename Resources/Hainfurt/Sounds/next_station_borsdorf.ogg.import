@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_borsdorf.ogg-7fd5a3936d3752de4b6a4e35c27fe693.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_borsdorf.ogg"
+dest_files=[ "res://.import/next_station_borsdorf.ogg-7fd5a3936d3752de4b6a4e35c27fe693.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

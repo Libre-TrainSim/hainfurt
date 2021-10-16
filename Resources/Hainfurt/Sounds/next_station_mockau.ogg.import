@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_mockau.ogg-49b1aa4768e536542891bcfdebfb03aa.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+dest_files=[ "res://.import/next_station_mockau.ogg-49b1aa4768e536542891bcfdebfb03aa.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

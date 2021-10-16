@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_machern.ogg-c8d09cff9592a4c684e20aea09d5c503.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_machern.ogg"
+dest_files=[ "res://.import/next_station_machern.ogg-c8d09cff9592a4c684e20aea09d5c503.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

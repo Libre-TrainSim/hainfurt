@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_harras.ogg-c4b37591135e005fea12e81417ea802c.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_harras.ogg"
+dest_files=[ "res://.import/next_station_harras.ogg-c4b37591135e005fea12e81417ea802c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

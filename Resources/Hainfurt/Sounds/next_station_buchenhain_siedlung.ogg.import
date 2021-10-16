@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/next_station_buchenhain_siedlung.ogg-9e20db8d7f179831d8e7522e9a393fe0.oggstr"
+
+[deps]
+
+source_file="res://Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+dest_files=[ "res://.import/next_station_buchenhain_siedlung.ogg-9e20db8d7f179831d8e7522e9a393fe0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
