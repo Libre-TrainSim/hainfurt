@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_klingental.ogg-967b949a9533e519b611335538518708.oggstr"
+path="res://.import/next_station_klingental.ogg-dbd55e6c684777ce8d97b4524669b044.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_klingental.ogg"
-dest_files=[ "res://.import/next_station_klingental.ogg-967b949a9533e519b611335538518708.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_klingental.ogg"
+dest_files=[ "res://.import/next_station_klingental.ogg-dbd55e6c684777ce8d97b4524669b044.oggstr" ]
 
 [params]
 

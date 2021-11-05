@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/train_to_hainfurt.ogg-b797f320bd587c04492447b5f2f4c70a.oggstr"
+path="res://.import/train_to_hainfurt.ogg-e424a8868868051b263666925e811b8e.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
-dest_files=[ "res://.import/train_to_hainfurt.ogg-b797f320bd587c04492447b5f2f4c70a.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+dest_files=[ "res://.import/train_to_hainfurt.ogg-e424a8868868051b263666925e811b8e.oggstr" ]
 
 [params]
 
