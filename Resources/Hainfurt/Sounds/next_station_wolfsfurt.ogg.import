@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_wolfsfurt.ogg-ca7345705a746262ae8e6070b38a69ee.oggstr"
+path="res://.import/next_station_wolfsfurt.ogg-0e5e0c361e38b1e235c96823b17ed587.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_wolfsfurt.ogg"
-dest_files=[ "res://.import/next_station_wolfsfurt.ogg-ca7345705a746262ae8e6070b38a69ee.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_wolfsfurt.ogg"
+dest_files=[ "res://.import/next_station_wolfsfurt.ogg-0e5e0c361e38b1e235c96823b17ed587.oggstr" ]
 
 [params]
 

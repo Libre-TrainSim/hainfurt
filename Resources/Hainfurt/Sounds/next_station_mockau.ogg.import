@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_mockau.ogg-49b1aa4768e536542891bcfdebfb03aa.oggstr"
+path="res://.import/next_station_mockau.ogg-44c272e3909f86946d31eb06892bb5ba.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_mockau.ogg"
-dest_files=[ "res://.import/next_station_mockau.ogg-49b1aa4768e536542891bcfdebfb03aa.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+dest_files=[ "res://.import/next_station_mockau.ogg-44c272e3909f86946d31eb06892bb5ba.oggstr" ]
 
 [params]
 

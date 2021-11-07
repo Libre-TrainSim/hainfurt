@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_buchenhain_siedlung.ogg-9e20db8d7f179831d8e7522e9a393fe0.oggstr"
+path="res://.import/next_station_buchenhain_siedlung.ogg-575cbb3e583cabf72be7d070065e91db.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
-dest_files=[ "res://.import/next_station_buchenhain_siedlung.ogg-9e20db8d7f179831d8e7522e9a393fe0.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+dest_files=[ "res://.import/next_station_buchenhain_siedlung.ogg-575cbb3e583cabf72be7d070065e91db.oggstr" ]
 
 [params]
 

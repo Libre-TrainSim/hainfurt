@@ -1,16 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://addons/jean28518.jTools/jSaveManager/jSaveModule.tscn" type="PackedScene" id=1]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Rail.tscn" type="PackedScene" id=4]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Station.tscn" type="PackedScene" id=10]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/Signal.tscn" type="PackedScene" id=11]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Scripts/World.gd" type="Script" id=12]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/SpeedLimit.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Resources/Basic/BasicWorldEnviroment.tres" type="Environment" id=18]
-[ext_resource path="res://Resources/Basic/Materials/Grass.tres" type="Material" id=26]
-[ext_resource path="res://addons/Libre_Train_Sim_Editor/Data/Modules/ContactPoint.tscn" type="PackedScene" id=29]
-[ext_resource path="res://Resources/Basic/grass.obj" type="ArrayMesh" id=32]
-[ext_resource path="res://Resources/Basic/BasicSun.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Data/Modules/Rail.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Data/Modules/Station.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Data/Modules/Signal.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Data/Scripts/World.gd" type="Script" id=12]
+[ext_resource path="res://Data/Modules/SpeedLimit_Lf7.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Resources/Environments/BasicWorldEnvironment.tres" type="Environment" id=18]
+[ext_resource path="res://Data/Modules/ContactPoint.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Resources/Environments/BasicSun.tscn" type="PackedScene" id=38]
 
 [node name="World" type="Spatial"]
 script = ExtResource( 12 )
@@ -21,1176 +19,1126 @@ environment = ExtResource( 18 )
 
 [node name="Players" type="Spatial" parent="."]
 
-[node name="Grass" type="Spatial" parent="."]
-
-[node name="grass" type="MeshInstance" parent="Grass"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0551109, -0.483741, -0.0448751 )
-material_override = ExtResource( 26 )
-mesh = ExtResource( 32 )
-material/0 = null
-
 [node name="Signals" type="Spatial" parent="."]
 
 [node name="Wolfsfurt" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9949, 3.8147e-06, -1.26986 )
 stationLength = 150
-platformSide = 1
-attachedRail = "RailP15"
-onRailPosition = 245
+platform_side = 1
+attached_rail = "RailP15"
+on_rail_position = 245
 forward = false
 
 [node name="Silberbach" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3827.16, 3.8147e-06, 176.506 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Icking2"
-onRailPosition = 200
+platform_side = 2
+attached_rail = "Icking2"
+on_rail_position = 200
 
 [node name="SignalSilberbach_A1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.754526, 0, -0.65627, 0, 1, 0, 0.65627, 0, 0.754526, 4066.49, 3.8147e-06, 355.06 )
 visible = false
-setPassAtH = 12
-setPassAtM = 4
-setPassAtS = 30
+set_pass_at_h = 12
+set_pass_at_m = 4
+set_pass_at_s = 30
 speed = 120
-attachedRail = "Icking3"
+attached_rail = "Icking3"
 
 [node name="SignalSilberbach_E1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.893433, 0, -0.449196, 0, 1, 0, 0.449196, 0, 0.893433, 3539.14, 3.8147e-06, 15.4543 )
 visible = false
 status = 1
 speed = 60
-attachedRail = "RailP12"
-onRailPosition = 20
+attached_rail = "RailP12"
+on_rail_position = 20
 
 [node name="Signal_STK1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.949038, 0, -0.315161, 0, 1, 0, 0.315161, 0, 0.949038, 2815.53, 3.8147e-06, 315.419 )
 visible = false
 status = 1
-attachedRail = "RailP10"
-onRailPosition = 40
+attached_rail = "RailP10"
+on_rail_position = 40
 
 [node name="Signal_STK2" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.898718, 0, -0.438528, 0, 1, 0, 0.438528, 0, 0.898718, 1560.59, 3.8147e-06, -227.425 )
 visible = false
 status = 1
 speed = 100
-attachedRail = "RailP6"
-onRailPosition = 20
+attached_rail = "RailP6"
+on_rail_position = 20
 
 [node name="Signal_Wolfsfurt_A3" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.999357, 0, -0.0358656, 0, 1, 0, 0.0358656, 0, 0.999357, 326.658, 3.8147e-06, 35.5158 )
 visible = false
-setPassAtM = 1
+set_pass_at_m = 1
 speed = 80
-attachedRail = "RailP14"
+attached_rail = "RailP14"
 forward = false
-onRailPosition = 200
+on_rail_position = 200
 
 [node name="Signal2" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.991335, 0, -0.131357, 0, 1, 0, 0.131357, 0, 0.991335, 326.198, 3.8147e-06, 25.9838 )
 visible = false
-setPassAtH = 12
-setPassAtM = 1
+set_pass_at_h = 12
+set_pass_at_m = 1
 speed = 80
-attachedRail = "RailP2"
+attached_rail = "RailP2"
 
 [node name="Signal" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.991335, 0, -0.131357, 0, 1, 0, 0.131357, 0, 0.991335, 326.789, 3.8147e-06, 21.5228 )
 visible = false
-attachedRail = "RailP2P"
+attached_rail = "RailP2P"
 
 [node name="SignalSTK3" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.94833, 0, -0.317285, 0, 1, 0, 0.317285, 0, 0.94833, 5126.12, 3.8147e-06, 968.331 )
 visible = false
 status = 1
-attachedRail = "Icking7"
-onRailPosition = 30
+attached_rail = "Icking7"
+on_rail_position = 30
 
 [node name="SignalSTK4" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.952761, 0, -0.303724, 0, 1, 0, 0.303724, 0, 0.952761, 6639.59, 3.8147e-06, 1568.37 )
 visible = false
 status = 1
-attachedRail = "Icking10"
-onRailPosition = 30
+attached_rail = "Icking10"
+on_rail_position = 30
 
 [node name="Signal_Goldensee_E" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.956686, 0, -0.291122, 0, 1, 0, 0.291122, 0, 0.956686, 7269.72, 3.8147e-06, 1764.67 )
 visible = false
 status = 1
 speed = 80
-attachedRail = "Icking10"
-onRailPosition = 690
+attached_rail = "Icking10"
+on_rail_position = 690
 
 [node name="Signal_Goldensee_A1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.588808, 0, -0.808273, 0, 1, 0, 0.808273, 0, 0.588808, 7794.72, 3.8147e-06, 2316 )
 visible = false
-setPassAtM = 7
-setPassAtS = 50
-attachedRail = "Ebenhausen4Connector"
-onRailPosition = 20
+set_pass_at_m = 7
+set_pass_at_s = 50
+attached_rail = "Ebenhausen4Connector"
+on_rail_position = 20
 
 [node name="SignalSTK5" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.980796, 0, -0.195037, 0, 1, 0, 0.195037, 0, 0.980796, 8904.37, 3.8147e-06, 2282.46 )
 visible = false
 status = 1
 speed = 110
-attachedRail = "Ebenhausen7"
-onRailPosition = 200
+attached_rail = "Ebenhausen7"
+on_rail_position = 200
 
 [node name="SignalSTK6" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.772583, 0, -0.634914, 0, 1, 0, 0.634914, 0, 0.772583, 10207.8, 3.8147e-06, 2842.98 )
 visible = false
 status = 1
-attachedRail = "Ebenhausen12"
-onRailPosition = 40
+attached_rail = "Ebenhausen12"
+on_rail_position = 40
 
 [node name="SignalSTK7" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.960471, 0, -0.278381, 0, 1, 0, 0.278381, 0, 0.960471, 11448.5, 3.8147e-06, 3335.47 )
 visible = false
-setPassAtH = 12
-setPassAtM = 10
+set_pass_at_h = 12
+set_pass_at_m = 10
 speed = 90
-attachedRail = "Ebenhausen16"
-onRailPosition = 20
+attached_rail = "Ebenhausen16"
+on_rail_position = 20
 
 [node name="Klingental_E" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.87535, 0, -0.483491, 0, 1, 0, 0.483491, 0, 0.87535, 12391.5, 3.8147e-06, 4179 )
 visible = false
 status = 1
 speed = 80
-attachedRail = "Ebenhausen19"
-onRailPosition = 320
+attached_rail = "Ebenhausen19"
+on_rail_position = 320
 
 [node name="Klingental_A1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.0712607, 0, -0.997458, 0, 1, 0, 0.997458, 0, 0.0712607, 12609.3, 3.8147e-06, 4626.02 )
 visible = false
 status = 1
-attachedRail = "Ebenhausen23"
+attached_rail = "Ebenhausen23"
 
 [node name="SignalSTK8" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.754936, 0, -0.655799, 0, 1, 0, 0.655799, 0, 0.754936, 13507, 3.8147e-06, 5257.12 )
 visible = false
 status = 1
-attachedRail = "Buchenhain2"
-onRailPosition = 30
+attached_rail = "Buchenhain2"
+on_rail_position = 30
 
 [node name="Signal_BuchenhainE" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.890898, 0, -0.454202, 0, 1, 0, 0.454202, 0, 0.890898, 14730.1, 3.8147e-06, 6213.77 )
 visible = false
 status = 1
-setPassAtH = 12
-setPassAtM = 15
-attachedRail = "Höllkriegelsreuth"
-onRailPosition = 290
+set_pass_at_h = 12
+set_pass_at_m = 15
+attached_rail = "Höllkriegelsreuth"
+on_rail_position = 290
 
 [node name="Signal_BuchenhainA1" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.892861, 0, -0.450332, 0, 1, 0, 0.450332, 0, 0.892861, 15312.2, 3.8147e-06, 6523.61 )
 visible = false
 status = 1
-setPassAtH = 12
-setPassAtM = 17
-setPassAtS = 25
+set_pass_at_h = 12
+set_pass_at_m = 17
+set_pass_at_s = 25
 speed = 120
-blockSignal = true
-attachedRail = "Höllkriegelsreuth9PConnector2"
-onRailPosition = 50
+attached_rail = "Höllkriegelsreuth9PConnector2"
+on_rail_position = 50
 
 [node name="Goldensee" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7666.8, 3.8147e-06, 2140.45 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Ebenhausen"
-onRailPosition = 250
+platform_side = 2
+attached_rail = "Ebenhausen"
+on_rail_position = 250
 
 [node name="Klingental" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12598.7, 3.8147e-06, 4478.4 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Ebenhausen22"
-onRailPosition = 2
+platform_side = 2
+attached_rail = "Ebenhausen22"
+on_rail_position = 2
 
 [node name="Siemenswerke" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13709.9, 3.8147e-06, 5435.25 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Buchenhain2"
-onRailPosition = 300
+platform_side = 2
+attached_rail = "Buchenhain2"
+on_rail_position = 300
 
 [node name="Buchenhain" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15092.9, 3.8147e-06, 6403.56 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Höllkriegelsreuth9P"
+platform_side = 1
+attached_rail = "Höllkriegelsreuth9P"
 
 [node name="Signal3" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.875882, 0, -0.482527, 0, 1, 0, 0.482527, 0, 0.875882, 15735.6, 3.8147e-06, 6749.93 )
 visible = false
-setPassAtH = 12
-setPassAtM = 17
-setPassAtS = 30
+set_pass_at_h = 12
+set_pass_at_m = 17
+set_pass_at_s = 30
 speed = 160
-attachedRail = "Höllkriegelsreuth13P"
-onRailPosition = 30
+attached_rail = "Höllkriegelsreuth13P"
+on_rail_position = 30
 
 [node name="Signal4" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.866335, 0, -0.499464, 0, 1, 0, 0.499464, 0, 0.866335, 15302.1, 3.8147e-06, 6498.62 )
 visible = false
-attachedRail = "Höllkriegelsreuth5P3Connector"
-onRailPosition = 30
+attached_rail = "Höllkriegelsreuth5P3Connector"
+on_rail_position = 30
 
 [node name="Signal5" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.87535, 0, -0.483491, 0, 1, 0, 0.483491, 0, 0.87535, 15300.1, 3.8147e-06, 6504.26 )
 visible = false
-attachedRail = "Höllkriegelsreuth10"
-onRailPosition = 30
+attached_rail = "Höllkriegelsreuth10"
+on_rail_position = 30
 
 [node name="Signal6" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.829877, 0, -0.557948, 0, 1, 0, 0.557948, 0, 0.829877, 15015.6, 3.8147e-06, 6335.08 )
 visible = false
-attachedRail = "Höllkriegelsreuth5P4"
+attached_rail = "Höllkriegelsreuth5P4"
 forward = false
-onRailPosition = 100
+on_rail_position = 100
 
 [node name="Signal7" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.87535, 0, 0.483491, 0, 1, 0, -0.483491, 0, -0.87535, 15105.3, 3.8147e-06, 6389.61 )
 visible = false
-attachedRail = "Höllkriegelsreuth5P3"
+attached_rail = "Höllkriegelsreuth5P3"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal8" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.90639, 0, 0.42244, 0, 1, 0, -0.42244, 0, -0.90639, 15080.9, 3.8147e-06, 6384 )
 visible = false
-setPassAtH = 13
-setPassAtM = 41
-setPassAtS = 10
-attachedRail = "Höllkriegelsreuth9Connector"
-onRailPosition = 20
+set_pass_at_h = 13
+set_pass_at_m = 41
+set_pass_at_s = 10
+attached_rail = "Höllkriegelsreuth9Connector"
+on_rail_position = 20
 
 [node name="Signal9" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.879308, 0, 0.476254, 0, 1, 0, -0.476254, 0, -0.879308, 15075.6, 3.8147e-06, 6394.11 )
 visible = false
-attachedRail = "Höllkriegelsreuth9PConnector"
+attached_rail = "Höllkriegelsreuth9PConnector"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal10" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.743861, 0, 0.668334, 0, 1, 0, -0.668334, 0, -0.743861, 14176.1, 3.8147e-06, 5858.88 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Buchenhain3"
+attached_rail = "Buchenhain3"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal11" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.824979, 0, 0.565163, 0, 1, 0, -0.565163, 0, -0.824979, 12728, 3.8147e-06, 4812.58 )
 visible = false
-attachedRail = "Ebenhausen24"
+attached_rail = "Ebenhausen24"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal12" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.153614, 0, 0.988131, 0, 1, 0, -0.988131, 0, -0.153614, 12600.4, 3.8147e-06, 4454.68 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Ebenhausen21"
+attached_rail = "Ebenhausen21"
 forward = false
-onRailPosition = 330
+on_rail_position = 330
 
 [node name="Signal13" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.51633, 0, 0.85639, 0, 1, 0, -0.85639, 0, -0.51633, 11794.5, 3.8147e-06, 3647.3 )
 visible = false
-attachedRail = "Ebenhausen17"
+attached_rail = "Ebenhausen17"
 forward = false
-onRailPosition = 100
+on_rail_position = 100
 
 [node name="Signal14" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.784899, 0, 0.619623, 0, 1, 0, -0.619623, 0, -0.784899, 10514.4, 3.8147e-06, 3115.09 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Ebenhausen13"
+attached_rail = "Ebenhausen13"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal15" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.85038, 0, 0.526168, 0, 1, 0, -0.526168, 0, -0.85038, 9299.14, 3.8147e-06, 2494.42 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Ebenhausen9"
+attached_rail = "Ebenhausen9"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal16" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999873, 0, 0.0159449, 0, 1, 0, -0.0159449, 0, -0.999873, 8083.69, 3.8147e-06, 2463.27 )
 visible = false
 status = 1
 speed = 60
-attachedRail = "Ebenhausen3"
+attached_rail = "Ebenhausen3"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal17" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.616632, 0, 0.787251, 0, 1, 0, -0.787251, 0, -0.616632, 7522.92, 3.8147e-06, 1934.54 )
 visible = false
-attachedRail = "Icking12"
+attached_rail = "Icking12"
 forward = false
-onRailPosition = 300
+on_rail_position = 300
 
 [node name="Signal18" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.747926, 0, 0.663782, 0, 1, 0, -0.663782, 0, -0.747926, 6395.31, 3.8147e-06, 1436.46 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Icking9"
+attached_rail = "Icking9"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal19" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.939076, 0, 0.34371, 0, 1, 0, -0.34371, 0, -0.939076, 5050.52, 3.8147e-06, 942.173 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Icking6"
+attached_rail = "Icking6"
 forward = false
-onRailPosition = 450
+on_rail_position = 450
 
 [node name="Signal20" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.822009, 0, 0.569474, 0, 1, 0, -0.569474, 0, -0.822009, 4240.08, 3.8147e-06, 490.027 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Icking4"
+attached_rail = "Icking4"
 forward = false
-onRailPosition = 20
+on_rail_position = 20
 
 [node name="Signal21" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.893433, 0, 0.449196, 0, 1, 0, -0.449196, 0, -0.893433, 3637.42, 3.8147e-06, 64.8659 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "RailP13"
+attached_rail = "RailP13"
 forward = false
-onRailPosition = 80
+on_rail_position = 80
 
 [node name="Signal22" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.898718, 0, 0.438528, 0, 1, 0, -0.438528, 0, -0.898718, 2733.59, 3.8147e-06, 278.396 )
 visible = false
-attachedRail = "RailP9"
+attached_rail = "RailP9"
 forward = false
-onRailPosition = 300
+on_rail_position = 300
 
 [node name="Signal23" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.959014, 0, 0.283357, 0, 1, 0, -0.283357, 0, -0.959014, 1449.51, 3.8147e-06, -272.374 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "RailP5"
+attached_rail = "RailP5"
 forward = false
-onRailPosition = 600
+on_rail_position = 600
 
 [node name="Signal24" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.94838, 0, -0.317135, 0, 1, 0, 0.317135, 0, -0.94838, 718.795, 3.8147e-06, -55.029 )
 visible = false
 status = 1
 speed = 80
-attachedRail = "RailP4"
+attached_rail = "RailP4"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal25" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.991335, 0, 0.131357, 0, 1, 0, -0.131357, 0, -0.991335, 4.21152, 3.8147e-06, -4.5536 )
 visible = false
 speed = 80
-attachedRail = "RailP15"
-onRailPosition = 270
+attached_rail = "RailP15"
+on_rail_position = 270
 
 [node name="Signal26" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.991335, 0, 0.131357, 0, 1, 0, -0.131357, 0, -0.991335, -0.942799, 3.8147e-06, -17.364 )
 visible = false
-attachedRail = "RailP"
+attached_rail = "RailP"
 forward = false
-onRailPosition = 20
+on_rail_position = 20
 
 [node name="Signal27" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.991335, 0, 0.131357, 0, 1, 0, -0.131357, 0, -0.991335, -0.351698, 3.8147e-06, -21.825 )
 visible = false
-attachedRail = "Rail"
+attached_rail = "Rail"
 forward = false
-onRailPosition = 20
+on_rail_position = 20
 
 [node name="Buchenhain2R" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.87535, 0, -0.483491, 0, 1, 0, 0.483491, 0, 0.87535, 15265, 3.8147e-06, 6484.92 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Höllkriegelsreuth9"
-onRailPosition = 190
+platform_side = 1
+attached_rail = "Höllkriegelsreuth9"
+on_rail_position = 190
 forward = false
 
 [node name="SiemenswerkeR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.755698, 0, -0.654921, 0, 1, 0, 0.654921, 0, 0.755698, 13818.1, 3.8147e-06, 5531.79 )
 stationLength = 150
-platformSide = 1
-attachedRail = "Buchenhain2"
-onRailPosition = 445
+platform_side = 1
+attached_rail = "Buchenhain2"
+on_rail_position = 445
 forward = false
 
 [node name="KlingentalR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.0648548, 0, -0.997895, 0, 1, 0, 0.997895, 0, 0.0648548, 12613.6, 3.8147e-06, 4629.32 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Ebenhausen25Connector"
-onRailPosition = 70
+platform_side = 2
+attached_rail = "Ebenhausen25Connector"
+on_rail_position = 70
 forward = false
 
 [node name="GoldenseeR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.589004, 0, -0.80813, 0, 1, 0, 0.80813, 0, 0.589004, 7768.77, 3.8147e-06, 2271.35 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Icking13"
-onRailPosition = 400
+platform_side = 2
+attached_rail = "Icking13"
+on_rail_position = 400
 forward = false
 
 [node name="SilberbachR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.893433, 0, -0.449196, 0, 1, 0, 0.449196, 0, 0.893433, 3944.65, 3.8147e-06, 251.6 )
 stationLength = 150
-platformSide = 2
-attachedRail = "Icking2P"
-onRailPosition = 340
+platform_side = 2
+attached_rail = "Icking2P"
+on_rail_position = 340
 forward = false
 
 [node name="Wolfsfurt2R" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.991335, 0, -0.131357, 0, 1, 0, 0.131357, 0, 0.991335, 177.498, 3.8147e-06, 6.28031 )
 stationLength = 150
-platformSide = 1
-attachedRail = "RailP"
-onRailPosition = 200
+platform_side = 1
+attached_rail = "RailP"
+on_rail_position = 200
 forward = false
 
 [node name="Wolfsfurt2" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.991335, 0, -0.131357, 0, 1, 0, 0.131357, 0, 0.991335, 28.7973, 3.8147e-06, -13.4232 )
 stationLength = 150
-platformSide = 2
-attachedRail = "RailP"
-onRailPosition = 50
+platform_side = 2
+attached_rail = "RailP"
+on_rail_position = 50
 
 [node name="SpeedLimit" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.890898, 0, -0.454202, 0, 1, 0, 0.454202, 0, 0.890898, 14730.1, 3.8147e-06, 6213.77 )
 speed = 90
-attachedRail = "Höllkriegelsreuth"
-onRailPosition = 290
-forward = false
+attached_rail = "Höllkriegelsreuth"
+on_rail_position = 290
 
 [node name="SpeedLimit2" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.899454, 0, -0.437016, 0, 1, 0, 0.437016, 0, 0.899454, 12883.8, 3.8147e-06, 4902.29 )
 speed = 90
-attachedRail = "Ebenhausen26"
-onRailPosition = 10
+attached_rail = "Ebenhausen26"
+on_rail_position = 10
 
 [node name="SpeedLimit3" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.875349, 0, -0.483491, 0, 1, 0, 0.483491, 0, 0.875349, 12409, 3.8147e-06, 4188.67 )
 speed = 90
-attachedRail = "Ebenhausen19"
-onRailPosition = 340
-forward = false
+attached_rail = "Ebenhausen19"
+on_rail_position = 340
 
 [node name="SpeedLimit4" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.533044, 0, -0.846087, 0, 1, 0, 0.846087, 0, 0.533044, 11737.6, 3.8147e-06, 3553.16 )
 speed = 110
-attachedRail = "Ebenhausen16"
-onRailPosition = 390
-forward = false
+attached_rail = "Ebenhausen16"
+on_rail_position = 390
 
 [node name="SpeedLimit5" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( -0.956686, 0, 0.29112, 0, 1, 0, -0.29112, 0, -0.956686, 7269.72, 3.8147e-06, 1764.67 )
 speed = 120
-attachedRail = "Icking10"
-onRailPosition = 690
-forward = false
+attached_rail = "Icking10"
+on_rail_position = 690
 
 [node name="SpeedLimit6" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.911492, 0, -0.411318, 0, 1, 0, 0.411318, 0, 0.911492, 3512.25, 3.8147e-06, 2.16745 )
 speed = 80
-attachedRail = "RailP11"
-onRailPosition = 390
-forward = false
+attached_rail = "RailP11"
+on_rail_position = 390
 
 [node name="SpeedLimit7" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.898718, 0, -0.438528, 0, 1, 0, 0.438528, 0, 0.898718, 2769.53, 3.8147e-06, 295.937 )
 speed = 100
-attachedRail = "RailP9"
-onRailPosition = 340
-forward = false
+attached_rail = "RailP9"
+on_rail_position = 340
 
 [node name="ContactPoint" parent="Signals" instance=ExtResource( 29 )]
 transform = Transform( 0.876472, 0, -0.481452, 0, 1, 0, 0.481452, 0, 0.876472, 14996.7, 3.8147e-06, 6351.59 )
 affectedSignal = "Signal8"
-attachedRail = "Höllkriegelsreuth3"
-onRailPosition = 140
+attached_rail = "Höllkriegelsreuth3"
+on_rail_position = 140
 
 [node name="ContactPoint2" parent="Signals" instance=ExtResource( 29 )]
 transform = Transform( 0.589004, 0, -0.80813, 0, 1, 0, 0.80813, 0, 0.589004, 7815.89, 3.8147e-06, 2336 )
 affectedSignal = "Signal_Goldensee_A1"
-attachedRail = "Icking13"
-onRailPosition = 480
+attached_rail = "Icking13"
+on_rail_position = 480
 forward = false
 
 [node name="ContactPoint3" parent="Signals" instance=ExtResource( 29 )]
 transform = Transform( 0.589004, 0, -0.80813, 0, 1, 0, 0.80813, 0, 0.589004, 7519.55, 3.8147e-06, 1938.42 )
 affectedSignal = "Signal17"
-attachedRail = "Ebenhausen"
+attached_rail = "Ebenhausen"
 
 [node name="Wolfsfurt1R" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( -0.991335, 0, 0.131357, 0, 1, 0, -0.131357, 0, -0.991335, 177.695, 3.8147e-06, 18.4338 )
 stationLength = 150
-platformSide = 2
-attachedRail = "RailP15"
-onRailPosition = 95
+platform_side = 2
+attached_rail = "RailP15"
+on_rail_position = 95
 
 [node name="ContactPoint4" parent="Signals" instance=ExtResource( 29 )]
 transform = Transform( -0.998686, 0, -0.0512463, 0, 1, 0, 0.0512463, 0, -0.998686, 376.641, 3.8147e-06, 35.1304 )
 affectedSignal = "Signal2"
-bySpecificTrain = "Player"
 newSpeed = 80
+bySpecificTrain = "Player"
 affectTime = 4
-attachedRail = "RailP14"
-onRailPosition = 150
+attached_rail = "RailP14"
+on_rail_position = 150
 
 [node name="Hainfurt_2" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.776197, 0, 0.630491, 0, 1, 0, -0.630491, 0, 0.776197, 25351.7, 3.8147e-06, 8228.91 )
 stationLength = 250
-platformSide = 2
-attachedRail = "HainfurtP2P10"
-onRailPosition = 50
+platform_side = 2
+attached_rail = "HainfurtP2P10"
+on_rail_position = 50
 
 [node name="BuchenhainSiedlung" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.89169, 0, -0.452647, 0, 1, 0, 0.452647, 0, 0.89169, 16811.9, 3.8147e-06, 7313.76 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P"
-onRailPosition = 295
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 295
 
 [node name="BuchenhainSiedlungR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.89169, 0, -0.452647, 0, 1, 0, 0.452647, 0, 0.89169, 16912, 3.8147e-06, 7359.53 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14PP"
-onRailPosition = 405
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 405
 forward = false
 
 [node name="Borsdorf" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.891689, 0, -0.452648, 0, 1, 0, 0.452648, 0, 0.891689, 18297.9, 3.8147e-06, 8041.63 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P3"
-onRailPosition = 100
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P3"
+on_rail_position = 100
 
 [node name="BorsdorfR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.891689, 0, -0.452648, 0, 1, 0, 0.452648, 0, 0.891689, 18397.6, 3.8147e-06, 8057.96 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P3P"
-onRailPosition = 200
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P3P"
+on_rail_position = 200
 forward = false
 
 [node name="Ostkurve" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.990057, 0, 0.140665, 0, 1, 0, -0.140665, 0, 0.990057, 19218.9, 3.8147e-06, 7744.75 )
 stationLength = 200
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P5P5P3"
-onRailPosition = 45
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P5P5P3"
+on_rail_position = 45
 
 [node name="OstkurveR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.990057, 0, 0.140665, 0, 1, 0, -0.140665, 0, 0.990057, 19441, 3.8147e-06, 7741.61 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Höllkriegelsreuth14P5P5P2P2"
-onRailPosition = 255
+platform_side = 1
+attached_rail = "Höllkriegelsreuth14P5P5P2P2"
+on_rail_position = 255
 forward = false
 
 [node name="Mockau" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.97846, 0, -0.206438, 0, 1, 0, 0.206438, 0, 0.97846, 20152.5, 3.8147e-06, 7903.74 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P5P5P7"
-onRailPosition = 95
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P5P5P7"
+on_rail_position = 95
 
 [node name="MockauR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.97846, 0, -0.206438, 0, 1, 0, 0.206438, 0, 0.97846, 20260.7, 3.8147e-06, 7923.45 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P5P5P7P2"
-onRailPosition = 205
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P5P5P7P2"
+on_rail_position = 205
 forward = false
 
 [node name="Pantzisch" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.956744, 0, -0.290931, 0, 1, 0, 0.290931, 0, 0.956744, 21310.4, 3.8147e-06, 8217.37 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P5P5P8"
-onRailPosition = 295
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 295
 
 [node name="PantzischR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.956744, 0, -0.290931, 0, 1, 0, 0.290931, 0, 0.956744, 21417.2, 3.8147e-06, 8244.15 )
 stationLength = 100
-platformSide = 2
-attachedRail = "Höllkriegelsreuth14P5P5P8P"
-onRailPosition = 405
+platform_side = 2
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 405
 forward = false
 
 [node name="Machern" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 22489.4, 3.8147e-06, 8454.83 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P3P"
+platform_side = 1
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P3P"
 
 [node name="MachernR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 22689.5, 3.8147e-06, 8463.5 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P3"
-onRailPosition = 200
+platform_side = 1
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P3"
+on_rail_position = 200
 forward = false
 
 [node name="Harras" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.999873, 0, -0.015946, 0, 1, 0, 0.015946, 0, 0.999873, 23960.2, 3.8147e-06, 8564.15 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Harras2PP3"
+platform_side = 1
+attached_rail = "Harras2PP3"
 
 [node name="HarrasR" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.999873, 0, -0.015946, 0, 1, 0, 0.015946, 0, 0.999873, 24160.4, 3.8147e-06, 8555.34 )
 stationLength = 200
-platformSide = 1
-attachedRail = "Harras2PP3P"
-onRailPosition = 200
+platform_side = 1
+attached_rail = "Harras2PP3P"
+on_rail_position = 200
 forward = false
 
 [node name="Signal28" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.787083, 0, 0.616848, 0, 1, 0, -0.616848, 0, 0.787083, 18878.2, 3.8147e-06, 7916.89 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P2P2"
-onRailPosition = 5
+attached_rail = "Höllkriegelsreuth14P5P2P2"
+on_rail_position = 5
 
 [node name="Signal29" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.787083, 0, 0.616848, 0, 1, 0, -0.616848, 0, 0.787083, 18875.4, 3.8147e-06, 7913.34 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P3"
-onRailPosition = 5
+attached_rail = "Höllkriegelsreuth14P5P3"
+on_rail_position = 5
 
 [node name="Signal30" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.776153, 0, 0.630545, 0, 1, 0, -0.630545, 0, 0.776153, 18903.5, 1.42043, 7914.21 )
 visible = false
 status = 1
 speed = 60
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P11"
-onRailPosition = 5
+attached_rail = "Höllkriegelsreuth14P11"
+on_rail_position = 5
 
 [node name="Signal31" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.990057, 0, 0.140664, 0, 1, 0, -0.140664, 0, 0.990057, 18545.1, 3.8147e-06, 8060.72 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P3"
-onRailPosition = 350
+attached_rail = "Höllkriegelsreuth14P3"
+on_rail_position = 350
 
 [node name="Signal32" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.904584, 0, -0.426296, 0, 1, 0, 0.426296, 0, 0.904584, 17845.9, 3.8147e-06, 7828.55 )
 visible = false
 status = 1
 speed = 100
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P3Connector"
-onRailPosition = 50
+attached_rail = "Höllkriegelsreuth14P3Connector"
+on_rail_position = 50
 
 [node name="Signal33" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.89169, 0, -0.452646, 0, 1, 0, 0.452646, 0, 0.89169, 16593.5, 3.8147e-06, 7202.86 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P"
-onRailPosition = 50
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 50
 
 [node name="Signal34" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.876059, 0, 0.482204, 0, 1, 0, -0.482204, 0, -0.876059, 15746.5, 3.8147e-06, 6750.81 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth13"
+attached_rail = "Höllkriegelsreuth13"
 forward = false
-onRailPosition = 40
+on_rail_position = 40
 
 [node name="Signal35" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.89169, 0, 0.452646, 0, 1, 0, -0.452646, 0, -0.89169, 16684.7, 3.8147e-06, 7244.11 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14PP"
+attached_rail = "Höllkriegelsreuth14PP"
 forward = false
-onRailPosition = 150
+on_rail_position = 150
 
 [node name="Signal36" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.899841, 0, 0.436216, 0, 1, 0, -0.436216, 0, -0.899841, 17983.1, 3.8147e-06, 7889.16 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P3ConnectorP"
+attached_rail = "Höllkriegelsreuth14P3ConnectorP"
 forward = false
-onRailPosition = 200
+on_rail_position = 200
 
 [node name="Signal37" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.917314, 0, -0.398165, 0, 1, 0, 0.398165, 0, -0.917314, 18692, 3.8147e-06, 8014.41 )
 visible = false
 status = 1
 speed = 140
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P4P"
+attached_rail = "Höllkriegelsreuth14P4P"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal38" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.990859, 0, -0.134903, 0, 1, 0, 0.134903, 0, -0.990859, 19179.2, 3.8147e-06, 7749.22 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P3"
+attached_rail = "Höllkriegelsreuth14P5P5P3"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal39" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.982998, 0, -0.183614, 0, 1, 0, 0.183614, 0, 0.982998, 19452.9, 3.8147e-06, 7755.98 )
 visible = false
 status = 1
 speed = 120
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P3"
-onRailPosition = 280
+attached_rail = "Höllkriegelsreuth14P5P5P3"
+on_rail_position = 280
 
 [node name="Signal40" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.990859, 0, -0.134903, 0, 1, 0, 0.134903, 0, -0.990859, 19191.9, 3.8147e-06, 7739.09 )
 visible = false
 status = 1
-setPassAtH = 12
-setPassAtM = 35
-setPassAtS = 15
+set_pass_at_h = 12
+set_pass_at_m = 35
+set_pass_at_s = 15
 speed = 80
-attachedRail = "Höllkriegelsreuth14P5P5P2P2"
+attached_rail = "Höllkriegelsreuth14P5P5P2P2"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal41" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.97411, 0, 0.226075, 0, 1, 0, -0.226075, 0, -0.97411, 19772.2, 3.8147e-06, 7817.54 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P5PConnector"
+attached_rail = "Höllkriegelsreuth14P5P5P5PConnector"
 forward = false
-onRailPosition = 100
+on_rail_position = 100
 
 [node name="Signal42" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.97846, 0, -0.206438, 0, 1, 0, 0.206438, 0, 0.97846, 19844.3, 3.8147e-06, 7838.33 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P4"
-onRailPosition = 380
+attached_rail = "Höllkriegelsreuth14P5P5P4"
+on_rail_position = 380
 
 [node name="Signal43" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.987005, 0, -0.160691, 0, 1, 0, 0.160691, 0, 0.987005, 19445.9, 3.8147e-06, 7742.4 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P2P2"
-onRailPosition = 260
+attached_rail = "Höllkriegelsreuth14P5P5P2P2"
+on_rail_position = 260
 
 [node name="Signal44" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.977805, 0, -0.209519, 0, 1, 0, 0.209519, 0, 0.977805, 19850.2, 3.8147e-06, 7834.96 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P5PConnector"
-onRailPosition = 180
+attached_rail = "Höllkriegelsreuth14P5P5P5PConnector"
+on_rail_position = 180
 
 [node name="Signal45" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.978279, 0, 0.207291, 0, 1, 0, -0.207291, 0, -0.978279, 20070.3, 3.8147e-06, 7881.41 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P7P2"
+attached_rail = "Höllkriegelsreuth14P5P5P7P2"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal46" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.969601, 0, -0.244693, 0, 1, 0, 0.244693, 0, 0.969601, 20498, 3.8147e-06, 7985.26 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P7"
-onRailPosition = 450
+attached_rail = "Höllkriegelsreuth14P5P5P7"
+on_rail_position = 450
 
 [node name="Signal47" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.958009, 0, 0.286739, 0, 1, 0, -0.286739, 0, -0.958009, 20981, 3.8147e-06, 8113.78 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P10P"
+attached_rail = "Höllkriegelsreuth14P5P5P10P"
 forward = false
-onRailPosition = 450
+on_rail_position = 450
 
 [node name="Signal48" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.960297, 0, -0.278981, 0, 1, 0, 0.278981, 0, 0.960297, 21507.1, 3.8147e-06, 8275.06 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P8"
-onRailPosition = 500
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 500
 
 [node name="Signal49" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.962863, 0, 0.26999, 0, 1, 0, -0.26999, 0, -0.962863, 21710.1, 3.8147e-06, 8328.77 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P8P2"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal50" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994183, 0, -0.107701, 0, 1, 0, 0.107701, 0, 0.994183, 22081.6, 3.8147e-06, 8405.03 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P"
-onRailPosition = 390
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P"
+on_rail_position = 390
 
 [node name="Signal51" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 22391.1, 3.8147e-06, 8432.59 )
 visible = false
-setPassAtH = 12
-setPassAtM = 4
-setPassAtS = 40
+set_pass_at_h = 12
+set_pass_at_m = 4
+set_pass_at_s = 40
 speed = 120
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P2"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P2"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal52" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.99069, 0, 0.136137, 0, 1, 0, -0.136137, 0, -0.99069, 22390.1, 3.8147e-06, 8442.87 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P3PConnector"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P3PConnector"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal53" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 22371.9, 3.8147e-06, 8423.57 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P2P"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P2P"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal54" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 22476.9, 3.8147e-06, 8423.91 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector5"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector5"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal55" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999814, 0, 0.0192658, 0, 1, 0, -0.0192658, 0, -0.999814, 22477.2, 3.8147e-06, 8418.37 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector6"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector6"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal56" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 22685.3, 3.8147e-06, 8456.02 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P2P2"
-onRailPosition = 195
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P2P2"
+on_rail_position = 195
 
 [node name="Signal57" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.996742, 0, -0.0806558, 0, 1, 0, 0.0806558, 0, 0.996742, 22718.2, 3.8147e-06, 8478.2 )
 visible = false
 status = 1
-setPassAtH = 12
-setPassAtM = 27
-setPassAtS = 50
+set_pass_at_h = 12
+set_pass_at_m = 27
+set_pass_at_s = 50
 speed = 100
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P3PConnector2"
-onRailPosition = 30
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P3PConnector2"
+on_rail_position = 30
 
 [node name="Signal58" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 22729.3, 3.8147e-06, 8467.62 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P4"
-onRailPosition = 40
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P4"
+on_rail_position = 40
 
 [node name="Signal59" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.987005, 0, -0.160691, 0, 1, 0, 0.160691, 0, 0.987005, 22735.4, 3.8147e-06, 8451.86 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector8"
-onRailPosition = 40
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector8"
+on_rail_position = 40
 
 [node name="Signal60" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 23077.4, 3.8147e-06, 8503.68 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P6"
-onRailPosition = 90
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P6"
+on_rail_position = 90
 
 [node name="Signal61" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994678, 0, -0.10303, 0, 1, 0, 0.10303, 0, 0.994678, 23162.6, 3.8147e-06, 8500.19 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11"
-onRailPosition = 150
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11"
+on_rail_position = 150
 
 [node name="Signal62" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 22854.3, 3.8147e-06, 8468.25 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector10"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector10"
 forward = false
-onRailPosition = 40
+on_rail_position = 40
 
 [node name="Signal63" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 23216.7, 3.8147e-06, 8511.83 )
 visible = false
 status = 1
-setPassAtH = 13
-setPassAtM = 30
-blockSignal = true
-attachedRail = "HarrasP"
+set_pass_at_h = 13
+set_pass_at_m = 30
+attached_rail = "HarrasP"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal64" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 22898.4, 3.8147e-06, 8485.14 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P5"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P5"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal65" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.994678, 0, 0.10303, 0, 1, 0, -0.10303, 0, -0.994678, 23217.3, 3.8147e-06, 8505.86 )
 visible = false
-attachedRail = "Harras"
+attached_rail = "Harras"
 forward = false
-onRailPosition = 5
+on_rail_position = 5
 
 [node name="Signal66" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.995221, 0, 0.0976465, 0, 1, 0, -0.0976465, 0, -0.995221, 23116.7, 3.8147e-06, 8512.2 )
 visible = false
-attachedRail = "Höllkriegelsreuth14P5P5P8P2P3P5P2Connector"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P3P5P2Connector"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="Signal67" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.9949, 0, -0.100865, 0, 1, 0, 0.100865, 0, 0.9949, 23419.9, 3.8147e-06, 8538.91 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Harras2PP"
-onRailPosition = 10
+attached_rail = "Harras2PP"
+on_rail_position = 10
 
 [node name="Signal68" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.9949, 0, -0.100863, 0, 1, 0, 0.100863, 0, 0.9949, 23420.6, 3.8147e-06, 8532.94 )
 visible = false
-attachedRail = "Harras2P"
-onRailPosition = 10
+attached_rail = "Harras2P"
+on_rail_position = 10
 
 [node name="Signal69" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.994901, 0, -0.10086, 0, 1, 0, 0.10086, 0, 0.994901, 23421.2, 3.8147e-06, 8526.97 )
 visible = false
-attachedRail = "Harras2"
-onRailPosition = 10
+attached_rail = "Harras2"
+on_rail_position = 10
 
 [node name="Signal70" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999942, 0, -0.0107664, 0, 1, 0, 0.0107664, 0, -0.999942, 23935.5, 3.8147e-06, 8546.09 )
 visible = false
-attachedRail = "Harras2PP3PPConnector"
+attached_rail = "Harras2PP3PPConnector"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal71" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999942, 0, -0.0107671, 0, 1, 0, 0.0107671, 0, -0.999942, 23935.4, 3.8147e-06, 8552.09 )
 visible = false
 status = 1
-setPassAtH = 13
-setPassAtM = 29
-setPassAtS = 48
-blockSignal = true
-attachedRail = "Harras2PP3PConnector"
+set_pass_at_h = 13
+set_pass_at_m = 29
+set_pass_at_s = 48
+attached_rail = "Harras2PP3PConnector"
 forward = false
-onRailPosition = 50
+on_rail_position = 50
 
 [node name="Signal72" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999873, 0, 0.0159461, 0, 1, 0, -0.0159461, 0, -0.999873, 23910.3, 3.8147e-06, 8563.35 )
 visible = false
-attachedRail = "Harras2PP2"
+attached_rail = "Harras2PP2"
 forward = false
-onRailPosition = 100
+on_rail_position = 100
 
 [node name="Signal73" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.999979, 0, 0.00652385, 0, 1, 0, -0.00652385, 0, 0.999979, 24190.2, 3.8147e-06, 8567.48 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Harras2PP3Connector"
-onRailPosition = 30
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 30
 
 [node name="Signal74" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.999873, 0, -0.015946, 0, 1, 0, 0.015946, 0, 0.999873, 24410.4, 3.8147e-06, 8559.33 )
 visible = false
-attachedRail = "Harras2PP3P2"
-onRailPosition = 50
+attached_rail = "Harras2PP3P2"
+on_rail_position = 50
 
 [node name="Signal75" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.999873, 0, -0.015946, 0, 1, 0, 0.015946, 0, 0.999873, 24555.3, 3.8147e-06, 8566.14 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Harras2PP3P2P"
-onRailPosition = 195
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 195
 
 [node name="Signal76" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.999873, 0, -0.015946, 0, 1, 0, 0.015946, 0, 0.999873, 24310.5, 3.8147e-06, 8551.73 )
 visible = false
-attachedRail = "Harras2PP3PP"
-onRailPosition = 350
+attached_rail = "Harras2PP3PP"
+on_rail_position = 350
 
 [node name="Signal77" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999873, 0, 0.0159461, 0, 1, 0, -0.0159461, 0, -0.999873, 24710.4, 3.8147e-06, 8564.11 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Harras2PP3P3"
+attached_rail = "Harras2PP3P3"
 forward = false
-onRailPosition = 200
+on_rail_position = 200
 
 [node name="Signal78" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999873, 0, 0.0159461, 0, 1, 0, -0.0159461, 0, -0.999873, 24710.3, 3.8147e-06, 8568.61 )
 visible = false
-attachedRail = "Harras2PP3P2P"
+attached_rail = "Harras2PP3P2P"
 forward = false
-onRailPosition = 350
+on_rail_position = 350
 
 [node name="Signal79" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.999873, 0, 0.0159461, 0, 1, 0, -0.0159461, 0, -0.999873, 24720.5, 3.8147e-06, 8558.27 )
 visible = false
-attachedRail = "Harras2PP3P2P2"
+attached_rail = "Harras2PP3P2P2"
 forward = false
-onRailPosition = 360
+on_rail_position = 360
 
 [node name="Signal80" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.886491, 0, 0.462746, 0, 1, 0, -0.462746, 0, 0.886491, 25039.5, 3.8147e-06, 8503.26 )
 visible = false
 speed = 60
-attachedRail = "Harras2PP3P2P3PP"
-onRailPosition = 290
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 290
 
 [node name="Signal81" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.884697, 0, 0.466167, 0, 1, 0, -0.466167, 0, 0.884697, 25039.4, 3.8147e-06, 8498.23 )
 visible = false
-attachedRail = "Harras2PP3P2P3PPP"
-onRailPosition = 290
+attached_rail = "Harras2PP3P2P3PPP"
+on_rail_position = 290
 
 [node name="Signal82" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.787082, 0, 0.616848, 0, 1, 0, -0.616848, 0, 0.787082, 25123, 3.8147e-06, 8436.99 )
 visible = false
-attachedRail = "Harras2PP3P2P3"
-onRailPosition = 390
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 390
 
 [node name="Signal83" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.772907, 0, 0.634519, 0, 1, 0, -0.634519, 0, 0.772907, 25061.2, 3.8147e-06, 8519.53 )
 visible = false
-attachedRail = "HainfurtPPPP3PP"
+attached_rail = "HainfurtPPPP3PP"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal84" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.772915, 0, -0.63451, 0, 1, 0, 0.63451, 0, -0.772915, 25058.4, 3.8147e-06, 8516.04 )
 visible = false
-attachedRail = "HainfurtPPPP3PPP"
-onRailPosition = 10
+attached_rail = "HainfurtPPPP3PPP"
+on_rail_position = 10
 
 [node name="Signal85" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( 0.772889, 0, 0.634542, 0, 1, 0, -0.634542, 0, 0.772889, 25067.9, 3.8147e-06, 8527.67 )
 visible = false
-attachedRail = "HainfurtPPPP3"
+attached_rail = "HainfurtPPPP3"
 forward = false
-onRailPosition = 10
+on_rail_position = 10
 
 [node name="Signal86" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.772897, 0, -0.634532, 0, 1, 0, 0.634532, 0, -0.772897, 25065, 3.8147e-06, 8524.19 )
 visible = false
-attachedRail = "HainfurtPPPP3P"
-onRailPosition = 10
+attached_rail = "HainfurtPPPP3P"
+on_rail_position = 10
 
 [node name="Signal87" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.892616, 0, -0.450818, 0, 1, 0, 0.450818, 0, -0.892616, 25030.5, 3.8147e-06, 8502.81 )
 visible = false
 status = 1
 speed = 100
-blockSignal = true
-attachedRail = "Harras2PP3P2P3PPP"
+attached_rail = "Harras2PP3P2P3PPP"
 forward = false
-onRailPosition = 280
+on_rail_position = 280
 
 [node name="Signal88" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.797728, 0, -0.603017, 0, 1, 0, 0.603017, 0, -0.797728, 25115, 3.8147e-06, 8443.09 )
 visible = false
 status = 1
-blockSignal = true
-attachedRail = "Harras2PP3P2P3"
+attached_rail = "Harras2PP3P2P3"
 forward = false
-onRailPosition = 380
+on_rail_position = 380
 
 [node name="Signal89" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.753721, 0, -0.657195, 0, 1, 0, 0.657195, 0, -0.753721, 25338, 3.8147e-06, 8229.09 )
 visible = false
-attachedRail = "HainfurtP2P8"
+attached_rail = "HainfurtP2P8"
 forward = false
-onRailPosition = 40
+on_rail_position = 40
 
 [node name="Signal90" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.776197, 0, -0.630491, 0, 1, 0, 0.630491, 0, -0.776197, 25343.9, 3.8147e-06, 8235.21 )
 visible = false
-setPassAtH = 12
-setPassAtS = 25
+set_pass_at_h = 12
+set_pass_at_s = 25
 speed = 40
-attachedRail = "HainfurtP2P10"
+attached_rail = "HainfurtP2P10"
 forward = false
-onRailPosition = 40
+on_rail_position = 40
 
 [node name="Signal91" parent="Signals" instance=ExtResource( 11 )]
 transform = Transform( -0.776197, 0, -0.630491, 0, 1, 0, 0.630491, 0, -0.776197, 25303.5, 3.8147e-06, 8279.29 )
 visible = false
-attachedRail = "HainfurtP2P9"
+attached_rail = "HainfurtP2P9"
 forward = false
-onRailPosition = 30
+on_rail_position = 30
 
 [node name="SpeedLimit8" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.776197, 0, 0.630491, 0, 1, 0, -0.630491, 0, 0.776197, 25284.1, 3.8147e-06, 8295.06 )
 speed = 30
-attachedRail = "HainfurtP2P9"
-onRailPosition = 5
+attached_rail = "HainfurtP2P9"
+on_rail_position = 5
 
 [node name="SpeedLimit9" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.776197, 0, 0.630491, 0, 1, 0, -0.630491, 0, 0.776197, 25340.1, 3.8147e-06, 8238.36 )
 speed = 30
-attachedRail = "HainfurtP2P10"
-onRailPosition = 35
+attached_rail = "HainfurtP2P10"
+on_rail_position = 35
 
 [node name="SpeedLimit10" parent="Signals" instance=ExtResource( 16 )]
 transform = Transform( 0.742136, 0, 0.67025, 0, 1, 0, -0.67025, 0, 0.742136, 25334.3, 3.8147e-06, 8232.4 )
 speed = 30
-attachedRail = "HainfurtP2P8"
-onRailPosition = 35
+attached_rail = "HainfurtP2P8"
+on_rail_position = 35
 
 [node name="Hainfurt_2R" parent="Signals" instance=ExtResource( 10 )]
 transform = Transform( 0.776197, 0, 0.630491, 0, 1, 0, -0.630491, 0, 0.776197, 25545.8, 3.8147e-06, 8071.28 )
 stationLength = 250
-platformSide = 1
-attachedRail = "HainfurtP2P10"
-onRailPosition = 300
+platform_side = 1
+attached_rail = "HainfurtP2P10"
+on_rail_position = 300
 forward = false
 
 [node name="Rails" type="Spatial" parent="."]
@@ -1204,25 +1152,17 @@ startrot = -7.54802
 endrot = -7.54802
 startpos = Vector3( -20.1784, 3.8147e-06, -24.4521 )
 endpos = Vector3( 326.789, 3.8147e-06, 21.5229 )
-othersDistance = 4.5
-otherLength = 350.0
-Outlength = 350.0
 isSwitchPart = [ "", "" ]
 
 [node name="RailP" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.991335, 0, -0.131357, 0, 1, 0, 0.131357, 0, 0.991335, -20.7695, 3.8147e-06, -19.9911 )
 visible = false
-railTypePath = ""
 length = 350.0
 visibleSegments = 389.889
 startrot = -7.54802
 endrot = -7.54802
 startpos = Vector3( -20.7695, 3.8147e-06, -19.9911 )
 endpos = Vector3( 326.198, 3.8147e-06, 25.9839 )
-othersDistance = 12.0
-otherLength = 350.0
-Outlength = 350.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="RailP2" parent="Rails" instance=ExtResource( 4 )]
@@ -1235,14 +1175,10 @@ startrot = -7.54802
 endrot = 17.9168
 startpos = Vector3( 326.198, 3.8147e-06, 25.9838 )
 endpos = Vector3( 523.745, 3.8147e-06, 8.05997 )
-otherRadius = 445.5
-otherLength = 198.0
-Outlength = 45.0188
 tend1Pos = 50.0
 tend1 = 2.22
 tend2Pos = 100.0
 tend2 = 2.22
-automaticTendency = false
 isSwitchPart = [ "", "RailP14" ]
 
 [node name="RailP3" parent="Rails" instance=ExtResource( 4 )]
@@ -1254,8 +1190,6 @@ startrot = 17.9168
 endrot = 17.9168
 startpos = Vector3( 523.744, 3.8147e-06, 8.05989 )
 endpos = Vector3( 714.045, 3.8147e-06, -53.4671 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "RailP4Connector" ]
 
 [node name="RailP2P" parent="Rails" instance=ExtResource( 4 )]
@@ -1268,9 +1202,6 @@ startrot = -7.54802
 endrot = 17.9168
 startpos = Vector3( 326.789, 3.8147e-06, 21.5228 )
 endpos = Vector3( 522.36, 3.8147e-06, 3.77819 )
-otherRadius = 441.0
-otherLength = 196.0
-Outlength = 44.7933
 tend1Pos = 50
 tend1 = 3.367
 tend2Pos = 148.0
@@ -1288,9 +1219,6 @@ startrot = 17.9168
 endrot = 40.8351
 startpos = Vector3( 714.045, 3.8147e-06, -53.4671 )
 endpos = Vector3( 887.169, 3.8147e-06, -150.922 )
-otherRadius = 495.5
-otherLength = 198.2
-Outlength = 47.452
 tend1Pos = 50
 tend1 = 3.0
 tend2Pos = 150.0
@@ -1308,9 +1236,6 @@ startrot = 17.9168
 endrot = 15.339
 startpos = Vector3( 522.36, 3.8147e-06, 3.77819 )
 endpos = Vector3( 618.203, 3.8147e-06, -24.8447 )
-otherRadius = -2227.93
-otherLength = 100.236
-Outlength = 100.034
 isSwitchPart = [ "", "" ]
 
 [node name="RailP4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -1323,9 +1248,6 @@ startrot = 15.339
 endrot = 17.9167
 startpos = Vector3( 618.203, 3.8147e-06, -24.8446 )
 endpos = Vector3( 714.046, 3.8147e-06, -53.4672 )
-otherRadius = 2218.93
-otherLength = 99.8315
-Outlength = 100.036
 isSwitchPart = [ "", "RailP3" ]
 
 [node name="RailP5" parent="Rails" instance=ExtResource( 4 )]
@@ -1338,9 +1260,6 @@ startrot = 40.8351
 endrot = -26.01
 startpos = Vector3( 887.169, 3.8147e-06, -150.922 )
 endpos = Vector3( 1542.62, 3.8147e-06, -236.196 )
-otherRadius = -604.5
-otherLength = 705.25
-Outlength = 700.0
 tend1Pos = 50
 tend1 = -2.5
 tend2Pos = 650.0
@@ -1357,8 +1276,6 @@ startrot = -26.01
 endrot = -26.01
 startpos = Vector3( 1542.62, 3.8147e-06, -236.196 )
 endpos = Vector3( 1902.11, 3.8147e-06, -60.7849 )
-otherLength = 400.0
-Outlength = 400.0
 automaticTendency = true
 isSwitchPart = [ "", "" ]
 
@@ -1372,9 +1289,6 @@ startrot = -26.01
 endrot = -14.5508
 startpos = Vector3( 1902.1, 3.8147e-06, -60.7843 )
 endpos = Vector3( 2276.68, 3.8147e-06, 77.6307 )
-otherRadius = 1995.5
-otherLength = 399.1
-Outlength = 94.8772
 tend1Pos = 50
 tend1 = 0.75
 tend2Pos = 350.0
@@ -1392,9 +1306,6 @@ startrot = -14.5508
 endrot = -26.01
 startpos = Vector3( 2276.68, 3.8147e-06, 77.6308 )
 endpos = Vector3( 2463.97, 3.8147e-06, 146.838 )
-otherRadius = -1004.5
-otherLength = 200.9
-Outlength = 200.0
 tend1Pos = 50
 tend1 = -1.5
 tend2Pos = 150.0
@@ -1411,8 +1322,6 @@ startrot = -26.01
 endrot = -26.01
 startpos = Vector3( 2463.97, 3.8147e-06, 146.838 )
 endpos = Vector3( 2778.52, 3.8147e-06, 300.323 )
-otherLength = 350.0
-Outlength = 350.0
 automaticTendency = true
 isSwitchPart = [ "", "" ]
 
@@ -1426,9 +1335,6 @@ startrot = -26.01
 endrot = 69.483
 startpos = Vector3( 2778.52, 3.8147e-06, 300.323 )
 endpos = Vector3( 3191.05, 3.8147e-06, 135.853 )
-otherRadius = 295.5
-otherLength = 492.5
-Outlength = 36.7654
 tend1Pos = 50
 tend1 = 5.0
 tend2Pos = 450.0
@@ -1446,9 +1352,6 @@ startrot = 69.483
 endrot = -26.6921
 startpos = Vector3( 3191.05, 3.8147e-06, 135.854 )
 endpos = Vector3( 3521.27, 3.8147e-06, 6.47067 )
-otherRadius = -242.798
-otherLength = 407.554
-Outlength = 400.0
 tend1Pos = 50
 tend1 = -6.29464
 tend2Pos = 350.0
@@ -1465,8 +1368,6 @@ startrot = -26.6921
 endrot = -26.6921
 startpos = Vector3( 3521.27, 3.8147e-06, 6.47038 )
 endpos = Vector3( 3565.94, 3.8147e-06, 28.9302 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "", "" ]
 
 [node name="RailP13" parent="Rails" instance=ExtResource( 4 )]
@@ -1489,9 +1390,6 @@ startrot = -26.6921
 endrot = -41.0161
 startpos = Vector3( 3653.27, 3.8147e-06, 77.8702 )
 endpos = Vector3( 4066.49, 3.8147e-06, 355.06 )
-otherRadius = -2000.0
-otherLength = 500.0
-Outlength = 498.875
 tend1Pos = 50
 tend1 = -0.751691
 tend2Pos = 448.875
@@ -1509,9 +1407,6 @@ startrot = -26.6921
 endrot = -31.8454
 startpos = Vector3( 3565.95, 3.8147e-06, 28.9302 )
 endpos = Vector3( 3609.61, 3.8147e-06, 53.4002 )
-otherRadius = -561.167
-otherLength = 50.4721
-Outlength = 50.0674
 isSwitchPart = [ "RailP13", "" ]
 
 [node name="RailP14PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -1524,9 +1419,6 @@ startrot = -31.8453
 endrot = -26.6921
 startpos = Vector3( 3609.61, 3.8147e-06, 53.4002 )
 endpos = Vector3( 3653.27, 3.8147e-06, 77.8702 )
-otherRadius = 552.167
-otherLength = 49.6627
-Outlength = 50.0669
 isSwitchPart = [ "", "" ]
 
 [node name="Icking3" parent="Rails" instance=ExtResource( 4 )]
@@ -1539,9 +1431,6 @@ startrot = -41.016
 endrot = -35.2864
 startpos = Vector3( 4066.49, 3.8147e-06, 355.06 )
 endpos = Vector3( 4223.7, 3.8147e-06, 478.556 )
-otherRadius = 1995.5
-otherLength = 199.55
-Outlength = 94.8772
 tend1Pos = 50
 tend1 = 0.75
 tend2Pos = 150.0
@@ -1559,9 +1448,6 @@ startrot = -26.6921
 endrot = -41.0161
 startpos = Vector3( 3655.29, 3.8147e-06, 73.8497 )
 endpos = Vector3( 4069.44, 3.8147e-06, 351.665 )
-otherRadius = -2004.5
-otherLength = 501.125
-Outlength = 500.0
 tend1Pos = 50
 tend1 = -0.75
 tend2Pos = 450.0
@@ -1579,9 +1465,6 @@ startrot = -35.2865
 endrot = -29.5569
 startpos = Vector3( 4223.7, 3.8147e-06, 478.556 )
 endpos = Vector3( 4392.46, 3.8147e-06, 585.741 )
-otherRadius = 1995.5
-otherLength = 199.55
-Outlength = 94.8772
 tend1Pos = 50
 tend1 = 0.75
 tend2Pos = 150.0
@@ -1599,9 +1482,6 @@ startrot = -29.5569
 endrot = -32.9947
 startpos = Vector3( 4392.46, 3.8147e-06, 585.741 )
 endpos = Vector3( 4648.83, 3.8147e-06, 741.465 )
-otherRadius = -5004.5
-otherLength = 300.27
-Outlength = 300.0
 tend1Pos = 50
 tend1 = -0.3
 tend2Pos = 250.0
@@ -1619,9 +1499,6 @@ startrot = -32.9946
 endrot = -18.6707
 startpos = Vector3( 4648.82, 3.8147e-06, 741.465 )
 endpos = Vector3( 5097.68, 3.8147e-06, 958.77 )
-otherRadius = 1995.5
-otherLength = 498.875
-Outlength = 94.8772
 tend1Pos = 50
 tend1 = 0.75
 tend2Pos = 450.0
@@ -1632,7 +1509,6 @@ isSwitchPart = [ "", "" ]
 [node name="Icking15" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.838722, 0, -0.544561, 0, 1, 0, 0.544561, 0, 0.838722, 4655.95, 3.8147e-06, 812.491 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 500.0
 radius = 2000.0
 buildDistance = 1.9
@@ -1641,10 +1517,6 @@ startrot = -32.9946
 endrot = -18.6707
 startpos = Vector3( 4655.95, 3.8147e-06, 812.491 )
 endpos = Vector3( 5104.81, 3.8147e-06, 1029.8 )
-otherRadius = 1995.5
-otherLength = 498.875
-Outlength = 94.8772
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -1658,9 +1530,6 @@ startrot = -18.6707
 endrot = -12.9411
 startpos = Vector3( 5097.68, 3.8147e-06, 958.77 )
 endpos = Vector3( 6059.47, 3.8147e-06, 1231.04 )
-otherRadius = 9995.5
-otherLength = 999.55
-Outlength = 212.136
 tend1Pos = 50
 tend1 = 0.15
 tend2Pos = 950.0
@@ -1678,9 +1547,6 @@ startrot = -12.9411
 endrot = -46.3637
 startpos = Vector3( 6059.47, 3.8147e-06, 1231.04 )
 endpos = Vector3( 6359.34, 3.8147e-06, 1401.75 )
-otherRadius = -604.5
-otherLength = 352.625
-Outlength = 350.0
 tend1Pos = 50
 tend1 = -2.5
 tend2Pos = 300.0
@@ -1698,9 +1564,6 @@ startrot = -46.3636
 endrot = -17.7157
 startpos = Vector3( 6359.34, 3.8147e-06, 1401.75 )
 endpos = Vector3( 6611, 3.8147e-06, 1559.25 )
-otherRadius = 595.5
-otherLength = 297.75
-Outlength = 51.9778
 tend1Pos = 50
 tend1 = 2.5
 tend2Pos = 250.0
@@ -1718,9 +1581,6 @@ startrot = -17.7158
 endrot = -16.9136
 startpos = Vector3( 6611.01, 3.8147e-06, 1559.25 )
 endpos = Vector3( 7279.28, 3.8147e-06, 1767.58 )
-otherRadius = 49995.5
-otherLength = 699.937
-Outlength = 474.343
 tend1Pos = 50
 tend1 = 0.03
 tend2Pos = 650.0
@@ -1738,9 +1598,6 @@ startrot = -16.9136
 endrot = -53.9137
 startpos = Vector3( 7279.28, 3.8147e-06, 1767.58 )
 endpos = Vector3( 7519.55, 3.8147e-06, 1938.42 )
-otherRadius = -469.06
-otherLength = 302.906
-Outlength = 300.0
 isSwitchPart = [ "Icking12", "" ]
 
 [node name="Icking12" parent="Rails" instance=ExtResource( 4 )]
@@ -1753,12 +1610,8 @@ startrot = -16.9136
 endrot = -53.9137
 startpos = Vector3( 7279.28, 3.8147e-06, 1767.58 )
 endpos = Vector3( 7533.17, 3.8147e-06, 1948.1 )
-otherRadius = -495.385
-otherLength = 319.906
-Outlength = 317.0
 tend1Pos = 50.0
 tend2Pos = 267.0
-automaticTendency = false
 isSwitchPart = [ "Icking11", "" ]
 
 [node name="Ebenhausen" parent="Rails" instance=ExtResource( 4 )]
@@ -1770,8 +1623,6 @@ startrot = -53.9136
 endrot = -53.9136
 startpos = Vector3( 7519.55, 3.8147e-06, 1938.42 )
 endpos = Vector3( 7755.15, 3.8147e-06, 2261.67 )
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Icking13" parent="Rails" instance=ExtResource( 4 )]
@@ -1783,8 +1634,6 @@ startrot = -53.9136
 endrot = -53.9136
 startpos = Vector3( 7533.17, 3.8147e-06, 1948.1 )
 endpos = Vector3( 7821.78, 3.8147e-06, 2344.08 )
-otherLength = 490.0
-Outlength = 490.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen2" parent="Rails" instance=ExtResource( 4 )]
@@ -1797,9 +1646,6 @@ startrot = -53.9136
 endrot = -3.91366
 startpos = Vector3( 7821.78, 3.8147e-06, 2344.08 )
 endpos = Vector3( 8033.74, 3.8147e-06, 2461.15 )
-otherRadius = 281.979
-otherLength = 246.073
-Outlength = 35.9284
 isSwitchPart = [ "", "Ebenhausen4" ]
 
 [node name="Ebenhausen3" parent="Rails" instance=ExtResource( 4 )]
@@ -1812,9 +1658,6 @@ startrot = -3.91362
 endrot = 11.0864
 startpos = Vector3( 8033.74, 3.8147e-06, 2461.16 )
 endpos = Vector3( 8282.54, 3.8147e-06, 2445.57 )
-otherRadius = 950.43
-otherLength = 248.822
-Outlength = 65.5658
 tend1Pos = 50
 tend1 = 1.5708
 tend2Pos = 200.0
@@ -1832,9 +1675,6 @@ startrot = 176.086
 endrot = 126.086
 startpos = Vector3( 8033.74, 3.8147e-06, 2461.16 )
 endpos = Vector3( 7810.76, 3.8147e-06, 2338 )
-otherRadius = -305.876
-otherLength = 266.927
-Outlength = 263.0
 isSwitchPart = [ "Ebenhausen2", "" ]
 
 [node name="EbenhausenConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -1847,9 +1687,6 @@ startrot = -53.9136
 endrot = -53.9378
 startpos = Vector3( 7755.15, 3.8147e-06, 2261.67 )
 endpos = Vector3( 7782.95, 3.8147e-06, 2299.83 )
-otherRadius = -111896.0
-otherLength = 47.2177
-Outlength = 47.2158
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -1862,9 +1699,6 @@ startrot = -53.9378
 endrot = -53.9136
 startpos = Vector3( 7782.95, 3.8147e-06, 2299.83 )
 endpos = Vector3( 7810.75, 3.8147e-06, 2337.99 )
-otherRadius = 111886.0
-otherLength = 47.2139
-Outlength = 709.585
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen5" parent="Rails" instance=ExtResource( 4 )]
@@ -1877,9 +1711,6 @@ startrot = 11.0864
 endrot = 19.0864
 startpos = Vector3( 8282.54, 3.8147e-06, 2445.57 )
 endpos = Vector3( 8427.25, 3.8147e-06, 2406.56 )
-otherRadius = 1069.8
-otherLength = 149.372
-Outlength = 69.5416
 automaticTendency = true
 isSwitchPart = [ "", "" ]
 
@@ -1893,9 +1724,6 @@ startrot = 19.0864
 endrot = 22.0864
 startpos = Vector3( 8427.25, 3.8147e-06, 2406.56 )
 endpos = Vector3( 8708.06, 3.8147e-06, 2301.09 )
-otherRadius = 5725.08
-otherLength = 299.764
-Outlength = 160.576
 tend1Pos = 50
 tend1 = 0.261799
 tend2Pos = 250.0
@@ -1913,9 +1741,6 @@ startrot = 22.0864
 endrot = -27.9136
 startpos = Vector3( 8708.06, 3.8147e-06, 2301.08 )
 endpos = Vector3( 8998.25, 3.8147e-06, 2315.85 )
-otherRadius = -348.275
-otherLength = 303.927
-Outlength = 300.0
 tend1Pos = 50
 tend1 = -4.36332
 tend2Pos = 250.0
@@ -1933,9 +1758,6 @@ startrot = -27.9136
 endrot = -32.9136
 startpos = Vector3( 8998.26, 3.8147e-06, 2315.85 )
 endpos = Vector3( 9256.9, 3.8147e-06, 2467.67 )
-otherRadius = -3442.25
-otherLength = 300.393
-Outlength = 300.0
 tend1Pos = 50
 tend1 = -0.436332
 tend2Pos = 250.0
@@ -1953,10 +1775,6 @@ startrot = -32.9136
 endrot = -25.9136
 startpos = Vector3( 9256.89, 3.8147e-06, 2467.68 )
 endpos = Vector3( 9518.06, 3.8147e-06, 2614.92 )
-otherRadius = 2451.03
-otherLength = 299.45
-Outlength = 105.126
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen10" parent="Rails" instance=ExtResource( 4 )]
@@ -1969,9 +1787,6 @@ startrot = -25.9136
 endrot = -0.913624
 startpos = Vector3( 9518.06, 3.8147e-06, 2614.92 )
 endpos = Vector3( 9807.57, 3.8147e-06, 2683.96 )
-otherRadius = 683.049
-otherLength = 298.036
-Outlength = 55.6387
 tend1Pos = 50.0
 tend1 = 5.0
 tend2Pos = 250.0
@@ -1988,9 +1803,6 @@ startrot = -0.913625
 endrot = -38.9137
 startpos = Vector3( 9807.57, 3.8147e-06, 2683.96 )
 endpos = Vector3( 10176.8, 3.8147e-06, 2817.72 )
-otherRadius = -607.613
-otherLength = 402.985
-Outlength = 400.0
 tend1Pos = 50.0
 tend1 = -5.0
 tend2Pos = 350.0
@@ -2007,9 +1819,6 @@ startrot = -38.9136
 endrot = -43.9136
 startpos = Vector3( 10176.8, 3.8147e-06, 2817.72 )
 endpos = Vector3( 10476.7, 3.8147e-06, 3082.23 )
-otherRadius = -4588.16
-otherLength = 400.393
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen13" parent="Rails" instance=ExtResource( 4 )]
@@ -2022,9 +1831,6 @@ startrot = -43.9136
 endrot = 1.08636
 startpos = Vector3( 10476.7, 3.8147e-06, 3082.23 )
 endpos = Vector3( 10839.6, 3.8147e-06, 3224.54 )
-otherRadius = 504.796
-otherLength = 396.466
-Outlength = 47.8907
 tend1Pos = 50.0
 tend1 = 5.0
 tend2Pos = 350.0
@@ -2040,8 +1846,6 @@ startrot = 1.08637
 endrot = -8.91363
 startpos = Vector3( 10839.6, 3.8147e-06, 3224.55 )
 endpos = Vector3( 10939.2, 3.8147e-06, 3231.37 )
-otherRadius = -577.458
-otherLength = 100.785
 tend1Pos = 49.0
 tend1 = -5.0
 tend2Pos = 50.0
@@ -2058,9 +1862,6 @@ startrot = -8.91361
 endrot = -13.9136
 startpos = Vector3( 10939.2, 3.8147e-06, 3231.36 )
 endpos = Vector3( 11429.2, 3.8147e-06, 3330.27 )
-otherRadius = -5734.08
-otherLength = 500.393
-Outlength = 500.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen16" parent="Rails" instance=ExtResource( 4 )]
@@ -2073,9 +1874,6 @@ startrot = -13.9136
 endrot = -58.9136
 startpos = Vector3( 11429.2, 3.8147e-06, 3330.28 )
 endpos = Vector3( 11742.9, 3.8147e-06, 3561.67 )
-otherRadius = -513.796
-otherLength = 403.534
-Outlength = 400.0
 tend1Pos = 50.0
 tend1 = -5.0
 tend2Pos = 350.0
@@ -2091,8 +1889,6 @@ startrot = -58.9136
 endrot = -58.9136
 startpos = Vector3( 11742.9, 3.8147e-06, 3561.66 )
 endpos = Vector3( 11897.8, 3.8147e-06, 3818.58 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen18" parent="Rails" instance=ExtResource( 4 )]
@@ -2105,9 +1901,6 @@ startrot = -58.9136
 endrot = -28.9136
 startpos = Vector3( 11897.8, 3.8147e-06, 3818.58 )
 endpos = Vector3( 12111.5, 3.8147e-06, 4024.28 )
-otherRadius = 568.458
-otherLength = 297.644
-Outlength = 50.7937
 tend1Pos = 50.0
 tend1 = 5.0
 tend2Pos = 250.0
@@ -2123,8 +1916,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 12111.4, 3.8147e-06, 4024.28 )
 endpos = Vector3( 12417.8, 3.8147e-06, 4193.5 )
-otherLength = 350.0
-Outlength = 350.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen20" parent="Rails" instance=ExtResource( 4 )]
@@ -2137,9 +1928,6 @@ startrot = -28.9136
 endrot = -85.9137
 startpos = Vector3( 12417.8, 3.8147e-06, 4193.51 )
 endpos = Vector3( 12598.6, 3.8147e-06, 4476.4 )
-otherRadius = -356.316
-otherLength = 354.477
-Outlength = 350.0
 isSwitchPart = [ "Ebenhausen21", "" ]
 
 [node name="Ebenhausen21" parent="Rails" instance=ExtResource( 4 )]
@@ -2152,9 +1940,6 @@ startrot = -28.9136
 endrot = -85.9136
 startpos = Vector3( 12417.8, 3.8147e-06, 4193.51 )
 endpos = Vector3( 12603.8, 3.8147e-06, 4484.48 )
-otherRadius = -366.368
-otherLength = 364.477
-Outlength = 360.0
 isSwitchPart = [ "Ebenhausen20", "" ]
 
 [node name="Ebenhausen22" parent="Rails" instance=ExtResource( 4 )]
@@ -2166,8 +1951,6 @@ startrot = -85.9136
 endrot = -85.9136
 startpos = Vector3( 12598.6, 3.8147e-06, 4476.4 )
 endpos = Vector3( 12609.3, 3.8147e-06, 4626.02 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen23" parent="Rails" instance=ExtResource( 4 )]
@@ -2180,9 +1963,6 @@ startrot = -85.9136
 endrot = -35.9136
 startpos = Vector3( 12609.3, 3.8147e-06, 4626.02 )
 endpos = Vector3( 12703.5, 3.8147e-06, 4795.3 )
-otherRadius = 224.683
-otherLength = 196.073
-Outlength = 32.1406
 isSwitchPart = [ "", "Ebenhausen25" ]
 
 [node name="Ebenhausen24" parent="Rails" instance=ExtResource( 4 )]
@@ -2195,9 +1975,6 @@ startrot = -35.9136
 endrot = -25.9137
 startpos = Vector3( 12703.5, 3.8147e-06, 4795.3 )
 endpos = Vector3( 12874.9, 3.8147e-06, 4897.92 )
-otherRadius = 1141.42
-otherLength = 199.215
-Outlength = 71.8215
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen25" parent="Rails" instance=ExtResource( 4 )]
@@ -2210,9 +1987,6 @@ startrot = 144.086
 endrot = 94.0864
 startpos = Vector3( 12703.5, 3.8147e-06, 4795.3 )
 endpos = Vector3( 12614, 3.8147e-06, 4634.48 )
-otherRadius = -222.224
-otherLength = 193.927
-Outlength = 190.0
 isSwitchPart = [ "Ebenhausen23", "" ]
 
 [node name="Ebenhausen21Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2225,9 +1999,6 @@ startrot = -85.9136
 endrot = -86.2815
 startpos = Vector3( 12603.8, 3.8147e-06, 4484.48 )
 endpos = Vector3( 12608.9, 3.8147e-06, 4559.48 )
-otherRadius = -11713.2
-otherLength = 75.2036
-Outlength = 75.1747
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen25Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2240,9 +2011,6 @@ startrot = -86.2815
 endrot = -85.9136
 startpos = Vector3( 12608.9, 3.8147e-06, 4559.48 )
 endpos = Vector3( 12614, 3.8147e-06, 4634.48 )
-otherRadius = 11704.2
-otherLength = 75.1458
-Outlength = 229.545
 isSwitchPart = [ "", "" ]
 
 [node name="Ebenhausen26" parent="Rails" instance=ExtResource( 4 )]
@@ -2254,8 +2022,6 @@ startrot = -25.9136
 endrot = -25.9136
 startpos = Vector3( 12874.8, 3.8147e-06, 4897.92 )
 endpos = Vector3( 13234.6, 3.8147e-06, 5072.73 )
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Buchenhain" parent="Rails" instance=ExtResource( 4 )]
@@ -2268,9 +2034,6 @@ startrot = -25.9136
 endrot = -40.9136
 startpos = Vector3( 13234.6, 3.8147e-06, 5072.73 )
 endpos = Vector3( 13484.3, 3.8147e-06, 5237.46 )
-otherRadius = -1150.42
-otherLength = 301.178
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Buchenhain2" parent="Rails" instance=ExtResource( 4 )]
@@ -2283,9 +2046,6 @@ startrot = -40.9136
 endrot = -42.9136
 startpos = Vector3( 13484.3, 3.8147e-06, 5237.46 )
 endpos = Vector3( 14154, 3.8147e-06, 5838.64 )
-otherRadius = -25787.6
-otherLength = 900.157
-Outlength = 900.0
 isSwitchPart = [ "", "" ]
 
 [node name="Buchenhain3" parent="Rails" instance=ExtResource( 4 )]
@@ -2298,9 +2058,6 @@ startrot = -42.9136
 endrot = -29.9136
 startpos = Vector3( 14154, 3.8147e-06, 5838.64 )
 endpos = Vector3( 14475.2, 3.8147e-06, 6075.58 )
-otherRadius = 1758.45
-otherLength = 398.979
-Outlength = 89.0784
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth" parent="Rails" instance=ExtResource( 4 )]
@@ -2313,9 +2070,6 @@ startrot = -29.9136
 endrot = -26.9136
 startpos = Vector3( 14475.2, 3.8147e-06, 6075.57 )
 endpos = Vector3( 14739, 3.8147e-06, 6218.3 )
-otherRadius = 5725.08
-otherLength = 299.764
-Outlength = 160.576
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth2" parent="Rails" instance=ExtResource( 4 )]
@@ -2327,8 +2081,6 @@ startrot = -26.9136
 endrot = -26.9136
 startpos = Vector3( 14739.1, 3.8147e-06, 6218.3 )
 endpos = Vector3( 14872.9, 3.8147e-06, 6286.2 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "HöllkriegelsreuthConnector", "" ]
 
 [node name="HöllkriegelsreuthConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -2341,9 +2093,6 @@ startrot = -26.9136
 endrot = -23.4766
 startpos = Vector3( 14739.1, 3.8147e-06, 6218.3 )
 endpos = Vector3( 14807, 3.8147e-06, 6250.24 )
-otherRadius = 1246.52
-otherLength = 74.7753
-Outlength = 75.0418
 isSwitchPart = [ "Höllkriegelsreuth2", "" ]
 
 [node name="Höllkriegelsreuth4PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -2356,9 +2105,6 @@ startrot = -23.4766
 endrot = -26.9136
 startpos = Vector3( 14807, 3.8147e-06, 6250.25 )
 endpos = Vector3( 14874.9, 3.8147e-06, 6282.19 )
-otherRadius = -1255.52
-otherLength = 75.3151
-Outlength = 75.0452
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth5P3" parent="Rails" instance=ExtResource( 4 )]
@@ -2370,8 +2116,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 15100.9, 3.8147e-06, 6387.19 )
 endpos = Vector3( 15276, 3.8147e-06, 6483.89 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth5P4" parent="Rails" instance=ExtResource( 4 )]
@@ -2384,10 +2128,6 @@ startrot = 151.086
 endrot = 141.086
 startpos = Vector3( 15100.9, 3.8147e-06, 6387.19 )
 endpos = Vector3( 14935.1, 3.8147e-06, 6275.74 )
-otherRadius = -1150.42
-otherLength = 200.785
-Outlength = 200.0
-automaticTendency = false
 isSwitchPart = [ "Höllkriegelsreuth5P3Connector2", "" ]
 
 [node name="Höllkriegelsreuth5P5" parent="Rails" instance=ExtResource( 4 )]
@@ -2399,8 +2139,6 @@ startrot = 141.086
 endrot = 141.086
 startpos = Vector3( 14935.1, 3.8147e-06, 6275.74 )
 endpos = Vector3( 14779.5, 3.8147e-06, 6150.11 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth9" parent="Rails" instance=ExtResource( 4 )]
@@ -2412,9 +2150,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 15098.7, 3.8147e-06, 6393.06 )
 endpos = Vector3( 15273.8, 3.8147e-06, 6489.76 )
-othersDistance = 12.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth10" parent="Rails" instance=ExtResource( 4 )]
@@ -2426,8 +2161,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 15273.8, 3.8147e-06, 6489.76 )
 endpos = Vector3( 15448.9, 3.8147e-06, 6586.46 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "Höllkriegelsreuth11Connector" ]
 
 [node name="Höllkriegelsreuth11" parent="Rails" instance=ExtResource( 4 )]
@@ -2439,9 +2172,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 15448.9, 3.8147e-06, 6586.46 )
 endpos = Vector3( 15580.2, 3.8147e-06, 6658.98 )
-othersDistance = 4.5
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "Höllkriegelsreuth10Connector", "" ]
 
 [node name="Höllkriegelsreuth5P3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2454,9 +2184,6 @@ startrot = -28.9136
 endrot = -32.4358
 startpos = Vector3( 15276, 3.8147e-06, 6483.88 )
 endpos = Vector3( 15362.5, 3.8147e-06, 6535.17 )
-otherRadius = -1640.11
-otherLength = 100.823
-Outlength = 100.546
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth11Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2469,9 +2196,6 @@ startrot = -32.4358
 endrot = -28.9136
 startpos = Vector3( 15362.4, 3.8147e-06, 6535.17 )
 endpos = Vector3( 15448.9, 3.8147e-06, 6586.46 )
-otherRadius = 1631.11
-otherLength = 100.269
-Outlength = 85.8017
 isSwitchPart = [ "", "Höllkriegelsreuth10" ]
 
 [node name="Höllkriegelsreuth11P" parent="Rails" instance=ExtResource( 4 )]
@@ -2483,9 +2207,6 @@ startrot = -28.9136
 endrot = -28.9136
 startpos = Vector3( 15446.7, 3.8147e-06, 6590.4 )
 endpos = Vector3( 15578, 3.8147e-06, 6662.92 )
-othersDistance = 4.5
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "Höllkriegelsreuth11P2Connector" ]
 
 [node name="Höllkriegelsreuth11P2" parent="Rails" instance=ExtResource( 4 )]
@@ -2497,8 +2218,6 @@ startrot = -28.9137
 endrot = -28.9137
 startpos = Vector3( 15578, 3.8147e-06, 6662.92 )
 endpos = Vector3( 15709.3, 3.8147e-06, 6735.44 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "Höllkriegelsreuth11PConnector2", "" ]
 
 [node name="Höllkriegelsreuth12" parent="Rails" instance=ExtResource( 4 )]
@@ -2510,8 +2229,6 @@ startrot = -28.9137
 endrot = -28.9137
 startpos = Vector3( 15580.2, 3.8147e-06, 6658.98 )
 endpos = Vector3( 15711.5, 3.8147e-06, 6731.5 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "Höllkriegelsreuth13Connector" ]
 
 [node name="Höllkriegelsreuth11PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -2524,9 +2241,6 @@ startrot = -28.9137
 endrot = -25.4676
 startpos = Vector3( 15578, 3.8147e-06, 6662.92 )
 endpos = Vector3( 15644.8, 3.8147e-06, 6697.21 )
-otherRadius = 1243.41
-otherLength = 74.7851
-Outlength = 74.9485
 isSwitchPart = [ "Höllkriegelsreuth11P2", "" ]
 
 [node name="Höllkriegelsreuth13Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2539,9 +2253,6 @@ startrot = -25.4676
 endrot = -28.9136
 startpos = Vector3( 15644.8, 3.8147e-06, 6697.21 )
 endpos = Vector3( 15711.6, 3.8147e-06, 6731.5 )
-otherRadius = -1252.41
-otherLength = 75.3265
-Outlength = 75.0558
 isSwitchPart = [ "", "Höllkriegelsreuth12" ]
 
 [node name="Höllkriegelsreuth10Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2554,9 +2265,6 @@ startrot = -28.9137
 endrot = -32.3498
 startpos = Vector3( 15448.9, 3.8147e-06, 6586.46 )
 endpos = Vector3( 15513.5, 3.8147e-06, 6624.69 )
-otherRadius = -1255.91
-otherLength = 75.3182
-Outlength = 75.0483
 isSwitchPart = [ "Höllkriegelsreuth11", "" ]
 
 [node name="Höllkriegelsreuth11P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2569,9 +2277,6 @@ startrot = -32.3497
 endrot = -28.9136
 startpos = Vector3( 15513.4, 0, 6624.69 )
 endpos = Vector3( 15578, 0, 6662.92 )
-otherRadius = 1246.91
-otherLength = 74.7784
-Outlength = 75.0535
 isSwitchPart = [ "", "Höllkriegelsreuth11P" ]
 
 [node name="Höllkriegelsreuth14P3" parent="Rails" instance=ExtResource( 4 )]
@@ -2584,9 +2289,6 @@ startrot = -26.9137
 endrot = 13.0863
 startpos = Vector3( 18205.2, 3.8147e-06, 8004.36 )
 endpos = Vector3( 18594.3, 3.8147e-06, 8051.54 )
-otherRadius = 568.458
-otherLength = 396.858
-Outlength = 50.7937
 tend1Pos = 50
 tend1 = 2.61799
 tend2Pos = 350.0
@@ -2604,9 +2306,6 @@ startrot = -26.9137
 endrot = 23.0863
 startpos = Vector3( 18207.2, 3.8147e-06, 8000.34 )
 endpos = Vector3( 18687.4, 3.8147e-06, 8016.39 )
-otherRadius = 563.958
-otherLength = 492.146
-Outlength = 50.594
 tend1Pos = 50
 tend1 = 2.63872
 tend2Pos = 446.073
@@ -2623,8 +2322,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18858.1, 3.8147e-06, 7915.51 )
 endpos = Vector3( 18866, 3.8147e-06, 7909.34 )
-otherLength = 10.0
-Outlength = 10.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P3" parent="Rails" instance=ExtResource( 4 )]
@@ -2636,8 +2333,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18871.5, 3.8147e-06, 7916.42 )
 endpos = Vector3( 18891.2, 3.8147e-06, 7901 )
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P4" parent="Rails" instance=ExtResource( 4 )]
@@ -2649,9 +2344,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18910.8, 3.8147e-06, 7885.58 )
 endpos = Vector3( 18930.5, 3.8147e-06, 7870.16 )
-othersDistance = 4.5
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5" parent="Rails" instance=ExtResource( 4 )]
@@ -2663,9 +2355,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18950.2, 3.8147e-06, 7854.74 )
 endpos = Vector3( 18989.6, 3.8147e-06, 7823.9 )
-othersDistance = 4.5
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P2PConnector" ]
 
 [node name="Höllkriegelsreuth14P5P5P" parent="Rails" instance=ExtResource( 4 )]
@@ -2677,8 +2366,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18953, 3.8147e-06, 7858.28 )
 endpos = Vector3( 18992.4, 3.8147e-06, 7827.44 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P9" ]
 
 [node name="Höllkriegelsreuth14P5P6" parent="Rails" instance=ExtResource( 4 )]
@@ -2690,9 +2377,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18930.5, 3.8147e-06, 7870.16 )
 endpos = Vector3( 18950.2, 3.8147e-06, 7854.74 )
-othersDistance = 4.5
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P6P" parent="Rails" instance=ExtResource( 4 )]
@@ -2704,8 +2388,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18933.3, 3.8147e-06, 7873.7 )
 endpos = Vector3( 18953, 3.8147e-06, 7858.28 )
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P2P2" parent="Rails" instance=ExtResource( 4 )]
@@ -2717,8 +2399,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18874.3, 3.8147e-06, 7919.97 )
 endpos = Vector3( 18933.3, 3.8147e-06, 7873.71 )
-otherLength = 75.0
-Outlength = 75.0
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P6P2" ]
 
 [node name="Höllkriegelsreuth14P5P6P2" parent="Rails" instance=ExtResource( 4 )]
@@ -2731,9 +2411,6 @@ startrot = -141.914
 endrot = -152.198
 startpos = Vector3( 18933.3, 3.8147e-06, 7873.7 )
 endpos = Vector3( 18912.2, 3.8147e-06, 7887.35 )
-otherRadius = -144.523
-otherLength = 25.9421
-Outlength = 25.1343
 isSwitchPart = [ "Höllkriegelsreuth14P5P2P2", "" ]
 
 [node name="Höllkriegelsreuth14P5P7" parent="Rails" instance=ExtResource( 4 )]
@@ -2746,9 +2423,6 @@ startrot = 38.0863
 endrot = 27.8016
 startpos = Vector3( 18891.2, 3.8147e-06, 7901 )
 endpos = Vector3( 18912.3, 3.8147e-06, 7887.35 )
-otherRadius = -144.523
-otherLength = 25.9421
-Outlength = 25.1343
 isSwitchPart = [ "Höllkriegelsreuth14P5P8", "Höllkriegelsreuth14P5P6P2Connector" ]
 
 [node name="Höllkriegelsreuth14P5P8" parent="Rails" instance=ExtResource( 4 )]
@@ -2760,8 +2434,6 @@ startrot = 38.0863
 endrot = 38.0863
 startpos = Vector3( 18891.2, 3.8147e-06, 7901 )
 endpos = Vector3( 18910.9, 3.8147e-06, 7885.58 )
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "Höllkriegelsreuth14P5P7", "" ]
 
 [node name="Höllkriegelsreuth14P4P" parent="Rails" instance=ExtResource( 4 )]
@@ -2774,9 +2446,6 @@ startrot = 23.0863
 endrot = 38.0863
 startpos = Vector3( 18687.4, 3.8147e-06, 8016.39 )
 endpos = Vector3( 18858.1, 3.8147e-06, 7915.51 )
-otherRadius = 754.944
-otherLength = 197.644
-Outlength = 58.4738
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P2" parent="Rails" instance=ExtResource( 4 )]
@@ -2789,9 +2458,6 @@ startrot = 38.0863
 endrot = 8.08631
 startpos = Vector3( 18992.3, 3.8147e-06, 7827.44 )
 endpos = Vector3( 19174.2, 3.8147e-06, 7749.91 )
-otherRadius = -386.472
-otherLength = 202.356
-Outlength = 200.0
 tend1Pos = 50
 tend1 = -3.92699
 tend2Pos = 150.0
@@ -2810,9 +2476,6 @@ startrot = 38.0863
 endrot = 8.08633
 startpos = Vector3( 18989.6, 3.8147e-06, 7823.9 )
 endpos = Vector3( 19186.9, 3.8147e-06, 7739.78 )
-otherRadius = -418.94
-otherLength = 219.356
-Outlength = 217.0
 tend1Pos = 50
 tend1 = -3.61934
 tend2Pos = 167.0
@@ -2831,9 +2494,6 @@ startrot = 38.0863
 endrot = 31.2199
 startpos = Vector3( 18865.9, 3.8147e-06, 7909.34 )
 endpos = Vector3( 18927.7, 3.8147e-06, 7866.62 )
-otherRadius = -631.817
-otherLength = 75.7179
-Outlength = 75.1786
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -2846,9 +2506,6 @@ startrot = 31.2199
 endrot = 38.0863
 startpos = Vector3( 18927.8, 3.8147e-06, 7866.62 )
 endpos = Vector3( 18989.6, 3.8147e-06, 7823.9 )
-otherRadius = 622.817
-otherLength = 74.6393
-Outlength = 53.1471
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5" ]
 
 [node name="Höllkriegelsreuth14P5P9" parent="Rails" instance=ExtResource( 4 )]
@@ -2861,9 +2518,6 @@ startrot = -141.914
 endrot = -61.9137
 startpos = Vector3( 18871.5, 3.8147e-06, 7916.42 )
 endpos = Vector3( 18681.4, 3.8147e-06, 8817.31 )
-otherRadius = 711.697
-otherLength = 993.717
-Outlength = 56.7853
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P9P" parent="Rails" instance=ExtResource( 4 )]
@@ -2876,9 +2530,6 @@ startrot = -141.914
 endrot = -61.9137
 startpos = Vector3( 18874.3, 3.8147e-06, 7919.97 )
 endpos = Vector3( 18685.4, 3.8147e-06, 8815.2 )
-otherRadius = 707.197
-otherLength = 987.434
-Outlength = 56.6068
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P3" parent="Rails" instance=ExtResource( 4 )]
@@ -2891,9 +2542,6 @@ startrot = 8.08633
 endrot = -11.9137
 startpos = Vector3( 19174.2, 3.8147e-06, 7749.91 )
 endpos = Vector3( 19472.5, 3.8147e-06, 7759.88 )
-otherRadius = -863.937
-otherLength = 301.571
-Outlength = 300.0
 startTend = -1.75
 tend1Pos = 50
 tend1 = -1.74533
@@ -2911,8 +2559,6 @@ startrot = -11.9137
 endrot = -11.9137
 startpos = Vector3( 19472.5, 3.8147e-06, 7759.88 )
 endpos = Vector3( 19863.9, 3.8147e-06, 7842.46 )
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P5" parent="Rails" instance=ExtResource( 4 )]
@@ -2965,10 +2611,6 @@ startrot = -11.9137
 endrot = -14.4137
 startpos = Vector3( 20059.6, 3.8147e-06, 7883.74 )
 endpos = Vector3( 20546.4, 3.8147e-06, 7997.6 )
-otherRadius = -11463.7
-otherLength = 500.196
-Outlength = 500.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -2981,9 +2623,6 @@ startrot = -11.9137
 endrot = -6.76101
 startpos = Vector3( 19863.9, 3.8147e-06, 7842.45 )
 endpos = Vector3( 19913.3, 3.8147e-06, 7850.57 )
-otherRadius = 552.233
-otherLength = 49.663
-Outlength = 50.0698
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P5", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P6PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -2996,9 +2635,6 @@ startrot = -6.761
 endrot = -11.9137
 startpos = Vector3( 19913.3, 3.8147e-06, 7850.57 )
 endpos = Vector3( 19962.7, 3.8147e-06, 7858.69 )
-otherRadius = -561.233
-otherLength = 50.4724
-Outlength = 50.0677
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P5P" ]
 
 [node name="Höllkriegelsreuth14P5P5P5PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -3011,9 +2647,6 @@ startrot = -11.9137
 endrot = -17.0671
 startpos = Vector3( 19962.7, 3.8147e-06, 7858.69 )
 endpos = Vector3( 20011.2, 3.8147e-06, 7871.21 )
-otherRadius = -561.144
-otherLength = 50.4717
-Outlength = 50.067
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P6P", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P7Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3026,9 +2659,6 @@ startrot = -17.0671
 endrot = -11.9137
 startpos = Vector3( 20011.1, 3.8147e-06, 7871.22 )
 endpos = Vector3( 20059.6, 3.8147e-06, 7883.74 )
-otherRadius = 552.144
-otherLength = 49.6623
-Outlength = 50.0658
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P6" ]
 
 [node name="Höllkriegelsreuth14P5P5P8" parent="Rails" instance=ExtResource( 4 )]
@@ -3041,9 +2671,6 @@ startrot = -16.9137
 endrot = -15.9137
 startpos = Vector3( 21027.8, 3.8147e-06, 8132.58 )
 endpos = Vector3( 21699.3, 3.8147e-06, 8330.38 )
-otherRadius = 40102.5
-otherLength = 699.921
-Outlength = 424.833
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P" parent="Rails" instance=ExtResource( 4 )]
@@ -3056,9 +2683,6 @@ startrot = -16.9137
 endrot = -15.9137
 startpos = Vector3( 21029.1, 3.8147e-06, 8128.28 )
 endpos = Vector3( 21700.5, 3.8147e-06, 8326.05 )
-otherRadius = 40098.0
-otherLength = 699.842
-Outlength = 424.809
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2" parent="Rails" instance=ExtResource( 4 )]
@@ -3071,10 +2695,6 @@ startrot = -15.9137
 endrot = -5.91368
 startpos = Vector3( 21700.5, 3.8147e-06, 8326.05 )
 endpos = Vector3( 22092.8, 3.8147e-06, 8401.69 )
-othersDistance = 4.5
-otherRadius = 2296.33
-otherLength = 400.785
-Outlength = 101.562
 tend1Pos = 50
 tend1 = 0.654499
 tend2Pos = 350.0
@@ -3092,10 +2712,6 @@ startrot = -15.9137
 endrot = -5.91369
 startpos = Vector3( 21699.3, 3.8147e-06, 8330.38 )
 endpos = Vector3( 22092.3, 3.8147e-06, 8406.16 )
-othersDistance = 4.5
-otherRadius = 2300.83
-otherLength = 401.57
-Outlength = 101.662
 tend1Pos = 50
 tend1 = 0.653216
 tend2Pos = 350.785
@@ -3122,8 +2738,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22192.2, 3.8147e-06, 8411.99 )
 endpos = Vector3( 22341.4, 3.8147e-06, 8427.44 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P2P" parent="Rails" instance=ExtResource( 4 )]
@@ -3146,9 +2760,6 @@ startrot = -5.91368
 endrot = -0.760721
 startpos = Vector3( 22092.3, 3.8147e-06, 8406.16 )
 endpos = Vector3( 22142.3, 3.8147e-06, 8409.07 )
-otherRadius = 552.202
-otherLength = 49.6629
-Outlength = 50.0684
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P2", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3161,9 +2772,6 @@ startrot = -0.760738
 endrot = -5.9137
 startpos = Vector3( 22142.3, 3.8147e-06, 8409.08 )
 endpos = Vector3( 22192.3, 3.8147e-06, 8411.99 )
-otherRadius = -561.202
-otherLength = 50.4723
-Outlength = 50.0676
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P2P" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2" parent="Rails" instance=ExtResource( 4 )]
@@ -3175,9 +2783,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22341.4, 3.8147e-06, 8427.44 )
 endpos = Vector3( 22490.6, 3.8147e-06, 8442.89 )
-othersDistance = -7.0
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2P" parent="Rails" instance=ExtResource( 4 )]
@@ -3189,8 +2794,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22342.1, 3.8147e-06, 8420.48 )
 endpos = Vector3( 22491.3, 3.8147e-06, 8435.93 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3203,10 +2806,6 @@ startrot = -5.91368
 endrot = -0.569519
 startpos = Vector3( 22192.3, 3.8147e-06, 8411.99 )
 endpos = Vector3( 22267.2, 3.8147e-06, 8416.23 )
-othersDistance = -7.0
-otherRadius = 797.884
-otherLength = 74.4212
-Outlength = 60.1969
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3219,9 +2818,6 @@ startrot = -0.569537
 endrot = -5.9137
 startpos = Vector3( 22267.2, 3.8147e-06, 8416.24 )
 endpos = Vector3( 22342.1, 3.8147e-06, 8420.48 )
-otherRadius = -809.384
-otherLength = 75.4938
-Outlength = 75.0741
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector2", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -3253,8 +2849,6 @@ startrot = -0.569519
 endrot = -5.91368
 startpos = Vector3( 22367.2, 3.8147e-06, 8417.23 )
 endpos = Vector3( 22467, 3.8147e-06, 8422.88 )
-otherRadius = -1076.62
-otherLength = 100.42
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector3", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P3" parent="Rails" instance=ExtResource( 4 )]
@@ -3266,9 +2860,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22490.6, 3.8147e-06, 8442.89 )
 endpos = Vector3( 22689.5, 3.8147e-06, 8463.5 )
-othersDistance = 12.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector5" parent="Rails" instance=ExtResource( 4 )]
@@ -3280,8 +2871,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22467, 3.8147e-06, 8422.88 )
 endpos = Vector3( 22695.8, 3.8147e-06, 8446.58 )
-otherLength = 230.0
-Outlength = 230.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector6" parent="Rails" instance=ExtResource( 4 )]
@@ -3293,8 +2882,6 @@ startrot = -0.569519
 endrot = -5.91368
 startpos = Vector3( 22467.2, 3.8147e-06, 8418.22 )
 endpos = Vector3( 22567, 3.8147e-06, 8423.87 )
-otherRadius = -1076.62
-otherLength = 100.42
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector7" parent="Rails" instance=ExtResource( 4 )]
@@ -3306,8 +2893,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22567, 3.8147e-06, 8423.88 )
 endpos = Vector3( 22716.2, 3.8147e-06, 8439.33 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2P2" parent="Rails" instance=ExtResource( 4 )]
@@ -3319,8 +2904,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22491.3, 3.8147e-06, 8435.93 )
 endpos = Vector3( 22690.2, 3.8147e-06, 8456.54 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector8" parent="Rails" instance=ExtResource( 4 )]
@@ -3333,9 +2916,6 @@ startrot = -5.91368
 endrot = -10.9137
 startpos = Vector3( 22695.8, 3.8147e-06, 8446.58 )
 endpos = Vector3( 22755.1, 3.8147e-06, 8455.36 )
-otherRadius = -692.049
-otherLength = 60.3927
-Outlength = 60.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector9" parent="Rails" instance=ExtResource( 4 )]
@@ -3348,9 +2928,6 @@ startrot = -10.9137
 endrot = -5.91368
 startpos = Vector3( 22755.1, 3.8147e-06, 8455.35 )
 endpos = Vector3( 22814.4, 3.8147e-06, 8464.13 )
-otherRadius = 683.049
-otherLength = 59.6073
-Outlength = 55.6387
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector10Connector" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P4" parent="Rails" instance=ExtResource( 4 )]
@@ -3362,8 +2939,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22689.5, 3.8147e-06, 8463.5 )
 endpos = Vector3( 22888.4, 3.8147e-06, 8484.11 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3P5Connector" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5" parent="Rails" instance=ExtResource( 4 )]
@@ -3374,7 +2949,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22888.5, 3.8147e-06, 8484.11 )
 endpos = Vector3( 22988, 3.8147e-06, 8494.41 )
-othersDistance = 4.5
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3P6Connector" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3387,9 +2961,6 @@ startrot = -5.91368
 endrot = -9.91969
 startpos = Vector3( 22690.2, 3.8147e-06, 8456.54 )
 endpos = Vector3( 22789.3, 3.8147e-06, 8470.32 )
-otherRadius = -1436.06
-otherLength = 100.407
-Outlength = 100.092
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P2P2Connector2", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3402,9 +2973,6 @@ startrot = -9.91971
 endrot = -5.9137
 startpos = Vector3( 22789.4, 3.8147e-06, 8470.32 )
 endpos = Vector3( 22888.5, 3.8147e-06, 8484.1 )
-otherRadius = 1427.06
-otherLength = 99.7774
-Outlength = 80.2727
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3P4" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector10" parent="Rails" instance=ExtResource( 4 )]
@@ -3416,9 +2984,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22814.5, 3.8147e-06, 8464.13 )
 endpos = Vector3( 22864.2, 3.8147e-06, 8469.28 )
-otherLength = 50.0
-Outlength = 50.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P2P2Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -3431,9 +2996,6 @@ startrot = -5.91368
 endrot = -1.07815
 startpos = Vector3( 22690.2, 3.8147e-06, 8456.54 )
 endpos = Vector3( 22752.3, 3.8147e-06, 8460.33 )
-otherRadius = 733.135
-otherLength = 61.8736
-Outlength = 57.6285
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P2P2Connector", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector10Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3446,9 +3008,6 @@ startrot = -1.07815
 endrot = -5.91368
 startpos = Vector3( 22752.4, 3.8147e-06, 8460.34 )
 endpos = Vector3( 22814.5, 3.8147e-06, 8464.13 )
-otherRadius = -742.135
-otherLength = 62.6332
-Outlength = 62.2534
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector9" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P" parent="Rails" instance=ExtResource( 4 )]
@@ -3491,9 +3050,6 @@ startrot = -5.91368
 endrot = -0.761728
 startpos = Vector3( 22888, 3.8147e-06, 8488.58 )
 endpos = Vector3( 22938, 3.8147e-06, 8491.49 )
-otherRadius = 552.322
-otherLength = 49.664
-Outlength = 50.0738
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P5P", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P6Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3506,9 +3062,6 @@ startrot = -0.761735
 endrot = -5.91369
 startpos = Vector3( 22938, 3.8147e-06, 8491.5 )
 endpos = Vector3( 22988, 3.8147e-06, 8494.41 )
-otherRadius = -561.322
-otherLength = 50.4732
-Outlength = 50.0686
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3P5" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -3521,9 +3074,6 @@ startrot = -5.91368
 endrot = -11.0657
 startpos = Vector3( 22987.9, 3.8147e-06, 8494.41 )
 endpos = Vector3( 23037.4, 3.8147e-06, 8501.8 )
-otherRadius = -561.309
-otherLength = 50.4728
-Outlength = 50.0682
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P6", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3536,9 +3086,6 @@ startrot = -11.0657
 endrot = -5.9137
 startpos = Vector3( 23037.4, 3.8147e-06, 8501.8 )
 endpos = Vector3( 23086.9, 3.8147e-06, 8509.19 )
-otherRadius = 552.309
-otherLength = 49.6636
-Outlength = 50.0732
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3P5P2" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11" parent="Rails" instance=ExtResource( 4 )]
@@ -3550,8 +3097,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 23013.4, 3.8147e-06, 8484.74 )
 endpos = Vector3( 23212.3, 3.8147e-06, 8505.35 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector12Connector" ]
 
 [node name="Harras" parent="Rails" instance=ExtResource( 4 )]
@@ -3563,9 +3108,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 23212.3, 3.8147e-06, 8505.34 )
 endpos = Vector3( 23411.2, 3.8147e-06, 8525.95 )
-othersDistance = 6.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P6Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -3578,9 +3120,6 @@ startrot = -5.91368
 endrot = 5.33506
 startpos = Vector3( 23087.4, 3.8147e-06, 8504.71 )
 endpos = Vector3( 23149.9, 3.8147e-06, 8505.03 )
-otherRadius = 314.197
-otherLength = 61.6855
-Outlength = 37.8923
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P6Connector3", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector12Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3593,9 +3132,6 @@ startrot = 5.33506
 endrot = -5.91368
 startpos = Vector3( 23149.9, 3.8147e-06, 8505.03 )
 endpos = Vector3( 23212.4, 3.8147e-06, 8505.35 )
-otherRadius = -323.197
-otherLength = 63.4525
-Outlength = 62.569
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11" ]
 
 [node name="HarrasP" parent="Rails" instance=ExtResource( 4 )]
@@ -3607,9 +3143,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 23211.7, 3.8147e-06, 8511.31 )
 endpos = Vector3( 23410.6, 3.8147e-06, 8531.92 )
-othersDistance = 12.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P6Connector3" parent="Rails" instance=ExtResource( 4 )]
@@ -3622,9 +3155,6 @@ startrot = -5.91368
 endrot = -0.163065
 startpos = Vector3( 23087.4, 3.8147e-06, 8504.71 )
 endpos = Vector3( 23149.6, 3.8147e-06, 8508.01 )
-otherRadius = 615.94
-otherLength = 61.8201
-Outlength = 52.8552
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P8P2P3P6Connector2", "" ]
 
 [node name="HarrasPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3637,9 +3167,6 @@ startrot = -0.163063
 endrot = -5.91368
 startpos = Vector3( 23149.6, 3.8147e-06, 8508.01 )
 endpos = Vector3( 23211.8, 3.8147e-06, 8511.31 )
-otherRadius = -624.94
-otherLength = 62.7235
-Outlength = 62.2718
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3652,9 +3179,6 @@ startrot = -5.91368
 endrot = -4.23767
 startpos = Vector3( 23086.9, 3.8147e-06, 8509.19 )
 endpos = Vector3( 23248.4, 3.8147e-06, 8523.54 )
-otherRadius = 5540.09
-otherLength = 162.058
-Outlength = 157.963
 isSwitchPart = [ "", "" ]
 
 [node name="HarrasP2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3667,9 +3191,6 @@ startrot = -4.23767
 endrot = -5.91368
 startpos = Vector3( 23248.5, 3.8147e-06, 8523.54 )
 endpos = Vector3( 23410, 3.8147e-06, 8537.89 )
-otherRadius = -5549.09
-otherLength = 162.322
-Outlength = 162.19
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2" parent="Rails" instance=ExtResource( 4 )]
@@ -3682,10 +3203,6 @@ startrot = -5.91368
 endrot = -0.913677
 startpos = Vector3( 23411.3, 3.8147e-06, 8525.95 )
 endpos = Vector3( 23810.5, 3.8147e-06, 8549.76 )
-othersDistance = 6.0
-otherRadius = 4589.66
-otherLength = 400.524
-Outlength = 143.625
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2P" parent="Rails" instance=ExtResource( 4 )]
@@ -3698,10 +3215,6 @@ startrot = -5.91368
 endrot = -0.913672
 startpos = Vector3( 23410.7, 3.8147e-06, 8531.92 )
 endpos = Vector3( 23810.4, 3.8147e-06, 8555.76 )
-othersDistance = 6.0
-otherRadius = 4595.66
-otherLength = 401.048
-Outlength = 143.719
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP" parent="Rails" instance=ExtResource( 4 )]
@@ -3714,9 +3227,6 @@ startrot = -5.91368
 endrot = -0.913679
 startpos = Vector3( 23410, 3.8147e-06, 8537.89 )
 endpos = Vector3( 23810.2, 3.8147e-06, 8561.76 )
-otherRadius = 4591.16
-otherLength = 400.654
-Outlength = 143.813
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP2" parent="Rails" instance=ExtResource( 4 )]
@@ -3728,8 +3238,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 23810.3, 3.8147e-06, 8561.76 )
 endpos = Vector3( 23960.3, 3.8147e-06, 8564.15 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3" parent="Rails" instance=ExtResource( 4 )]
@@ -3741,9 +3249,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 23960.2, 3.8147e-06, 8564.15 )
 endpos = Vector3( 24160.2, 3.8147e-06, 8567.34 )
-othersDistance = -12.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P" parent="Rails" instance=ExtResource( 4 )]
@@ -3755,9 +3260,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 23960.4, 3.8147e-06, 8552.15 )
 endpos = Vector3( 24360.3, 3.8147e-06, 8558.53 )
-othersDistance = -6.0
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3770,9 +3272,6 @@ startrot = -0.913677
 endrot = 3.6684
 startpos = Vector3( 23810.4, 3.8147e-06, 8549.76 )
 endpos = Vector3( 23885.4, 3.8147e-06, 8547.96 )
-otherRadius = 934.31
-otherLength = 74.7189
-Outlength = 65.0103
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3PPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3785,9 +3284,6 @@ startrot = 3.6684
 endrot = -0.913677
 startpos = Vector3( 23885.5, 3.8147e-06, 8547.96 )
 endpos = Vector3( 23960.5, 3.8147e-06, 8546.16 )
-otherRadius = -943.31
-otherLength = 75.4387
-Outlength = 75.0788
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3800,9 +3296,6 @@ startrot = -0.913677
 endrot = 3.66837
 startpos = Vector3( 23810.3, 3.8147e-06, 8555.76 )
 endpos = Vector3( 23885.3, 3.8147e-06, 8553.96 )
-otherRadius = 934.329
-otherLength = 74.7199
-Outlength = 65.0109
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3815,9 +3308,6 @@ startrot = 3.66836
 endrot = -0.913679
 startpos = Vector3( 23885.4, 3.8147e-06, 8553.96 )
 endpos = Vector3( 23960.4, 3.8147e-06, 8552.16 )
-otherRadius = -943.329
-otherLength = 75.4397
-Outlength = 75.0798
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P2" parent="Rails" instance=ExtResource( 4 )]
@@ -3829,10 +3319,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 24360.4, 3.8147e-06, 8558.53 )
 endpos = Vector3( 24510.4, 3.8147e-06, 8560.92 )
-othersDistance = -6.0
-otherLength = 150.0
-Outlength = 150.0
-automaticTendency = false
 isSwitchPart = [ "", "Harras2PP3P3Connector" ]
 
 [node name="Harras2PP3P2P" parent="Rails" instance=ExtResource( 4 )]
@@ -3844,8 +3330,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 24360.3, 3.8147e-06, 8563.03 )
 endpos = Vector3( 24760.2, 3.8147e-06, 8569.41 )
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P2P2" parent="Rails" instance=ExtResource( 4 )]
@@ -3857,9 +3341,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 24360.5, 3.8147e-06, 8552.53 )
 endpos = Vector3( 24760.4, 3.8147e-06, 8558.91 )
-otherLength = 400.0
-Outlength = 400.0
-automaticTendency = false
 isSwitchPart = [ "Harras2PP3PPConnector2", "" ]
 
 [node name="Harras2PP3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -3872,9 +3353,6 @@ startrot = -0.913677
 endrot = 3.38192
 startpos = Vector3( 24160.2, 3.8147e-06, 8567.34 )
 endpos = Vector3( 24260.2, 3.8147e-06, 8565.18 )
-otherRadius = 1330.58
-otherLength = 99.7566
-Outlength = 77.5213
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -3887,9 +3365,6 @@ startrot = 3.3819
 endrot = -0.913693
 startpos = Vector3( 24260.3, 3.8147e-06, 8565.18 )
 endpos = Vector3( 24360.3, 3.8147e-06, 8563.02 )
-otherRadius = -1339.58
-otherLength = 100.431
-Outlength = 100.094
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3PP" parent="Rails" instance=ExtResource( 4 )]
@@ -3901,8 +3376,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 23960.5, 3.8147e-06, 8546.15 )
 endpos = Vector3( 24360.4, 3.8147e-06, 8552.53 )
-otherLength = 400.0
-Outlength = 400.0
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P2P3" parent="Rails" instance=ExtResource( 4 )]
@@ -3915,10 +3388,6 @@ startrot = -0.913677
 endrot = 39.0863
 startpos = Vector3( 24760.4, 3.8147e-06, 8558.91 )
 endpos = Vector3( 25130.8, 3.8147e-06, 8430.75 )
-othersDistance = 6.0
-otherRadius = 578.958
-otherLength = 404.189
-Outlength = 50.7937
 tend1Pos = 50
 tend1 = 2.61799
 tend2Pos = 350.0
@@ -3936,9 +3405,6 @@ startrot = -0.913677
 endrot = 28.5464
 startpos = Vector3( 24760.2, 3.8147e-06, 8569.41 )
 endpos = Vector3( 25048.3, 3.8147e-06, 8498.55 )
-otherRadius = 578.958
-otherLength = 297.686
-Outlength = 51.2567
 tend1Pos = 50
 tend1 = 2.57088
 tend2Pos = 250.0
@@ -3955,8 +3421,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25137.4, 3.8147e-06, 8438.9 )
 endpos = Vector3( 25176.2, 3.8147e-06, 8407.38 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "Harras2PP3P2P3PPConnector", "" ]
 
 [node name="HainfurtP" parent="Rails" instance=ExtResource( 4 )]
@@ -3967,7 +3431,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25143.7, 3.8147e-06, 8446.66 )
 endpos = Vector3( 25221.3, 3.8147e-06, 8383.61 )
-othersDistance = 4.5
 isSwitchPart = [ "", "HainfurtP3Connector" ]
 
 [node name="HainfurtPP" parent="Rails" instance=ExtResource( 4 )]
@@ -3978,7 +3441,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25146.6, 3.8147e-06, 8450.16 )
 endpos = Vector3( 25224.2, 3.8147e-06, 8387.11 )
-othersDistance = 6.0
 isSwitchPart = [ "", "HainfurtPP2Connector" ]
 
 [node name="HainfurtPPP" parent="Rails" instance=ExtResource( 4 )]
@@ -3989,7 +3451,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25150.3, 3.8147e-06, 8454.81 )
 endpos = Vector3( 25227.9, 3.8147e-06, 8391.76 )
-othersDistance = 4.5
 isSwitchPart = [ "HainfurtPPP2Connector", "" ]
 
 [node name="HainfurtPPPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4001,8 +3462,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25153.2, 3.8147e-06, 8458.31 )
 endpos = Vector3( 25386.1, 3.8147e-06, 8269.16 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP2" parent="Rails" instance=ExtResource( 4 )]
@@ -4014,9 +3473,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25134.6, 3.8147e-06, 8435.41 )
 endpos = Vector3( 25173.4, 3.8147e-06, 8403.89 )
-othersDistance = -6.0
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "Harras2PP3P2P3PConnector", "" ]
 
 [node name="HainfurtP2P" parent="Rails" instance=ExtResource( 4 )]
@@ -4038,8 +3494,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25208.4, 3.8147e-06, 8367.7 )
 endpos = Vector3( 25363.6, 3.8147e-06, 8241.6 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "HainfurtP2P3", "" ]
 
 [node name="HainfurtP2P3" parent="Rails" instance=ExtResource( 4 )]
@@ -4052,9 +3506,6 @@ startrot = 39.0863
 endrot = 49.0863
 startpos = Vector3( 25208.4, 3.8147e-06, 8367.7 )
 endpos = Vector3( 25244.3, 3.8147e-06, 8332.96 )
-otherRadius = 281.979
-otherLength = 49.2146
-Outlength = 35.9284
 isSwitchPart = [ "HainfurtP2P2", "" ]
 
 [node name="HainfurtP3" parent="Rails" instance=ExtResource( 4 )]
@@ -4077,9 +3528,6 @@ startrot = 39.0863
 endrot = 27.6657
 startpos = Vector3( 25137.4, 3.8147e-06, 8438.9 )
 endpos = Vector3( 25179.4, 3.8147e-06, 8411.26 )
-otherRadius = -257.01
-otherLength = 51.2293
-Outlength = 50.3323
 isSwitchPart = [ "Hainfurt", "" ]
 
 [node name="HainfurtP3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4092,9 +3540,6 @@ startrot = 27.6656
 endrot = 39.0863
 startpos = Vector3( 25179.4, 3.8147e-06, 8411.26 )
 endpos = Vector3( 25221.4, 3.8147e-06, 8383.62 )
-otherRadius = 248.01
-otherLength = 49.4353
-Outlength = 33.7341
 isSwitchPart = [ "", "HainfurtP" ]
 
 [node name="HainfurtPP2" parent="Rails" instance=ExtResource( 4 )]
@@ -4127,9 +3572,6 @@ startrot = 39.0863
 endrot = 45.9541
 startpos = Vector3( 25150.3, 3.8147e-06, 8454.81 )
 endpos = Vector3( 25187.2, 3.8147e-06, 8420.96 )
-otherRadius = 413.634
-otherLength = 49.5802
-Outlength = 43.3969
 isSwitchPart = [ "HainfurtPPP", "" ]
 
 [node name="HainfurtPP2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4142,9 +3584,6 @@ startrot = 45.9541
 endrot = 39.0863
 startpos = Vector3( 25187.3, 3.8147e-06, 8420.96 )
 endpos = Vector3( 25224.2, 3.8147e-06, 8387.11 )
-otherRadius = -422.634
-otherLength = 50.659
-Outlength = 50.1196
 isSwitchPart = [ "", "HainfurtPP" ]
 
 [node name="HainfurtP4" parent="Rails" instance=ExtResource( 4 )]
@@ -4167,9 +3606,6 @@ startrot = 39.0863
 endrot = 44.2397
 startpos = Vector3( 25224.2, 3.8147e-06, 8387.11 )
 endpos = Vector3( 25261.6, 3.8147e-06, 8353.84 )
-otherRadius = 552.148
-otherLength = 49.662
-Outlength = 50.066
 isSwitchPart = [ "HainfurtPP2", "" ]
 
 [node name="HainfurtP4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4182,9 +3618,6 @@ startrot = 44.2397
 endrot = 39.0864
 startpos = Vector3( 25261.6, 3.8147e-06, 8353.83 )
 endpos = Vector3( 25299, 3.8147e-06, 8320.56 )
-otherRadius = -561.148
-otherLength = 50.4714
-Outlength = 50.0667
 isSwitchPart = [ "", "HainfurtP3" ]
 
 [node name="HainfurtPP3" parent="Rails" instance=ExtResource( 4 )]
@@ -4196,8 +3629,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25301.8, 3.8147e-06, 8324.06 )
 endpos = Vector3( 25340.6, 3.8147e-06, 8292.54 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "HainfurtPP2Connector2", "" ]
 
 [node name="HainfurtPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4210,9 +3641,6 @@ startrot = 39.0863
 endrot = 33.9326
 startpos = Vector3( 25221.3, 3.8147e-06, 8383.61 )
 endpos = Vector3( 25261.5, 3.8147e-06, 8353.83 )
-otherRadius = -561.119
-otherLength = 50.4722
-Outlength = 50.0674
 isSwitchPart = [ "HainfurtP3", "" ]
 
 [node name="HainfurtPP3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4225,9 +3653,6 @@ startrot = 33.9326
 endrot = 39.0863
 startpos = Vector3( 25261.6, 3.8147e-06, 8353.84 )
 endpos = Vector3( 25301.8, 3.8147e-06, 8324.06 )
-otherRadius = 552.119
-otherLength = 49.6626
-Outlength = 50.0647
 isSwitchPart = [ "", "HainfurtPP2" ]
 
 [node name="Harras2PP3P2P3PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4240,9 +3665,6 @@ startrot = 39.0863
 endrot = 45.9564
 startpos = Vector3( 25134.6, 3.8147e-06, 8435.41 )
 endpos = Vector3( 25171.5, 3.8147e-06, 8401.56 )
-otherRadius = 413.489
-otherLength = 49.5796
-Outlength = 43.3894
 isSwitchPart = [ "HainfurtP2", "" ]
 
 [node name="HainfurtP2P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4255,9 +3677,6 @@ startrot = 45.9564
 endrot = 39.0863
 startpos = Vector3( 25171.5, 3.8147e-06, 8401.55 )
 endpos = Vector3( 25208.4, 3.8147e-06, 8367.7 )
-otherRadius = -422.489
-otherLength = 50.6588
-Outlength = 50.1192
 isSwitchPart = [ "", "HainfurtP2P" ]
 
 [node name="HainfurtP2P4" parent="Rails" instance=ExtResource( 4 )]
@@ -4270,9 +3689,6 @@ startrot = 49.0863
 endrot = 39.0863
 startpos = Vector3( 25244.3, 3.8147e-06, 8332.96 )
 endpos = Vector3( 25280.2, 3.8147e-06, 8298.22 )
-otherRadius = -290.979
-otherLength = 50.7854
-Outlength = 50.0
 isSwitchPart = [ "HainfurtP2P5", "" ]
 
 [node name="HainfurtP2P5" parent="Rails" instance=ExtResource( 4 )]
@@ -4284,8 +3700,6 @@ startrot = 49.0863
 endrot = 49.0863
 startpos = Vector3( 25244.3, 3.8147e-06, 8332.96 )
 endpos = Vector3( 25277, 3.8147e-06, 8295.17 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "HainfurtP2P4", "" ]
 
 [node name="HainfurtP2P6" parent="Rails" instance=ExtResource( 4 )]
@@ -4297,8 +3711,6 @@ startrot = 49.0863
 endrot = 49.0863
 startpos = Vector3( 25277, 3.8147e-06, 8295.17 )
 endpos = Vector3( 25309.7, 3.8147e-06, 8257.38 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "HainfurtP2P7", "" ]
 
 [node name="Hainfurt2" parent="Rails" instance=ExtResource( 4 )]
@@ -4330,8 +3742,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25251, 3.8147e-06, 8340.83 )
 endpos = Vector3( 25367.4, 3.8147e-06, 8246.26 )
-otherLength = 150.0
-Outlength = 150.0
 isSwitchPart = [ "", "HainfurtP6Connector2Connector" ]
 
 [node name="HainfurtP2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4344,9 +3754,6 @@ startrot = 39.0863
 endrot = 33.9326
 startpos = Vector3( 25173.4, 3.8147e-06, 8403.88 )
 endpos = Vector3( 25213.6, 3.8147e-06, 8374.1 )
-otherRadius = -561.119
-otherLength = 50.4722
-Outlength = 50.0674
 isSwitchPart = [ "HainfurtP5", "" ]
 
 [node name="Hainfurt3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4359,9 +3766,6 @@ startrot = 33.9326
 endrot = 39.0863
 startpos = Vector3( 25213.6, 3.8147e-06, 8374.11 )
 endpos = Vector3( 25253.8, 3.8147e-06, 8344.33 )
-otherRadius = 552.119
-otherLength = 49.6626
-Outlength = 50.0647
 isSwitchPart = [ "", "Hainfurt2" ]
 
 [node name="HainfurtConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4374,9 +3778,6 @@ startrot = 39.0863
 endrot = 44.2405
 startpos = Vector3( 25176.2, 3.8147e-06, 8407.38 )
 endpos = Vector3( 25213.6, 3.8147e-06, 8374.11 )
-otherRadius = 552.07
-otherLength = 49.6622
-Outlength = 50.0625
 isSwitchPart = [ "Hainfurt2", "" ]
 
 [node name="HainfurtP6Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4389,9 +3790,6 @@ startrot = 44.2405
 endrot = 39.0863
 startpos = Vector3( 25213.6, 3.8147e-06, 8374.11 )
 endpos = Vector3( 25251, 3.8147e-06, 8340.84 )
-otherRadius = -561.07
-otherLength = 50.4718
-Outlength = 50.067
 isSwitchPart = [ "", "HainfurtP5" ]
 
 [node name="Hainfurt4" parent="Rails" instance=ExtResource( 4 )]
@@ -4403,9 +3801,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25370.3, 3.8147e-06, 8249.75 )
 endpos = Vector3( 25409.1, 3.8147e-06, 8218.23 )
-othersDistance = 4.5
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "Hainfurt4ConnectorConnector", "" ]
 
 [node name="HainfurtP2P7" parent="Rails" instance=ExtResource( 4 )]
@@ -4418,9 +3813,6 @@ startrot = 49.0863
 endrot = 39.0863
 startpos = Vector3( 25277, 3.8147e-06, 8295.17 )
 endpos = Vector3( 25312.9, 3.8147e-06, 8260.43 )
-otherRadius = -290.979
-otherLength = 50.7854
-Outlength = 50.0
 isSwitchPart = [ "HainfurtP2P6", "" ]
 
 [node name="HainfurtP2P8" parent="Rails" instance=ExtResource( 4 )]
@@ -4433,9 +3825,6 @@ startrot = 49.0863
 endrot = 39.0863
 startpos = Vector3( 25309.8, 3.8147e-06, 8257.39 )
 endpos = Vector3( 25345.7, 3.8147e-06, 8222.65 )
-otherRadius = -290.979
-otherLength = 50.7854
-Outlength = 50.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5" parent="Rails" instance=ExtResource( 4 )]
@@ -4447,9 +3836,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25486.7, 3.8147e-06, 8155.18 )
 endpos = Vector3( 25719.6, 3.8147e-06, 7966.03 )
-othersDistance = -12.0
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5P" parent="Rails" instance=ExtResource( 4 )]
@@ -4461,9 +3847,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25489.5, 3.8147e-06, 8158.67 )
 endpos = Vector3( 25722.4, 3.8147e-06, 7969.52 )
-othersDistance = 12.0
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PP" parent="Rails" instance=ExtResource( 4 )]
@@ -4475,9 +3858,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25497.1, 3.8147e-06, 8167.99 )
 endpos = Vector3( 25730, 3.8147e-06, 7978.84 )
-othersDistance = 4.5
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4489,9 +3869,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25499.9, 3.8147e-06, 8171.48 )
 endpos = Vector3( 25732.8, 3.8147e-06, 7982.33 )
-othersDistance = 12.0
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4503,9 +3880,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25507.5, 3.8147e-06, 8180.79 )
 endpos = Vector3( 25740.4, 3.8147e-06, 7991.64 )
-othersDistance = 4.5
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5P2" parent="Rails" instance=ExtResource( 4 )]
@@ -4517,8 +3891,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25479.1, 3.8147e-06, 8145.87 )
 endpos = Vector3( 25712, 3.8147e-06, 7956.72 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5P2P" parent="Rails" instance=ExtResource( 4 )]
@@ -4530,8 +3902,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25476.3, 3.8147e-06, 8142.37 )
 endpos = Vector3( 25709.2, 3.8147e-06, 7953.22 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt6P" parent="Rails" instance=ExtResource( 4 )]
@@ -4543,8 +3913,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25431.3, 3.8147e-06, 8205.96 )
 endpos = Vector3( 25489.5, 3.8147e-06, 8158.67 )
-otherLength = 75.0
-Outlength = 75.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP4Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -4557,9 +3925,6 @@ startrot = 39.0863
 endrot = 47.4714
 startpos = Vector3( 25376.6, 3.8147e-06, 8257.52 )
 endpos = Vector3( 25404, 3.8147e-06, 8231.74 )
-otherRadius = 252.664
-otherLength = 36.9767
-Outlength = 34.0431
 isSwitchPart = [ "HainfurtP4Connector3", "" ]
 
 [node name="Hainfurt6PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4572,9 +3937,6 @@ startrot = 47.4714
 endrot = 39.0863
 startpos = Vector3( 25404, 3.8147e-06, 8231.74 )
 endpos = Vector3( 25431.4, 3.8147e-06, 8205.96 )
-otherRadius = -261.664
-otherLength = 38.2939
-Outlength = 37.6353
 isSwitchPart = [ "", "Hainfurt6PConnector2" ]
 
 [node name="Hainfurt4ConnectorConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4587,9 +3949,6 @@ startrot = 39.0863
 endrot = 32.2184
 startpos = Vector3( 25370.3, 3.8147e-06, 8249.75 )
 endpos = Vector3( 25400.8, 3.8147e-06, 8227.85 )
-otherRadius = -318.098
-otherLength = 38.1297
-Outlength = 37.5903
 isSwitchPart = [ "Hainfurt4", "" ]
 
 [node name="Hainfurt6PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -4602,9 +3961,6 @@ startrot = 32.2184
 endrot = 39.0863
 startpos = Vector3( 25400.8, 3.8147e-06, 8227.86 )
 endpos = Vector3( 25431.3, 3.8147e-06, 8205.96 )
-otherRadius = 309.098
-otherLength = 37.0509
-Outlength = 37.5883
 isSwitchPart = [ "", "Hainfurt6PConnector" ]
 
 [node name="HainfurtP4Connector3" parent="Rails" instance=ExtResource( 4 )]
@@ -4617,9 +3973,6 @@ startrot = 39.0863
 endrot = 34.1222
 startpos = Vector3( 25376.6, 3.8147e-06, 8257.52 )
 endpos = Vector3( 25436.9, 3.8147e-06, 8212.75 )
-otherRadius = -871.248
-otherLength = 75.4852
-Outlength = 75.0953
 isSwitchPart = [ "HainfurtP4Connector2", "" ]
 
 [node name="Hainfurt5PPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4632,9 +3985,6 @@ startrot = 34.1222
 endrot = 39.0863
 startpos = Vector3( 25436.8, 3.8147e-06, 8212.75 )
 endpos = Vector3( 25497.1, 3.8147e-06, 8167.99 )
-otherRadius = 862.248
-otherLength = 74.7054
-Outlength = 62.4664
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPP3Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -4647,9 +3997,6 @@ startrot = 39.0863
 endrot = 34.1225
 startpos = Vector3( 25379.4, 3.8147e-06, 8261.01 )
 endpos = Vector3( 25439.7, 3.8147e-06, 8216.25 )
-otherRadius = -871.302
-otherLength = 75.4853
-Outlength = 75.0954
 isSwitchPart = [ "HainfurtPP3Connector3", "" ]
 
 [node name="Hainfurt5PPPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4662,9 +4009,6 @@ startrot = 34.1225
 endrot = 39.0863
 startpos = Vector3( 25439.7, 3.8147e-06, 8216.24 )
 endpos = Vector3( 25500, 3.8147e-06, 8171.48 )
-otherRadius = 862.302
-otherLength = 74.7055
-Outlength = 62.4684
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPP3Connector3" parent="Rails" instance=ExtResource( 4 )]
@@ -4677,9 +4021,6 @@ startrot = 39.0863
 endrot = 25.023
 startpos = Vector3( 25379.4, 3.8147e-06, 8261.01 )
 endpos = Vector3( 25443.4, 3.8147e-06, 8220.9 )
-otherRadius = -313.157
-otherLength = 76.8646
-Outlength = 75.7601
 isSwitchPart = [ "HainfurtPP3Connector2", "" ]
 
 [node name="Hainfurt5PPPPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4692,9 +4033,6 @@ startrot = 25.023
 endrot = 39.0863
 startpos = Vector3( 25443.5, 3.8147e-06, 8220.9 )
 endpos = Vector3( 25507.5, 3.8147e-06, 8180.79 )
-otherRadius = 304.157
-otherLength = 74.6556
-Outlength = 37.2914
 isSwitchPart = [ "HainfurtPP3Connector3Connector", "" ]
 
 [node name="Hainfurt5PPPPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4706,9 +4044,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25510.4, 3.8147e-06, 8184.29 )
 endpos = Vector3( 25743.3, 3.8147e-06, 7995.14 )
-othersDistance = 12.0
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPPPPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4720,10 +4055,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25517.9, 3.8147e-06, 8193.6 )
 endpos = Vector3( 25789.6, 3.8147e-06, 7972.93 )
-othersDistance = 4.4
-otherLength = 350.0
-Outlength = 350.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPP3" parent="Rails" instance=ExtResource( 4 )]
@@ -4746,9 +4077,6 @@ startrot = -140.914
 endrot = -154.977
 startpos = Vector3( 25510.4, 3.8147e-06, 8184.29 )
 endpos = Vector3( 25474.9, 3.8147e-06, 8206.52 )
-otherRadius = -175.614
-otherLength = 43.1045
-Outlength = 42.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPP3Connector3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4761,9 +4089,6 @@ startrot = 25.023
 endrot = 24.2177
 startpos = Vector3( 25443.5, 3.8147e-06, 8220.9 )
 endpos = Vector3( 25459.2, 3.8147e-06, 8213.71 )
-otherRadius = -1232.43
-otherLength = 17.3218
-Outlength = 17.2586
 isSwitchPart = [ "Hainfurt5PPPPConnector", "" ]
 
 [node name="Hainfurt5PPPPP2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4776,9 +4101,6 @@ startrot = 24.2177
 endrot = 25.023
 startpos = Vector3( 25459.2, 3.8147e-06, 8213.71 )
 endpos = Vector3( 25474.9, 3.8147e-06, 8206.52 )
-otherRadius = 1223.43
-otherLength = 17.1954
-Outlength = 74.3463
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPP4" parent="Rails" instance=ExtResource( 4 )]
@@ -4790,8 +4112,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25340.6, 3.8147e-06, 8292.53 )
 endpos = Vector3( 25379.4, 3.8147e-06, 8261.01 )
-otherLength = 50.0
-Outlength = 50.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPP4" parent="Rails" instance=ExtResource( 4 )]
@@ -4814,10 +4134,6 @@ startrot = 39.0863
 endrot = 17.2006
 startpos = Vector3( 25383.2, 3.8147e-06, 8265.67 )
 endpos = Vector3( 25450.6, 3.8147e-06, 8229.64 )
-othersDistance = 4.5
-otherRadius = -196.709
-otherLength = 75.1386
-Outlength = 76.8575
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPPPPPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4830,10 +4146,6 @@ startrot = 17.2006
 endrot = 39.0864
 startpos = Vector3( 25450.6, 3.8147e-06, 8229.63 )
 endpos = Vector3( 25518, 3.8147e-06, 8193.6 )
-othersDistance = 4.5
-otherRadius = 205.709
-otherLength = 78.5764
-Outlength = 30.1187
 isSwitchPart = [ "HainfurtPPP4Connector2", "" ]
 
 [node name="HainfurtPP2Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -4846,9 +4158,6 @@ startrot = 39.0863
 endrot = 32.219
 startpos = Vector3( 25301.8, 3.8147e-06, 8324.06 )
 endpos = Vector3( 25342.5, 3.8147e-06, 8294.86 )
-otherRadius = -422.661
-otherLength = 50.6591
-Outlength = 50.1197
 isSwitchPart = [ "HainfurtPP3", "" ]
 
 [node name="HainfurtPPP4ConnectorConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4861,9 +4170,6 @@ startrot = 32.219
 endrot = 39.0863
 startpos = Vector3( 25342.5, 3.8147e-06, 8294.86 )
 endpos = Vector3( 25383.2, 3.8147e-06, 8265.66 )
-otherRadius = 413.661
-otherLength = 49.5803
-Outlength = 43.3983
 isSwitchPart = [ "", "HainfurtPPP4" ]
 
 [node name="HainfurtPPP4Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -4875,9 +4181,6 @@ startrot = 17.2006
 endrot = 39.0863
 startpos = Vector3( 25450.6, 3.8147e-06, 8229.63 )
 endpos = Vector3( 25538.2, 3.8147e-06, 8182.75 )
-otherRadius = 257.295
-otherLength = 98.2811
-Outlength = 34.3478
 isSwitchPart = [ "Hainfurt5PPPPPPConnector", "HainfurtPPP4Connector3Connector" ]
 
 [node name="HainfurtPPP4Connector3" parent="Rails" instance=ExtResource( 4 )]
@@ -4889,8 +4192,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25538.2, 3.8147e-06, 8182.75 )
 endpos = Vector3( 25755.5, 3.8147e-06, 8006.21 )
-otherLength = 280.0
-Outlength = 280.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPP4ConnectorP" parent="Rails" instance=ExtResource( 4 )]
@@ -4903,9 +4204,6 @@ startrot = 39.0863
 endrot = 17.2006
 startpos = Vector3( 25386, 3.8147e-06, 8269.16 )
 endpos = Vector3( 25451.9, 3.8147e-06, 8233.93 )
-otherRadius = -201.209
-otherLength = 76.8575
-Outlength = 75.1386
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPPPPPConnectorP" parent="Rails" instance=ExtResource( 4 )]
@@ -4918,9 +4216,6 @@ startrot = 17.2006
 endrot = 39.0864
 startpos = Vector3( 25451.9, 3.8147e-06, 8233.93 )
 endpos = Vector3( 25520.8, 3.8147e-06, 8197.09 )
-otherRadius = 201.209
-otherLength = 76.8575
-Outlength = 30.453
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5PPPPPPConnectorPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4933,9 +4228,6 @@ startrot = 39.0863
 endrot = 39.7585
 startpos = Vector3( 25520.8, 3.8147e-06, 8197.09 )
 endpos = Vector3( 25529.5, 3.8147e-06, 8189.92 )
-otherRadius = 958.136
-otherLength = 11.2402
-Outlength = 65.8297
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPP4Connector3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -4948,9 +4240,6 @@ startrot = 39.7585
 endrot = 39.0863
 startpos = Vector3( 25529.5, 3.8147e-06, 8189.92 )
 endpos = Vector3( 25538.2, 3.8147e-06, 8182.75 )
-otherRadius = -967.136
-otherLength = 11.3458
-Outlength = 11.293
 isSwitchPart = [ "", "HainfurtPPP4Connector2" ]
 
 [node name="Harras2PP3P2P3PPP" parent="Rails" instance=ExtResource( 4 )]
@@ -4963,10 +4252,6 @@ startrot = -0.913677
 endrot = 28.5464
 startpos = Vector3( 24760.3, 3.8147e-06, 8564.91 )
 endpos = Vector3( 25046.2, 3.8147e-06, 8494.6 )
-othersDistance = 6.0
-otherRadius = 584.958
-otherLength = 300.771
-Outlength = 51.0588
 tend1Pos = 50
 tend1 = 2.59086
 tend2Pos = 247.686
@@ -4984,9 +4269,6 @@ startrot = -140.914
 endrot = -151.454
 startpos = Vector3( 25137.4, 3.8147e-06, 8438.9 )
 endpos = Vector3( 25089.3, 3.8147e-06, 8471.13 )
-otherRadius = -319.793
-otherLength = 58.8278
-Outlength = 58.0
 isSwitchPart = [ "Harras2PP3P2P3PPP2P", "" ]
 
 [node name="Harras2PP3P2P3PPPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -4999,9 +4281,6 @@ startrot = 28.5464
 endrot = 28.6042
 startpos = Vector3( 25046.2, 3.8147e-06, 8494.6 )
 endpos = Vector3( 25067.7, 3.8147e-06, 8482.87 )
-otherRadius = 24319.9
-otherLength = 24.5222
-Outlength = 330.85
 isSwitchPart = [ "Harras2PP3P2P3PPP2", "" ]
 
 [node name="Hainfurt7Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5014,9 +4293,6 @@ startrot = 28.6042
 endrot = 28.5464
 startpos = Vector3( 25067.8, 3.8147e-06, 8482.86 )
 endpos = Vector3( 25089.3, 3.8147e-06, 8471.13 )
-otherRadius = -24328.9
-otherLength = 24.5312
-Outlength = 24.5267
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3P2P3PP2" parent="Rails" instance=ExtResource( 4 )]
@@ -5029,9 +4305,6 @@ startrot = 28.5464
 endrot = 39.0863
 startpos = Vector3( 25048.4, 3.8147e-06, 8498.55 )
 endpos = Vector3( 25096.5, 3.8147e-06, 8466.32 )
-otherRadius = 310.793
-otherLength = 57.1722
-Outlength = 37.6896
 isSwitchPart = [ "Harras2PP3P2P3PPP2P", "" ]
 
 [node name="Harras2PP3P2P3PP2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5044,9 +4317,6 @@ startrot = 39.0863
 endrot = 39.031
 startpos = Vector3( 25096.5, 3.8147e-06, 8466.32 )
 endpos = Vector3( 25115.5, 3.8147e-06, 8450.87 )
-otherRadius = -25412.3
-otherLength = 24.5309
-Outlength = 24.5266
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP2Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -5059,9 +4329,6 @@ startrot = 39.031
 endrot = 39.0863
 startpos = Vector3( 25115.5, 3.8147e-06, 8450.86 )
 endpos = Vector3( 25134.5, 3.8147e-06, 8435.41 )
-otherRadius = 25403.3
-otherLength = 24.5223
-Outlength = 338.137
 isSwitchPart = [ "", "Harras2PP3P2P3PPP2" ]
 
 [node name="Harras2PP3P2P3PPP2" parent="Rails" instance=ExtResource( 4 )]
@@ -5074,10 +4341,6 @@ startrot = 28.5464
 endrot = 39.0864
 startpos = Vector3( 25046.2, 3.8147e-06, 8494.6 )
 endpos = Vector3( 25134.6, 3.8147e-06, 8435.41 )
-othersDistance = 4.5
-otherRadius = 583.458
-otherLength = 107.331
-Outlength = 51.0588
 isSwitchPart = [ "Harras2PP3P2P3PPPConnector", "HainfurtP2Connector2" ]
 
 [node name="Harras2PP3P2P3PPP2P" parent="Rails" instance=ExtResource( 4 )]
@@ -5090,9 +4353,6 @@ startrot = 28.5464
 endrot = 39.0863
 startpos = Vector3( 25048.4, 3.8147e-06, 8498.55 )
 endpos = Vector3( 25137.4, 3.8147e-06, 8438.9 )
-otherRadius = 578.958
-otherLength = 106.502
-Outlength = 51.2567
 isSwitchPart = [ "Harras2PP3P2P3PP2", "Hainfurt7" ]
 
 [node name="Hainfurt6" parent="Rails" instance=ExtResource( 4 )]
@@ -5115,9 +4375,6 @@ startrot = 39.0863
 endrot = 52.773
 startpos = Vector3( 25409.1, 3.8147e-06, 8218.23 )
 endpos = Vector3( 25444.1, 3.8147e-06, 8182.05 )
-otherRadius = 206.815
-otherLength = 49.4035
-Outlength = 30.8644
 isSwitchPart = [ "Hainfurt6", "" ]
 
 [node name="Hainfurt5P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5130,9 +4387,6 @@ startrot = 52.773
 endrot = 39.0863
 startpos = Vector3( 25444.1, 3.8147e-06, 8182.05 )
 endpos = Vector3( 25479.1, 3.8147e-06, 8145.87 )
-otherRadius = -215.815
-otherLength = 51.5533
-Outlength = 50.4784
 isSwitchPart = [ "", "Hainfurt5P2Connector2" ]
 
 [node name="HainfurtP6Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -5145,9 +4399,6 @@ startrot = 39.0863
 endrot = 48.2342
 startpos = Vector3( 25367.4, 3.8147e-06, 8246.26 )
 endpos = Vector3( 25421.8, 3.8147e-06, 8194.32 )
-otherRadius = 467.246
-otherLength = 74.6009
-Outlength = 46.0928
 isSwitchPart = [ "HainfurtP6Connector3", "" ]
 
 [node name="Hainfurt5P2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5160,9 +4411,6 @@ startrot = 48.2342
 endrot = 39.0863
 startpos = Vector3( 25421.9, 3.8147e-06, 8194.32 )
 endpos = Vector3( 25476.3, 3.8147e-06, 8142.38 )
-otherRadius = -476.246
-otherLength = 76.0379
-Outlength = 75.3194
 isSwitchPart = [ "", "Hainfurt5P2PConnector2" ]
 
 [node name="HainfurtP6Connector3" parent="Rails" instance=ExtResource( 4 )]
@@ -5175,9 +4423,6 @@ startrot = 39.0863
 endrot = 44.811
 startpos = Vector3( 25367.4, 3.8147e-06, 8246.26 )
 endpos = Vector3( 25423.2, 3.8147e-06, 8196.06 )
-otherRadius = 747.4
-otherLength = 74.6754
-Outlength = 58.1828
 isSwitchPart = [ "HainfurtP6Connector2", "" ]
 
 [node name="Hainfurt5P2Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -5190,9 +4435,6 @@ startrot = 44.811
 endrot = 39.0863
 startpos = Vector3( 25423.3, 3.8147e-06, 8196.06 )
 endpos = Vector3( 25479.2, 3.8147e-06, 8145.86 )
-otherRadius = -756.4
-otherLength = 75.5746
-Outlength = 75.125
 isSwitchPart = [ "", "Hainfurt5P2Connector" ]
 
 [node name="HainfurtP2P9" parent="Rails" instance=ExtResource( 4 )]
@@ -5204,9 +4446,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25280.2, 3.8147e-06, 8298.21 )
 endpos = Vector3( 25396.6, 3.8147e-06, 8203.64 )
-otherLength = 150.0
-Outlength = 150.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP2P10" parent="Rails" instance=ExtResource( 4 )]
@@ -5218,8 +4457,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25312.9, 3.8147e-06, 8260.43 )
 endpos = Vector3( 25545.8, 3.8147e-06, 8071.28 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP2P11" parent="Rails" instance=ExtResource( 4 )]
@@ -5231,8 +4468,6 @@ startrot = 39.0863
 endrot = 39.0863
 startpos = Vector3( 25345.6, 3.8147e-06, 8222.64 )
 endpos = Vector3( 25539.6, 3.8147e-06, 8065.02 )
-otherLength = 250.0
-Outlength = 250.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P3P" parent="Rails" instance=ExtResource( 4 )]
@@ -5244,8 +4479,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22489.4, 3.8147e-06, 8454.83 )
 endpos = Vector3( 22688.3, 3.8147e-06, 8475.44 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5258,9 +4491,6 @@ startrot = -5.91368
 endrot = -8.77923
 startpos = Vector3( 22191.8, 3.8147e-06, 8416.46 )
 endpos = Vector3( 22340.6, 3.8147e-06, 8435.64 )
-otherRadius = -3004.6
-otherLength = 150.27
-Outlength = 150.045
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P3PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5273,9 +4503,6 @@ startrot = -8.77925
 endrot = -5.9137
 startpos = Vector3( 22340.6, 3.8147e-06, 8435.65 )
 endpos = Vector3( 22489.4, 3.8147e-06, 8454.83 )
-otherRadius = 2995.6
-otherLength = 149.82
-Outlength = 116.199
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P3PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -5288,9 +4515,6 @@ startrot = -5.91368
 endrot = -1.61824
 startpos = Vector3( 22688.3, 3.8147e-06, 8475.44 )
 endpos = Vector3( 22788.2, 3.8147e-06, 8482.01 )
-otherRadius = 1330.63
-otherLength = 99.7566
-Outlength = 77.5227
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5303,9 +4527,6 @@ startrot = -1.61825
 endrot = -5.91369
 startpos = Vector3( 22788.2, 3.8147e-06, 8482.01 )
 endpos = Vector3( 22888.1, 3.8147e-06, 8488.58 )
-otherRadius = -1339.63
-otherLength = 100.431
-Outlength = 100.094
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPPP2" parent="Rails" instance=ExtResource( 4 )]
@@ -5328,9 +4549,6 @@ startrot = 39.0863
 endrot = 44.2404
 startpos = Vector3( 25075.6, 3.8147e-06, 8521.35 )
 endpos = Vector3( 25113, 3.8147e-06, 8488.08 )
-otherRadius = 552.067
-otherLength = 49.6622
-Outlength = 50.0624
 isSwitchPart = [ "HainfurtPPPP2", "" ]
 
 [node name="HainfurtPPPConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5343,9 +4561,6 @@ startrot = 44.2405
 endrot = 39.0863
 startpos = Vector3( 25113, 3.8147e-06, 8488.08 )
 endpos = Vector3( 25150.4, 3.8147e-06, 8454.81 )
-otherRadius = -561.067
-otherLength = 50.4718
-Outlength = 50.067
 isSwitchPart = [ "", "HainfurtPPP2" ]
 
 [node name="HainfurtPPPP3" parent="Rails" instance=ExtResource( 4 )]
@@ -5358,10 +4573,6 @@ startrot = -140.914
 endrot = -110.914
 startpos = Vector3( 25075.6, 3.8147e-06, 8521.35 )
 endpos = Vector3( 24495.7, 3.8147e-06, 9322.03 )
-othersDistance = 4.5
-otherRadius = 1914.36
-otherLength = 1002.36
-Outlength = 92.7149
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPPP3P" parent="Rails" instance=ExtResource( 4 )]
@@ -5374,10 +4585,6 @@ startrot = -140.914
 endrot = -110.984
 startpos = Vector3( 25072.7, 3.8147e-06, 8517.86 )
 endpos = Vector3( 24492.3, 3.8147e-06, 9318.23 )
-othersDistance = 6.0
-otherRadius = 1920.36
-otherLength = 1003.13
-Outlength = 92.8241
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPPPP3PP" parent="Rails" instance=ExtResource( 4 )]
@@ -5390,10 +4597,6 @@ startrot = -140.914
 endrot = -111.078
 startpos = Vector3( 25068.9, 3.8147e-06, 8513.2 )
 endpos = Vector3( 24487.8, 3.8147e-06, 9313.15 )
-othersDistance = 4.5
-otherRadius = 1924.86
-otherLength = 1002.34
-Outlength = 92.9694
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtPP5" parent="Rails" instance=ExtResource( 4 )]
@@ -5426,9 +4629,6 @@ startrot = -140.914
 endrot = -111.147
 startpos = Vector3( 25066.1, 3.8147e-06, 8509.71 )
 endpos = Vector3( 24484.5, 3.8147e-06, 9309.35 )
-otherRadius = 1920.36
-otherLength = 997.662
-Outlength = 93.0782
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth13" parent="Rails" instance=ExtResource( 4 )]
@@ -5441,10 +4641,6 @@ startrot = -28.9137
 endrot = -26.9137
 startpos = Vector3( 15711.5, 3.8147e-06, 6731.5 )
 endpos = Vector3( 16550.9, 3.8147e-06, 7176.21 )
-othersDistance = 4.5
-otherRadius = 27220.0
-otherLength = 950.157
-Outlength = 349.959
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth13P" parent="Rails" instance=ExtResource( 4 )]
@@ -5457,9 +4653,6 @@ startrot = -28.9137
 endrot = -26.9137
 startpos = Vector3( 15709.3, 3.8147e-06, 6735.44 )
 endpos = Vector3( 16548.9, 3.8147e-06, 7180.22 )
-otherRadius = 27215.5
-otherLength = 950.0
-Outlength = 349.988
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P" parent="Rails" instance=ExtResource( 4 )]
@@ -5471,8 +4664,6 @@ startrot = -26.9136
 endrot = -26.9136
 startpos = Vector3( 16548.9, 3.8147e-06, 7180.23 )
 endpos = Vector3( 17396.1, 3.8147e-06, 7610.28 )
-otherLength = 950.079
-Outlength = 950.079
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P6P2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5485,9 +4676,6 @@ startrot = 27.9197
 endrot = 27.8016
 startpos = Vector3( 18901, 3.8147e-06, 7893.29 )
 endpos = Vector3( 18912.2, 3.8147e-06, 7887.35 )
-otherRadius = -6173.82
-otherLength = 12.7188
-Outlength = 12.7095
 isSwitchPart = [ "", "Höllkriegelsreuth14P5P7" ]
 
 [node name="Höllkriegelsreuth14PP" parent="Rails" instance=ExtResource( 4 )]
@@ -5499,8 +4687,6 @@ startrot = -26.9136
 endrot = -26.9136
 startpos = Vector3( 16550.9, 3.8147e-06, 7176.21 )
 endpos = Vector3( 17398.1, 3.8147e-06, 7606.26 )
-otherLength = 950.079
-Outlength = 950.079
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5513,9 +4699,6 @@ startrot = -26.9136
 endrot = -25.0226
 startpos = Vector3( 17396.1, 3.8147e-06, 7610.28 )
 endpos = Vector3( 17800.7, 3.8147e-06, 7807.32 )
-otherRadius = 13630.5
-otherLength = 449.869
-Outlength = 247.708
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5528,9 +4711,6 @@ startrot = -25.0226
 endrot = -26.9136
 startpos = Vector3( 17800.6, 3.8147e-06, 7807.32 )
 endpos = Vector3( 18205.2, 3.8147e-06, 8004.36 )
-otherRadius = -13639.5
-otherLength = 450.167
-Outlength = 450.018
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14PConnectorP" parent="Rails" instance=ExtResource( 4 )]
@@ -5543,9 +4723,6 @@ startrot = -26.9136
 endrot = -25.0226
 startpos = Vector3( 17398.1, 3.8147e-06, 7606.27 )
 endpos = Vector3( 17802.5, 3.8147e-06, 7803.25 )
-otherRadius = 13626.0
-otherLength = 449.72
-Outlength = 247.667
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P3ConnectorP" parent="Rails" instance=ExtResource( 4 )]
@@ -5558,9 +4735,6 @@ startrot = -25.0226
 endrot = -26.9136
 startpos = Vector3( 17802.5, 3.8147e-06, 7803.24 )
 endpos = Vector3( 18207.2, 3.8147e-06, 8000.35 )
-otherRadius = -13644.0
-otherLength = 450.315
-Outlength = 450.166
 isSwitchPart = [ "", "" ]
 
 [node name="RailP14" parent="Rails" instance=ExtResource( 4 )]
@@ -5573,14 +4747,10 @@ startrot = -162.083
 endrot = -187.548
 startpos = Vector3( 523.744, 3.8147e-06, 8.05989 )
 endpos = Vector3( 271.872, 3.8147e-06, 30.9128 )
-otherRadius = -578.25
-otherLength = 257.0
-Outlength = 255.0
 tend1Pos = 100.0
 tend1 = -1.74
 tend2Pos = 205.0
 tend2 = -1.74
-automaticTendency = false
 isSwitchPart = [ "RailP2", "" ]
 
 [node name="RailP15" parent="Rails" instance=ExtResource( 4 )]
@@ -5592,8 +4762,6 @@ startrot = 172.452
 endrot = 172.452
 startpos = Vector3( 271.872, 3.8147e-06, 30.9127 )
 endpos = Vector3( -25.5285, 3.8147e-06, -8.49451 )
-otherLength = 300.0
-Outlength = 300.0
 isSwitchPart = [ "", "" ]
 
 [node name="Icking14" parent="Rails" instance=ExtResource( 4 )]
@@ -5606,9 +4774,6 @@ startrot = 144.714
 endrot = 138.984
 startpos = Vector3( 4223.7, 3.8147e-06, 478.556 )
 endpos = Vector3( 4200.12, 3.8147e-06, 460.032 )
-otherRadius = -304.499
-otherLength = 30.45
-Outlength = 30.0
 isSwitchPart = [ "Icking3", "" ]
 
 [node name="Icking14Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5621,9 +4786,6 @@ startrot = 138.984
 endrot = 141.681
 startpos = Vector3( 4200.12, 3.8147e-06, 460.032 )
 endpos = Vector3( 4134.78, 3.8147e-06, 405.849 )
-otherRadius = 1798.67
-otherLength = 84.679
-Outlength = 90.0886
 isSwitchPart = [ "", "" ]
 
 [node name="Icking2PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5636,9 +4798,6 @@ startrot = 141.681
 endrot = 138.984
 startpos = Vector3( 4134.78, 3.8147e-06, 405.848 )
 endpos = Vector3( 4069.44, 3.8147e-06, 351.665 )
-otherRadius = -1807.67
-otherLength = 85.1028
-Outlength = 84.8909
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P2P2" parent="Rails" instance=ExtResource( 4 )]
@@ -5651,9 +4810,6 @@ startrot = 8.08633
 endrot = -11.9137
 startpos = Vector3( 19186.9, 3.8147e-06, 7739.78 )
 endpos = Vector3( 19485.2, 3.8147e-06, 7749.75 )
-otherRadius = -863.937
-otherLength = 301.571
-Outlength = 300.0
 startTend = -1.75
 tend1Pos = 50
 tend1 = -1.74533
@@ -5672,9 +4828,6 @@ startrot = -11.9137
 endrot = -14.2811
 startpos = Vector3( 19485.3, 3.8147e-06, 7749.75 )
 endpos = Vector3( 19675.1, 3.8147e-06, 7793.9 )
-otherRadius = -4720.29
-otherLength = 195.038
-Outlength = 194.852
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P5PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5687,9 +4840,6 @@ startrot = -14.2811
 endrot = -11.9137
 startpos = Vector3( 19675, 3.8147e-06, 7793.9 )
 endpos = Vector3( 19864.8, 3.8147e-06, 7838.05 )
-otherRadius = 4711.29
-otherLength = 194.666
-Outlength = 145.68
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth9P" parent="Rails" instance=ExtResource( 4 )]
@@ -5701,8 +4851,6 @@ startrot = -28.9137
 endrot = -28.9137
 startpos = Vector3( 15092.9, 3.8147e-06, 6403.56 )
 endpos = Vector3( 15268, 3.8147e-06, 6500.26 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth9PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -5715,9 +4863,6 @@ startrot = -28.9137
 endrot = -24.6115
 startpos = Vector3( 15268, 3.8147e-06, 6500.26 )
 endpos = Vector3( 15357.4, 3.8147e-06, 6545.33 )
-otherRadius = 1328.77
-otherLength = 99.7731
-Outlength = 77.4687
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth11PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5730,9 +4875,6 @@ startrot = -24.6115
 endrot = -28.9136
 startpos = Vector3( 15357.3, 3.8147e-06, 6545.33 )
 endpos = Vector3( 15446.7, 3.8147e-06, 6590.4 )
-otherRadius = -1337.77
-otherLength = 100.449
-Outlength = 100.111
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth3" parent="Rails" instance=ExtResource( 4 )]
@@ -5745,9 +4887,6 @@ startrot = -26.9136
 endrot = -28.9136
 startpos = Vector3( 14872.9, 3.8147e-06, 6286.2 )
 endpos = Vector3( 15005.4, 3.8147e-06, 6356.42 )
-otherRadius = -4301.68
-otherLength = 150.157
-Outlength = 150.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5760,9 +4899,6 @@ startrot = -28.9137
 endrot = -27.7213
 startpos = Vector3( 15005.4, 3.8147e-06, 6356.41 )
 endpos = Vector3( 15049.2, 3.8147e-06, 6379.99 )
-otherRadius = 2383.72
-otherLength = 49.6066
-Outlength = 103.676
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth9PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5775,15 +4911,11 @@ startrot = -27.7213
 endrot = -28.9136
 startpos = Vector3( 15049.1, 3.8147e-06, 6379.99 )
 endpos = Vector3( 15092.9, 3.8147e-06, 6403.57 )
-otherRadius = -2392.72
-otherLength = 49.7938
-Outlength = 49.7002
 isSwitchPart = [ "", "" ]
 
 [node name="Icking16" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.947374, 0, -0.320129, 0, 1, 0, 0.320129, 0, 0.947374, 5104.81, 3.8147e-06, 1029.8 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 1000.0
 buildDistance = 1.9
 visibleSegments = 527.316
@@ -5791,16 +4923,12 @@ startrot = -18.6707
 endrot = -18.6707
 startpos = Vector3( 5104.81, 3.8147e-06, 1029.8 )
 endpos = Vector3( 6052.18, 3.8147e-06, 1349.93 )
-otherLength = 1000.0
-Outlength = 1000.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking17" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.947374, 0, -0.320129, 0, 1, 0, 0.320129, 0, 0.947374, 6052.19, 3.8147e-06, 1349.92 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 500.0
 radius = -2864.79
 buildDistance = 1.9
@@ -5809,17 +4937,12 @@ startrot = -18.6707
 endrot = -28.6707
 startpos = Vector3( 6052.19, 3.8147e-06, 1349.92 )
 endpos = Vector3( 6509.54, 3.8147e-06, 1550.41 )
-otherRadius = -2869.29
-otherLength = 500.785
-Outlength = 500.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking18" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.877392, 0, -0.479775, 0, 1, 0, 0.479775, 0, 0.877392, 6509.54, 3.8147e-06, 1550.41 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 500.0
 radius = 2864.79
 buildDistance = 1.9
@@ -5828,17 +4951,12 @@ startrot = -28.6707
 endrot = -18.6707
 startpos = Vector3( 6509.54, 3.8147e-06, 1550.41 )
 endpos = Vector3( 6966.89, 3.8147e-06, 1750.89 )
-otherRadius = 2860.29
-otherLength = 499.215
-Outlength = 113.548
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking19" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.947374, 0, -0.320129, 0, 1, 0, 0.320129, 0, 0.947374, 6966.89, 3.8147e-06, 1750.9 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 1000.0
 radius = -1507.78
 buildDistance = 1.9
@@ -5847,17 +4965,12 @@ startrot = -18.6707
 endrot = -56.6708
 startpos = Vector3( 6966.89, 3.8147e-06, 1750.9 )
 endpos = Vector3( 7744, 3.8147e-06, 2350.88 )
-otherRadius = -1512.28
-otherLength = 1002.98
-Outlength = 1000.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking20" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.54945, 0, -0.835527, 0, 1, 0, 0.835527, 0, 0.54945, 7744, 3.8147e-06, 2350.88 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 400.0
 radius = 1145.92
 buildDistance = 1.9
@@ -5866,17 +4979,12 @@ startrot = -56.6707
 endrot = -36.6708
 startpos = Vector3( 7744, 3.8147e-06, 2350.88 )
 endpos = Vector3( 8017.08, 3.8147e-06, 2640.37 )
-otherRadius = 1141.42
-otherLength = 398.429
-Outlength = 71.8215
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking21" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.802081, 0, -0.597215, 0, 1, 0, 0.597215, 0, 0.802081, 8017.09, 3.8147e-06, 2640.37 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 400.0
 radius = 1145.92
 buildDistance = 1.9
@@ -5885,17 +4993,12 @@ startrot = -36.6707
 endrot = -16.6708
 startpos = Vector3( 8017.09, 3.8147e-06, 2640.37 )
 endpos = Vector3( 8372.72, 3.8147e-06, 2819.01 )
-otherRadius = 1141.42
-otherLength = 398.429
-Outlength = 71.8215
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking22" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( -0.838721, 0, 0.544561, 0, 1, 0, -0.544561, 0, -0.838721, 4655.95, 3.8147e-06, 812.491 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 40.0
 radius = 50.9296
 buildDistance = 1.9
@@ -5904,17 +5007,12 @@ startrot = 147.005
 endrot = 192.005
 startpos = Vector3( 4655.95, 3.8147e-06, 812.491 )
 endpos = Vector3( 4617.62, 3.8147e-06, 805.391 )
-otherRadius = 46.4296
-otherLength = 36.4657
-Outlength = 15.1951
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
 [node name="Icking23" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( -0.978128, 0, -0.208003, 0, 1, 0, 0.208003, 0, -0.978128, 4617.62, 3.8147e-06, 805.391 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Road.tscn"
 length = 400.0
 buildDistance = 1.9
 visibleSegments = 211.526
@@ -5922,9 +5020,6 @@ startrot = -167.995
 endrot = -167.995
 startpos = Vector3( 4617.62, 3.8147e-06, 805.391 )
 endpos = Vector3( 4226.37, 3.8147e-06, 888.592 )
-otherLength = 400.0
-Outlength = 400.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -5947,9 +5042,6 @@ startrot = 172.452
 endrot = 172.452
 startpos = Vector3( -119.903, 3.8147e-06, -33.1268 )
 endpos = Vector3( -318.17, 3.8147e-06, -59.3983 )
-othersDistance = -8.0
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "", "" ]
 
 [node name="RailP17Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -5962,9 +5054,6 @@ startrot = -7.54802
 endrot = -2.39488
 startpos = Vector3( -119.903, 3.8147e-06, -33.1268 )
 endpos = Vector3( -70.0407, 3.8147e-06, -28.7894 )
-otherRadius = 552.182
-otherLength = 49.6628
-Outlength = 50.0675
 isSwitchPart = [ "RailP16", "" ]
 
 [node name="RailConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -5977,9 +5066,6 @@ startrot = -2.3949
 endrot = -7.54803
 startpos = Vector3( -70.0407, 3.8147e-06, -28.7895 )
 endpos = Vector3( -20.1784, 3.8147e-06, -24.4521 )
-otherRadius = -561.182
-otherLength = 50.4722
-Outlength = 50.0675
 isSwitchPart = [ "", "" ]
 
 [node name="RailP17P" parent="Rails" instance=ExtResource( 4 )]
@@ -5991,8 +5077,6 @@ startrot = 172.452
 endrot = 172.452
 startpos = Vector3( -120.954, 3.8147e-06, -25.1962 )
 endpos = Vector3( -145.737, 3.8147e-06, -28.4801 )
-otherLength = 25.0
-Outlength = 25.0
 isSwitchPart = [ "", "" ]
 
 [node name="RailP15Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6005,9 +5089,6 @@ startrot = 172.452
 endrot = 167.693
 startpos = Vector3( -25.5285, 3.8147e-06, -8.4945 )
 endpos = Vector3( -73.2412, 3.8147e-06, -16.8453 )
-otherRadius = -587.834
-otherLength = 48.8257
-Outlength = 48.4519
 isSwitchPart = [ "", "" ]
 
 [node name="RailP17PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -6020,9 +5101,6 @@ startrot = 167.693
 endrot = 172.452
 startpos = Vector3( -73.2412, 3.8147e-06, -16.8453 )
 endpos = Vector3( -120.954, 3.8147e-06, -25.1961 )
-otherRadius = 578.834
-otherLength = 48.0781
-Outlength = 51.2513
 isSwitchPart = [ "", "" ]
 
 [node name="RailP17P2" parent="Rails" instance=ExtResource( 4 )]
@@ -6034,8 +5112,6 @@ startrot = 172.452
 endrot = 172.452
 startpos = Vector3( -145.737, 3.8147e-06, -28.4801 )
 endpos = Vector3( -344.004, 3.8147e-06, -54.7516 )
-otherLength = 200.0
-Outlength = 200.0
 isSwitchPart = [ "RailP17P3", "" ]
 
 [node name="RailP17P3" parent="Rails" instance=ExtResource( 4 )]
@@ -6048,9 +5124,6 @@ startrot = 172.452
 endrot = 239.119
 startpos = Vector3( -145.737, 3.8147e-06, -28.4801 )
 endpos = Vector3( -570.982, 3.8147e-06, 176.957 )
-otherRadius = 425.218
-otherLength = 494.764
-Outlength = 43.9934
 isSwitchPart = [ "RailP17P2", "" ]
 
 [node name="Höllkriegelsreuth3P" parent="Rails" instance=ExtResource( 4 )]
@@ -6063,9 +5136,6 @@ startrot = -26.9136
 endrot = -28.9136
 startpos = Vector3( 14874.9, 3.8147e-06, 6282.19 )
 endpos = Vector3( 15007.6, 3.8147e-06, 6352.48 )
-otherRadius = -4306.18
-otherLength = 150.314
-Outlength = 150.157
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth9Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6078,9 +5148,6 @@ startrot = 151.086
 endrot = 160.883
 startpos = Vector3( 15098.7, 3.8147e-06, 6393.06 )
 endpos = Vector3( 15053.2, 3.8147e-06, 6372.77 )
-otherRadius = 287.434
-otherLength = 49.1485
-Outlength = 36.2684
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth3PConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -6093,9 +5160,6 @@ startrot = 160.883
 endrot = 151.086
 startpos = Vector3( 15053.2, 3.8147e-06, 6372.77 )
 endpos = Vector3( 15007.7, 3.8147e-06, 6352.48 )
-otherRadius = -296.434
-otherLength = 50.6875
-Outlength = 49.918
 isSwitchPart = [ "", "Höllkriegelsreuth3PConnector2" ]
 
 [node name="Höllkriegelsreuth5P3Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -6108,9 +5172,6 @@ startrot = 151.086
 endrot = 168.092
 startpos = Vector3( 15100.9, 3.8147e-06, 6387.19 )
 endpos = Vector3( 15054.3, 3.8147e-06, 6369.83 )
-otherRadius = 163.786
-otherLength = 48.6135
-Outlength = 27.5496
 isSwitchPart = [ "Höllkriegelsreuth5P4", "" ]
 
 [node name="Höllkriegelsreuth3PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -6123,9 +5184,6 @@ startrot = 168.092
 endrot = 151.086
 startpos = Vector3( 15054.3, 3.8147e-06, 6369.83 )
 endpos = Vector3( 15007.7, 3.8147e-06, 6352.47 )
-otherRadius = -172.786
-otherLength = 51.2849
-Outlength = 49.9492
 isSwitchPart = [ "", "Höllkriegelsreuth3PConnector" ]
 
 [node name="RailP17P4" parent="Rails" instance=ExtResource( 4 )]
@@ -6138,9 +5196,6 @@ startrot = -120.881
 endrot = -54.2146
 startpos = Vector3( -570.982, 3.8147e-06, 176.957 )
 endpos = Vector3( -550.777, 3.8147e-06, 648.793 )
-otherRadius = 425.218
-otherLength = 494.764
-Outlength = 43.9934
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P6" parent="Rails" instance=ExtResource( 4 )]
@@ -6152,10 +5207,7 @@ startrot = 13.0863
 endrot = 13.0863
 startpos = Vector3( 18594.3, 3.8147e-06, 8051.54 )
 endpos = Vector3( 18643, 1.74646, 8040.22 )
-otherLength = 50.0
-Outlength = 50.0
 endSlope = 7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P7" parent="Rails" instance=ExtResource( 4 )]
@@ -6168,7 +5220,6 @@ startpos = Vector3( 18643, 1.74646, 8040.22 )
 endpos = Vector3( 18740.4, 8.74646, 8017.58 )
 startSlope = 7.0
 endSlope = 7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P8" parent="Rails" instance=ExtResource( 4 )]
@@ -6181,11 +5232,7 @@ startrot = 13.0863
 endrot = 25.5863
 startpos = Vector3( 18740.4, 8.74646, 8017.58 )
 endpos = Vector3( 18782.8, 10.3247, 8002.71 )
-otherRadius = 201.765
-otherLength = 44.0183
-Outlength = 30.494
 startSlope = 7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P9" parent="Rails" instance=ExtResource( 4 )]
@@ -6198,11 +5245,7 @@ startrot = 25.5863
 endrot = 38.0863
 startpos = Vector3( 18782.8, 10.3247, 8002.7 )
 endpos = Vector3( 18821, 8.75292, 7979.01 )
-otherRadius = 201.765
-otherLength = 44.0183
-Outlength = 30.494
 endSlope = -7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P10" parent="Rails" instance=ExtResource( 4 )]
@@ -6215,7 +5258,6 @@ startpos = Vector3( 18820.9, 8.75291, 7979.01 )
 endpos = Vector3( 18899.6, 1.75291, 7917.33 )
 startSlope = -7.0
 endSlope = -7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P11" parent="Rails" instance=ExtResource( 4 )]
@@ -6228,11 +5270,7 @@ startrot = 38.0863
 endrot = 48.0863
 startpos = Vector3( 18899.6, 1.75291, 7917.33 )
 endpos = Vector3( 18935.9, 0.00635099, 7883.35 )
-otherRadius = 280.833
-otherLength = 49.0146
-Outlength = 35.8565
 startSlope = -7.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P9" parent="Rails" instance=ExtResource( 4 )]
@@ -6245,10 +5283,6 @@ startrot = -141.914
 endrot = -131.914
 startpos = Vector3( 18992.3, 3.8147e-06, 7827.44 )
 endpos = Vector3( 18955.8, 3.8147e-06, 7861.55 )
-otherRadius = 281.979
-otherLength = 49.2146
-Outlength = 35.9284
-automaticTendency = false
 isSwitchPart = [ "Höllkriegelsreuth14P5P5P", "" ]
 
 [node name="Höllkriegelsreuth14P11Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6261,9 +5295,6 @@ startrot = 48.0863
 endrot = 47.1778
 startpos = Vector3( 18935.9, 0.00634968, 7883.35 )
 endpos = Vector3( 18945.8, 0.00634968, 7872.45 )
-otherRadius = -935.128
-otherLength = 14.8266
-Outlength = 14.7553
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P9Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6276,24 +5307,17 @@ startrot = 47.1778
 endrot = 48.0863
 startpos = Vector3( 18945.9, 0.00634968, 7872.45 )
 endpos = Vector3( 18955.8, 0.00634968, 7861.55 )
-otherRadius = 926.128
-otherLength = 14.684
-Outlength = 64.7265
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5" parent="Rails" instance=ExtResource( 4 )]
 transform = Transform( 0.97403, 0, 0.226418, 0, 1, 0, -0.226418, 0, 0.97403, 18604, -1, 8049.27 )
 visible = false
-railTypePath = "res://Resources/Basic/RailTypes/Invisible.tscn"
 length = 150.0
 visibleSegments = 167.667
 startrot = 13.0863
 endrot = 13.0863
 startpos = Vector3( 18604, -1, 8049.27 )
 endpos = Vector3( 18750.1, -1, 8015.31 )
-otherLength = 150.0
-Outlength = 150.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -6306,9 +5330,6 @@ startrot = -0.913677
 endrot = -0.913677
 startpos = Vector3( 24510.4, 3.8147e-06, 8560.92 )
 endpos = Vector3( 24760.4, 3.8147e-06, 8564.91 )
-otherLength = 250.0
-Outlength = 250.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Harras2PP3PPConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -6321,9 +5342,6 @@ startrot = -0.913677
 endrot = -5.49476
 startpos = Vector3( 24360.4, 3.8147e-06, 8552.53 )
 endpos = Vector3( 24435.4, 3.8147e-06, 8556.73 )
-otherRadius = -943.819
-otherLength = 75.463
-Outlength = 75.1032
 isSwitchPart = [ "Harras2PP3P2P2", "" ]
 
 [node name="Harras2PP3P3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6336,9 +5354,6 @@ startrot = -5.49476
 endrot = -0.913677
 startpos = Vector3( 24435.4, 3.8147e-06, 8556.73 )
 endpos = Vector3( 24510.4, 3.8147e-06, 8560.93 )
-otherRadius = 934.819
-otherLength = 74.7434
-Outlength = 65.0279
 isSwitchPart = [ "", "Harras2PP3P2" ]
 
 [node name="Hainfurt5P3" parent="Rails" instance=ExtResource( 4 )]
@@ -6350,9 +5365,6 @@ startrot = 129.086
 endrot = 129.086
 startpos = Vector3( 25899.7, -0.999996, 8171.74 )
 endpos = Vector3( 25269.2, -0.999996, 7395.54 )
-otherLength = 1000.0
-Outlength = 1000.0
-automaticTendency = false
 overheadLine = false
 isSwitchPart = [ "", "" ]
 
@@ -6366,9 +5378,6 @@ startrot = 39.0863
 endrot = 43.6611
 startpos = Vector3( 25363.6, 3.8147e-06, 8241.6 )
 endpos = Vector3( 25419.9, 3.8147e-06, 8191.98 )
-otherRadius = 935.897
-otherLength = 74.7259
-Outlength = 65.0652
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt5P2PConnector2" parent="Rails" instance=ExtResource( 4 )]
@@ -6381,9 +5390,6 @@ startrot = 43.6611
 endrot = 39.0863
 startpos = Vector3( 25420, 3.8147e-06, 8191.99 )
 endpos = Vector3( 25476.3, 3.8147e-06, 8142.37 )
-otherRadius = -944.897
-otherLength = 75.4445
-Outlength = 75.0852
 isSwitchPart = [ "", "Hainfurt5P2PConnector" ]
 
 [node name="HainfurtP2P12" parent="Rails" instance=ExtResource( 4 )]
@@ -6395,8 +5401,6 @@ startrot = 129.086
 endrot = 129.086
 startpos = Vector3( 25554.9, -1, 8074.65 )
 endpos = Vector3( 25397.3, -1, 7880.6 )
-otherLength = 250.0
-Outlength = 250.0
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt4ConnectorConnector3" parent="Rails" instance=ExtResource( 4 )]
@@ -6408,9 +5412,6 @@ startrot = -140.914
 endrot = -140.914
 startpos = Vector3( 25339.3, 3.8147e-06, 8274.97 )
 endpos = Vector3( 25253.9, 3.8147e-06, 8344.32 )
-otherLength = 110.0
-Outlength = 110.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP6Connector2Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6423,9 +5424,6 @@ startrot = -140.914
 endrot = -127.955
 startpos = Vector3( 25367.4, 3.8147e-06, 8246.26 )
 endpos = Vector3( 25353.3, 3.8147e-06, 8260.62 )
-otherRadius = 84.5736
-otherLength = 19.1286
-Outlength = 20.0632
 isSwitchPart = [ "HainfurtP6", "" ]
 
 [node name="Hainfurt4ConnectorConnector3Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6438,9 +5436,6 @@ startrot = -127.955
 endrot = -140.914
 startpos = Vector3( 25353.3, 3.8147e-06, 8260.62 )
 endpos = Vector3( 25339.2, 3.8147e-06, 8274.98 )
-otherRadius = -93.5736
-otherLength = 21.1642
-Outlength = 20.1464
 isSwitchPart = [ "HainfurtP6Connector2ConnectorConnector", "Hainfurt4ConnectorConnector3Connector2" ]
 
 [node name="HainfurtP4Connector4" parent="Rails" instance=ExtResource( 4 )]
@@ -6453,10 +5448,6 @@ startrot = 39.0864
 endrot = 52.0454
 startpos = Vector3( 25299, 3.8147e-06, 8320.56 )
 endpos = Vector3( 25333.9, 3.8147e-06, 8284.93 )
-otherRadius = 216.566
-otherLength = 48.9822
-Outlength = 31.5672
-automaticTendency = false
 isSwitchPart = [ "HainfurtP4", "" ]
 
 [node name="HainfurtP4Connector4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6469,9 +5460,6 @@ startrot = 52.0453
 endrot = 50.7721
 startpos = Vector3( 25333.9, 3.8147e-06, 8284.93 )
 endpos = Vector3( 25343.6, 3.8147e-06, 8272.77 )
-otherRadius = -704.532
-otherLength = 15.6562
-Outlength = 15.5562
 isSwitchPart = [ "HainfurtP4Connector5", "" ]
 
 [node name="HainfurtP6Connector2ConnectorConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -6484,9 +5472,6 @@ startrot = 50.7721
 endrot = 52.0454
 startpos = Vector3( 25343.6, 3.8147e-06, 8272.77 )
 endpos = Vector3( 25353.3, 3.8147e-06, 8260.61 )
-otherRadius = 695.532
-otherLength = 15.4562
-Outlength = 56.1412
 isSwitchPart = [ "", "Hainfurt4ConnectorConnector3Connector" ]
 
 [node name="HainfurtP4Connector5" parent="Rails" instance=ExtResource( 4 )]
@@ -6499,10 +5484,6 @@ startrot = 52.0453
 endrot = 39.0863
 startpos = Vector3( 25333.9, 3.8147e-06, 8284.93 )
 endpos = Vector3( 25361, 3.8147e-06, 8257.28 )
-otherRadius = -176.047
-otherLength = 39.8178
-Outlength = 38.8
-automaticTendency = false
 isSwitchPart = [ "HainfurtP4Connector4Connector", "HainfurtP4Connector5ConnectorConnector" ]
 
 [node name="HainfurtP4Connector5Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6515,9 +5496,6 @@ startrot = 39.0864
 endrot = 39.1005
 startpos = Vector3( 25361, 3.8147e-06, 8257.29 )
 endpos = Vector3( 25365.6, 3.8147e-06, 8253.52 )
-otherRadius = 24315.7
-otherLength = 5.97439
-Outlength = 330.821
 isSwitchPart = [ "", "" ]
 
 [node name="Hainfurt4Connector" parent="Rails" instance=ExtResource( 4 )]
@@ -6530,9 +5508,6 @@ startrot = 39.1004
 endrot = 39.0864
 startpos = Vector3( 25365.7, 3.8147e-06, 8253.52 )
 endpos = Vector3( 25370.3, 3.8147e-06, 8249.75 )
-otherRadius = -24324.7
-otherLength = 5.97661
-Outlength = 5.9755
 isSwitchPart = [ "", "" ]
 
 [node name="HainfurtP4Connector5ConnectorConnector" parent="Rails" instance=ExtResource( 4 )]
@@ -6545,9 +5520,6 @@ startrot = -140.914
 endrot = -140.922
 startpos = Vector3( 25361, 3.8147e-06, 8257.29 )
 endpos = Vector3( 25350.1, 3.8147e-06, 8266.13 )
-otherRadius = -97662.1
-otherLength = 14.0255
-Outlength = 14.0249
 isSwitchPart = [ "HainfurtP4Connector5", "" ]
 
 [node name="Hainfurt4ConnectorConnector3Connector2" parent="Rails" instance=ExtResource( 4 )]
@@ -6560,9 +5532,6 @@ startrot = -140.922
 endrot = -140.914
 startpos = Vector3( 25350.1, 3.8147e-06, 8266.13 )
 endpos = Vector3( 25339.2, 3.8147e-06, 8274.97 )
-otherRadius = 97653.1
-otherLength = 14.0243
-Outlength = 662.918
 isSwitchPart = [ "", "Hainfurt4ConnectorConnector3Connector" ]
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector12" parent="Rails" instance=ExtResource( 4 )]
@@ -6574,9 +5543,6 @@ startrot = -5.91368
 endrot = -5.91368
 startpos = Vector3( 22864.2, 3.8147e-06, 8469.28 )
 endpos = Vector3( 23013.4, 3.8147e-06, 8484.73 )
-otherLength = 150.0
-Outlength = 150.0
-automaticTendency = false
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P7P2" parent="Rails" instance=ExtResource( 4 )]
@@ -6589,9 +5555,6 @@ startrot = -11.9137
 endrot = -14.4137
 startpos = Vector3( 20060.5, 3.8147e-06, 7879.34 )
 endpos = Vector3( 20547.5, 3.8147e-06, 7993.24 )
-otherRadius = -11468.2
-otherLength = 500.393
-Outlength = 500.196
 parallelRail = "Höllkriegelsreuth14P5P5P7"
 distanceToParallelRail = -4.5
 isSwitchPart = [ "", "" ]
@@ -6606,9 +5569,6 @@ startrot = -14.4137
 endrot = -16.9137
 startpos = Vector3( 20546.4, 3.8147e-06, 7997.6 )
 endpos = Vector3( 21027.8, 3.8147e-06, 8132.58 )
-otherRadius = -11463.7
-otherLength = 500.196
-Outlength = 500.0
 isSwitchPart = [ "", "" ]
 
 [node name="Höllkriegelsreuth14P5P5P10P" parent="Rails" instance=ExtResource( 4 )]
@@ -6621,19 +5581,11 @@ startrot = -14.4137
 endrot = -16.9137
 startpos = Vector3( 20547.5, 3.8147e-06, 7993.24 )
 endpos = Vector3( 21029.1, 3.8147e-06, 8128.28 )
-otherRadius = -11468.2
-otherLength = 500.393
-Outlength = 500.196
 parallelRail = "Höllkriegelsreuth14P5P5P10"
 distanceToParallelRail = -4.5
 isSwitchPart = [ "", "" ]
 
 [node name="Buildings" type="Spatial" parent="."]
-
-[node name="grass" type="MeshInstance" parent="Buildings"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23374.5, -0.5, 3340.79 )
-mesh = ExtResource( 32 )
-material/0 = ExtResource( 26 )
 
 [node name="Flora" type="Spatial" parent="."]
 
@@ -6645,3 +5597,5 @@ shadow_color = Color( 0.682353, 0.682353, 0.682353, 1 )
 
 [node name="jSaveModule" parent="." instance=ExtResource( 1 )]
 save_path = "res://Worlds/Hainfurt/Hainfurt.save"
+
+[node name="jSaveModuleScenarios" parent="." instance=ExtResource( 1 )]

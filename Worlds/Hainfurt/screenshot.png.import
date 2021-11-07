@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/screenshot.png-a88903e8da70b10210613f3de3714331.stex"
+path="res://.import/screenshot.png-5d104ba5e2f732bc614b6fc5dd558022.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Worlds/Hainfurt/screenshot.png"
-dest_files=[ "res://.import/screenshot.png-a88903e8da70b10210613f3de3714331.stex" ]
+source_file="res://Mods/hainfurt/Worlds/Hainfurt/screenshot.png"
+dest_files=[ "res://.import/screenshot.png-5d104ba5e2f732bc614b6fc5dd558022.stex" ]
 
 [params]
 

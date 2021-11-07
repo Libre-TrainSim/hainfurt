@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_siemenswerke.ogg-10b93456b3bce4dcfe74205f2398d49c.oggstr"
+path="res://.import/next_station_siemenswerke.ogg-f22967b6a3fba89711335765d215b6ac.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_siemenswerke.ogg"
-dest_files=[ "res://.import/next_station_siemenswerke.ogg-10b93456b3bce4dcfe74205f2398d49c.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_siemenswerke.ogg"
+dest_files=[ "res://.import/next_station_siemenswerke.ogg-f22967b6a3fba89711335765d215b6ac.oggstr" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/next_station_harras.ogg-c4b37591135e005fea12e81417ea802c.oggstr"
+path="res://.import/next_station_harras.ogg-e4d737d94d27de611b9b964f0fe80cab.oggstr"
 
 [deps]
 
-source_file="res://Resources/Hainfurt/Sounds/next_station_harras.ogg"
-dest_files=[ "res://.import/next_station_harras.ogg-c4b37591135e005fea12e81417ea802c.oggstr" ]
+source_file="res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg"
+dest_files=[ "res://.import/next_station_harras.ogg-e4d737d94d27de611b9b964f0fe80cab.oggstr" ]
 
 [params]
 

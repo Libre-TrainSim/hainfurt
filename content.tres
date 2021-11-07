@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/mod_content.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+unique_name = "libre_train_sim_hainfurt"
+display_name = "Hainfurt"
+version_major = 0
+version_minor = 9
+version_patch = 0
+depends_on = [  ]
+environment_folders = [  ]
+material_folders = [  ]
+music_folders = [  ]
+object_folders = [  ]
+persons_folders = [  ]
+rail_type_folders = [  ]
+signal_type_folders = [  ]
+sound_folders = [ "res://Mods/hainfurt/Resources/Hainfurt/Sounds" ]
+texture_folders = [  ]
+trains = [  ]
+worlds = [ "res://Mods/hainfurt/Worlds/Hainfurt/Hainfurt.tscn" ]
