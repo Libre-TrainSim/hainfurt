@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-unique_name = "libre_train_sim_hainfurt"
+unique_name = "hainfurt"
 display_name = "Hainfurt"
 version_major = 0
 version_minor = 9

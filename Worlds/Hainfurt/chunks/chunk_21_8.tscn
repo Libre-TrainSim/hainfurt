@@ -1,0 +1,1059 @@
+[gd_scene load_steps=68 format=2]
+
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=1]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=2]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Objects/Office1.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Resources/Objects/SpecialGround.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Objects/platform_light_1.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Resources/Objects/house2.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Resources/Materials/Blue_Plastic.tres" type="Material" id=15]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=16]
+[ext_resource path="res://Resources/Materials/Wall_Blue.tres" type="Material" id=17]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/Metal_Black.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Materials/RoofDark.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=21]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=22]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=23]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=24]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=31]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=32]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=33]
+[ext_resource path="res://Resources/Materials/Wall_Orange.tres" type="Material" id=34]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=35]
+[ext_resource path="res://Resources/Materials/Wall_Green.tres" type="Material" id=36]
+[ext_resource path="res://Resources/Materials/Wall_Grey.tres" type="Material" id=37]
+[ext_resource path="res://Resources/Objects/house6.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Resources/Objects/office2.obj" type="ArrayMesh" id=39]
+
+[sub_resource type="MultiMesh" id=1]
+transform_format = 1
+mesh = ExtResource( 38 )
+
+[sub_resource type="MultiMesh" id=2]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=3]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=4]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=5]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=6]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=7]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=8]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=9]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=10]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=11]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=12]
+transform_format = 1
+mesh = ExtResource( 38 )
+
+[sub_resource type="MultiMesh" id=13]
+transform_format = 1
+mesh = ExtResource( 39 )
+
+[sub_resource type="MultiMesh" id=14]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=15]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=16]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=17]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=18]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=19]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=20]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=21]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=22]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=23]
+transform_format = 1
+mesh = ExtResource( 38 )
+
+[sub_resource type="MultiMesh" id=24]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=25]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=26]
+transform_format = 1
+mesh = ExtResource( 38 )
+
+[sub_resource type="MultiMesh" id=27]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=28]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[node name="Chunk" type="Spatial"]
+script = ExtResource( 3 )
+is_empty = false
+chunk_position = Vector3( 21, 0, 8 )
+rails = [ "Höllkriegelsreuth14P5P5P8", "Höllkriegelsreuth14P5P5P8P", "Höllkriegelsreuth14P5P5P8P2", "Höllkriegelsreuth14P5P5P8P2P" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Höllkriegelsreuth14P5P5P8 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 1 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 700.0
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 36 ), ExtResource( 2 ), ExtResource( 25 ), ExtResource( 32 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8 Offices" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 2 )
+script = ExtResource( 4 )
+description = "Offices"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 700.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 15 ), ExtResource( 25 ), ExtResource( 2 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 35.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8 Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21315.1, 3.8147e-06, 8218.79 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 3 )
+script = ExtResource( 4 )
+description = "Platform_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21315.1, 3.8147e-06, 8218.79 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 4 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 31 ), ExtResource( 33 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 360.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 5 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 700.0
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 1 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8 SoundWall_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 6 )
+script = ExtResource( 4 )
+description = "SoundWall_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 295.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8 SoundWall_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21310.4, 3.8147e-06, 8217.37 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 7 )
+script = ExtResource( 4 )
+description = "SoundWall_duplicate_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 295.0
+length = 115.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.2
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8 SoundWall_duplicate_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21420.7, 3.8147e-06, 8249.86 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 8 )
+script = ExtResource( 4 )
+description = "SoundWall_duplicate_duplicate_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 410.0
+length = 289.92
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8 SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 9 )
+script = ExtResource( 4 )
+description = "SpecialGround"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 700.0
+objectPath = ""
+materials = [ ExtResource( 16 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 75.0
+height = -0.2
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21027.8, 3.8147e-06, 8132.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 10 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 0.0
+length = 700.0
+objectPath = ""
+materials = [ ExtResource( 29 ), null ]
+sides = 2
+spawnRate = 0.8
+rows = 1
+distanceLength = 15.0
+distanceRows = 10.0
+shift = 16.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 107409
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8 trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21315.1, 3.8147e-06, 8218.79 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 11 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Höllkriegelsreuth14P5P5P8"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 32 ), ExtResource( 27 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21029.1, 3.8147e-06, 8128.28 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 12 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 0.0
+length = 699.921
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 36 ), ExtResource( 2 ), ExtResource( 25 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P Offices" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21038.7, 3.8147e-06, 8131.19 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 13 )
+script = ExtResource( 4 )
+description = "Offices"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 10.0
+length = 689.92
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 32 ), ExtResource( 37 ), ExtResource( 25 ), ExtResource( 19 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 80.0
+distanceRows = 40.0
+shift = 20.0
+height = 0.0
+rotationObjects = 10.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21316.4, 3.8147e-06, 8214.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 14 )
+script = ExtResource( 4 )
+description = "Platform_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21316.4, 3.8147e-06, 8214.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 15 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 31 ), ExtResource( 33 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21029.1, 3.8147e-06, 8128.28 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 16 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 0.0
+length = 699.921
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 1 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21029.1, 3.8147e-06, 8128.28 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 17 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 0.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P SoundWall_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21306.9, 3.8147e-06, 8211.65 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 18 )
+script = ExtResource( 4 )
+description = "SoundWall_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 290.0
+length = 120.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P SoundWall_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21417.2, 3.8147e-06, 8244.15 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 19 )
+script = ExtResource( 4 )
+description = "SoundWall_duplicate_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 405.0
+length = 294.92
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21029.1, 3.8147e-06, 8128.28 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 20 )
+script = ExtResource( 4 )
+description = "SpecialGround"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 0.0
+length = 699.921
+objectPath = ""
+materials = [ ExtResource( 16 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 55.0
+height = -0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21316.4, 3.8147e-06, 8214.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 21 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Höllkriegelsreuth14P5P5P8P"
+on_rail_position = 300.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 32 ), ExtResource( 27 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P2 Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21710.1, 3.8147e-06, 8328.77 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 22 )
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2"
+on_rail_position = 10.0
+length = 390.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 3
+distanceLength = 40.0
+distanceRows = 40.0
+shift = 20.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P2 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21710.1, 3.8147e-06, 8328.77 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 23 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2"
+on_rail_position = 10.0
+length = 390.0
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 36 ), ExtResource( 2 ), ExtResource( 25 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21700.5, 3.8147e-06, 8326.05 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 24 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2"
+on_rail_position = 0.0
+length = 400.0
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 1 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21700.5, 3.8147e-06, 8326.05 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 25 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2"
+on_rail_position = 0.0
+length = 400.0
+objectPath = ""
+materials = [ ExtResource( 17 ), ExtResource( 26 ), ExtResource( 16 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P2P Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21708.9, 3.8147e-06, 8333.1 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 26 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P"
+on_rail_position = 10.0
+length = 390.79
+objectPath = ""
+materials = [ ExtResource( 28 ), ExtResource( 36 ), ExtResource( 2 ), ExtResource( 25 ), ExtResource( 32 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P5P5P8P2P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21699.3, 3.8147e-06, 8330.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 27 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P"
+on_rail_position = 0.0
+length = 400.785
+objectPath = ""
+materials = [ ExtResource( 16 ), ExtResource( 18 ), ExtResource( 1 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Höllkriegelsreuth14P5P5P8P2P Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21699.3, 3.8147e-06, 8330.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 28 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Höllkriegelsreuth14P5P5P8P2P"
+on_rail_position = 0.0
+length = 400.785
+objectPath = ""
+materials = [ ExtResource( 30 ), null ]
+sides = 2
+spawnRate = 0.7
+rows = 10
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/world_config.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+release_date = {
+"day": 6.0,
+"month": 8.0,
+"year": 2021.0
+}
+author = "Jean"
+track_description = "Fictive suburban track between Wolfsfurt and Hainfurt"
+thumbnail_path = "res://Mods/hainfurt/Worlds/Hainfurt/screenshot.png"
+scenarios = [ "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Buchenhain - Hainfurt.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Buchenhain - Hainfurt (Duplicate).tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Buchenhain - Hainfurth.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Buchenhain - Wolfsfurt .tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Buchenhain - Wolfsfurt  (Duplicate).tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Hainfurt - Buchenhain.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Hainfurt - Buchenhain - Wolfsfurt.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Wolfsfurt - Buchenhain.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Wolfsfurt - Buchenhain (Duplicate).tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/S1: Wolfsfurt - Buchenhain - Hainfurt.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/Testing.tres", "user://editor/hainfurt/Worlds/Hainfurt/scenarios/Wolfsfurt - Buchenhain - Hainfurt.tres" ]
+notes = ""

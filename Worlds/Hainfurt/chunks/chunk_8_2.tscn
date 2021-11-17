@@ -1,0 +1,826 @@
+[gd_scene load_steps=45 format=2]
+
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=1]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=2]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Resources/Objects/house1.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=11]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=12]
+[ext_resource path="res://Resources/Materials/Wall_Blue_Light.tres" type="Material" id=13]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=14]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=15]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=16]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=17]
+[ext_resource path="res://Resources/Materials/EasyTree3.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Materials/Roof.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=21]
+[ext_resource path="res://Resources/Materials/Wall_Red.tres" type="Material" id=22]
+
+[sub_resource type="MultiMesh" id=1]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=2]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=3]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=4]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=5]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=6]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=7]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=8]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=9]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=10]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=11]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=12]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=13]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=14]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=15]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=16]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=17]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=18]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=19]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=20]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=21]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=22]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[node name="Chunk" type="Spatial"]
+script = ExtResource( 3 )
+is_empty = false
+chunk_position = Vector3( 8, 0, 2 )
+rails = [ "Ebenhausen3", "Ebenhausen4", "Ebenhausen5", "Ebenhausen6", "Ebenhausen7", "Ebenhausen8", "Icking21" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Ebenhausen3 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 1 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Ebenhausen3"
+on_rail_position = 0.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 3
+distanceLength = 25.0
+distanceRows = 20.0
+shift = 20.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Ebenhausen3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8083.69, 3.8147e-06, 2463.27 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 2 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen3"
+on_rail_position = 50.0
+length = 200.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Ebenhausen3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 3 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Ebenhausen3"
+on_rail_position = 0.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 11 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen3 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 4 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Ebenhausen3"
+on_rail_position = 0.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 2
+spawnRate = 0.6
+rows = 15
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen4 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 5 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen4"
+on_rail_position = 0.0
+length = 263.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen4 RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 6 )
+script = ExtResource( 4 )
+description = "RailVegetation"
+attached_rail = "Ebenhausen4"
+on_rail_position = 0.0
+length = 263.0
+objectPath = ""
+materials = [ ExtResource( 18 ), null ]
+sides = 1
+spawnRate = 0.8
+rows = 1
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 5.0
+height = -3.0
+rotationObjects = 1080.0
+randomLocation = true
+randomLocationFactor = 0.1
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -299552
+wholeRail = true
+
+[node name="Ebenhausen4 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8033.74, 3.8147e-06, 2461.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 7 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Ebenhausen4"
+on_rail_position = 0.0
+length = 263.0
+objectPath = ""
+materials = [ ExtResource( 21 ), null ]
+sides = 1
+spawnRate = 0.15
+rows = 4
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 0.0
+rotationObjects = 360.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -934527
+wholeRail = true
+
+[node name="Ebenhausen5 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8282.54, 3.8147e-06, 2445.57 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 8 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Ebenhausen5"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 3
+distanceLength = 25.0
+distanceRows = 20.0
+shift = 20.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Ebenhausen5 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8282.54, 3.8147e-06, 2445.57 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 9 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen5"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen5 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8282.54, 3.8147e-06, 2445.57 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 10 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Ebenhausen5"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 11 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen5 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8282.54, 3.8147e-06, 2445.57 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 11 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Ebenhausen5"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 2
+spawnRate = 0.6
+rows = 15
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen6 Houses2" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8427.25, 3.8147e-06, 2406.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 12 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Ebenhausen6"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 6
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 100.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8427.25, 3.8147e-06, 2406.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 13 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen6"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen6 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8427.25, 3.8147e-06, 2406.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 14 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Ebenhausen6"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 2
+spawnRate = 0.6
+rows = 15
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen6 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8427.25, 3.8147e-06, 2406.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 15 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Ebenhausen6"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 1
+spawnRate = 0.1
+rows = 8
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 15.0
+height = -2.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen7 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8708.06, 3.8147e-06, 2301.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 16 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Ebenhausen7"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 22 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 6
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 100.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen7 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8708.06, 3.8147e-06, 2301.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 17 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen7"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen7 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8708.06, 3.8147e-06, 2301.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 18 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Ebenhausen7"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 2
+spawnRate = 0.6
+rows = 15
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen7 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8708.06, 3.8147e-06, 2301.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 19 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Ebenhausen7"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 1
+spawnRate = 0.1
+rows = 8
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 15.0
+height = -2.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen8 Houses2" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8998.26, 3.8147e-06, 2315.85 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 20 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Ebenhausen8"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 20 ), ExtResource( 22 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 6
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 100.0
+height = 0.0
+rotationObjects = 45.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen8 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8998.26, 3.8147e-06, 2315.85 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 21 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Ebenhausen8"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 1 ), ExtResource( 15 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen8 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8998.26, 3.8147e-06, 2315.85 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 22 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Ebenhausen8"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 19 ), null ]
+sides = 3
+spawnRate = 0.1
+rows = 7
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 15.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]

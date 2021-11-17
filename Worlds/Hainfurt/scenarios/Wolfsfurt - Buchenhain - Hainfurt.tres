@@ -1,0 +1,1053 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+time = {
+"hour": 12.0,
+"minute": 0.0,
+"second": 30.0
+}
+title = "Wolfsfurt - Buchenhain - Hainfurt"
+description = "You drive the normal S1 from Wolfsfurt to Buchenhain, and have to hold at every station.
+
+Have fun!"
+duration = 17
+train_length = 150.0
+trains = {
+"Player": {
+"DespawnRail": "",
+"Direction": 1,
+"DoorConfiguration": 2,
+"InitialSpeed": 0.0,
+"InitialSpeedLimit": 80.0,
+"PreferredTrain": "JFR1_Red",
+"Route": "Höllkriegelsreuth3 Ebenhausen20 Icking11 RailP12Connector  Harras2PP3P2P3PP Höllkriegelsreuth14P4 Höllkriegelsreuth14P5ConnectorConnector Harras2PP3P2P3PPConnector HainfurtPConnector Harras2PP3P2P3PPP2P Buchenhain2 Höllkriegelsreuth14P5P5P5 Höllkriegelsreuth14P5P5P8P2P2 Höllkriegelsreuth14P5P5P8P2P3P5P Harras2PP3P2P3PP2 Harras2PP3P2P3PConnector HainfurtP2P3 HainfurtP2P5 HainfurtP2P7",
+"SpawnTime": [ -1.0, 0.0, 0.0 ],
+"StartRail": "RailP",
+"StartRailPosition": 200.0,
+"Stations": {
+"approachAnnouncePath": [ "", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_silberbach.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_goldensee.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_klingental.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_siemenswerke.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_borsdorf.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_ostkurve.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_pantzisch.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_machern.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_hauptbahnhof.ogg" ],
+"arrivalAnnouncePath": [ "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg", " ", "", "", "", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg", "", "", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg", "", "", "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg", "", "res://Resources/Sounds/platform_endstation.ogg" ],
+"arrivalTime": [ [ 0.0, 0.0, 0.0 ], [ 12.0, 4.0, 40.0 ], [ 12.0, 7.0, 40.0 ], [ 12.0, 12.0, 40.0 ], [ 12.0, 14.0, 40.0 ], [ 12.0, 17.0, 10.0 ], [ 12.0, 19.0, 10.0 ], [ 12.0, 21.0, 10.0 ], [ 12.0, 22.0, 40.0 ], [ 12.0, 24.0, 10.0 ], [ 12.0, 26.0, 0.0 ], [ 12.0, 27.0, 40.0 ], [ 12.0, 29.0, 40.0 ], [ 12.0, 32.0, 0.0 ] ],
+"departureAnnouncePath": [ "res://Resources/Sounds/platform_departure.ogg", "", "", "", "", "res://Resources/Sounds/platform_departure.ogg", "", "", "res://Resources/Sounds/platform_departure.ogg", "", "", "res://Resources/Sounds/platform_departure.ogg", "", "" ],
+"departureTime": [ [ 12.0, 1.0, 0.0 ], [ 12.0, 5.0, 0.0 ], [ 12.0, 8.0, 0.0 ], [ 12.0, 13.0, 0.0 ], [ 12.0, 15.0, 0.0 ], [ 12.0, 17.0, 30.0 ], [ 12.0, 19.0, 30.0 ], [ 12.0, 21.0, 30.0 ], [ 12.0, 23.0, 0.0 ], [ 12.0, 24.0, 30.0 ], [ 12.0, 26.0, 20.0 ], [ 12.0, 28.0, 0.0 ], [ 12.0, 30.0, 0.0 ], [ 12.0, 32.0, 10.0 ] ],
+"haltTime": [ 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 5.0 ],
+"leavingPersons": [ 10.0, 10.0, 10.0, 10.0, 10.0, 50.0, 10.0, 10.0, 60.0, 10.0, 10.0, 20.0, 30.0, 100.0 ],
+"nodeName": [ "Wolfsfurt2", "Silberbach", "Goldensee", "Klingental", "Siemenswerke", "Buchenhain", "BuchenhainSiedlung", "Borsdorf", "Ostkurve", "Mockau", "Pantzisch", "Machern", "Harras", "Hainfurt_2" ],
+"stationName": [ "Wolfsfurt", "Silberbach", "Goldensee", "Klingental", "Siemenswerke", "Buchenhain", "Buchenhain Siedlung", "Borsdorf", "Hainfurt Ostkurve", "Mockau", "Pantzisch", "Machern", "Harras", "Hainfurt Hauptbahnhof" ],
+"stopType": [ 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3 ],
+"waitingPersons": [ 100.0, 40.0, 40.0, 90.0, 40.0, 100.0, 40.0, 40.0, 80.0, 40.0, 40.0, 100.0, 80.0, 20.0 ]
+}
+},
+"npc1": {
+"DespawnRail": "RailP17P4",
+"Direction": 0,
+"DoorConfiguration": 0,
+"InitialSpeed": 80.0,
+"InitialSpeedLimit": 80.0,
+"PreferredTrain": "",
+"Route": "RailP3 RailP14 RailP17P3",
+"SpawnTime": [ 12.0, 0.0, 35.0 ],
+"StartRail": "RailP4",
+"StartRailPosition": 20.0,
+"Stations": {
+"approachAnnouncePath": [ "" ],
+"arrivalAnnouncePath": [ "" ],
+"arrivalTime": [ [ 0.0, 0.0, 0.0 ] ],
+"departureAnnouncePath": [ "" ],
+"departureTime": [ [ 0.0, 0.0, 0.0 ] ],
+"haltTime": [ 100.0 ],
+"leavingPersons": [ 50.0 ],
+"nodeName": [ "Wolfsfurt1R" ],
+"stationName": [ "-" ],
+"stopType": [ 1 ],
+"waitingPersons": [ 100.0 ]
+}
+},
+"npc2": {
+"DespawnRail": "Icking9",
+"Direction": 0,
+"DoorConfiguration": 0,
+"InitialSpeed": 80.0,
+"InitialSpeedLimit": 80.0,
+"PreferredTrain": "",
+"Route": "Ebenhausen2",
+"SpawnTime": [ 12.0, 7.0, 45.0 ],
+"StartRail": "Ebenhausen5",
+"StartRailPosition": 0.0,
+"Stations": {
+"approachAnnouncePath": [ "" ],
+"arrivalAnnouncePath": [ "" ],
+"arrivalTime": [ [ 0.0, 0.0, 0.0 ] ],
+"departureAnnouncePath": [ "" ],
+"departureTime": [ [ 0.0, 0.0, 0.0 ] ],
+"haltTime": [ 15.0 ],
+"leavingPersons": [ 50.0 ],
+"nodeName": [ "GoldenseeR" ],
+"stationName": [ "-" ],
+"stopType": [ 1 ],
+"waitingPersons": [ 100.0 ]
+}
+},
+"npc3": {
+"DespawnRail": "Buchenhain3",
+"Direction": 0,
+"DoorConfiguration": 0,
+"InitialSpeed": 120.0,
+"InitialSpeedLimit": 120.0,
+"PreferredTrain": "",
+"Route": "Höllkriegelsreuth12 Höllkriegelsreuth10 ",
+"SpawnTime": [ 12.0, 16.0, 45.0 ],
+"StartRail": "Höllkriegelsreuth14PP",
+"StartRailPosition": 0.0,
+"Stations": {
+"approachAnnouncePath": [ "" ],
+"arrivalAnnouncePath": [ "" ],
+"arrivalTime": [ [ 0.0, 0.0, 0.0 ] ],
+"departureAnnouncePath": [ "" ],
+"departureTime": [ [ 0.0, 0.0, 0.0 ] ],
+"haltTime": [ 15.0 ],
+"leavingPersons": [ 50.0 ],
+"nodeName": [ "Buchenhain2R" ],
+"stationName": [ "-" ],
+"stopType": [ 1 ],
+"waitingPersons": [ 100.0 ]
+}
+}
+}
+signals = {
+"Borsdorf": null,
+"BorsdorfR": null,
+"Buchenhain": null,
+"Buchenhain2R": null,
+"BuchenhainSiedlung": null,
+"BuchenhainSiedlungR": null,
+"ContactPoint": {
+"affectTime": 0,
+"affectedSignal": "Signal8",
+"bySpecificTrain": "",
+"newSpeed": -1,
+"newStatus": 1
+},
+"ContactPoint2": {
+"affectTime": 0,
+"affectedSignal": "Signal_Goldensee_A1",
+"bySpecificTrain": "",
+"newSpeed": -1,
+"newStatus": 1
+},
+"ContactPoint3": {
+"affectTime": 0,
+"affectedSignal": "Signal17",
+"bySpecificTrain": "",
+"newSpeed": -1,
+"newStatus": 1
+},
+"ContactPoint4": {
+"affectTime": 4,
+"affectedSignal": "Signal2",
+"bySpecificTrain": "Player",
+"newSpeed": -1,
+"newStatus": 1
+},
+"Goldensee": null,
+"GoldenseeR": null,
+"Hainfurt_2": null,
+"Hainfurt_2R": null,
+"Harras": null,
+"HarrasR": null,
+"Klingental": null,
+"KlingentalR": null,
+"Klingental_A1": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Klingental_E": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 1
+},
+"Machern": null,
+"MachernR": null,
+"Mockau": null,
+"MockauR": null,
+"Ostkurve": null,
+"OstkurveR": null,
+"Pantzisch": null,
+"PantzischR": null,
+"Siemenswerke": null,
+"SiemenswerkeR": null,
+"Signal": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal10": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal11": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal12": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal13": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal14": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal15": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal16": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 60,
+"status": 1
+},
+"Signal17": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal18": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal19": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal2": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 1,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 0
+},
+"Signal20": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal21": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal22": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal23": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal24": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 1
+},
+"Signal25": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 1
+},
+"Signal26": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal27": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal28": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal29": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal3": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 17,
+"set_pass_at_s": 30,
+"speed": 160,
+"status": 0
+},
+"Signal30": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 60,
+"status": 1
+},
+"Signal31": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal32": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 100,
+"status": 1
+},
+"Signal33": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal34": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal35": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal36": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal37": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 140,
+"status": 1
+},
+"Signal38": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal39": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 120,
+"status": 1
+},
+"Signal4": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal40": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 35,
+"set_pass_at_s": 15,
+"speed": 80,
+"status": 1
+},
+"Signal41": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal42": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal43": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal44": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal45": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal46": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal47": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal48": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal49": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal5": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal50": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal51": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 120,
+"status": 1
+},
+"Signal52": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal53": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal54": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal55": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal56": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal57": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 100,
+"status": 1
+},
+"Signal58": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal59": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal6": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal60": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal61": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal62": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal63": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal64": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal65": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal66": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal67": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal68": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal69": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal7": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal70": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal71": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal72": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal73": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal74": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal75": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal76": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal77": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal78": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal79": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal8": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal80": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 60,
+"status": 1
+},
+"Signal81": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal82": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal83": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal84": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal85": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal86": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal87": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 100,
+"status": 1
+},
+"Signal88": {
+"is_block_signal": true,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal89": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal9": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal90": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 24,
+"set_pass_at_s": 25,
+"speed": 40,
+"status": 0
+},
+"Signal91": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"SignalSTK3": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"SignalSTK4": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"SignalSTK5": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 110,
+"status": 1
+},
+"SignalSTK6": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"SignalSTK7": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 10,
+"set_pass_at_s": 0,
+"speed": 90,
+"status": 0
+},
+"SignalSTK8": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"SignalSilberbach_A1": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 4,
+"set_pass_at_s": 30,
+"speed": 120,
+"status": 0
+},
+"SignalSilberbach_E1": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 60,
+"status": 1
+},
+"Signal_BuchenhainA1": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 17,
+"set_pass_at_s": 25,
+"speed": 120,
+"status": 0
+},
+"Signal_BuchenhainE": {
+"is_block_signal": false,
+"set_pass_at_h": 12,
+"set_pass_at_m": 15,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 0
+},
+"Signal_Goldensee_A1": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 7,
+"set_pass_at_s": 50,
+"speed": -1,
+"status": 0
+},
+"Signal_Goldensee_E": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 1
+},
+"Signal_STK1": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": -1,
+"status": 1
+},
+"Signal_STK2": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 0,
+"set_pass_at_s": 0,
+"speed": 100,
+"status": 1
+},
+"Signal_Wolfsfurt_A3": {
+"is_block_signal": false,
+"set_pass_at_h": 25,
+"set_pass_at_m": 1,
+"set_pass_at_s": 0,
+"speed": 80,
+"status": 0
+},
+"Silberbach": null,
+"SilberbachR": null,
+"SpeedLimit": null,
+"SpeedLimit10": null,
+"SpeedLimit2": null,
+"SpeedLimit3": null,
+"SpeedLimit4": null,
+"SpeedLimit5": null,
+"SpeedLimit6": null,
+"SpeedLimit7": null,
+"SpeedLimit8": null,
+"SpeedLimit9": null,
+"Wolfsfurt": null,
+"Wolfsfurt1R": null,
+"Wolfsfurt2": null,
+"Wolfsfurt2R": null
+}

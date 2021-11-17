@@ -1,0 +1,797 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=1]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=2]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Objects/platform_light_1.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Objects/house1.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=13]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=14]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=15]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=16]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=17]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=21]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=22]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=23]
+[ext_resource path="res://Resources/Materials/Roof.tres" type="Material" id=24]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/Wall_Orange.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/Wall_Red.tres" type="Material" id=29]
+
+[sub_resource type="MultiMesh" id=1]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=2]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=3]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=4]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=5]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=6]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=7]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=8]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=9]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=10]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=11]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=12]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=13]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=14]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=15]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=16]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=17]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=18]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=19]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=20]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=21]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[node name="Chunk" type="Spatial"]
+script = ExtResource( 3 )
+is_empty = false
+chunk_position = Vector3( 3, 0, 0 )
+rails = [ "RailP11", "RailP12", "RailP13", "Icking2", "RailP12Connector", "RailP14PConnector", "Icking2P" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Icking2 Platform2" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3827.16, 3.8147e-06, 176.506 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 1 )
+script = ExtResource( 4 )
+description = "Platform"
+attached_rail = "Icking2"
+on_rail_position = 200.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3831.38, 3.8147e-06, 179.193 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 2 )
+script = ExtResource( 4 )
+description = "Platform_duplicate"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3831.38, 3.8147e-06, 179.193 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 3 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 25 ), ExtResource( 27 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 360.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3653.27, 3.8147e-06, 77.8702 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 4 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Icking2"
+on_rail_position = 0.0
+length = 498.88
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3653.27, 3.8147e-06, 77.8702 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 5 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Icking2"
+on_rail_position = 0.0
+length = 498.875
+objectPath = ""
+materials = [ ExtResource( 23 ) ]
+sides = 2
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Icking2 trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3831.38, 3.8147e-06, 179.193 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 6 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 21 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3655.29, 3.8147e-06, 73.8497 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 7 )
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 500.0
+objectPath = ""
+materials = [ ExtResource( 24 ), ExtResource( 28 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 2 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 4
+distanceLength = 25.0
+distanceRows = 30.0
+shift = 15.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3829.19, 3.8147e-06, 172.466 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 8 )
+script = ExtResource( 4 )
+description = "Platform"
+attached_rail = "Icking2P"
+on_rail_position = 200.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3833.41, 3.8147e-06, 175.152 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 9 )
+script = ExtResource( 4 )
+description = "Platform_duplicate"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 360.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3833.41, 3.8147e-06, 175.152 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 10 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 25 ), ExtResource( 27 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 540.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3655.29, 3.8147e-06, 73.8497 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 11 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 500.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Icking2P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3655.29, 3.8147e-06, 73.8497 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 12 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 190.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 20 ), ExtResource( 13 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3833.41, 3.8147e-06, 175.152 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 13 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 21 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 360.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP11 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3191.05, 3.8147e-06, 135.854 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 14 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "RailP11"
+on_rail_position = 0.0
+length = 400.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP11 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3191.05, 3.8147e-06, 135.854 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 15 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "RailP11"
+on_rail_position = 0.0
+length = 400.0
+objectPath = ""
+materials = [ ExtResource( 23 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP12 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3521.27, 3.8147e-06, 6.47038 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 16 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "RailP12"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP12 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3521.27, 3.8147e-06, 6.47038 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 17 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "RailP12"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 23 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP13 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3565.95, 3.8147e-06, 28.9302 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 18 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "RailP13"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP13 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3610.62, 3.8147e-06, 51.39 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 19 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "RailP13"
+on_rail_position = 50.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 20 ), ExtResource( 13 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP13 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3565.95, 3.8147e-06, 28.9302 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 20 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "RailP13"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 23 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP14PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3609.61, 3.8147e-06, 53.4002 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 21 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "RailP14PConnector"
+on_rail_position = 0.0
+length = 50.0674
+objectPath = ""
+materials = [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 18 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]

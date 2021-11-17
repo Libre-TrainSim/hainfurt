@@ -1,0 +1,7059 @@
+[gd_scene load_steps=258 format=2]
+
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=1]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=2]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Objects/Pole1_double.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Resources/Objects/Platform-1_no_railings.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Objects/platform_cube.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Resources/Objects/office5.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Resources/Objects/SpecialGround.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Resources/Objects/platform_light_1.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Resources/Objects/house2.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Resources/Objects/Pole1_small.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Resources/Objects/Platform-1_double.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Resources/Objects/Bench.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Resources/Objects/DestinationSignFromUp_outside.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Resources/Objects/platform_light_1_double.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Resources/Objects/Platform_double_roofing.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Resources/Materials/DestinationSign.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/Wall_Blue.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/Metal_Black.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/RoofDark.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=31]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=32]
+[ext_resource path="res://Resources/Materials/LEDLamp_Bright.tres" type="Material" id=33]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=34]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=35]
+[ext_resource path="res://Resources/Materials/Wood_Dark.tres" type="Material" id=36]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=37]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=38]
+[ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=39]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=40]
+[ext_resource path="res://Resources/Materials/EasyTree3.tres" type="Material" id=41]
+[ext_resource path="res://Resources/Materials/Roof.tres" type="Material" id=42]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=43]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=44]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=45]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=46]
+[ext_resource path="res://Resources/Materials/Wall_Red.tres" type="Material" id=47]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=48]
+[ext_resource path="res://Resources/Materials/Wall_Green.tres" type="Material" id=49]
+[ext_resource path="res://Resources/Materials/Wall_Green_Dark.tres" type="Material" id=50]
+[ext_resource path="res://Resources/Materials/Red_Plastic.tres" type="Material" id=51]
+[ext_resource path="res://Resources/Materials/Wall_Grey.tres" type="Material" id=52]
+[ext_resource path="res://Resources/Materials/CorrugatedSteel.tres" type="Material" id=53]
+[ext_resource path="res://Resources/Materials/GlassHalfInvisible.tres" type="Material" id=54]
+[ext_resource path="res://Resources/Materials/Metal_Grey_Light.tres" type="Material" id=55]
+[ext_resource path="res://Resources/Materials/Stoneplates_Red.tres" type="Material" id=56]
+[ext_resource path="res://Resources/Objects/office4.obj" type="ArrayMesh" id=57]
+[ext_resource path="res://Resources/Objects/house6.obj" type="ArrayMesh" id=58]
+[ext_resource path="res://Resources/Objects/empty.obj" type="ArrayMesh" id=59]
+[ext_resource path="res://Resources/Objects/Poles_1_20m.obj" type="ArrayMesh" id=60]
+[ext_resource path="res://Resources/Objects/bumper.obj" type="ArrayMesh" id=61]
+[ext_resource path="res://Resources/Objects/Poles_1_14m.obj" type="ArrayMesh" id=62]
+[ext_resource path="res://Resources/Objects/office2.obj" type="ArrayMesh" id=63]
+
+[sub_resource type="MultiMesh" id=1]
+transform_format = 1
+mesh = ExtResource( 62 )
+
+[sub_resource type="MultiMesh" id=2]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=3]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=4]
+transform_format = 1
+mesh = ExtResource( 60 )
+
+[sub_resource type="MultiMesh" id=5]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=6]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=7]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=8]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=9]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=10]
+transform_format = 1
+mesh = ExtResource( 15 )
+
+[sub_resource type="MultiMesh" id=11]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=12]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=13]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=14]
+transform_format = 1
+mesh = ExtResource( 18 )
+
+[sub_resource type="MultiMesh" id=15]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=16]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=17]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=18]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=19]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=20]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=21]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=22]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=23]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=24]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=25]
+transform_format = 1
+mesh = ExtResource( 15 )
+
+[sub_resource type="MultiMesh" id=26]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=27]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=28]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=29]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=30]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=31]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=32]
+transform_format = 1
+mesh = ExtResource( 18 )
+
+[sub_resource type="MultiMesh" id=33]
+transform_format = 1
+mesh = ExtResource( 7 )
+
+[sub_resource type="MultiMesh" id=34]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=35]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=36]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=37]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=38]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=39]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=40]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=41]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=42]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=43]
+transform_format = 1
+mesh = ExtResource( 63 )
+
+[sub_resource type="MultiMesh" id=44]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=45]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=46]
+transform_format = 1
+mesh = ExtResource( 15 )
+
+[sub_resource type="MultiMesh" id=47]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=48]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=49]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=50]
+transform_format = 1
+mesh = ExtResource( 18 )
+
+[sub_resource type="MultiMesh" id=51]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=52]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=53]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=54]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=55]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=56]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=57]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=58]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=59]
+transform_format = 1
+mesh = ExtResource( 15 )
+
+[sub_resource type="MultiMesh" id=60]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=61]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=62]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=63]
+transform_format = 1
+mesh = ExtResource( 18 )
+
+[sub_resource type="MultiMesh" id=64]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=65]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=66]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=67]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=68]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=69]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=70]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=71]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=72]
+transform_format = 1
+mesh = ExtResource( 15 )
+
+[sub_resource type="MultiMesh" id=73]
+transform_format = 1
+mesh = ExtResource( 61 )
+
+[sub_resource type="MultiMesh" id=74]
+transform_format = 1
+mesh = ExtResource( 14 )
+
+[sub_resource type="MultiMesh" id=75]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=76]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=77]
+transform_format = 1
+mesh = ExtResource( 16 )
+
+[sub_resource type="MultiMesh" id=78]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=79]
+transform_format = 1
+mesh = ExtResource( 9 )
+
+[sub_resource type="MultiMesh" id=80]
+transform_format = 1
+mesh = ExtResource( 18 )
+
+[sub_resource type="MultiMesh" id=81]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=82]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=83]
+transform_format = 1
+mesh = ExtResource( 10 )
+
+[sub_resource type="MultiMesh" id=84]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=85]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=86]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=87]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=88]
+transform_format = 1
+mesh = ExtResource( 58 )
+
+[sub_resource type="MultiMesh" id=89]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=90]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=91]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=92]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=93]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=94]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=95]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=96]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=97]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=98]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=99]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=100]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=101]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=102]
+transform_format = 1
+mesh = ExtResource( 61 )
+
+[sub_resource type="MultiMesh" id=103]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=104]
+transform_format = 1
+mesh = ExtResource( 63 )
+
+[sub_resource type="MultiMesh" id=105]
+transform_format = 1
+mesh = ExtResource( 22 )
+
+[sub_resource type="MultiMesh" id=106]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=107]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=108]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=109]
+transform_format = 1
+mesh = ExtResource( 61 )
+
+[sub_resource type="MultiMesh" id=110]
+transform_format = 1
+mesh = ExtResource( 22 )
+
+[sub_resource type="MultiMesh" id=111]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=112]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=113]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=114]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=115]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=116]
+transform_format = 1
+mesh = ExtResource( 23 )
+
+[sub_resource type="MultiMesh" id=117]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=118]
+transform_format = 1
+mesh = ExtResource( 8 )
+
+[sub_resource type="MultiMesh" id=119]
+transform_format = 1
+mesh = ExtResource( 62 )
+
+[sub_resource type="MultiMesh" id=120]
+transform_format = 1
+mesh = ExtResource( 60 )
+
+[sub_resource type="MultiMesh" id=121]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=122]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=123]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=124]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=125]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=126]
+transform_format = 1
+mesh = ExtResource( 63 )
+
+[sub_resource type="MultiMesh" id=127]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=128]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=129]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=130]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=131]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=132]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=133]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=134]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=135]
+transform_format = 1
+mesh = ExtResource( 63 )
+
+[sub_resource type="MultiMesh" id=136]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=137]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=138]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=139]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=140]
+transform_format = 1
+mesh = ExtResource( 61 )
+
+[sub_resource type="MultiMesh" id=141]
+transform_format = 1
+mesh = ExtResource( 20 )
+
+[sub_resource type="MultiMesh" id=142]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=143]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=144]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=145]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=146]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=147]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=148]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=149]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=150]
+transform_format = 1
+mesh = ExtResource( 13 )
+
+[sub_resource type="MultiMesh" id=151]
+transform_format = 1
+mesh = ExtResource( 60 )
+
+[sub_resource type="MultiMesh" id=152]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=153]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=154]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=155]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=156]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=157]
+transform_format = 1
+mesh = ExtResource( 24 )
+
+[sub_resource type="MultiMesh" id=158]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=159]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=160]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=161]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=162]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=163]
+transform_format = 1
+mesh = ExtResource( 6 )
+
+[sub_resource type="MultiMesh" id=164]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=165]
+transform_format = 1
+mesh = ExtResource( 61 )
+
+[sub_resource type="MultiMesh" id=166]
+transform_format = 1
+mesh = ExtResource( 22 )
+
+[sub_resource type="MultiMesh" id=167]
+transform_format = 1
+mesh = ExtResource( 11 )
+
+[sub_resource type="MultiMesh" id=168]
+transform_format = 1
+mesh = ExtResource( 19 )
+
+[sub_resource type="MultiMesh" id=169]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=170]
+transform_format = 1
+mesh = ExtResource( 58 )
+
+[sub_resource type="MultiMesh" id=171]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=172]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=173]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=174]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=175]
+transform_format = 1
+mesh = ExtResource( 58 )
+
+[sub_resource type="MultiMesh" id=176]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=177]
+transform_format = 1
+mesh = ExtResource( 60 )
+
+[sub_resource type="MultiMesh" id=178]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=179]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=180]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=181]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=182]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=183]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=184]
+transform_format = 1
+mesh = ExtResource( 12 )
+
+[sub_resource type="MultiMesh" id=185]
+transform_format = 1
+mesh = ExtResource( 57 )
+
+[sub_resource type="MultiMesh" id=186]
+transform_format = 1
+mesh = ExtResource( 60 )
+
+[sub_resource type="MultiMesh" id=187]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=188]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=189]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=190]
+transform_format = 1
+mesh = ExtResource( 59 )
+
+[sub_resource type="MultiMesh" id=191]
+transform_format = 1
+mesh = ExtResource( 21 )
+
+[sub_resource type="MultiMesh" id=192]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[sub_resource type="MultiMesh" id=193]
+transform_format = 1
+mesh = ExtResource( 62 )
+
+[sub_resource type="MultiMesh" id=194]
+transform_format = 1
+mesh = ExtResource( 17 )
+
+[node name="Chunk" type="Spatial"]
+script = ExtResource( 3 )
+is_empty = false
+chunk_position = Vector3( 25, 0, 8 )
+rails = [ "Hainfurt", "HainfurtP", "HainfurtPP", "HainfurtPPP", "HainfurtPPPP", "HainfurtP2", "HainfurtP2P", "HainfurtP2P2", "HainfurtP2P3", "HainfurtP3", "Harras2PP3P2P3PPConnector", "HainfurtP3Connector", "HainfurtPP2", "HainfurtPPP2", "HainfurtPPP2Connector", "HainfurtPP2Connector", "HainfurtP4", "HainfurtPP2ConnectorConnector", "HainfurtP4Connector", "HainfurtPP3", "HainfurtPConnector", "HainfurtPP3Connector", "Harras2PP3P2P3PConnector", "HainfurtP2P2Connector", "HainfurtP2P4", "HainfurtP2P5", "HainfurtP2P6", "Hainfurt2", "HainfurtP5", "HainfurtP6", "HainfurtP2Connector", "Hainfurt3Connector", "HainfurtConnector", "HainfurtP6Connector", "Hainfurt4", "HainfurtP2P7", "HainfurtP2P8", "Hainfurt5", "Hainfurt5P", "Hainfurt5PP", "Hainfurt5PPP", "Hainfurt5PPPP", "Hainfurt5P2", "Hainfurt5P2P", "Hainfurt6P", "HainfurtP4Connector2", "Hainfurt6PConnector", "Hainfurt4ConnectorConnector", "Hainfurt6PConnector2", "HainfurtP4Connector3", "Hainfurt5PPConnector", "HainfurtPP3Connector2", "Hainfurt5PPPConnector", "HainfurtPP3Connector3", "Hainfurt5PPPPConnector", "Hainfurt5PPPPP", "Hainfurt5PPPPPP", "HainfurtPPP3", "Hainfurt5PPPPP2", "HainfurtPP3Connector3Connector", "Hainfurt5PPPPP2Connector", "HainfurtPP4", "HainfurtPPP4", "HainfurtPPP4Connector", "Hainfurt5PPPPPPConnector", "HainfurtPP2Connector2", "HainfurtPPP4ConnectorConnector", "HainfurtPPP4Connector2", "HainfurtPPP4Connector3", "HainfurtPPP4ConnectorP", "Hainfurt5PPPPPPConnectorP", "Hainfurt5PPPPPPConnectorPConnector", "HainfurtPPP4Connector3Connector", "Hainfurt7", "Harras2PP3P2P3PPPConnector", "Hainfurt7Connector", "Harras2PP3P2P3PP2", "Harras2PP3P2P3PP2Connector", "HainfurtP2Connector2", "Harras2PP3P2P3PPP2", "Harras2PP3P2P3PPP2P", "Hainfurt6", "Hainfurt4Connector2", "Hainfurt5P2Connector", "HainfurtP6Connector2", "Hainfurt5P2PConnector", "HainfurtP6Connector3", "Hainfurt5P2Connector2", "HainfurtP2P9", "HainfurtP2P10", "HainfurtP2P11", "HainfurtPPPP2", "HainfurtPPPP3Connector", "HainfurtPPPConnector", "HainfurtPPPP3", "HainfurtPPPP3P", "HainfurtPPPP3PP", "HainfurtPP5", "HainfurtP7", "HainfurtPPPP3PPP", "Hainfurt5P3", "HainfurtP2P2Connector2", "Hainfurt5P2PConnector2", "HainfurtP2P12", "Hainfurt4ConnectorConnector3", "HainfurtP6Connector2Connector", "Hainfurt4ConnectorConnector3Connector", "HainfurtP4Connector4", "HainfurtP4Connector4Connector", "HainfurtP6Connector2ConnectorConnector", "HainfurtP4Connector5", "HainfurtP4Connector5Connector", "Hainfurt4Connector", "HainfurtP4Connector5ConnectorConnector", "Hainfurt4ConnectorConnector3Connector2" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Hainfurt2 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25176.2, 3.8147e-06, 8407.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 1 )
+script = ExtResource( 4 )
+description = "Poles_14m"
+attached_rail = "Hainfurt2"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 5.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 809539
+wholeRail = false
+
+[node name="Hainfurt2 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25184, 3.8147e-06, 8401.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 2 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Hainfurt2"
+on_rail_position = 10.0
+length = 70.0
+objectPath = ""
+materials = [ ExtResource( 43 ), null ]
+sides = 2
+spawnRate = 0.3
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.1
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 14247
+wholeRail = false
+
+[node name="Hainfurt2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25184, 3.8147e-06, 8401.08 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 3 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt2"
+on_rail_position = 10.0
+length = 90.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = false
+
+[node name="Hainfurt4 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25401.3, 3.8147e-06, 8224.53 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 4 )
+script = ExtResource( 4 )
+description = "Poles_20m"
+attached_rail = "Hainfurt4"
+on_rail_position = 40.0
+length = 10.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 8.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt4Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25373.5, 3.8147e-06, 8247.21 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 5 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt4Connector"
+on_rail_position = 10.0
+length = 40.33
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = false
+
+[node name="Hainfurt4Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25409.1, 3.8147e-06, 8218.23 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 6 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt4Connector2"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt4ConnectorConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25370.3, 3.8147e-06, 8249.75 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 7 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt4ConnectorConnector"
+on_rail_position = 0.0
+length = 37.59
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = false
+
+[node name="Hainfurt4ConnectorConnector3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25339.3, 3.8147e-06, 8274.97 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 8 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt4ConnectorConnector3"
+on_rail_position = 0.0
+length = 110.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="Hainfurt4ConnectorConnector3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25308.3, 3.8147e-06, 8300.19 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 9 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt4ConnectorConnector3"
+on_rail_position = 40.0
+length = 70.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -4.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -590168
+wholeRail = false
+
+[node name="Hainfurt5 Bench" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25494.5, 3.8147e-06, 8148.88 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 10 )
+script = ExtResource( 4 )
+description = "Bench"
+attached_rail = "Hainfurt5"
+on_rail_position = 10.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 31 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5 DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25490.6, 3.8147e-06, 8152.03 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 11 )
+script = ExtResource( 4 )
+description = "DoublePlatform"
+attached_rail = "Hainfurt5"
+on_rail_position = 5.0
+length = 295.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25513.9, 3.8147e-06, 8133.11 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 12 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5"
+on_rail_position = 35.0
+length = 265.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5 InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.7, 3.8147e-06, 8129.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 13 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25490.6, 3.8147e-06, 8152.03 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 14 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Hainfurt5"
+on_rail_position = 5.0
+length = 30.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25486.7, 3.8147e-06, 8155.18 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 15 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt5"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5 trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25499.9, 3.8147e-06, 8144.46 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 16 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Hainfurt5"
+on_rail_position = 17.0
+length = 283.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25520.5, 3.8147e-06, 8133.45 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 17 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5P"
+on_rail_position = 40.0
+length = 260.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25489.5, 3.8147e-06, 8158.67 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 18 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5P"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2 InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25510.1, 3.8147e-06, 8120.65 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 19 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5P2"
+on_rail_position = 40.0
+length = 260.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5P2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25479.1, 3.8147e-06, 8145.87 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 20 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5P2"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25444.1, 3.8147e-06, 8182.05 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 21 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5P2Connector"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2Connector Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25450.3, 3.8147e-06, 8174.23 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 22 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Hainfurt5P2Connector"
+on_rail_position = 10.0
+length = 40.48
+objectPath = ""
+materials = [ ExtResource( 43 ), null ]
+sides = 2
+spawnRate = 0.3
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.1
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 14247
+wholeRail = false
+
+[node name="Hainfurt5P2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25444.1, 3.8147e-06, 8182.05 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 23 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5P2Connector"
+on_rail_position = 0.0
+length = 50.4784
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = true
+
+[node name="Hainfurt5P2Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25423.3, 3.8147e-06, 8196.06 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 24 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5P2Connector2"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P Bench" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25484.1, 3.8147e-06, 8136.07 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 25 )
+script = ExtResource( 4 )
+description = "Bench"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 10.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 31 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25480.2, 3.8147e-06, 8139.22 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 26 )
+script = ExtResource( 4 )
+description = "DoublePlatform"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 5.0
+length = 105.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 5.7
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25487.9, 3.8147e-06, 8132.91 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 27 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 15.0
+length = 285.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5P2P InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25507.3, 3.8147e-06, 8117.15 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 28 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5P2P Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25522.9, 3.8147e-06, 8104.54 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 29 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 60.0
+length = 240.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 53 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 40.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25476.3, 3.8147e-06, 8142.37 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 30 )
+script = ExtResource( 4 )
+description = "Office4_duplicate"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -20.0
+rotationObjects = 60.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2P Office4_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25584.2, 3.8147e-06, 8054.73 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 31 )
+script = ExtResource( 4 )
+description = "Office4_duplicate_duplicate"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 139.0
+length = 161.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 53 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 50.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25480.2, 3.8147e-06, 8139.22 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 32 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 5.0
+length = 5.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P Platform_no_railing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25565.6, 3.8147e-06, 8069.86 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 33 )
+script = ExtResource( 4 )
+description = "Platform_no_railing"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 115.0
+length = 185.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.2
+height = 0.6
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25476.3, 3.8147e-06, 8142.37 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 34 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2P SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25476.3, 3.8147e-06, 8142.37 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 35 )
+script = ExtResource( 4 )
+description = "SpecialGround"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 95.0
+height = -0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2P SpecialGround_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25557.8, 3.8147e-06, 8076.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 36 )
+script = ExtResource( 4 )
+description = "SpecialGround_duplicate"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 105.0
+length = 195.0
+objectPath = ""
+materials = [ ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 55.0
+height = -0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25565.6, 3.8147e-06, 8069.86 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 37 )
+script = ExtResource( 4 )
+description = "platform_cube"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 115.0
+length = 185.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 7.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2P trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25489.5, 3.8147e-06, 8131.65 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 38 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Hainfurt5P2P"
+on_rail_position = 17.0
+length = 283.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P2PConnector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25420, 3.8147e-06, 8191.99 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 39 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5P2PConnector2"
+on_rail_position = 0.0
+length = 75.0852
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P2PConnector2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25420, 3.8147e-06, 8191.99 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 40 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5P2PConnector2"
+on_rail_position = 0.0
+length = 75.0852
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -590168
+wholeRail = true
+
+[node name="Hainfurt5P3 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25762.9, -0.999996, 8003.3 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 41 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5P3"
+on_rail_position = 217.0
+length = 83.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5P3 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25899.7, -0.999996, 8171.74 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 42 )
+script = ExtResource( 4 )
+description = "Office4_duplicate"
+attached_rail = "Hainfurt5P3"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 56 ), ExtResource( 37 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 3
+distanceLength = 80.0
+distanceRows = 40.0
+shift = 120.0
+height = 0.0
+rotationObjects = 110.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5P3 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25899.7, -0.999996, 8171.74 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 43 )
+script = ExtResource( 4 )
+description = "Offices_duplicate"
+attached_rail = "Hainfurt5P3"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 48 ), ExtResource( 37 ), ExtResource( 29 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 40.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 86340
+wholeRail = true
+
+[node name="Hainfurt5P3 SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25899.7, -0.999996, 8171.74 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 44 )
+script = ExtResource( 4 )
+description = "SpecialGround"
+attached_rail = "Hainfurt5P3"
+on_rail_position = 0.0
+length = 500.0
+objectPath = ""
+materials = [ ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 45.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5P3 platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25761.3, -0.999996, 8001.36 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 45 )
+script = ExtResource( 4 )
+description = "platform_cube"
+attached_rail = "Hainfurt5P3"
+on_rail_position = 219.5
+length = 80.5
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25504.9, 3.8147e-06, 8161.69 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 46 )
+script = ExtResource( 4 )
+description = "Bench"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 10.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 31 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25501, 3.8147e-06, 8164.84 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 47 )
+script = ExtResource( 4 )
+description = "DoublePlatform"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 5.0
+length = 295.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25524.3, 3.8147e-06, 8145.92 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 48 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 35.0
+length = 265.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5PP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25528.1, 3.8147e-06, 8142.77 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 49 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5PP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25501, 3.8147e-06, 8164.84 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 50 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 5.0
+length = 30.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25497.1, 3.8147e-06, 8167.99 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 51 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PP trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25510.3, 3.8147e-06, 8157.27 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 52 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Hainfurt5PP"
+on_rail_position = 17.0
+length = 283.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25436.8, 3.8147e-06, 8212.75 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 53 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPConnector"
+on_rail_position = 0.0
+length = 75.0953
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25530.9, 3.8147e-06, 8146.26 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 54 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5PPP"
+on_rail_position = 40.0
+length = 260.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5PPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25499.9, 3.8147e-06, 8171.48 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 55 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPConnector Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25439.7, 3.8147e-06, 8216.24 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 56 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt5PPPConnector"
+on_rail_position = 0.0
+length = 75.0954
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPConnector Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25447.9, 3.8147e-06, 8210.58 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 57 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Hainfurt5PPPConnector"
+on_rail_position = 10.0
+length = 65.1
+objectPath = ""
+materials = [ ExtResource( 43 ), null ]
+sides = 2
+spawnRate = 0.3
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.1
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 14247
+wholeRail = false
+
+[node name="Hainfurt5PPPConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25456.1, 3.8147e-06, 8204.83 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 58 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5PPPConnector"
+on_rail_position = 20.0
+length = 55.1
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = false
+
+[node name="Hainfurt5PPPP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25515.3, 3.8147e-06, 8174.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 59 )
+script = ExtResource( 4 )
+description = "Bench"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 10.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 31 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25511.4, 3.8147e-06, 8177.64 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 60 )
+script = ExtResource( 4 )
+description = "DoublePlatform"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 5.0
+length = 295.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25534.7, 3.8147e-06, 8158.72 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 61 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 35.0
+length = 265.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5PPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25538.5, 3.8147e-06, 8155.57 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 62 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5PPPP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25511.4, 3.8147e-06, 8177.64 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 63 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 5.0
+length = 30.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25507.5, 3.8147e-06, 8180.79 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 64 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPP trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25520.7, 3.8147e-06, 8170.07 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 65 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Hainfurt5PPPP"
+on_rail_position = 17.0
+length = 283.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25443.5, 3.8147e-06, 8220.9 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 66 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPConnector"
+on_rail_position = 0.0
+length = 75.7601
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25541.4, 3.8147e-06, 8159.07 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 67 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5PPPPP"
+on_rail_position = 40.0
+length = 260.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5PPPPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25510.4, 3.8147e-06, 8184.29 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 68 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPP2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25474.9, 3.8147e-06, 8206.52 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 69 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPP2"
+on_rail_position = 42.0
+length = 0.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPP2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25510.4, 3.8147e-06, 8184.29 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 70 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5PPPPP2"
+on_rail_position = 0.0
+length = 42.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = true
+
+[node name="Hainfurt5PPPPP2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25459.2, 3.8147e-06, 8213.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 71 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5PPPPP2Connector"
+on_rail_position = 0.0
+length = 17.2586
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = true
+
+[node name="Hainfurt5PPPPPP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25525.7, 3.8147e-06, 8187.29 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 72 )
+script = ExtResource( 4 )
+description = "Bench"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 10.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 31 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25748.4, 3.8147e-06, 8006.34 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 73 )
+script = ExtResource( 4 )
+description = "Bumper"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 297.0
+length = 0.0
+objectPath = ""
+materials = [ ExtResource( 2 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 55 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -10393
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25521.8, 3.8147e-06, 8190.45 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 74 )
+script = ExtResource( 4 )
+description = "DoublePlatform"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 5.0
+length = 295.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25545.1, 3.8147e-06, 8171.53 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 75 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 35.0
+length = 265.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 76 )
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 350.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 120.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25548.9, 3.8147e-06, 8168.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 77 )
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 78 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 350.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 38 ), ExtResource( 37 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 160.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPP Office5" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25548.9, 3.8147e-06, 8168.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 79 )
+script = ExtResource( 4 )
+description = "Office5"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 40.0
+length = 310.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 51 ), ExtResource( 40 ), ExtResource( 54 ), ExtResource( 29 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 70.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25521.8, 3.8147e-06, 8190.45 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 80 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 5.0
+length = 30.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 81 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 350.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 379364
+wholeRail = true
+
+[node name="Hainfurt5PPPPPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 82 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 9.5
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 83 )
+script = ExtResource( 4 )
+description = "SpecialGround"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 350.0
+objectPath = ""
+materials = [ ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 4.0
+distanceRows = 0.0
+shift = 95.0
+height = -0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25517.9, 3.8147e-06, 8193.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 84 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.2
+rows = 4
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 14.5
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -298968
+wholeRail = false
+
+[node name="Hainfurt5PPPPPP trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25531.1, 3.8147e-06, 8182.88 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 85 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "Hainfurt5PPPPPP"
+on_rail_position = 17.0
+length = 283.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 6.0
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25450.6, 3.8147e-06, 8229.63 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 86 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPPPConnector"
+on_rail_position = 0.0
+length = 76.86
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPPConnectorP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25451.9, 3.8147e-06, 8233.93 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 87 )
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 0.0
+length = 78.5764
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 20.0
+distanceRows = 40.0
+shift = 120.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPPConnectorP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25479.8, 3.8147e-06, 8223 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 88 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 30.0
+length = 48.58
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 47 ), ExtResource( 2 ), ExtResource( 37 ), ExtResource( 45 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 3
+distanceLength = 40.0
+distanceRows = 30.0
+shift = 40.0
+height = 0.0
+rotationObjects = 100.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPPConnectorP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25451.9, 3.8147e-06, 8233.93 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 89 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 0.0
+length = 78.5764
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 38 ), ExtResource( 37 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 160.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPPConnectorP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25451.9, 3.8147e-06, 8233.93 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 90 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 0.0
+length = 76.86
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt5PPPPPPConnectorP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25451.9, 3.8147e-06, 8233.93 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 91 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 0.0
+length = 78.5764
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt5PPPPPPConnectorP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25451.9, 3.8147e-06, 8233.93 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 92 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt5PPPPPPConnectorP"
+on_rail_position = 0.0
+length = 78.5764
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -298968
+wholeRail = true
+
+[node name="Hainfurt6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25447.9, 3.8147e-06, 8186.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 93 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt6"
+on_rail_position = 50.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Hainfurt6P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25431.3, 3.8147e-06, 8205.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 94 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Hainfurt6P"
+on_rail_position = 0.0
+length = 75.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Hainfurt6P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25431.3, 3.8147e-06, 8205.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 95 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Hainfurt6P"
+on_rail_position = 0.0
+length = 75.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = true
+
+[node name="HainfurtP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25143.7, 3.8147e-06, 8446.66 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 96 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtP"
+on_rail_position = 0.0
+length = 90.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = false
+
+[node name="HainfurtP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25143.7, 3.8147e-06, 8446.66 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 97 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = false
+
+[node name="HainfurtP2P Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25161.8, 3.8147e-06, 8405.53 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 98 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtP2P"
+on_rail_position = 40.0
+length = 60.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 49 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 80.0
+height = 0.0
+rotationObjects = 30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25130.8, 3.8147e-06, 8430.75 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 99 )
+script = ExtResource( 4 )
+description = "Office4_duplicate"
+attached_rail = "HainfurtP2P"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25130.8, 3.8147e-06, 8430.75 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 100 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25130.8, 3.8147e-06, 8430.75 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 101 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = true
+
+[node name="HainfurtP2P10 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25543.4, 3.8147e-06, 8073.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 102 )
+script = ExtResource( 4 )
+description = "Bumper"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 297.0
+length = 3.0
+objectPath = ""
+materials = [ ExtResource( 2 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 55 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -10393
+wholeRail = false
+
+[node name="HainfurtP2P10 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25312.9, 3.8147e-06, 8260.43 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 103 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P10 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25375, 3.8147e-06, 8209.99 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 104 )
+script = ExtResource( 4 )
+description = "Offices_duplicate"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 80.0
+length = 200.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 29 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 40.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 86340
+wholeRail = false
+
+[node name="HainfurtP2P10 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25356.4, 3.8147e-06, 8225.12 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 105 )
+script = ExtResource( 4 )
+description = "Platform"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 56.0
+length = 144.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.2
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P10 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25356.4, 3.8147e-06, 8225.12 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 106 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 56.0
+length = 144.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P10 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25351.7, 3.8147e-06, 8228.91 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 107 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 50.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P10 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25312.9, 3.8147e-06, 8260.43 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 108 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P10"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 4.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = false
+
+[node name="HainfurtP2P11 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25537.3, 3.8147e-06, 8066.91 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 109 )
+script = ExtResource( 4 )
+description = "Bumper"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 247.0
+length = 3.0
+objectPath = ""
+materials = [ ExtResource( 2 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 55 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -10393
+wholeRail = false
+
+[node name="HainfurtP2P11 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25349.5, 3.8147e-06, 8219.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 110 )
+script = ExtResource( 4 )
+description = "Platform"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 5.0
+length = 245.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P11 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25349.5, 3.8147e-06, 8219.49 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 111 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 5.0
+length = 245.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P11 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25345.6, 3.8147e-06, 8222.64 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 112 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 0.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P11 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25345.6, 3.8147e-06, 8222.64 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 113 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 0.0
+length = 250.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P11 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25345.6, 3.8147e-06, 8222.64 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 114 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 0.0
+length = 170.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 8.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = false
+
+[node name="HainfurtP2P11 trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25358.8, 3.8147e-06, 8211.92 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 115 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "HainfurtP2P11"
+on_rail_position = 17.0
+length = 233.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P12 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25547.3, -1, 8065.34 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 116 )
+script = ExtResource( 4 )
+description = "DoublePlatformRooofing"
+attached_rail = "HainfurtP2P12"
+on_rail_position = 12.0
+length = 8.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 36 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 134932
+wholeRail = false
+
+[node name="HainfurtP2P12 platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25551.7, -1, 8070.77 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 117 )
+script = ExtResource( 4 )
+description = "platform_cube"
+attached_rail = "HainfurtP2P12"
+on_rail_position = 5.0
+length = 20.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 1.2
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P12 platform_cube_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25551.7, -1, 8070.77 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 118 )
+script = ExtResource( 4 )
+description = "platform_cube_duplicate"
+attached_rail = "HainfurtP2P12"
+on_rail_position = 5.0
+length = 20.0
+objectPath = ""
+materials = [ ExtResource( 34 ), ExtResource( 32 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 2.2
+height = 1.01
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P2 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25208.4, 3.8147e-06, 8367.7 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 119 )
+script = ExtResource( 4 )
+description = "Poles_14m"
+attached_rail = "HainfurtP2P2"
+on_rail_position = 0.0
+length = 200.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 809539
+wholeRail = false
+
+[node name="HainfurtP2P2 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25332.6, 3.8147e-06, 8266.82 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 120 )
+script = ExtResource( 4 )
+description = "Poles_20m"
+attached_rail = "HainfurtP2P2"
+on_rail_position = 160.0
+length = 15.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 809539
+wholeRail = false
+
+[node name="HainfurtP2P2Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25363.6, 3.8147e-06, 8241.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 121 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P2Connector2"
+on_rail_position = 0.0
+length = 75.0852
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P2Connector2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25363.6, 3.8147e-06, 8241.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 122 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P2Connector2"
+on_rail_position = 0.0
+length = 75.0852
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -590168
+wholeRail = true
+
+[node name="HainfurtP2P3 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25208.4, 3.8147e-06, 8367.7 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 123 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtP2P3"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25208.4, 3.8147e-06, 8367.7 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 124 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P3"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25208.4, 3.8147e-06, 8367.7 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 125 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P3"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = true
+
+[node name="HainfurtP2P4 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25265.1, 3.8147e-06, 8311.36 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 126 )
+script = ExtResource( 4 )
+description = "Offices_duplicate"
+attached_rail = "HainfurtP2P4"
+on_rail_position = 30.0
+length = 20.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 29 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 40.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 86340
+wholeRail = false
+
+[node name="HainfurtP2P5 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25244.3, 3.8147e-06, 8332.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 127 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtP2P5"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P5 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25244.3, 3.8147e-06, 8332.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 128 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P5"
+on_rail_position = 0.0
+length = 45.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P5 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25244.3, 3.8147e-06, 8332.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 129 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P5"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P5 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25244.3, 3.8147e-06, 8332.96 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 130 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P5"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = true
+
+[node name="HainfurtP2P6 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25277, 3.8147e-06, 8295.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 131 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtP2P6"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -30.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25277, 3.8147e-06, 8295.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 132 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P6"
+on_rail_position = 0.0
+length = 45.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P6 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25277, 3.8147e-06, 8295.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 133 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P6"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P6 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25277, 3.8147e-06, 8295.17 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 134 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P6"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = true
+
+[node name="HainfurtP2P7 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25312.9, 3.8147e-06, 8260.43 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 135 )
+script = ExtResource( 4 )
+description = "Offices_duplicate"
+attached_rail = "HainfurtP2P7"
+on_rail_position = 50.0
+length = 0.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 29 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 70.0
+distanceRows = 40.0
+shift = 40.0
+height = 1.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 86340
+wholeRail = false
+
+[node name="HainfurtP2P7 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25312.9, 3.8147e-06, 8260.43 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 136 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P7"
+on_rail_position = 50.0
+length = 0.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P8 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25309.8, 3.8147e-06, 8257.39 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 137 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P8"
+on_rail_position = 0.0
+length = 45.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP2P8 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25309.8, 3.8147e-06, 8257.39 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 138 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtP2P8"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P8 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25309.8, 3.8147e-06, 8257.39 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 139 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P8"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -565631
+wholeRail = true
+
+[node name="HainfurtP2P9 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25394.3, 3.8147e-06, 8205.53 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 140 )
+script = ExtResource( 4 )
+description = "Bumper"
+attached_rail = "HainfurtP2P9"
+on_rail_position = 147.0
+length = 3.0
+objectPath = ""
+materials = [ ExtResource( 2 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 55 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -10393
+wholeRail = false
+
+[node name="HainfurtP2P9 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25280.2, 3.8147e-06, 8298.21 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 141 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP2P9"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP2P9 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25280.2, 3.8147e-06, 8298.21 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 142 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP2P9"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 4.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -590168
+wholeRail = true
+
+[node name="HainfurtP3Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25179.4, 3.8147e-06, 8411.26 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 143 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP3Connector"
+on_rail_position = 0.0
+length = 50.3323
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 587943
+wholeRail = true
+
+[node name="HainfurtP4 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25299, 3.8147e-06, 8320.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 144 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtP4"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtP4Connector3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25376.6, 3.8147e-06, 8257.52 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 145 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP4Connector3"
+on_rail_position = 0.0
+length = 75.0953
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtP4Connector4 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25299, 3.8147e-06, 8320.56 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 146 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP4Connector4"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 587943
+wholeRail = true
+
+[node name="HainfurtP6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25251, 3.8147e-06, 8340.83 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 147 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP6"
+on_rail_position = 0.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP6 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25251, 3.8147e-06, 8340.83 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 148 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtP6"
+on_rail_position = 0.0
+length = 150.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -719376
+wholeRail = true
+
+[node name="HainfurtP6Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25404.5, 3.8147e-06, 8212.74 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 149 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP6Connector2"
+on_rail_position = 50.0
+length = 25.32
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 587943
+wholeRail = false
+
+[node name="HainfurtP6Connector3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25367.4, 3.8147e-06, 8246.26 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 150 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtP6Connector3"
+on_rail_position = 0.0
+length = 75.125
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 587943
+wholeRail = true
+
+[node name="HainfurtP7 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25104.9, 3.8147e-06, 8478.18 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 151 )
+script = ExtResource( 4 )
+description = "Poles_20m"
+attached_rail = "HainfurtP7"
+on_rail_position = 50.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 7.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtP7 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25143.7, 3.8147e-06, 8446.66 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 152 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtP7"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtP7 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25143.7, 3.8147e-06, 8446.66 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 153 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtP7"
+on_rail_position = 0.0
+length = 80.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -644114
+wholeRail = false
+
+[node name="HainfurtPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25146.6, 3.8147e-06, 8450.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 154 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPP"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPP3Connector2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25379.4, 3.8147e-06, 8261.01 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 155 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPP3Connector2"
+on_rail_position = 0.0
+length = 75.0954
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPP3Connector3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25379.4, 3.8147e-06, 8261.01 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 156 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPP3Connector3"
+on_rail_position = 0.0
+length = 75.7601
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPP3Connector3Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25443.5, 3.8147e-06, 8220.9 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 157 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtPP3Connector3Connector"
+on_rail_position = 0.0
+length = 17.2586
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -540823
+wholeRail = true
+
+[node name="HainfurtPP5 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25146.6, 3.8147e-06, 8450.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 158 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPP5"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25150.3, 3.8147e-06, 8454.81 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 159 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPPP2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25150.3, 3.8147e-06, 8454.81 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 160 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP2"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPPP3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25228, 3.8147e-06, 8391.76 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 161 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP3"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPPP4 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25305.6, 3.8147e-06, 8328.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 162 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP4"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 448029
+wholeRail = true
+
+[node name="HainfurtPPP4Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25383.2, 3.8147e-06, 8265.67 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 163 )
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "HainfurtPPP4Connector"
+on_rail_position = 0.0
+length = 76.8575
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 1 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPP4Connector2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25450.6, 3.8147e-06, 8229.63 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 164 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP4Connector2"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 576259
+wholeRail = true
+
+[node name="HainfurtPPP4Connector3 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25750.9, 3.8147e-06, 8010 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 165 )
+script = ExtResource( 4 )
+description = "Bumper"
+attached_rail = "HainfurtPPP4Connector3"
+on_rail_position = 274.0
+length = 6.0
+objectPath = ""
+materials = [ ExtResource( 2 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 55 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -10393
+wholeRail = false
+
+[node name="HainfurtPPP4Connector3 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25542.1, 3.8147e-06, 8179.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 166 )
+script = ExtResource( 4 )
+description = "Platform"
+attached_rail = "HainfurtPPP4Connector3"
+on_rail_position = 5.0
+length = 275.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.2
+height = 0.6
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPP4Connector3 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25542.1, 3.8147e-06, 8179.6 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 167 )
+script = ExtResource( 4 )
+description = "Platform_light_double"
+attached_rail = "HainfurtPPP4Connector3"
+on_rail_position = 5.0
+length = 275.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 44 ), ExtResource( 46 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPP4Connector3 trash" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25551.4, 3.8147e-06, 8172.03 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 168 )
+script = ExtResource( 4 )
+description = "trash"
+attached_rail = "HainfurtPPP4Connector3"
+on_rail_position = 17.0
+length = 263.0
+objectPath = ""
+materials = [ ExtResource( 45 ), ExtResource( 39 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 180.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPP4ConnectorP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25386, 3.8147e-06, 8269.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 169 )
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "HainfurtPPP4ConnectorP"
+on_rail_position = 0.0
+length = 75.1386
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 120.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPP4ConnectorP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25402.1, 3.8147e-06, 8257.36 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 170 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "HainfurtPPP4ConnectorP"
+on_rail_position = 20.0
+length = 55.14
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 47 ), ExtResource( 2 ), ExtResource( 37 ), ExtResource( 45 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 3
+distanceLength = 40.0
+distanceRows = 30.0
+shift = 40.0
+height = 0.0
+rotationObjects = 100.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPP4ConnectorP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25386, 3.8147e-06, 8269.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 171 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPP4ConnectorP"
+on_rail_position = 0.0
+length = 75.1386
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 576259
+wholeRail = true
+
+[node name="HainfurtPPP4ConnectorP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25386, 3.8147e-06, 8269.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 172 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtPPP4ConnectorP"
+on_rail_position = 0.0
+length = 75.1386
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPP4ConnectorP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25386, 3.8147e-06, 8269.16 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 173 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtPPP4ConnectorP"
+on_rail_position = 0.0
+length = 75.1386
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -298968
+wholeRail = true
+
+[node name="HainfurtPPPP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 174 )
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 30 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 120.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 175 )
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 40 ), ExtResource( 47 ), ExtResource( 2 ), ExtResource( 37 ), ExtResource( 45 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 40.0
+distanceRows = 40.0
+shift = 40.0
+height = 0.0
+rotationObjects = 100.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 176 )
+script = ExtResource( 4 )
+description = "Office4"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 38 ), ExtResource( 37 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 160.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 177 )
+script = ExtResource( 4 )
+description = "Poles_20m"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 290.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 6.7
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 178 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 179 )
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "HainfurtPPPP"
+on_rail_position = 0.0
+length = 300.0
+objectPath = ""
+materials = [ ExtResource( 41 ), null ]
+sides = 2
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -298968
+wholeRail = true
+
+[node name="HainfurtPPPP2 Houses2_Backround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25106.6, 3.8147e-06, 8496.14 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 180 )
+script = ExtResource( 4 )
+description = "Houses2_Backround"
+attached_rail = "HainfurtPPPP2"
+on_rail_position = 60.0
+length = 40.0
+objectPath = ""
+materials = [ ExtResource( 42 ), ExtResource( 38 ), ExtResource( 50 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 40.0
+distanceRows = 40.0
+shift = 20.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPPP2 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25114.4, 3.8147e-06, 8489.83 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 181 )
+script = ExtResource( 4 )
+description = "Office4_duplicate"
+attached_rail = "HainfurtPPPP2"
+on_rail_position = 50.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 100.0
+height = -30.0
+rotationObjects = 60.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPPP2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 182 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPPP2"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -657583
+wholeRail = true
+
+[node name="HainfurtPPPP2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25153.2, 3.8147e-06, 8458.31 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 183 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtPPPP2"
+on_rail_position = 0.0
+length = 100.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3 Houses2_Backround" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25075.6, 3.8147e-06, 8521.35 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 184 )
+script = ExtResource( 4 )
+description = "Houses2_Backround"
+attached_rail = "HainfurtPPPP3"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 42 ), ExtResource( 38 ), ExtResource( 50 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 38 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 40.0
+distanceRows = 40.0
+shift = 20.0
+height = 0.0
+rotationObjects = 90.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25037.2, 3.8147e-06, 8553.38 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 185 )
+script = ExtResource( 4 )
+description = "Office4_duplicate"
+attached_rail = "HainfurtPPPP3"
+on_rail_position = 50.0
+length = 950.0
+objectPath = ""
+materials = [ ExtResource( 29 ), ExtResource( 27 ), ExtResource( 37 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 100.0
+height = -30.0
+rotationObjects = 60.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="HainfurtPPPP3 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25075.6, 3.8147e-06, 8521.35 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 186 )
+script = ExtResource( 4 )
+description = "Poles_20m"
+attached_rail = "HainfurtPPPP3"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 7.5
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25075.6, 3.8147e-06, 8521.35 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 187 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtPPPP3"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 40 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25072.7, 3.8147e-06, 8517.86 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 188 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPPP3P"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.1
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25068.9, 3.8147e-06, 8513.2 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 189 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPPP3PP"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.5
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -219549
+wholeRail = true
+
+[node name="HainfurtPPPP3PPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25066.1, 3.8147e-06, 8509.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 190 )
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "HainfurtPPPP3PPP"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.2
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3PPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25066.1, 3.8147e-06, 8509.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 191 )
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "HainfurtPPPP3PPP"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 52 ), ExtResource( 38 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="HainfurtPPPP3PPP Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25066.1, 3.8147e-06, 8509.71 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 192 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "HainfurtPPPP3PPP"
+on_rail_position = 0.0
+length = 1000.0
+objectPath = ""
+materials = [ ExtResource( 43 ), null ]
+sides = 2
+spawnRate = 0.3
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -698613
+wholeRail = true
+
+[node name="Harras2PP3P2P3 Poles_14m_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25065.4, 3.8147e-06, 8476.7 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 193 )
+script = ExtResource( 4 )
+description = "Poles_14m_duplicate"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 320.0
+length = 80.0
+objectPath = ""
+materials = [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 35 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2P3PPP2P Trees" type="MultiMeshInstance" parent="TrackObjects" groups=[
+"TrackObject",
+] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25048.4, 3.8147e-06, 8498.55 )
+use_in_baked_light = true
+lod_max_distance = 100.0
+multimesh = SubResource( 194 )
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Harras2PP3P2P3PPP2P"
+on_rail_position = 0.0
+length = 50.0
+objectPath = ""
+materials = [ ExtResource( 43 ), null ]
+sides = 2
+spawnRate = 0.6
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 8.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -698613
+wholeRail = false
+
+[node name="Buildings" type="Spatial" parent="."]
