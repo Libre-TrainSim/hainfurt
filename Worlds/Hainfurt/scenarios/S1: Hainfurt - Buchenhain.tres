@@ -1,11 +1,47 @@
-[gd_resource type="Resource" load_steps=178 format=2]
+[gd_resource type="Resource" load_steps=204 format=2]
 
 [ext_resource path="res://Data/Scripts/Resources/contact_point_settings.gd" type="Script" id=1]
 [ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=2]
 [ext_resource path="res://Data/Scripts/Resources/signal_settings.gd" type="Script" id=3]
-[ext_resource path="res://Data/Scripts/Resources/route_point_spawn.gd" type="Script" id=4]
 [ext_resource path="res://Data/Scripts/Resources/route_point_station.gd" type="Script" id=5]
 [ext_resource path="res://Data/Scripts/Resources/scenario_route.gd" type="Script" id=6]
+[ext_resource path="res://Data/Scripts/Resources/station_settings.gd" type="Script" id=7]
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=118]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=119]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=128]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=129]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
@@ -47,6 +83,54 @@ new_status = 1
 enable_for_all_trains = false
 specific_train = "Player"
 
+[sub_resource type="Resource" id=115]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=122]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=127]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=142]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=140]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=141]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=116]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=121]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
 [sub_resource type="Resource" id=5]
 script = ExtResource( 3 )
 operation_mode = 2
@@ -60,6 +144,66 @@ operation_mode = 2
 signal_free_time = 90000
 speed = 80
 status = 1
+
+[sub_resource type="Resource" id=138]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=139]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=135]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=136]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=137]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=117]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=120]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )
@@ -803,14 +947,43 @@ signal_free_time = 90060
 speed = 80
 status = 0
 
-[sub_resource type="Resource" id=113]
-script = ExtResource( 4 )
-rail_name = "HainfurtP2P10"
-distance_on_rail = 175.0
-initial_speed = 0.0
-initial_speed_limit = 40
-
 [sub_resource type="Resource" id=114]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=123]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=113]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=126]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=125]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=124]
+script = ExtResource( 7 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=143]
 script = ExtResource( 5 )
 station_node_name = "Hainfurt_2R"
 station_name = "Hainfurt Hauptbahnhof"
@@ -825,7 +998,7 @@ stop_type = 2
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=115]
+[sub_resource type="Resource" id=144]
 script = ExtResource( 5 )
 station_node_name = "HarrasR"
 station_name = "Harras"
@@ -840,7 +1013,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=116]
+[sub_resource type="Resource" id=145]
 script = ExtResource( 5 )
 station_node_name = "MachernR"
 station_name = "Machern"
@@ -855,7 +1028,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=117]
+[sub_resource type="Resource" id=146]
 script = ExtResource( 5 )
 station_node_name = "PantzischR"
 station_name = "Pantzisch"
@@ -870,7 +1043,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=118]
+[sub_resource type="Resource" id=147]
 script = ExtResource( 5 )
 station_node_name = "MockauR"
 station_name = "Mockau"
@@ -885,7 +1058,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=119]
+[sub_resource type="Resource" id=148]
 script = ExtResource( 5 )
 station_node_name = "OstkurveR"
 station_name = "Hainfurt Ostkurve"
@@ -900,7 +1073,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=120]
+[sub_resource type="Resource" id=149]
 script = ExtResource( 5 )
 station_node_name = "BorsdorfR"
 station_name = "Borsdorf"
@@ -915,7 +1088,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=121]
+[sub_resource type="Resource" id=150]
 script = ExtResource( 5 )
 station_node_name = "BuchenhainSiedlungR"
 station_name = "Buchenhain Siedlung"
@@ -930,7 +1103,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=122]
+[sub_resource type="Resource" id=151]
 script = ExtResource( 5 )
 station_node_name = "Buchenhain2R"
 station_name = "Buchenhain"
@@ -945,461 +1118,43 @@ stop_type = 3
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=123]
-script = ExtResource( 6 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 113 ), SubResource( 114 ), SubResource( 115 ), SubResource( 116 ), SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = true
-train_name = "JFR1_Red"
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=124]
-script = ExtResource( 4 )
-rail_name = "Höllkriegelsreuth14P3"
-distance_on_rail = 400.0
-initial_speed = 120.0
-initial_speed_limit = 160
-
-[sub_resource type="Resource" id=125]
-script = ExtResource( 5 )
-station_node_name = "Wolfsfurt1"
-station_name = "Wolfsfurt"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=126]
-script = ExtResource( 5 )
-station_node_name = "Silberbach"
-station_name = "Silberbach"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 49960
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=127]
-script = ExtResource( 5 )
-station_node_name = "Goldensee"
-station_name = "Goldensee"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46600
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=128]
-script = ExtResource( 5 )
-station_node_name = "Klingental"
-station_name = "Klingental"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46480
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=129]
-script = ExtResource( 5 )
-station_node_name = "Siemenswerke"
-station_name = "Siemenswerke"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=130]
-script = ExtResource( 5 )
-station_node_name = "Buchenhain"
-station_name = "Buchenhain"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 2
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=131]
-script = ExtResource( 5 )
-station_node_name = "BuchenhainSiedlung"
-station_name = "Buchenhain Siedlung"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46620
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=132]
-script = ExtResource( 5 )
-station_node_name = "Borsdorf"
-station_name = "Borsdorf"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=133]
-script = ExtResource( 5 )
-station_node_name = "Ostkurve"
-station_name = "Hainfurt Ostkurve"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46690
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=134]
-script = ExtResource( 5 )
-station_node_name = "Mockau"
-station_name = "Mockau"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46690
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=135]
-script = ExtResource( 5 )
-station_node_name = "Pantzisch"
-station_name = "Pantzisch"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46675
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=136]
-script = ExtResource( 5 )
-station_node_name = "Machern"
-station_name = "Machern"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46675
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=137]
-script = ExtResource( 5 )
-station_node_name = "Harras"
-station_name = "Harras"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=138]
-script = ExtResource( 5 )
-station_node_name = "Hainfurt_2"
-station_name = "Hainfurt Hauptbahnhof"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46630
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=139]
-script = ExtResource( 6 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 124 ), SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ), SubResource( 130 ), SubResource( 131 ), SubResource( 132 ), SubResource( 133 ), SubResource( 134 ), SubResource( 135 ), SubResource( 136 ), SubResource( 137 ), SubResource( 138 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = true
-train_name = "JFR1_Red"
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=140]
-script = ExtResource( 4 )
-rail_name = "Höllkriegelsreuth14P5P5P8"
-distance_on_rail = 400.0
-initial_speed = 120.0
-initial_speed_limit = 160
-
-[sub_resource type="Resource" id=141]
-script = ExtResource( 5 )
-station_node_name = "Wolfsfurt1"
-station_name = "Wolfsfurt"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 0
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=142]
-script = ExtResource( 5 )
-station_node_name = "Silberbach"
-station_name = "Silberbach"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 49960
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=143]
-script = ExtResource( 5 )
-station_node_name = "Goldensee"
-station_name = "Goldensee"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46600
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=144]
-script = ExtResource( 5 )
-station_node_name = "Klingental"
-station_name = "Klingental"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46480
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=145]
-script = ExtResource( 5 )
-station_node_name = "Siemenswerke"
-station_name = "Siemenswerke"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=146]
-script = ExtResource( 5 )
-station_node_name = "Buchenhain"
-station_name = "Buchenhain"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 2
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=147]
-script = ExtResource( 5 )
-station_node_name = "BuchenhainSiedlung"
-station_name = "Buchenhain Siedlung"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46620
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=148]
-script = ExtResource( 5 )
-station_node_name = "Borsdorf"
-station_name = "Borsdorf"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=149]
-script = ExtResource( 5 )
-station_node_name = "Ostkurve"
-station_name = "Hainfurt Ostkurve"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46690
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=150]
-script = ExtResource( 5 )
-station_node_name = "Mockau"
-station_name = "Mockau"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46690
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=151]
-script = ExtResource( 5 )
-station_node_name = "Pantzisch"
-station_name = "Pantzisch"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46675
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
 [sub_resource type="Resource" id=152]
-script = ExtResource( 5 )
-station_node_name = "Machern"
-station_name = "Machern"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46675
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
+script = ExtResource( 6 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 143 ), SubResource( 144 ), SubResource( 145 ), SubResource( 146 ), SubResource( 147 ), SubResource( 148 ), SubResource( 149 ), SubResource( 150 ), SubResource( 151 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
 
 [sub_resource type="Resource" id=153]
 script = ExtResource( 5 )
-station_node_name = "Harras"
-station_name = "Harras"
+station_node_name = "Wolfsfurt"
+station_name = "Wolfsfurt"
 approach_sound_path = ""
 arrival_sound_path = ""
 departure_sound_path = ""
-duration_since_last_station = 46660
+duration_since_last_station = 0
 minimum_halt_time = 0
 planned_halt_time = 20
 signal_time = 0
-stop_type = 1
+stop_type = 2
 leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=154]
 script = ExtResource( 5 )
-station_node_name = "Hainfurt_2"
-station_name = "Hainfurt Hauptbahnhof"
+station_node_name = "Silberbach"
+station_name = "Silberbach"
 approach_sound_path = ""
 arrival_sound_path = ""
 departure_sound_path = ""
-duration_since_last_station = 46630
+duration_since_last_station = 49960
 minimum_halt_time = 0
 planned_halt_time = 20
 signal_time = 0
@@ -1408,34 +1163,43 @@ leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=155]
-script = ExtResource( 6 )
-rail_logic_settings = {
-}
-route_points = [ SubResource( 140 ), SubResource( 141 ), SubResource( 142 ), SubResource( 143 ), SubResource( 144 ), SubResource( 145 ), SubResource( 146 ), SubResource( 147 ), SubResource( 148 ), SubResource( 149 ), SubResource( 150 ), SubResource( 151 ), SubResource( 152 ), SubResource( 153 ), SubResource( 154 ) ]
-activate_only_at_specific_routes = false
-specific_routes = [  ]
-is_playable = true
-train_name = ""
-description = ""
-interval = 0
-interval_end = 0
-interval_start = 0
-
-[sub_resource type="Resource" id=156]
-script = ExtResource( 4 )
-rail_name = "Harras2PP3"
-distance_on_rail = 100.0
-initial_speed = 50.0
-initial_speed_limit = 100
-
-[sub_resource type="Resource" id=157]
 script = ExtResource( 5 )
-station_node_name = "Wolfsfurt1"
-station_name = "Wolfsfurt"
+station_node_name = "Goldensee"
+station_name = "Goldensee"
 approach_sound_path = ""
 arrival_sound_path = ""
 departure_sound_path = ""
-duration_since_last_station = 0
+duration_since_last_station = 46600
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=156]
+script = ExtResource( 5 )
+station_node_name = "Klingental"
+station_name = "Klingental"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46480
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=157]
+script = ExtResource( 5 )
+station_node_name = "Siemenswerke"
+station_name = "Siemenswerke"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
 minimum_halt_time = 0
 planned_halt_time = 20
 signal_time = 0
@@ -1445,66 +1209,6 @@ waiting_persons = 100
 
 [sub_resource type="Resource" id=158]
 script = ExtResource( 5 )
-station_node_name = "Silberbach"
-station_name = "Silberbach"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 49960
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=159]
-script = ExtResource( 5 )
-station_node_name = "Goldensee"
-station_name = "Goldensee"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46600
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=160]
-script = ExtResource( 5 )
-station_node_name = "Klingental"
-station_name = "Klingental"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46480
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=161]
-script = ExtResource( 5 )
-station_node_name = "Siemenswerke"
-station_name = "Siemenswerke"
-approach_sound_path = ""
-arrival_sound_path = ""
-departure_sound_path = ""
-duration_since_last_station = 46660
-minimum_halt_time = 0
-planned_halt_time = 20
-signal_time = 0
-stop_type = 1
-leaving_persons = 50
-waiting_persons = 100
-
-[sub_resource type="Resource" id=162]
-script = ExtResource( 5 )
 station_node_name = "Buchenhain"
 station_name = "Buchenhain"
 approach_sound_path = ""
@@ -1514,11 +1218,11 @@ duration_since_last_station = 46660
 minimum_halt_time = 0
 planned_halt_time = 20
 signal_time = 0
-stop_type = 2
+stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=163]
+[sub_resource type="Resource" id=159]
 script = ExtResource( 5 )
 station_node_name = "BuchenhainSiedlung"
 station_name = "Buchenhain Siedlung"
@@ -1533,7 +1237,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=164]
+[sub_resource type="Resource" id=160]
 script = ExtResource( 5 )
 station_node_name = "Borsdorf"
 station_name = "Borsdorf"
@@ -1548,7 +1252,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=165]
+[sub_resource type="Resource" id=161]
 script = ExtResource( 5 )
 station_node_name = "Ostkurve"
 station_name = "Hainfurt Ostkurve"
@@ -1563,7 +1267,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=166]
+[sub_resource type="Resource" id=162]
 script = ExtResource( 5 )
 station_node_name = "Mockau"
 station_name = "Mockau"
@@ -1578,7 +1282,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=167]
+[sub_resource type="Resource" id=163]
 script = ExtResource( 5 )
 station_node_name = "Pantzisch"
 station_name = "Pantzisch"
@@ -1593,7 +1297,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=168]
+[sub_resource type="Resource" id=164]
 script = ExtResource( 5 )
 station_node_name = "Machern"
 station_name = "Machern"
@@ -1608,7 +1312,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=169]
+[sub_resource type="Resource" id=165]
 script = ExtResource( 5 )
 station_node_name = "Harras"
 station_name = "Harras"
@@ -1623,7 +1327,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=170]
+[sub_resource type="Resource" id=166]
 script = ExtResource( 5 )
 station_node_name = "Hainfurt_2"
 station_name = "Hainfurt Hauptbahnhof"
@@ -1634,18 +1338,466 @@ duration_since_last_station = 46630
 minimum_halt_time = 0
 planned_halt_time = 20
 signal_time = 0
+stop_type = 3
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=167]
+script = ExtResource( 6 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 153 ), SubResource( 154 ), SubResource( 155 ), SubResource( 156 ), SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
+train_name = "JFR1_Red"
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
+
+[sub_resource type="Resource" id=168]
+script = ExtResource( 5 )
+station_node_name = "Wolfsfurt"
+station_name = "Wolfsfurt"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 2
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=169]
+script = ExtResource( 5 )
+station_node_name = "Silberbach"
+station_name = "Silberbach"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 49960
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=170]
+script = ExtResource( 5 )
+station_node_name = "Goldensee"
+station_name = "Goldensee"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46600
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
 stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
 [sub_resource type="Resource" id=171]
+script = ExtResource( 5 )
+station_node_name = "Klingental"
+station_name = "Klingental"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46480
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=172]
+script = ExtResource( 5 )
+station_node_name = "Siemenswerke"
+station_name = "Siemenswerke"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=173]
+script = ExtResource( 5 )
+station_node_name = "Buchenhain"
+station_name = "Buchenhain"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=174]
+script = ExtResource( 5 )
+station_node_name = "BuchenhainSiedlung"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46620
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=175]
+script = ExtResource( 5 )
+station_node_name = "Borsdorf"
+station_name = "Borsdorf"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=176]
+script = ExtResource( 5 )
+station_node_name = "Ostkurve"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46690
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=177]
+script = ExtResource( 5 )
+station_node_name = "Mockau"
+station_name = "Mockau"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46690
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=178]
+script = ExtResource( 5 )
+station_node_name = "Pantzisch"
+station_name = "Pantzisch"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46675
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=179]
+script = ExtResource( 5 )
+station_node_name = "Machern"
+station_name = "Machern"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46675
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=180]
+script = ExtResource( 5 )
+station_node_name = "Harras"
+station_name = "Harras"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=181]
+script = ExtResource( 5 )
+station_node_name = "Hainfurt_2"
+station_name = "Hainfurt Hauptbahnhof"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46630
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 3
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=182]
 script = ExtResource( 6 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 156 ), SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ), SubResource( 167 ), SubResource( 168 ), SubResource( 169 ), SubResource( 170 ) ]
+route_points = [ SubResource( 168 ), SubResource( 169 ), SubResource( 170 ), SubResource( 171 ), SubResource( 172 ), SubResource( 173 ), SubResource( 174 ), SubResource( 175 ), SubResource( 176 ), SubResource( 177 ), SubResource( 178 ), SubResource( 179 ), SubResource( 180 ), SubResource( 181 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
-is_playable = true
+is_playable = false
+train_name = ""
+description = ""
+interval = 0
+interval_end = 0
+interval_start = 0
+
+[sub_resource type="Resource" id=183]
+script = ExtResource( 5 )
+station_node_name = "Wolfsfurt"
+station_name = "Wolfsfurt"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 2
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=184]
+script = ExtResource( 5 )
+station_node_name = "Silberbach"
+station_name = "Silberbach"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 49960
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=185]
+script = ExtResource( 5 )
+station_node_name = "Goldensee"
+station_name = "Goldensee"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46600
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=186]
+script = ExtResource( 5 )
+station_node_name = "Klingental"
+station_name = "Klingental"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46480
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=187]
+script = ExtResource( 5 )
+station_node_name = "Siemenswerke"
+station_name = "Siemenswerke"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=188]
+script = ExtResource( 5 )
+station_node_name = "Buchenhain"
+station_name = "Buchenhain"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=189]
+script = ExtResource( 5 )
+station_node_name = "BuchenhainSiedlung"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46620
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=190]
+script = ExtResource( 5 )
+station_node_name = "Borsdorf"
+station_name = "Borsdorf"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=191]
+script = ExtResource( 5 )
+station_node_name = "Ostkurve"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46690
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=192]
+script = ExtResource( 5 )
+station_node_name = "Mockau"
+station_name = "Mockau"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46690
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=193]
+script = ExtResource( 5 )
+station_node_name = "Pantzisch"
+station_name = "Pantzisch"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46675
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=194]
+script = ExtResource( 5 )
+station_node_name = "Machern"
+station_name = "Machern"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46675
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=195]
+script = ExtResource( 5 )
+station_node_name = "Harras"
+station_name = "Harras"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46660
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=196]
+script = ExtResource( 5 )
+station_node_name = "Hainfurt_2"
+station_name = "Hainfurt Hauptbahnhof"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 46630
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 3
+leaving_persons = 50
+waiting_persons = 100
+
+[sub_resource type="Resource" id=197]
+script = ExtResource( 6 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 183 ), SubResource( 184 ), SubResource( 185 ), SubResource( 186 ), SubResource( 187 ), SubResource( 188 ), SubResource( 189 ), SubResource( 190 ), SubResource( 191 ), SubResource( 192 ), SubResource( 193 ), SubResource( 194 ), SubResource( 195 ), SubResource( 196 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = false
 train_name = ""
 description = ""
 interval = 0
@@ -1662,18 +1814,42 @@ Have fun!"
 duration = 15
 is_hidden = false
 routes = {
-"Player": SubResource( 123 ),
-"npc4": SubResource( 139 ),
-"npc5": SubResource( 155 ),
-"npc6": SubResource( 171 )
+"Player": SubResource( 152 ),
+"npc4": SubResource( 167 ),
+"npc5": SubResource( 182 ),
+"npc6": SubResource( 197 )
 }
 rail_logic_settings = {
+"Borsdorf": SubResource( 130 ),
+"BorsdorfR": SubResource( 131 ),
+"Buchenhain": SubResource( 118 ),
+"Buchenhain2R": SubResource( 119 ),
+"BuchenhainSiedlung": SubResource( 128 ),
+"BuchenhainSiedlungR": SubResource( 129 ),
 "ContactPoint": SubResource( 1 ),
 "ContactPoint2": SubResource( 2 ),
 "ContactPoint3": SubResource( 3 ),
 "ContactPoint4": SubResource( 4 ),
+"Goldensee": SubResource( 115 ),
+"GoldenseeR": SubResource( 122 ),
+"Hainfurt_2": SubResource( 127 ),
+"Hainfurt_2R": SubResource( 142 ),
+"Harras": SubResource( 140 ),
+"HarrasR": SubResource( 141 ),
+"Klingental": SubResource( 116 ),
+"KlingentalR": SubResource( 121 ),
 "Klingental_A1": SubResource( 5 ),
 "Klingental_E": SubResource( 6 ),
+"Machern": SubResource( 138 ),
+"MachernR": SubResource( 139 ),
+"Mockau": SubResource( 134 ),
+"MockauR": SubResource( 135 ),
+"Ostkurve": SubResource( 132 ),
+"OstkurveR": SubResource( 133 ),
+"Pantzisch": SubResource( 136 ),
+"PantzischR": SubResource( 137 ),
+"Siemenswerke": SubResource( 117 ),
+"SiemenswerkeR": SubResource( 120 ),
 "Signal": SubResource( 7 ),
 "Signal10": SubResource( 8 ),
 "Signal11": SubResource( 9 ),
@@ -1779,5 +1955,11 @@ rail_logic_settings = {
 "Signal_Goldensee_E": SubResource( 109 ),
 "Signal_STK1": SubResource( 110 ),
 "Signal_STK2": SubResource( 111 ),
-"Signal_Wolfsfurt_A3": SubResource( 112 )
+"Signal_Wolfsfurt_A3": SubResource( 112 ),
+"Silberbach": SubResource( 114 ),
+"SilberbachR": SubResource( 123 ),
+"Wolfsfurt": SubResource( 113 ),
+"Wolfsfurt1R": SubResource( 126 ),
+"Wolfsfurt2": SubResource( 125 ),
+"Wolfsfurt2R": SubResource( 124 )
 }

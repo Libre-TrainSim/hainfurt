@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=171 format=2]
+[gd_resource type="Resource" load_steps=170 format=2]
 
 [ext_resource path="res://Data/Scripts/Resources/contact_point_settings.gd" type="Script" id=1]
 [ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=2]
@@ -8,6 +8,42 @@
 [ext_resource path="res://Data/Scripts/Resources/route_point_despawn.gd" type="Script" id=6]
 [ext_resource path="res://Data/Scripts/Resources/scenario_route.gd" type="Script" id=7]
 [ext_resource path="res://Data/Scripts/Resources/station_settings.gd" type="Script" id=8]
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=118]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=119]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=128]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=129]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
@@ -49,6 +85,54 @@ new_status = 1
 enable_for_all_trains = false
 specific_train = "Player"
 
+[sub_resource type="Resource" id=115]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=122]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=127]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=142]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=140]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=141]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=116]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=121]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
 [sub_resource type="Resource" id=5]
 script = ExtResource( 3 )
 operation_mode = 2
@@ -62,6 +146,66 @@ operation_mode = 2
 signal_free_time = 90000
 speed = 80
 status = 1
+
+[sub_resource type="Resource" id=138]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=139]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=135]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=136]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=137]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=117]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=120]
+script = ExtResource( 8 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
 
 [sub_resource type="Resource" id=7]
 script = ExtResource( 3 )
@@ -805,61 +949,7 @@ signal_free_time = 90060
 speed = 80
 status = 0
 
-[sub_resource type="Resource" id=113]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
 [sub_resource type="Resource" id=114]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=115]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=116]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=117]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=118]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=119]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=120]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=121]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=122]
 script = ExtResource( 8 )
 assigned_signal_name = ""
 enable_person_system = true
@@ -871,13 +961,7 @@ assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
-[sub_resource type="Resource" id=124]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=125]
+[sub_resource type="Resource" id=113]
 script = ExtResource( 8 )
 assigned_signal_name = ""
 enable_person_system = true
@@ -889,110 +973,19 @@ assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
-[sub_resource type="Resource" id=127]
+[sub_resource type="Resource" id=125]
 script = ExtResource( 8 )
 assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
-[sub_resource type="Resource" id=128]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=129]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=130]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=131]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=132]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=133]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=134]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=135]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=136]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=137]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=138]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=139]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=140]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=141]
-script = ExtResource( 8 )
-assigned_signal_name = ""
-enable_person_system = true
-overwrite = false
-
-[sub_resource type="Resource" id=142]
+[sub_resource type="Resource" id=124]
 script = ExtResource( 8 )
 assigned_signal_name = ""
 enable_person_system = true
 overwrite = false
 
 [sub_resource type="Resource" id=143]
-script = ExtResource( 4 )
-rail_name = "RailP"
-distance_on_rail = 150.0
-initial_speed = 0.0
-initial_speed_limit = -1
-
-[sub_resource type="Resource" id=144]
 script = ExtResource( 5 )
 station_node_name = "Wolfsfurt2"
 station_name = "Wolfsfurt"
@@ -1007,7 +1000,7 @@ stop_type = 2
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=145]
+[sub_resource type="Resource" id=144]
 script = ExtResource( 5 )
 station_node_name = "Silberbach"
 station_name = "Silberbach"
@@ -1022,7 +1015,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=146]
+[sub_resource type="Resource" id=145]
 script = ExtResource( 5 )
 station_node_name = "Goldensee"
 station_name = "Goldensee"
@@ -1037,7 +1030,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=147]
+[sub_resource type="Resource" id=146]
 script = ExtResource( 5 )
 station_node_name = "Klingental"
 station_name = "Klingental"
@@ -1052,7 +1045,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=148]
+[sub_resource type="Resource" id=147]
 script = ExtResource( 5 )
 station_node_name = "Siemenswerke"
 station_name = "Siemenswerke"
@@ -1067,7 +1060,7 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=149]
+[sub_resource type="Resource" id=148]
 script = ExtResource( 5 )
 station_node_name = "Buchenhain"
 station_name = "Buchenhain"
@@ -1082,11 +1075,11 @@ stop_type = 3
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=150]
+[sub_resource type="Resource" id=149]
 script = ExtResource( 7 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 143 ), SubResource( 144 ), SubResource( 145 ), SubResource( 146 ), SubResource( 147 ), SubResource( 148 ), SubResource( 149 ) ]
+route_points = [ SubResource( 143 ), SubResource( 144 ), SubResource( 145 ), SubResource( 146 ), SubResource( 147 ), SubResource( 148 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = true
@@ -1096,14 +1089,14 @@ interval = 0
 interval_end = 0
 interval_start = 0
 
-[sub_resource type="Resource" id=151]
+[sub_resource type="Resource" id=150]
 script = ExtResource( 4 )
 rail_name = "RailP4"
 distance_on_rail = 20.0
 initial_speed = 80.0
 initial_speed_limit = 80
 
-[sub_resource type="Resource" id=152]
+[sub_resource type="Resource" id=151]
 script = ExtResource( 5 )
 station_node_name = "Wolfsfurt1R"
 station_name = "wolfsfurt"
@@ -1118,16 +1111,16 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=153]
+[sub_resource type="Resource" id=152]
 script = ExtResource( 6 )
 rail_name = "RailP17P4"
 distance_on_rail = 0.0
 
-[sub_resource type="Resource" id=154]
+[sub_resource type="Resource" id=153]
 script = ExtResource( 7 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 151 ), SubResource( 152 ), SubResource( 153 ) ]
+route_points = [ SubResource( 150 ), SubResource( 151 ), SubResource( 152 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -1137,14 +1130,14 @@ interval = 0
 interval_end = 0
 interval_start = 0
 
-[sub_resource type="Resource" id=155]
+[sub_resource type="Resource" id=154]
 script = ExtResource( 4 )
 rail_name = "Ebenhausen5"
 distance_on_rail = 0.0
 initial_speed = 80.0
 initial_speed_limit = 80
 
-[sub_resource type="Resource" id=156]
+[sub_resource type="Resource" id=155]
 script = ExtResource( 5 )
 station_node_name = "GoldenseeR"
 station_name = "goldensee"
@@ -1159,16 +1152,16 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=157]
+[sub_resource type="Resource" id=156]
 script = ExtResource( 6 )
 rail_name = "Icking9"
 distance_on_rail = 0.0
 
-[sub_resource type="Resource" id=158]
+[sub_resource type="Resource" id=157]
 script = ExtResource( 7 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 155 ), SubResource( 156 ), SubResource( 157 ) ]
+route_points = [ SubResource( 154 ), SubResource( 155 ), SubResource( 156 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -1178,14 +1171,14 @@ interval = 0
 interval_end = 0
 interval_start = 0
 
-[sub_resource type="Resource" id=159]
+[sub_resource type="Resource" id=158]
 script = ExtResource( 4 )
 rail_name = "Höllkriegelsreuth14PP"
 distance_on_rail = 0.0
 initial_speed = 120.0
 initial_speed_limit = 120
 
-[sub_resource type="Resource" id=160]
+[sub_resource type="Resource" id=159]
 script = ExtResource( 5 )
 station_node_name = "Buchenhain2R"
 station_name = "buchenhain"
@@ -1200,16 +1193,16 @@ stop_type = 1
 leaving_persons = 50
 waiting_persons = 100
 
-[sub_resource type="Resource" id=161]
+[sub_resource type="Resource" id=160]
 script = ExtResource( 6 )
 rail_name = "Buchenhain3"
 distance_on_rail = 0.0
 
-[sub_resource type="Resource" id=162]
+[sub_resource type="Resource" id=161]
 script = ExtResource( 7 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 159 ), SubResource( 160 ), SubResource( 161 ) ]
+route_points = [ SubResource( 158 ), SubResource( 159 ), SubResource( 160 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = false
@@ -1229,10 +1222,10 @@ Have fun!"
 duration = 17
 is_hidden = false
 routes = {
-"Player": SubResource( 150 ),
-"npc1": SubResource( 154 ),
-"npc2": SubResource( 158 ),
-"npc3": SubResource( 162 )
+"Player": SubResource( 149 ),
+"npc1": SubResource( 153 ),
+"npc2": SubResource( 157 ),
+"npc3": SubResource( 161 )
 }
 rail_logic_settings = {
 "Borsdorf": SubResource( 130 ),
