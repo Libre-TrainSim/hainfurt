@@ -1,0 +1,222 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=1]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=3]
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=4]
+[ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=6]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=8]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=9]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=11]
+
+[node name="chunk_10_3" type="Spatial"]
+script = ExtResource( 1 )
+is_empty = false
+generate_grass = true
+chunk_position = Vector3( 10, 0, 3 )
+rails = [ "Ebenhausen13", "Ebenhausen14", "Ebenhausen15" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Ebenhausen13 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10476.7, 3.8147e-06, 3082.23 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "Ebenhausen13"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 10 )
+materials = [ ExtResource( 6 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 9 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen13 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10476.7, 3.8147e-06, 3082.23 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "Ebenhausen13"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 8 ), null ]
+sides = 3
+spawnRate = 0.05
+rows = 20
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen13 Trees_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10476.7, 3.8147e-06, 3082.23 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees_duplicate"
+attached_rail = "Ebenhausen13"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 8 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 120.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen14 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10839.6, 3.8147e-06, 3224.55 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "Ebenhausen14"
+on_rail_position = 0.0
+length = 100.0
+mesh = ExtResource( 10 )
+materials = [ ExtResource( 6 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 9 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen14 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10839.6, 3.8147e-06, 3224.55 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "Ebenhausen14"
+on_rail_position = 0.0
+length = 100.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 8 ), null ]
+sides = 3
+spawnRate = 0.5
+rows = 20
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen15 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10939.2, 3.8147e-06, 3231.36 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "Ebenhausen15"
+on_rail_position = 0.0
+length = 500.0
+mesh = ExtResource( 10 )
+materials = [ ExtResource( 6 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 9 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Ebenhausen15 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10939.2, 3.8147e-06, 3231.36 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "Ebenhausen15"
+on_rail_position = 0.0
+length = 500.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 8 ), null ]
+sides = 3
+spawnRate = 0.5
+rows = 20
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="DefaultGrass" type="Spatial" parent="." instance=ExtResource( 5 )]

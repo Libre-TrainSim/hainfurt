@@ -1,0 +1,177 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=1]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=5]
+[ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=7]
+[ext_resource path="res://Resources/Materials/Roof.tres" type="Material" id=8]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=9]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=10]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=11]
+[ext_resource path="res://Resources/Objects/house1.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Resources/Materials/Wall_Orange.tres" type="Material" id=14]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=15]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=16]
+[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=22]
+
+[node name="chunk_5_0" type="Spatial"]
+script = ExtResource( 1 )
+is_empty = false
+generate_grass = true
+chunk_position = Vector3( 5, 0, 0 )
+rails = [ "Icking7" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Icking7 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5097.68, 3.8147e-06, 958.77 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Bushes"
+attached_rail = "Icking7"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 17 )
+materials = [ ExtResource( 15 ) ]
+sides = 2
+spawnRate = 0.8
+rows = 1
+distanceLength = 2.0
+distanceRows = 10.0
+shift = 8.0
+height = -5.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking7 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5097.68, 3.8147e-06, 958.77 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses"
+attached_rail = "Icking7"
+on_rail_position = 0.0
+length = 300.0
+mesh = ExtResource( 12 )
+materials = [ ExtResource( 8 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 3 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 4
+distanceLength = 25.0
+distanceRows = 30.0
+shift = 15.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking7 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5097.68, 3.8147e-06, 958.77 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Icking7"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 9 ), ExtResource( 22 ), ExtResource( 5 ), ExtResource( 19 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Icking7 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5097.68, 3.8147e-06, 958.77 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Icking7"
+on_rail_position = 0.0
+length = 310.0
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 18 ), ExtResource( 7 ), ExtResource( 9 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking7 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5097.68, 3.8147e-06, 958.77 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Icking7"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 16 ), null ]
+sides = 3
+spawnRate = 0.9
+rows = 6
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 150.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="DefaultGrass" type="Spatial" parent="." instance=ExtResource( 6 )]

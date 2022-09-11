@@ -1,0 +1,1094 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=1]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Resources/Materials/Black_Plastic.tres" type="Material" id=3]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=5]
+[ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=7]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=8]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=9]
+[ext_resource path="res://Resources/Materials/DestinationSign.tres" type="Material" id=10]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=11]
+[ext_resource path="res://Resources/Materials/RoofDark.tres" type="Material" id=12]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Resources/Objects/Office1.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Resources/Materials/Wall_Green.tres" type="Material" id=15]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=16]
+[ext_resource path="res://Resources/Materials/Metal_Black.tres" type="Material" id=17]
+[ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Objects/Poles_1_14m.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=21]
+[ext_resource path="res://Resources/Objects/house6.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Resources/Materials/Wall_Blue.tres" type="Material" id=23]
+[ext_resource path="res://Resources/Objects/office4.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Resources/Objects/office3.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Resources/Objects/factory1.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Resources/Objects/house2.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/Blue_Plastic.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Objects/DestinationSignFromUp_outside.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=32]
+[ext_resource path="res://Resources/Materials/EasyTree3.tres" type="Material" id=33]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=34]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Resources/Objects/platform_light_1_double.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Resources/Materials/CorrugatedSteel.tres" type="Material" id=37]
+[ext_resource path="res://Resources/Objects/empty.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=40]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=41]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=42]
+[ext_resource path="res://Resources/Materials/Wall_Grey.tres" type="Material" id=43]
+
+[node name="chunk_24_8" type="Spatial"]
+script = ExtResource( 1 )
+is_empty = false
+generate_grass = true
+chunk_position = Vector3( 24, 0, 8 )
+rails = [ "Harras2PP3P2", "Harras2PP3P2P", "Harras2PP3P2P2", "Harras2PP3Connector", "Harras2PP3P2PConnector", "Harras2PP3P2P3", "Harras2PP3P2P3PP", "Harras2PP3P2P3PPP", "Harras2PP3P3", "Harras2PP3PPConnector2", "Harras2PP3P3Connector" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="HainfurtPPPP3PPP Factory1" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24917.7, 3.8147e-06, 8643.64 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Factory1"
+attached_rail = "HainfurtPPPP3PPP"
+on_rail_position = 200.0
+length = 800.0
+mesh = ExtResource( 26 )
+materials = [ ExtResource( 12 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 5 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 100.0
+distanceRows = 0.0
+shift = 40.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3 InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24000.2, 3.8147e-06, 8564.79 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "InformationSystem"
+attached_rail = "Harras2PP3"
+on_rail_position = 40.0
+length = 120.0
+mesh = ExtResource( 31 )
+materials = [ ExtResource( 17 ), ExtResource( 10 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.0
+height = 4.5
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -865052
+wholeRail = false
+
+[node name="Harras2PP3 Platform_light_double_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24130.2, 3.8147e-06, 8566.86 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Platform_light_double_duplicate"
+attached_rail = "Harras2PP3"
+on_rail_position = 170.0
+length = 30.0
+mesh = ExtResource( 36 )
+materials = [ ExtResource( 8 ), ExtResource( 16 ), ExtResource( 40 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3Connector Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 29 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 20 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = -0.523599
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3Connector Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Offices"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 14 )
+materials = [ ExtResource( 43 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 9 ), ExtResource( 3 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 35.0
+height = 0.0
+rotationObjects = 0.349066
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.09
+mesh = ExtResource( 39 )
+materials = [ ExtResource( 8 ), ExtResource( 41 ), ExtResource( 5 ), ExtResource( 34 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3Connector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 7 ), ExtResource( 8 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 18 ), null ]
+sides = 2
+spawnRate = 0.8
+rows = 1
+distanceLength = 15.0
+distanceRows = 10.0
+shift = 16.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 107409
+wholeRail = true
+
+[node name="Harras2PP3Connector Trees Befroe Houses_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24160.2, 3.8147e-06, 8567.34 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees Befroe Houses_duplicate"
+attached_rail = "Harras2PP3Connector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 28 )
+materials = [ ExtResource( 33 ), null ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 2.0
+distanceRows = 8.0
+shift = 5.0
+height = -4.0
+rotationObjects = 3.14159
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 425166
+wholeRail = true
+
+[node name="Harras2PP3P2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.4, 3.8147e-06, 8558.53 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Harras2PP3P2"
+on_rail_position = 0.0
+length = 150.0
+mesh = ExtResource( 38 )
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.6
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.3, 3.8147e-06, 8563.03 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 29 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 20 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = -0.523599
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.3, 3.8147e-06, 8563.03 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Offices"
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 14 )
+materials = [ ExtResource( 43 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 9 ), ExtResource( 3 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 35.0
+height = 0.0
+rotationObjects = 0.349066
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.3, 3.8147e-06, 8563.03 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 38 )
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.3, 3.8147e-06, 8563.03 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 7 ), ExtResource( 8 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.3, 3.8147e-06, 8563.03 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Harras2PP3P2P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 18 ), null ]
+sides = 2
+spawnRate = 0.7
+rows = 1
+distanceLength = 15.0
+distanceRows = 10.0
+shift = 16.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 107409
+wholeRail = true
+
+[node name="Harras2PP3P2P2 Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24390.5, 3.8147e-06, 8553.01 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses2_duplicate"
+attached_rail = "Harras2PP3P2P2"
+on_rail_position = 30.0
+length = 370.0
+mesh = ExtResource( 27 )
+materials = [ ExtResource( 12 ), ExtResource( 43 ), ExtResource( 32 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 3
+distanceLength = 40.0
+distanceRows = 40.0
+shift = 20.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2P2 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24380.5, 3.8147e-06, 8552.85 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Harras2PP3P2P2"
+on_rail_position = 20.0
+length = 380.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 29 ), ExtResource( 15 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 20 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2P2 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.5, 3.8147e-06, 8552.53 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_14m"
+attached_rail = "Harras2PP3P2P2"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 19 )
+materials = [ ExtResource( 8 ), ExtResource( 41 ), ExtResource( 34 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24360.5, 3.8147e-06, 8552.53 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3P2P2"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 7 ), ExtResource( 8 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P3 Office4_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24800.4, 3.8147e-06, 8558.15 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Office4_duplicate_duplicate"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 40.0
+length = 360.0
+mesh = ExtResource( 24 )
+materials = [ ExtResource( 17 ), ExtResource( 23 ), ExtResource( 9 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 60.0
+distanceRows = 0.0
+shift = 150.0
+height = -40.0
+rotationObjects = -0.523599
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2P3 Offices3" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24790.4, 3.8147e-06, 8558.6 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Offices3"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 30.0
+length = 370.0
+mesh = ExtResource( 25 )
+materials = [ ExtResource( 9 ), ExtResource( 42 ), ExtResource( 17 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 2
+distanceLength = 35.0
+distanceRows = 50.0
+shift = 40.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2P3 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.4, 3.8147e-06, 8558.91 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_14m"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 19 )
+materials = [ ExtResource( 8 ), ExtResource( 41 ), ExtResource( 34 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.4, 3.8147e-06, 8558.91 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 29 ), ExtResource( 8 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.4, 3.8147e-06, 8558.91 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Harras2PP3P2P3"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 33 ), null ]
+sides = 1
+spawnRate = 0.2
+rows = 2
+distanceLength = 10.0
+distanceRows = 8.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -298968
+wholeRail = true
+
+[node name="Harras2PP3P2P3PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.2, 3.8147e-06, 8569.41 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 0.0
+length = 300.0
+mesh = ExtResource( 38 )
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 51.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P3PP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.2, 3.8147e-06, 8569.41 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 0.0
+length = 300.0
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 7 ), ExtResource( 8 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2P3PP Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.2, 3.8147e-06, 8569.41 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 0.0
+length = 300.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 21 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -320765
+wholeRail = true
+
+[node name="Harras2PP3P2P3PP Trees_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.2, 3.8147e-06, 8569.41 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees_duplicate"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 0.0
+length = 100.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 21 ), null ]
+sides = 2
+spawnRate = 0.8
+rows = 3
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -698613
+wholeRail = false
+
+[node name="Harras2PP3P2P3PP Trees_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24918.5, 3.8147e-06, 8550.13 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees_duplicate_duplicate"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 160.0
+length = 40.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 21 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 3
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -320765
+wholeRail = false
+
+[node name="Harras2PP3P2P3PP Trees_duplicate_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24956.8, 3.8147e-06, 8538.6 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees_duplicate_duplicate_duplicate"
+attached_rail = "Harras2PP3P2P3PP"
+on_rail_position = 200.0
+length = 60.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 21 ), null ]
+sides = 2
+spawnRate = 0.4
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = -620725
+wholeRail = false
+
+[node name="Harras2PP3P2P3PPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24760.3, 3.8147e-06, 8564.91 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Harras2PP3P2P3PPP"
+on_rail_position = 0.0
+length = 297.686
+mesh = ExtResource( 38 )
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2PConnector Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24260.3, 3.8147e-06, 8565.18 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Houses6"
+attached_rail = "Harras2PP3P2PConnector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 29 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 20 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 120.0
+height = 0.0
+rotationObjects = -0.523599
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2PConnector Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24260.3, 3.8147e-06, 8565.18 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Offices"
+attached_rail = "Harras2PP3P2PConnector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 14 )
+materials = [ ExtResource( 43 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 9 ), ExtResource( 3 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 2
+distanceLength = 30.0
+distanceRows = 40.0
+shift = 35.0
+height = 0.0
+rotationObjects = 0.349066
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24260.3, 3.8147e-06, 8565.18 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles"
+attached_rail = "Harras2PP3P2PConnector"
+on_rail_position = 0.0
+length = 90.0
+mesh = ExtResource( 39 )
+materials = [ ExtResource( 8 ), ExtResource( 41 ), ExtResource( 5 ), ExtResource( 34 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Harras2PP3P2PConnector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24260.3, 3.8147e-06, 8565.18 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "SoundWall"
+attached_rail = "Harras2PP3P2PConnector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 35 )
+materials = [ ExtResource( 43 ), ExtResource( 7 ), ExtResource( 8 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Harras2PP3P2PConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24260.3, 3.8147e-06, 8565.18 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Trees Befroe Houses"
+attached_rail = "Harras2PP3P2PConnector"
+on_rail_position = 0.0
+length = 100.094
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 18 ), null ]
+sides = 2
+spawnRate = 0.8
+rows = 1
+distanceLength = 15.0
+distanceRows = 10.0
+shift = 16.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 107409
+wholeRail = true
+
+[node name="Harras2PP3P3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24510.4, 3.8147e-06, 8560.92 )
+lod_max_distance = 100.0
+script = ExtResource( 4 )
+description = "Poles_invisible"
+attached_rail = "Harras2PP3P3"
+on_rail_position = 0.0
+length = 250.0
+mesh = ExtResource( 38 )
+materials = [  ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.6
+distanceRows = 0.0
+shift = 4.6
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="DefaultGrass" type="Spatial" parent="." instance=ExtResource( 6 )]
