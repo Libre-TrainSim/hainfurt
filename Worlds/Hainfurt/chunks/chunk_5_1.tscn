@@ -17,7 +17,7 @@ rails = [ "Icking16" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Icking16 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2104.8, 3.8147e-06, -21970.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3104.8, 3.8147e-06, 1029.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
