@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=6]
+
+[node name="chunk_5_1" type="Spatial"]
+script = ExtResource( 4 )
+is_empty = false
+generate_grass = true
+chunk_position = Vector3( 5, 0, 1 )
+rails = [ "Icking16" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Icking16 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2104.8, 3.8147e-06, -21970.2 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "Icking16"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 5 )
+materials = [ ExtResource( 6 ), null ]
+sides = 1
+spawnRate = 0.9
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="DefaultGrass" type="Spatial" parent="." instance=ExtResource( 1 )]

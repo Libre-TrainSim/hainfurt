@@ -12,6 +12,5 @@ release_date = {
 title = "Untitled"
 author = "Jean"
 track_description = "Fictive suburban track between Wolfsfurt and Hainfurt"
-thumbnail_path = ""
-scenarios = [  ]
+generate_grass = true
 editor_notes = ""
