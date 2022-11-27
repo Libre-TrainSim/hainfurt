@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/world_config.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+release_date = {
+"day": 6.0,
+"month": 8.0,
+"year": 2021.0
+}
+title = "Untitled"
+author = "Jean"
+track_description = "Fictive suburban track between Wolfsfurt and Hainfurt"
+thumbnail_path = ""
+scenarios = [  ]
+editor_notes = ""
