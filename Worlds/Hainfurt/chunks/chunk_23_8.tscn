@@ -62,7 +62,7 @@ rails = [ "Höllkriegelsreuth14P5P5P8P2P3P5P3Connector", "Höllkriegelsreuth14P5
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Harras Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20232.2, 3.8147e-06, -14492.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -767.806, 3.8147e-06, 507.36 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -90,13 +90,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20212.3, 3.8147e-06, -14494.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -787.699, 3.8147e-06, 505.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
 attached_rail = "Harras"
 on_rail_position = 0.0
-length = 200.0
+length = 200.074
 mesh = ExtResource( 47 )
 materials = [ ExtResource( 45 ), ExtResource( 23 ), ExtResource( 8 ), ExtResource( 13 ), ExtResource( 31 ) ]
 sides = 1
@@ -118,13 +118,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras Poles_22m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20212.3, 3.8147e-06, -14494.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -787.699, 3.8147e-06, 505.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_22m"
 attached_rail = "Harras"
 on_rail_position = 0.0
-length = 200.0
+length = 200.074
 mesh = ExtResource( 36 )
 materials = [ ExtResource( 7 ), ExtResource( 17 ), ExtResource( 21 ) ]
 sides = 2
@@ -146,13 +146,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20212.3, 3.8147e-06, -14494.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -787.699, 3.8147e-06, 505.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
 attached_rail = "Harras"
 on_rail_position = 0.0
-length = 200.0
+length = 200.074
 mesh = ExtResource( 22 )
 materials = [ ExtResource( 39 ), ExtResource( 16 ), ExtResource( 7 ) ]
 sides = 1
@@ -174,13 +174,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20212.3, 3.8147e-06, -14494.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -787.699, 3.8147e-06, 505.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
 attached_rail = "Harras"
 on_rail_position = 0.0
-length = 200.0
+length = 200.074
 mesh = ExtResource( 37 )
 materials = [ ExtResource( 35 ), null ]
 sides = 1
@@ -202,7 +202,7 @@ randomSeed = 888654
 wholeRail = true
 
 [node name="Harras2 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20441.2, 3.8147e-06, -14471 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -558.849, 3.8147e-06, 528.993 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -230,7 +230,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2 Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20411.3, 3.8147e-06, -14474 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -588.699, 3.8147e-06, 526 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -258,7 +258,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2 Poles_16m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20461.1, 3.8147e-06, -14469.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -538.938, 3.8147e-06, 530.88 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_16m"
@@ -286,7 +286,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20411.3, 3.8147e-06, -14474 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -588.699, 3.8147e-06, 526 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -314,7 +314,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20411.3, 3.8147e-06, -14474 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -588.699, 3.8147e-06, 526 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -342,7 +342,7 @@ randomSeed = 888654
 wholeRail = false
 
 [node name="Harras2Connector Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20830.4, 3.8147e-06, -14450.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -169.6, 3.8147e-06, 549.906 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -370,7 +370,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="Harras2Connector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.4, 3.8147e-06, -14450.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.6, 3.8147e-06, 549.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -398,7 +398,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.4, 3.8147e-06, -14450.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.6, 3.8147e-06, 549.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -426,13 +426,13 @@ randomSeed = 888654
 wholeRail = false
 
 [node name="Harras2P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410.7, 3.8147e-06, -14468.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -589.301, 3.8147e-06, 531.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
 attached_rail = "Harras2P"
 on_rail_position = 0.0
-length = 400.524
+length = 400.442
 mesh = ExtResource( 50 )
 materials = [  ]
 sides = 1
@@ -454,7 +454,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410, 3.8147e-06, -14462.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -590, 3.8147e-06, 537.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -482,7 +482,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410, 3.8147e-06, -14462.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -590, 3.8147e-06, 537.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -510,7 +510,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410, 3.8147e-06, -14462.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -590, 3.8147e-06, 537.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -538,7 +538,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410, 3.8147e-06, -14462.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -590, 3.8147e-06, 537.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -566,7 +566,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20410, 3.8147e-06, -14462.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -590, 3.8147e-06, 537.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -594,7 +594,7 @@ randomSeed = 100312
 wholeRail = true
 
 [node name="Harras2PP2 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.3, 3.8147e-06, -14438.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.699, 3.8147e-06, 561.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -622,7 +622,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP2 Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.3, 3.8147e-06, -14438.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.699, 3.8147e-06, 561.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -650,7 +650,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20860.3, 3.8147e-06, -14437.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -139.706, 3.8147e-06, 562.597 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -678,7 +678,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.3, 3.8147e-06, -14438.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.699, 3.8147e-06, 561.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -706,7 +706,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20810.3, 3.8147e-06, -14438.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -189.699, 3.8147e-06, 561.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -734,7 +734,7 @@ randomSeed = 100312
 wholeRail = true
 
 [node name="Harras2PP3 Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20970.2, 3.8147e-06, -14435.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8021, 3.8147e-06, 564.36 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bench"
@@ -762,7 +762,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3 DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20965.2, 3.8147e-06, -14435.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34.8014, 3.8147e-06, 564.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatform"
@@ -790,7 +790,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20995.2, 3.8147e-06, -14435.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.80523, 3.8147e-06, 564.758 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatformRooofing"
@@ -818,7 +818,7 @@ randomSeed = 134932
 wholeRail = false
 
 [node name="Harras2PP3 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.2, 3.8147e-06, -14435.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8008, 3.8147e-06, 564.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -846,7 +846,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP3 Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.2, 3.8147e-06, -14435.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8008, 3.8147e-06, 564.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -874,7 +874,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP3 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20965.2, 3.8147e-06, -14435.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -34.8014, 3.8147e-06, 564.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -902,7 +902,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.2, 3.8147e-06, -14435.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8008, 3.8147e-06, 564.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -930,7 +930,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.2, 3.8147e-06, -14435.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8008, 3.8147e-06, 564.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -958,7 +958,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.2, 3.8147e-06, -14435.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.8008, 3.8147e-06, 564.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -986,7 +986,7 @@ randomSeed = 107409
 wholeRail = true
 
 [node name="Harras2PP3 trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20968.2, 3.8147e-06, -14435.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8018, 3.8147e-06, 564.328 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trash"
@@ -1014,7 +1014,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.4, 3.8147e-06, -14447.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5996, 3.8147e-06, 552.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1042,7 +1042,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20885.4, 3.8147e-06, -14446 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.6, 3.8147e-06, 554 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1070,7 +1070,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3PConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20885.4, 3.8147e-06, -14446 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.6, 3.8147e-06, 554 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1098,7 +1098,7 @@ randomSeed = -590168
 wholeRail = true
 
 [node name="Harras2PP3PP Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20990.5, 3.8147e-06, -14453.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.50381, 3.8147e-06, 546.679 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -1126,7 +1126,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="Harras2PP3PP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.5, 3.8147e-06, -14453.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5, 3.8147e-06, 546.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1154,13 +1154,13 @@ randomSeed = -447477
 wholeRail = false
 
 [node name="Harras2PP3PP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.5, 3.8147e-06, -14453.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5, 3.8147e-06, 546.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
 attached_rail = "Harras2PP3PP"
 on_rail_position = 0.0
-length = 400.0
+length = 400.05
 mesh = ExtResource( 22 )
 materials = [ ExtResource( 42 ), ExtResource( 16 ), ExtResource( 7 ) ]
 sides = 1
@@ -1182,13 +1182,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP3PP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20960.5, 3.8147e-06, -14453.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.5, 3.8147e-06, 546.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
 attached_rail = "Harras2PP3PP"
 on_rail_position = 0.0
-length = 400.0
+length = 400.05
 mesh = ExtResource( 37 )
 materials = [ ExtResource( 35 ), null ]
 sides = 1
@@ -1210,7 +1210,7 @@ randomSeed = 888654
 wholeRail = true
 
 [node name="Harras2PP3PPConnector Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20895.5, 3.8147e-06, -14452.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -104.517, 3.8147e-06, 547.413 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -1238,7 +1238,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="Harras2PP3PPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20885.5, 3.8147e-06, -14452 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.5, 3.8147e-06, 548 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1266,7 +1266,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Harras2PP3PPConnector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20885.5, 3.8147e-06, -14452 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.5, 3.8147e-06, 548 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -1294,7 +1294,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Harras2PP3PPConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20885.5, 3.8147e-06, -14452 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -114.5, 3.8147e-06, 548 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1322,7 +1322,7 @@ randomSeed = 888654
 wholeRail = true
 
 [node name="HarrasP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20211.7, 3.8147e-06, -14488.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -788.301, 3.8147e-06, 511.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -1350,7 +1350,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HarrasP2PConnector Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20258.5, 3.8147e-06, -14475.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -741.528, 3.8147e-06, 524.248 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -1378,7 +1378,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HarrasP2PConnector Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20248.5, 3.8147e-06, -14476.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -751.5, 3.8147e-06, 523.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -1406,7 +1406,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HarrasP2PConnector Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20248.5, 3.8147e-06, -14476.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -751.5, 3.8147e-06, 523.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -1434,7 +1434,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HarrasP2PConnector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20248.5, 3.8147e-06, -14476.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -751.5, 3.8147e-06, 523.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -1462,7 +1462,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HarrasP2PConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20248.5, 3.8147e-06, -14476.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -751.5, 3.8147e-06, 523.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1490,7 +1490,7 @@ randomSeed = 100312
 wholeRail = true
 
 [node name="HarrasPConnector RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20169.6, 3.8147e-06, -14491.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -830.405, 3.8147e-06, 508.379 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "RailVegetation"
@@ -1518,7 +1518,7 @@ randomSeed = 954872
 wholeRail = false
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P2Connector Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20096.8, 3.8147e-06, -14489.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -903.152, 3.8147e-06, 510.222 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -1546,7 +1546,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P2Connector Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20086.9, 3.8147e-06, -14490.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -913.1, 3.8147e-06, 509.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -1574,7 +1574,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P2Connector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20086.9, 3.8147e-06, -14490.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -913.1, 3.8147e-06, 509.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -1602,7 +1602,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3P5P2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20086.9, 3.8147e-06, -14490.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -913.1, 3.8147e-06, 509.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1630,7 +1630,7 @@ randomSeed = 100312
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20073.1, 3.8147e-06, -14509.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -926.919, 3.8147e-06, 490.882 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -1658,7 +1658,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20013.4, 3.8147e-06, -14515.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -986.6, 3.8147e-06, 484.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices"
@@ -1686,7 +1686,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20013.4, 3.8147e-06, -14515.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -986.6, 3.8147e-06, 484.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_20m"
@@ -1714,7 +1714,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20013.4, 3.8147e-06, -14515.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -986.6, 3.8147e-06, 484.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "RailVegetation"
@@ -1742,7 +1742,7 @@ randomSeed = 954872
 wholeRail = false
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20013.4, 3.8147e-06, -14515.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -986.6, 3.8147e-06, 484.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -1770,7 +1770,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20013.4, 3.8147e-06, -14515.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -986.6, 3.8147e-06, 484.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -1798,7 +1798,7 @@ randomSeed = -51028
 wholeRail = true
 
 [node name="Höllkriegelsreuth14P5P5P8P2P3PConnectorConnector11 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20043.2, 3.8147e-06, -14512.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -956.759, 3.8147e-06, 487.791 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"

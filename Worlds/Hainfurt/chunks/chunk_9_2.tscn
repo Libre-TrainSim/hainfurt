@@ -34,7 +34,7 @@ rails = [ "Ebenhausen9", "Ebenhausen10", "Ebenhausen11" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Ebenhausen10 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6518.1, 3.8147e-06, -20385.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1518.1, 3.8147e-06, 614.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -62,7 +62,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen10 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6518.1, 3.8147e-06, -20385.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1518.1, 3.8147e-06, 614.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -90,7 +90,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen10 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6518.1, 3.8147e-06, -20385.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1518.1, 3.8147e-06, 614.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -118,7 +118,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen10 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6518.1, 3.8147e-06, -20385.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1518.1, 3.8147e-06, 614.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -146,7 +146,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bushes"
@@ -174,7 +174,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 CroopsLeft" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "CroopsLeft"
@@ -202,7 +202,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 CroopsLeft (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "CroopsLeft (Duplicate)"
@@ -230,7 +230,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 Fields" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Fields"
@@ -258,7 +258,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 Fields (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Fields (Duplicate)"
@@ -286,7 +286,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -314,7 +314,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen11 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6807.6, 3.8147e-06, -20316 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1807.6, 3.8147e-06, 684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -342,7 +342,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen9 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6256.9, 3.8147e-06, -20532.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1256.9, 3.8147e-06, 467.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
@@ -370,7 +370,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen9 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6256.9, 3.8147e-06, -20532.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1256.9, 3.8147e-06, 467.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -398,7 +398,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen9 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6256.9, 3.8147e-06, -20532.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1256.9, 3.8147e-06, 467.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -426,7 +426,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Ebenhausen9 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6256.9, 3.8147e-06, -20532.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1256.9, 3.8147e-06, 467.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"

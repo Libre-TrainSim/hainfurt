@@ -9,7 +9,7 @@ metadata={
 
 [deps]
 
-source_file="res://Mods/hainfurt/Worlds/Hainfurt/screenshot.png"
+source_file="res://Mods/Hainfurt/Worlds/Hainfurt/screenshot.png"
 dest_files=[ "res://.import/screenshot.png-5d104ba5e2f732bc614b6fc5dd558022.stex" ]
 
 [params]
