@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://Resources/Materials/Wall_Rough.tres" type="Material" id=27]
 [ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=28]
 [ext_resource path="res://Resources/Objects/house2.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=30]
 
 [node name="chunk_11_16" type="Spatial"]
 script = ExtResource( 5 )
@@ -300,7 +301,7 @@ attached_rail = "Rail68P"
 on_rail_position = 0.0
 length = 800.0
 mesh = ExtResource( 21 )
-materials = [  ]
+materials = [ ExtResource( 30 ) ]
 sides = 2
 spawnRate = 0.2
 rows = 10
