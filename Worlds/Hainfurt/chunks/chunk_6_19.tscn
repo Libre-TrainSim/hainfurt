@@ -33,7 +33,7 @@ rails = [ "Rail87", "Rail87P", "Rail210", "Rail210P" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail210 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.7, 3.8147e-06, 898.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1046.7, 3.8147e-06, 898.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -61,7 +61,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail210P Bridge" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6262, 3.8147e-06, 903.047 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1036.63, 3.8147e-06, 903.047 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bridge"
@@ -89,7 +89,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail210P Poles_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.3, 3.8147e-06, 895.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1043.3, 3.8147e-06, 895.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_duplicate"
@@ -117,7 +117,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail87 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 396.5, 3.8147e-06, 541.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1396.5, 3.8147e-06, 541.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -145,7 +145,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail87P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 393.4, 3.8147e-06, 538.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1393.4, 3.8147e-06, 538.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -173,7 +173,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail87P Tree" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 393.4, 3.8147e-06, 538.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1393.4, 3.8147e-06, 538.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Tree"
@@ -201,7 +201,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail87P Tree_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 393.4, 3.8147e-06, 538.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1393.4, 3.8147e-06, 538.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Tree_duplicate"
@@ -229,7 +229,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail87P Tree_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 393.4, 3.8147e-06, 538.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1393.4, 3.8147e-06, 538.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Tree_duplicate_duplicate"

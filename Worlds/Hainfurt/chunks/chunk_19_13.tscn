@@ -32,7 +32,7 @@ rails = [ "Rail43", "Rail43P" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail43 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3297.9, 3.8147e-06, -1614.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 297.9, 3.8147e-06, 2385.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -60,7 +60,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail43P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3302.2, 3.8147e-06, -1613.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 302.2, 3.8147e-06, 2386.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -88,7 +88,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail43P Bridge" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2971.58, 3.8147e-06, -1027.31 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.4228, 3.8147e-06, 2972.69 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bridge"
@@ -116,7 +116,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail43P trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3302.2, 3.8147e-06, -1613.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 302.2, 3.8147e-06, 2386.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trees"
@@ -144,7 +144,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail43 trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3297.9, 3.8147e-06, -1614.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 297.9, 3.8147e-06, 2385.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trees"
@@ -172,7 +172,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail43P grass" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3302.2, 3.8147e-06, -1613.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 302.2, 3.8147e-06, 2386.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "grass"
@@ -200,7 +200,7 @@ randomSeed = -482538
 wholeRail = true
 
 [node name="Rail43 grass" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3297.9, 3.8147e-06, -1614.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 297.9, 3.8147e-06, 2385.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "grass"
