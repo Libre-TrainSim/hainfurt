@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=171 format=2]
+[gd_resource type="Resource" load_steps=174 format=2]
 
 [ext_resource path="res://Data/Scripts/Resources/station_settings.gd" type="Script" id=1]
 [ext_resource path="res://Data/Scripts/Resources/contact_point_settings.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Data/Scripts/Resources/route_point_station.gd" type="Script" id=4]
 [ext_resource path="res://Data/Scripts/Resources/scenario_route.gd" type="Script" id=5]
 [ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=6]
+[ext_resource path="res://Data/Scripts/Resources/route_point_waypoint.gd" type="Script" id=7]
 
 [sub_resource type="Resource" id=66]
 script = ExtResource( 1 )
@@ -1123,6 +1124,25 @@ waiting_persons = 0
 
 [sub_resource type="Resource" id=163]
 script = ExtResource( 4 )
+station_node_name = "Goldensee"
+station_name = "-"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = ""
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 0
+signal_time = 0
+stop_type = 0
+leaving_persons = 0
+waiting_persons = 0
+
+[sub_resource type="Resource" id=164]
+script = ExtResource( 7 )
+rail_name = "Höllkriegelsreuth14P5P5P8P2P3P2P2"
+
+[sub_resource type="Resource" id=165]
+script = ExtResource( 4 )
 station_node_name = "Hainfurt_2"
 station_name = "Hainfurt"
 approach_sound_path = ""
@@ -1136,11 +1156,11 @@ stop_type = 3
 leaving_persons = 0
 waiting_persons = 0
 
-[sub_resource type="Resource" id=164]
+[sub_resource type="Resource" id=166]
 script = ExtResource( 5 )
 rail_logic_settings = {
 }
-route_points = [ SubResource( 161 ), SubResource( 162 ), SubResource( 163 ) ]
+route_points = [ SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ), SubResource( 165 ) ]
 activate_only_at_specific_routes = false
 specific_routes = [  ]
 is_playable = true
@@ -1158,7 +1178,7 @@ description = ""
 duration = 0
 is_hidden = false
 routes = {
-"Test2": SubResource( 164 )
+"Test2": SubResource( 166 )
 }
 rail_logic_settings = {
 "Borsdorf": SubResource( 66 ),
