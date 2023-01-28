@@ -33,13 +33,13 @@ rails = [ "RailP3", "RailP4", "RailP2PConnector", "RailP4Connector", "RailP5", "
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="RailP14 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6476.3, 3.8147e-06, -1991.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -476.301, 3.8147e-06, 8.1001 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "RailP14"
 on_rail_position = 0.0
-length = 254.927
+length = 254.925
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 13 ) ]
 sides = 2
@@ -61,7 +61,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP14 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6476.3, 3.8147e-06, -1991.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -476.301, 3.8147e-06, 8.1001 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -89,13 +89,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="RailP2PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6477.6, 3.8147e-06, -1996.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -477.6, 3.8147e-06, 3.7998 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "RailP2PConnector"
 on_rail_position = 0.0
-length = 99.9869
+length = 99.9853
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 13 ) ]
 sides = 2
@@ -117,13 +117,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP2PConnector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6477.6, 3.8147e-06, -1996.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -477.6, 3.8147e-06, 3.7998 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
 attached_rail = "RailP2PConnector"
 on_rail_position = 0.0
-length = 99.9869
+length = 99.9853
 mesh = ExtResource( 16 )
 materials = [ ExtResource( 19 ), ExtResource( 15 ), ExtResource( 6 ) ]
 sides = 1
@@ -145,13 +145,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP3 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6476.3, 3.8147e-06, -1991.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -476.301, 3.8147e-06, 8.1001 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses"
 attached_rail = "RailP3"
 on_rail_position = 0.0
-length = 200.021
+length = 200.022
 mesh = ExtResource( 17 )
 materials = [ ExtResource( 12 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 10 ) ]
 sides = 3
@@ -173,13 +173,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6476.3, 3.8147e-06, -1991.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -476.301, 3.8147e-06, 8.1001 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "RailP3"
 on_rail_position = 0.0
-length = 200.021
+length = 200.022
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 13 ) ]
 sides = 2
@@ -201,13 +201,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6476.3, 3.8147e-06, -1991.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -476.301, 3.8147e-06, 8.1001 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
 attached_rail = "RailP3"
 on_rail_position = 0.0
-length = 200.021
+length = 200.022
 mesh = ExtResource( 16 )
 materials = [ ExtResource( 19 ), ExtResource( 15 ), ExtResource( 6 ) ]
 sides = 2
@@ -229,7 +229,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP4 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6286, 3.8147e-06, -2053.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -286, 3.8147e-06, -53.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -257,7 +257,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP4 RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6286, 3.8147e-06, -2053.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -286, 3.8147e-06, -53.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "RailVegetation"
@@ -285,7 +285,7 @@ randomSeed = -343435
 wholeRail = true
 
 [node name="RailP4 TreesBackground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6286, 3.8147e-06, -2053.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -286, 3.8147e-06, -53.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "TreesBackground"
@@ -313,7 +313,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP4Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6381.8, 3.8147e-06, -2024.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -381.801, 3.8147e-06, -24.7998 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -341,7 +341,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="RailP4Connector SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6381.8, 3.8147e-06, -2024.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -381.801, 3.8147e-06, -24.7998 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -369,13 +369,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP5 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6112.8, 3.8147e-06, -2150.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -112.801, 3.8147e-06, -150.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "RailP5"
 on_rail_position = 0.0
-length = 699.947
+length = 699.948
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 13 ) ]
 sides = 2
@@ -397,13 +397,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="RailP5 TreesBackground" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6112.8, 3.8147e-06, -2150.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -112.801, 3.8147e-06, -150.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "TreesBackground"
 attached_rail = "RailP5"
 on_rail_position = 0.0
-length = 699.947
+length = 699.948
 mesh = ExtResource( 11 )
 materials = [ ExtResource( 22 ) ]
 sides = 3

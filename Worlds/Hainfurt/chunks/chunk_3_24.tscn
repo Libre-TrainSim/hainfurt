@@ -21,13 +21,13 @@ rails = [ "Rail148", "Rail148P", "Rail149", "Rail151", "Rail152", "Rail150", "Ra
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail198 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4000.6, 3.8147e-06, 21918.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1000.6, 3.8147e-06, 918.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail198"
 on_rail_position = 0.0
-length = 101.882
+length = 101.871
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -49,7 +49,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail200P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4062.2, 3.8147e-06, 21999.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1062.2, 3.8147e-06, 999.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -77,7 +77,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail202 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4000.6, 3.8147e-06, 21918.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1000.6, 3.8147e-06, 918.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -105,13 +105,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail206 Poles3387" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4037.1, 3.8147e-06, 21928.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1037.1, 3.8147e-06, 928.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail206"
 on_rail_position = 0.0
-length = 109.617
+length = 109.643
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -133,13 +133,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail206P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4040.2, 3.8147e-06, 21925 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1040.2, 3.8147e-06, 925 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail206P"
 on_rail_position = 0.0
-length = 109.535
+length = 109.575
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 0
@@ -161,13 +161,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail208 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4011.2, 3.8147e-06, 21898.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1011.2, 3.8147e-06, 898.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail208"
 on_rail_position = 0.0
-length = 41.1221
+length = 41.0424
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -189,13 +189,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail208 Poles3445" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4011.2, 3.8147e-06, 21898.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1011.2, 3.8147e-06, 898.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail208"
 on_rail_position = 0.0
-length = 41.1221
+length = 41.0424
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -217,13 +217,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail204 Poles3341" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4116.7, 3.8147e-06, 22003.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1116.7, 3.8147e-06, 1003.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail204"
 on_rail_position = 0.0
-length = 593.476
+length = 593.44
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -245,13 +245,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail204P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4119.8, 3.8147e-06, 22000.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1119.8, 3.8147e-06, 1000.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail204P"
 on_rail_position = 0.0
-length = 590.078
+length = 590.034
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -273,7 +273,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail200PP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4058.41, 3.8147e-06, 22002.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1058.41, 3.8147e-06, 1002.33 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -301,13 +301,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail148 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3659.5, 3.8147e-06, 21556.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -659.5, 3.8147e-06, 556.4 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail148"
 on_rail_position = 0.0
-length = 150.0
+length = 149.982
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -329,7 +329,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail148P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3699.46, 3.8147e-06, 21586.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -699.459, 3.8147e-06, 586.674 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -357,13 +357,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail149 Poles2635" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3768.3, 3.8147e-06, 21659.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -768.3, 3.8147e-06, 659.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail149"
 on_rail_position = 0.0
-length = 150.0
+length = 149.978
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -385,7 +385,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail150 Poles2637" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3734.13, 3.8147e-06, 21623.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -734.13, 3.8147e-06, 623.704 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -413,13 +413,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail152 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3662.5, 3.8147e-06, 21553 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -662.5, 3.8147e-06, 553 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail152"
 on_rail_position = 0.0
-length = 90.6683
+length = 90.6879
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -441,7 +441,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail154P2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3610.72, 3.8147e-06, 21535.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -610.724, 3.8147e-06, 535.668 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -469,13 +469,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail155 Poles2676" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3596.9, 3.8147e-06, 21521.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -596.9, 3.8147e-06, 521.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail155"
 on_rail_position = 0.0
-length = 7.03482
+length = 7.05779
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -497,13 +497,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail158 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3720.3, 3.8147e-06, 21638.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -720.3, 3.8147e-06, 638.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail158"
 on_rail_position = 0.0
-length = 50.0
+length = 49.9937
 mesh = ExtResource( 7 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -525,13 +525,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail159 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3755.9, 3.8147e-06, 21673.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -755.9, 3.8147e-06, 673.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail159"
 on_rail_position = 0.0
-length = 118.696
+length = 118.677
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -553,13 +553,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail159P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3752.7, 3.8147e-06, 21676.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -752.7, 3.8147e-06, 676.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail159P"
 on_rail_position = 0.0
-length = 118.798
+length = 118.818
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -581,7 +581,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail160 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3667.83, 3.8147e-06, 21591.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -667.827, 3.8147e-06, 591.669 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -609,13 +609,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail162 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3684.6, 3.8147e-06, 21603.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -684.6, 3.8147e-06, 603.1 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail162"
 on_rail_position = 0.0
-length = 50.0675
+length = 50.0774
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -637,7 +637,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail163 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3721.8, 3.8147e-06, 21636.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -721.8, 3.8147e-06, 636.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -665,13 +665,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail165 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3874, 3.8147e-06, 21766 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -874, 3.8147e-06, 766 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail165"
 on_rail_position = 0.0
-length = 50.0
+length = 50.0634
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -693,13 +693,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail167 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3874, 3.8147e-06, 21766 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -874, 3.8147e-06, 766 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail167"
 on_rail_position = 0.0
-length = 67.9021
+length = 67.9016
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -721,13 +721,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail170 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3711, 3.8147e-06, 21571.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -711, 3.8147e-06, 571.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail170"
 on_rail_position = 0.0
-length = 50.0
+length = 50.0017
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -749,7 +749,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail171 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3785.18, 3.8147e-06, 21638.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -785.179, 3.8147e-06, 638.661 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -777,7 +777,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail173 Poles2858" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3699.97, 3.8147e-06, 21554.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -699.952, 3.8147e-06, 554.255 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -805,7 +805,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail174 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3719.87, 3.8147e-06, 21576.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -719.875, 3.8147e-06, 576.734 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -833,13 +833,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail175 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3711, 3.8147e-06, 21571.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -711, 3.8147e-06, 571.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail175"
 on_rail_position = 0.0
-length = 50.0675
+length = 50.0835
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -861,7 +861,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail176 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3746.8, 3.8147e-06, 21606.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -746.8, 3.8147e-06, 606.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -889,13 +889,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail179 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3813.8, 3.8147e-06, 21699 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -813.8, 3.8147e-06, 699 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail179"
 on_rail_position = 0.0
-length = 90.0
+length = 89.9444
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -917,7 +917,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail180 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3778.5, 3.8147e-06, 21649.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -778.5, 3.8147e-06, 649.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -945,7 +945,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail180 Poles2895" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3778.5, 3.8147e-06, 21649.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -778.5, 3.8147e-06, 649.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -973,7 +973,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail183 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3856.2, 3.8147e-06, 21708.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -856.2, 3.8147e-06, 708.7 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1001,7 +1001,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail183P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3859.4, 3.8147e-06, 21705.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -859.4, 3.8147e-06, 705.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1029,13 +1029,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail184 Poles2968" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3748.3, 3.8147e-06, 21604.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -748.3, 3.8147e-06, 604.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail184"
 on_rail_position = 0.0
-length = 90.0
+length = 90.0102
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -1057,7 +1057,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail185 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3816.1, 3.8147e-06, 21664.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -816.1, 3.8147e-06, 664.1 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1085,13 +1085,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail186 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3845.5, 3.8147e-06, 21691.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -845.5, 3.8147e-06, 691.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail186"
 on_rail_position = 0.0
-length = 30.5
+length = 30.5467
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1113,13 +1113,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail186 Poles2971" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3845.5, 3.8147e-06, 21691.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -845.5, 3.8147e-06, 691.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail186"
 on_rail_position = 0.0
-length = 30.5
+length = 30.5467
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1141,13 +1141,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail187 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3645.9, 3.8147e-06, 21571.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -645.9, 3.8147e-06, 571.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail187"
 on_rail_position = 0.0
-length = 150.0
+length = 149.981
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1169,13 +1169,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail188 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3841.4, 3.8147e-06, 21755.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -841.4, 3.8147e-06, 755.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail188"
 on_rail_position = 0.0
-length = 114.055
+length = 113.999
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -1197,13 +1197,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail188P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3838.3, 3.8147e-06, 21758.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -838.3, 3.8147e-06, 758.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail188P"
 on_rail_position = 0.0
-length = 113.863
+length = 113.787
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1225,13 +1225,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail189 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3909.3, 3.8147e-06, 21801.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -909.3, 3.8147e-06, 801.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail189"
 on_rail_position = 0.0
-length = 50.0
+length = 50.0713
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1253,13 +1253,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail189 Poles3029" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3909.3, 3.8147e-06, 21801.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -909.3, 3.8147e-06, 801.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail189"
 on_rail_position = 0.0
-length = 50.0
+length = 50.0713
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1281,13 +1281,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail190 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3944.5, 3.8147e-06, 21837 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -944.5, 3.8147e-06, 837 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail190"
 on_rail_position = 0.0
-length = 130.0
+length = 129.973
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1309,13 +1309,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail190P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3947.7, 3.8147e-06, 21833.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -947.7, 3.8147e-06, 833.8 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail190P"
 on_rail_position = 0.0
-length = 129.903
+length = 129.901
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -1337,13 +1337,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail191 Poles3308" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3877.2, 3.8147e-06, 21762.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -877.2, 3.8147e-06, 762.8 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail191"
 on_rail_position = 0.0
-length = 100.0
+length = 100.056
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -1365,7 +1365,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail192 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3904.34, 3.8147e-06, 21792.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -904.318, 3.8147e-06, 792.192 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1393,7 +1393,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail193 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3917.25, 3.8147e-06, 21807.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -917.25, 3.8147e-06, 807.542 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1421,13 +1421,13 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Rail194 Poles3031" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3909.3, 3.8147e-06, 21801.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -909.3, 3.8147e-06, 801.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail194"
 on_rail_position = 0.0
-length = 50.0674
+length = 49.9929
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1449,13 +1449,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail195 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3922.7, 3.8147e-06, 21835.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -922.7, 3.8147e-06, 835.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail195"
 on_rail_position = 0.0
-length = 114.055
+length = 114.131
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 1
@@ -1477,7 +1477,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail195P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3919.5, 3.8147e-06, 21838.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -919.5, 3.8147e-06, 838.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1505,13 +1505,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail197 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3942.9, 3.8147e-06, 21838.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -942.9, 3.8147e-06, 838.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail197"
 on_rail_position = 0.0
-length = 49.8081
+length = 49.7412
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1533,13 +1533,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail198P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3997.2, 3.8147e-06, 21921.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -997.2, 3.8147e-06, 921.9 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail198P"
 on_rail_position = 0.0
-length = 101.159
+length = 101.149
 mesh = ExtResource( 8 )
 materials = [ ExtResource( 6 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 9 ) ]
 sides = 2
@@ -1561,7 +1561,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail199 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3971.7, 3.8147e-06, 21879.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -971.7, 3.8147e-06, 879.1 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1589,7 +1589,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail207 Poles3444" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3944.5, 3.8147e-06, 21837 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -944.5, 3.8147e-06, 837 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
@@ -1617,7 +1617,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail209 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3678.4, 3.8147e-06, 21533.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -678.4, 3.8147e-06, 533.4 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"

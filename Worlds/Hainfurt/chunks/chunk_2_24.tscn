@@ -20,7 +20,7 @@ rails = [ "Rail205", "Rail205P" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail205 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4656.6, 3.8147e-06, 22214 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1656.6, 3.8147e-06, 1214 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -48,7 +48,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail205 Poles3350" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4656.6, 3.8147e-06, 22214 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1656.6, 3.8147e-06, 1214 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"

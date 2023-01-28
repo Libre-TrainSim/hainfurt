@@ -20,13 +20,13 @@ rails = [ "Rail90", "Rail90P", "Rail91", "Rail91P" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail90 Poles4792" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2197, 3.8147e-06, 19584.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 803, 3.8147e-06, -1415.7 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail90"
 on_rail_position = 0.0
-length = 700.0
+length = 699.968
 mesh = ExtResource( 7 )
 materials = [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 1 ), ExtResource( 8 ) ]
 sides = 2
@@ -48,13 +48,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail90P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2201.1, 3.8147e-06, 19582.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 798.9, 3.8147e-06, -1417.5 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail90P"
 on_rail_position = 0.0
-length = 700.0
+length = 699.971
 mesh = ExtResource( 7 )
 materials = [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 1 ), ExtResource( 8 ) ]
 sides = 1
@@ -76,13 +76,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail91 Poles4793" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2480.7, 3.8147e-06, 20224.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 519.3, 3.8147e-06, -775.8 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail91"
 on_rail_position = 0.0
-length = 500.0
+length = 500.016
 mesh = ExtResource( 7 )
 materials = [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 1 ), ExtResource( 8 ) ]
 sides = 2
@@ -104,13 +104,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail91P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2484.8, 3.8147e-06, 20222.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 515.2, 3.8147e-06, -777.6 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Rail91P"
 on_rail_position = 0.0
-length = 499.215
+length = 499.207
 mesh = ExtResource( 7 )
 materials = [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 1 ), ExtResource( 8 ) ]
 sides = 1
