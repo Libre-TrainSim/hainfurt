@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
@@ -17,20 +17,564 @@
 [ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=15]
 [ext_resource path="res://Resources/Materials/EasyTree.tres" type="Material" id=16]
 [ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=17]
-[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=18]
 [ext_resource path="res://Resources/Materials/Wall_Orange.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Objects/platform_light_1.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Materials/Wall_Red.tres" type="Material" id=31]
 
 [node name="chunk_4_0" type="Spatial"]
 script = ExtResource( 6 )
 is_empty = false
 generate_grass = true
 chunk_position = Vector3( 4, 0, 0 )
-rails = [ "Icking3", "Icking4", "Icking5", "Icking6", "Icking15", "Icking14", "Icking14Connector", "Icking2PConnector", "Icking22", "Icking23" ]
+rails = [ "RailP12", "RailP13", "Icking2", "RailP12Connector", "RailP14PConnector", "Icking3", "Icking2P", "Icking4", "Icking14", "Icking14Connector", "Icking2PConnector" ]
 
 [node name="TrackObjects" type="Spatial" parent="."]
 
+[node name="Icking2 Platform2" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3172.81, 3.8147e-06, -1823.46 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform"
+attached_rail = "Icking2"
+on_rail_position = 200.0
+length = 150.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 18 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 5 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3168.6, 3.8147e-06, -1820.77 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform_duplicate"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 18 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 5 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3168.6, 3.8147e-06, -1820.77 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform_light_double"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 7 ), ExtResource( 28 ), ExtResource( 26 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 6.28319
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3346.7, 3.8147e-06, -1922.1 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "Icking2"
+on_rail_position = 0.0
+length = 498.88
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3346.7, 3.8147e-06, -1922.1 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "Icking2"
+on_rail_position = 0.0
+length = 498.867
+mesh = ExtResource( 17 )
+materials = [ ExtResource( 16 ) ]
+sides = 2
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Icking2 trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3168.6, 3.8147e-06, -1820.77 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "trash"
+attached_rail = "Icking2"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 24 )
+materials = [ ExtResource( 27 ), ExtResource( 25 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3344.7, 3.8147e-06, -1926.2 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Houses"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 500.0
+mesh = ExtResource( 9 )
+materials = [ ExtResource( 8 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 4 ) ]
+sides = 1
+spawnRate = 0.9
+rows = 4
+distanceLength = 25.0
+distanceRows = 30.0
+shift = 15.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3170.8, 3.8147e-06, -1827.58 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform"
+attached_rail = "Icking2P"
+on_rail_position = 200.0
+length = 150.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 18 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3166.58, 3.8147e-06, -1824.9 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform_duplicate"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 18 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 6.28319
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3166.58, 3.8147e-06, -1824.9 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Platform_light_double"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 7 ), ExtResource( 28 ), ExtResource( 26 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 9.42478
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3344.7, 3.8147e-06, -1926.2 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 500.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 70.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Icking2P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3344.7, 3.8147e-06, -1926.2 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "SoundWall"
+attached_rail = "Icking2P"
+on_rail_position = 0.0
+length = 190.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 31 ), ExtResource( 20 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Icking2P trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3166.58, 3.8147e-06, -1824.9 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "trash"
+attached_rail = "Icking2P"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 24 )
+materials = [ ExtResource( 27 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 6.28319
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP12 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3478.7, 3.8147e-06, -1993.5 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "RailP12"
+on_rail_position = 0.0
+length = 40.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP12 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3478.7, 3.8147e-06, -1993.5 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "RailP12"
+on_rail_position = 0.0
+length = 49.9092
+mesh = ExtResource( 17 )
+materials = [ ExtResource( 16 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP13 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3434.1, 3.8147e-06, -1971.1 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "RailP13"
+on_rail_position = 0.0
+length = 100.042
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP13 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3389.42, 3.8147e-06, -1948.65 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "SoundWall"
+attached_rail = "RailP13"
+on_rail_position = 50.0
+length = 50.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 31 ), ExtResource( 20 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="RailP13 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3434.1, 3.8147e-06, -1971.1 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Trees"
+attached_rail = "RailP13"
+on_rail_position = 0.0
+length = 100.042
+mesh = ExtResource( 17 )
+materials = [ ExtResource( 16 ) ]
+sides = 3
+spawnRate = 0.8
+rows = 4
+distanceLength = 13.0
+distanceRows = 13.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="RailP14PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3390.4, 3.8147e-06, -1946.6 )
+lod_max_distance = 100.0
+script = ExtResource( 3 )
+description = "Poles"
+attached_rail = "RailP14PConnector"
+on_rail_position = 0.0
+length = 50.116
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
 [node name="Icking14Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 200.1, 3.8147e-06, 460 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2799.9, 3.8147e-06, -1540 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -58,7 +602,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking2PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 134.8, 3.8147e-06, 405.801 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2865.2, 3.8147e-06, -1594.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -86,7 +630,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking2PConnector Poles_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.4568, 3.8147e-06, 351.623 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2930.54, 3.8147e-06, -1648.38 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_duplicate"
@@ -114,7 +658,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Icking3 Bushes (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 3.8147e-06, 355.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2933.5, 3.8147e-06, -1644.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bushes (Duplicate)"
@@ -142,7 +686,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 3.8147e-06, 355.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2933.5, 3.8147e-06, -1644.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -170,7 +714,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Icking3 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 3.8147e-06, 355.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2933.5, 3.8147e-06, -1644.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -198,7 +742,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking4 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 223.7, 3.8147e-06, 478.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2776.3, 3.8147e-06, -1521.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bushes"
@@ -226,7 +770,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking4 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 223.7, 3.8147e-06, 478.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2776.3, 3.8147e-06, -1521.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -254,7 +798,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Icking4 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 223.7, 3.8147e-06, 478.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2776.3, 3.8147e-06, -1521.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -269,230 +813,6 @@ rows = 4
 distanceLength = 13.0
 distanceRows = 13.0
 shift = 35.0
-height = 3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking5 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 392.5, 3.8147e-06, 585.699 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bushes"
-attached_rail = "Icking5"
-on_rail_position = 0.0
-length = 299.985
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 16 ) ]
-sides = 3
-spawnRate = 0.8
-rows = 1
-distanceLength = 2.0
-distanceRows = 10.0
-shift = 8.0
-height = -7.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking5 Bushes (Duplicate)" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 392.5, 3.8147e-06, 585.699 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bushes (Duplicate)"
-attached_rail = "Icking5"
-on_rail_position = 0.0
-length = 299.985
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 16 ) ]
-sides = 3
-spawnRate = 0.8
-rows = 1
-distanceLength = 10.0
-distanceRows = 10.0
-shift = 13.0
-height = -3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking5 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 392.5, 3.8147e-06, 585.699 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Icking5"
-on_rail_position = 0.0
-length = 299.985
-mesh = ExtResource( 13 )
-materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 80.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking5 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 392.5, 3.8147e-06, 585.699 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Trees"
-attached_rail = "Icking5"
-on_rail_position = 0.0
-length = 299.985
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 16 ) ]
-sides = 3
-spawnRate = 0.8
-rows = 6
-distanceLength = 13.0
-distanceRows = 13.0
-shift = 35.0
-height = 3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking6 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 648.8, 3.8147e-06, 741.5 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bushes"
-attached_rail = "Icking6"
-on_rail_position = 0.0
-length = 500.031
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 16 ) ]
-sides = 3
-spawnRate = 0.8
-rows = 1
-distanceLength = 2.0
-distanceRows = 10.0
-shift = 8.0
-height = -5.5
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking6 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 648.8, 3.8147e-06, 741.5 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Houses"
-attached_rail = "Icking6"
-on_rail_position = 0.0
-length = 500.0
-mesh = ExtResource( 9 )
-materials = [ ExtResource( 8 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 4 ) ]
-sides = 1
-spawnRate = 0.9
-rows = 4
-distanceLength = 25.0
-distanceRows = 20.0
-shift = 20.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Icking6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 648.8, 3.8147e-06, 741.5 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Icking6"
-on_rail_position = 0.0
-length = 500.031
-mesh = ExtResource( 13 )
-materials = [ ExtResource( 7 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 14 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 80.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Icking6 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 648.8, 3.8147e-06, 741.5 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Trees"
-attached_rail = "Icking6"
-on_rail_position = 0.0
-length = 500.031
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 18 ), null ]
-sides = 2
-spawnRate = 0.9
-rows = 6
-distanceLength = 10.0
-distanceRows = 10.0
-shift = 100.0
 height = 3.0
 rotationObjects = 0.0
 randomLocation = true

@@ -1,0 +1,526 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Resources/Materials/Metal.tres" type="Material" id=1]
+[ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=2]
+[ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=3]
+[ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Resources/Materials/Beton.tres" type="Material" id=6]
+[ext_resource path="res://Resources/Objects/easyBushes1_big.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Resources/Objects/transmission_tower.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=9]
+[ext_resource path="res://Resources/Materials/RoughMetal.tres" type="Material" id=10]
+[ext_resource path="res://Resources/Materials/Roof.tres" type="Material" id=11]
+[ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=12]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://Resources/Objects/Pole1.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Resources/Materials/EasyBush1.tres" type="Material" id=17]
+[ext_resource path="res://Resources/Materials/EasyTree6.tres" type="Material" id=18]
+[ext_resource path="res://Resources/Materials/Metal_Brown.tres" type="Material" id=19]
+[ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=20]
+[ext_resource path="res://Resources/Materials/Wood_Dark.tres" type="Material" id=21]
+[ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=22]
+[ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=23]
+[ext_resource path="res://Resources/Materials/EasyTree2.tres" type="Material" id=24]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/RoofDark.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/EasyTree5.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/EasyTree4.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Objects/house4.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Resources/Objects/house7.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Resources/Materials/Wall_Beige.tres" type="Material" id=33]
+[ext_resource path="res://Resources/Objects/TrainStationBuilding1.obj" type="ArrayMesh" id=34]
+[ext_resource path="res://Resources/Materials/LightBlue_Plastic.tres" type="Material" id=35]
+
+[node name="chunk_7_19" type="Spatial"]
+script = ExtResource( 3 )
+is_empty = false
+generate_grass = true
+chunk_position = Vector3( 7, 0, 19 )
+rails = [ "Rail85", "Rail85P", "Rail86", "Rail86P" ]
+
+[node name="TrackObjects" type="Spatial" parent="."]
+
+[node name="Rail85 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 270.85, 3.8147e-06, 16727.1 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Platform"
+attached_rail = "Rail85"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 9 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 1 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 6.28319
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Rail85 Poles4117" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 425.9, 3.8147e-06, 16593 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Poles"
+attached_rail = "Rail85"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 15 )
+materials = [ ExtResource( 6 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 19 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail85P Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 267.949, 3.8147e-06, 16723.7 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Platform"
+attached_rail = "Rail85P"
+on_rail_position = 205.0
+length = 145.0
+mesh = ExtResource( 13 )
+materials = [ ExtResource( 9 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 1 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Rail85P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 423, 3.8147e-06, 16589.6 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Poles"
+attached_rail = "Rail85P"
+on_rail_position = 0.0
+length = 400.236
+mesh = ExtResource( 15 )
+materials = [ ExtResource( 6 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 19 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 50.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail86 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 126.8, 3.8147e-06, 16858.5 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Poles"
+attached_rail = "Rail86"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 15 )
+materials = [ ExtResource( 6 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 19 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = -1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail86P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123.7, 3.8147e-06, 16855.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Poles"
+attached_rail = "Rail86P"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 15 )
+materials = [ ExtResource( 6 ), ExtResource( 22 ), ExtResource( 1 ), ExtResource( 19 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 80.0
+distanceRows = 0.0
+shift = 0.0
+height = 0.0
+rotationObjects = 1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail86P Tree" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -168.429, 3.8147e-06, 17128.4 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tree"
+attached_rail = "Rail86P"
+on_rail_position = 400.0
+length = 600.0
+mesh = ExtResource( 16 )
+materials = [ ExtResource( 18 ), ExtResource( 30 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 10
+distanceLength = 25.0
+distanceRows = 25.0
+shift = 20.0
+height = 3.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Rail86P Tree_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123.7, 3.8147e-06, 16855.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tree_duplicate"
+attached_rail = "Rail86P"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 16 )
+materials = [ ExtResource( 29 ), ExtResource( 30 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 5
+distanceLength = 25.0
+distanceRows = 25.0
+shift = 20.0
+height = 3.0
+rotationObjects = 3.14159
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail86P Tree_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123.7, 3.8147e-06, 16855.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Tree_duplicate_duplicate"
+attached_rail = "Rail86P"
+on_rail_position = 0.0
+length = 1000.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 17 ), ExtResource( 17 ) ]
+sides = 1
+spawnRate = 0.3
+rows = 5
+distanceLength = 5.0
+distanceRows = 5.0
+shift = 17.0
+height = -0.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -482538
+wholeRail = true
+
+[node name="Rail85 Bushes" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 425.9, 3.8147e-06, 16593 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Bushes"
+attached_rail = "Rail85"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 17 ), ExtResource( 17 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 5.0
+shift = 100.0
+height = -0.5
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -482538
+wholeRail = false
+
+[node name="Rail86 Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 126.8, 3.8147e-06, 16858.5 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Houses"
+attached_rail = "Rail86"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 32 )
+materials = [ ExtResource( 11 ), ExtResource( 21 ), ExtResource( 12 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 20 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 3
+distanceLength = 30.0
+distanceRows = 30.0
+shift = 40.0
+height = 0.0
+rotationObjects = 0.349066
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Rail85 TransmissionTower" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 148.703, 3.8147e-06, 16838 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "TransmissionTower"
+attached_rail = "Rail85"
+on_rail_position = 370.0
+length = 0.0
+mesh = ExtResource( 8 )
+materials = [ ExtResource( 9 ), ExtResource( 1 ), ExtResource( 35 ), ExtResource( 6 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 15.0
+height = 0.0
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Rail85P Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 423, 3.8147e-06, 16589.6 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Trees"
+attached_rail = "Rail85P"
+on_rail_position = 0.0
+length = 400.236
+mesh = ExtResource( 14 )
+materials = [ ExtResource( 24 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 8
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail85 grass" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 425.9, 3.8147e-06, 16593 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "grass"
+attached_rail = "Rail85"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 17 ) ]
+sides = 1
+spawnRate = 0.3
+rows = 1
+distanceLength = 2.0
+distanceRows = 5.0
+shift = 10.0
+height = -4.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -482538
+wholeRail = false
+
+[node name="Rail85 Offices" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 425.9, 3.8147e-06, 16593 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Offices"
+attached_rail = "Rail85"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 31 )
+materials = [ ExtResource( 23 ), ExtResource( 10 ), ExtResource( 28 ), ExtResource( 20 ), null, ExtResource( 23 ), null ]
+sides = 1
+spawnRate = 1.0
+rows = 3
+distanceLength = 20.0
+distanceRows = 15.0
+shift = 20.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = true
+
+[node name="Rail85P grass" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 423, 3.8147e-06, 16589.6 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "grass"
+attached_rail = "Rail85P"
+on_rail_position = 0.0
+length = 400.0
+mesh = ExtResource( 7 )
+materials = [ ExtResource( 17 ) ]
+sides = 2
+spawnRate = 0.3
+rows = 1
+distanceLength = 2.0
+distanceRows = 5.0
+shift = 10.0
+height = -4.0
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -482538
+wholeRail = false
+
+[node name="Rail85 trainstation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 279.827, 3.8147e-06, 16719.1 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "trainstation"
+attached_rail = "Rail85"
+on_rail_position = 193.0
+length = 0.0
+mesh = ExtResource( 34 )
+materials = [ ExtResource( 28 ), ExtResource( 20 ), ExtResource( 33 ), ExtResource( 12 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 33 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 21 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 6.0
+height = 0.5
+rotationObjects = -1.5708
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Buildings" type="Spatial" parent="."]
+
+[node name="DefaultGrass" type="Spatial" parent="." instance=ExtResource( 4 )]

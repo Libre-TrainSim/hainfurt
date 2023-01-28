@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Data/Modules/chunk_prefab_default_grass.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Data/Scripts/TrackObjects.gd" type="Script" id=2]
@@ -16,31 +16,70 @@
 [ext_resource path="res://Resources/Materials/Glass.tres" type="Material" id=14]
 [ext_resource path="res://Resources/Materials/Wood.tres" type="Material" id=15]
 [ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=16]
-[ext_resource path="res://Resources/Objects/EasyTree.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Resources/Materials/White_Plastic.tres" type="Material" id=17]
 [ext_resource path="res://Resources/Materials/Metal_Green.tres" type="Material" id=18]
-[ext_resource path="res://Resources/Objects/house1.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Resources/Objects/platform_light_1.obj" type="ArrayMesh" id=19]
 [ext_resource path="res://Resources/Objects/house4.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Resources/Objects/Platform-1.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Resources/Objects/Garbage.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Resources/Materials/Metal_Red.tres" type="Material" id=24]
+[ext_resource path="res://Resources/Materials/LEDLamp.tres" type="Material" id=25]
+[ext_resource path="res://Resources/Materials/Metal_Grey.tres" type="Material" id=26]
+[ext_resource path="res://Resources/Materials/Metal_White.tres" type="Material" id=27]
+[ext_resource path="res://Resources/Materials/PlasterStones.tres" type="Material" id=28]
+[ext_resource path="res://Resources/Materials/PlasterStonesLight.tres" type="Material" id=29]
+[ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=30]
+[ext_resource path="res://Resources/Materials/Wall_Blue.tres" type="Material" id=31]
 
 [node name="chunk_17_7" type="Spatial"]
 script = ExtResource( 4 )
 is_empty = false
 generate_grass = true
 chunk_position = Vector3( 17, 0, 7 )
-rails = [ "Höllkriegelsreuth14PConnector", "Höllkriegelsreuth14P3Connector", "Höllkriegelsreuth14PConnectorP", "Höllkriegelsreuth14P3ConnectorP" ]
+rails = [ "Höllkriegelsreuth14P", "Höllkriegelsreuth14PP" ]
 
 [node name="TrackObjects" type="Spatial" parent="."]
 
-[node name="Höllkriegelsreuth14P3Connector Houses_right" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -199.4, 3.8147e-06, -192.7 )
+[node name="Höllkriegelsreuth14P Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9548.9, 3.8147e-06, 5180.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Houses"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 0.0
+length = 950.08
+mesh = ExtResource( 20 )
+materials = [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 30 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 3
+distanceLength = 20.0
+distanceRows = 30.0
+shift = 25.0
+height = 0.0
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P Houses_right" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9548.9, 3.8147e-06, 5180.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Houses_right"
-attached_rail = "Höllkriegelsreuth14P3Connector"
+attached_rail = "Höllkriegelsreuth14P"
 on_rail_position = 0.0
-length = 450.02
+length = 950.08
 mesh = ExtResource( 20 )
 materials = [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 6 ) ]
-sides = 3
+sides = 2
 spawnRate = 1.0
 rows = 2
 distanceLength = 20.0
@@ -50,7 +89,7 @@ height = 0.0
 rotationObjects = 1.5708
 randomLocation = false
 randomLocationFactor = 0.3
-randomRotation = true
+randomRotation = false
 randomScale = false
 randomScaleFactor = 0.2
 placeLast = false
@@ -58,108 +97,24 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = false
 
-[node name="Höllkriegelsreuth14P3Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -199.4, 3.8147e-06, -192.7 )
+[node name="Höllkriegelsreuth14P Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9816.41, 3.8147e-06, 5315.99 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
-description = "Poles"
-attached_rail = "Höllkriegelsreuth14P3Connector"
-on_rail_position = 0.0
-length = 450.018
-mesh = ExtResource( 11 )
-materials = [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 12 ) ]
+description = "Platform_duplicate"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 300.0
+length = 100.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 17 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 5 ) ]
 sides = 2
 spawnRate = 1.0
 rows = 1
-distanceLength = 80.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Höllkriegelsreuth14P3Connector RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -199.4, 3.8147e-06, -192.7 )
-lod_max_distance = 100.0
-script = ExtResource( 2 )
-description = "RailVegetation"
-attached_rail = "Höllkriegelsreuth14P3Connector"
-on_rail_position = 0.0
-length = 450.018
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 9 ), null ]
-sides = 2
-spawnRate = 0.8
-rows = 1
-distanceLength = 5.0
-distanceRows = 10.0
-shift = 7.0
-height = -2.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = -791250
-wholeRail = true
-
-[node name="Höllkriegelsreuth14P3Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -199.4, 3.8147e-06, -192.7 )
-lod_max_distance = 100.0
-script = ExtResource( 2 )
-description = "Trees Befroe Houses"
-attached_rail = "Höllkriegelsreuth14P3Connector"
-on_rail_position = 0.0
-length = 450.018
-mesh = ExtResource( 16 )
-materials = [ ExtResource( 10 ) ]
-sides = 3
-spawnRate = 0.1
-rows = 7
 distanceLength = 10.0
-distanceRows = 10.0
-shift = 15.0
-height = 3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Höllkriegelsreuth14P3ConnectorP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -197.5, 3.8147e-06, -196.8 )
-lod_max_distance = 100.0
-script = ExtResource( 2 )
-description = "Poles"
-attached_rail = "Höllkriegelsreuth14P3ConnectorP"
-on_rail_position = 0.0
-length = 450.166
-mesh = ExtResource( 11 )
-materials = [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 12 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 80.0
 distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = -1.5708
+shift = 3.4
+height = 0.6
+rotationObjects = 3.14159
 randomLocation = false
 randomLocationFactor = 0.3
 randomRotation = false
@@ -168,44 +123,44 @@ randomScaleFactor = 0.2
 placeLast = true
 applySlopeRotation = false
 randomSeed = 0
-wholeRail = true
+wholeRail = false
 
-[node name="Höllkriegelsreuth14PConnector Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -603.9, 3.8147e-06, -389.7 )
+[node name="Höllkriegelsreuth14P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9816.41, 3.8147e-06, 5315.99 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
-description = "Houses"
-attached_rail = "Höllkriegelsreuth14PConnector"
-on_rail_position = 0.0
-length = 450.018
+description = "Platform_light_double"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 300.0
+length = 100.0
 mesh = ExtResource( 19 )
-materials = [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 14 ) ]
-sides = 3
+materials = [ ExtResource( 7 ), ExtResource( 27 ), ExtResource( 25 ) ]
+sides = 2
 spawnRate = 1.0
-rows = 3
-distanceLength = 40.0
-distanceRows = 40.0
-shift = 100.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
 height = 0.0
-rotationObjects = 0.0
+rotationObjects = 6.28319
 randomLocation = false
 randomLocationFactor = 0.3
 randomRotation = false
 randomScale = false
 randomScaleFactor = 0.2
-placeLast = false
+placeLast = true
 applySlopeRotation = false
 randomSeed = 0
-wholeRail = true
+wholeRail = false
 
-[node name="Höllkriegelsreuth14PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -603.9, 3.8147e-06, -389.7 )
+[node name="Höllkriegelsreuth14P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9548.9, 3.8147e-06, 5180.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
-attached_rail = "Höllkriegelsreuth14PConnector"
+attached_rail = "Höllkriegelsreuth14P"
 on_rail_position = 0.0
-length = 450.018
+length = 950.079
 mesh = ExtResource( 11 )
 materials = [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 12 ) ]
 sides = 2
@@ -226,51 +181,107 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
 
-[node name="Höllkriegelsreuth14PConnector RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -603.9, 3.8147e-06, -389.7 )
+[node name="Höllkriegelsreuth14P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9548.9, 3.8147e-06, 5180.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
-description = "RailVegetation"
-attached_rail = "Höllkriegelsreuth14PConnector"
+description = "SoundWall"
+attached_rail = "Höllkriegelsreuth14P"
 on_rail_position = 0.0
-length = 450.018
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 9 ), null ]
+length = 290.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
 sides = 2
-spawnRate = 0.8
+spawnRate = 1.0
 rows = 1
 distanceLength = 5.0
-distanceRows = 10.0
-shift = 7.0
-height = -2.0
-rotationObjects = 0.0
-randomLocation = true
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 3.14159
+randomLocation = false
 randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
+randomRotation = false
+randomScale = false
 randomScaleFactor = 0.2
 placeLast = true
 applySlopeRotation = false
-randomSeed = 160931
-wholeRail = true
+randomSeed = 0
+wholeRail = false
 
-[node name="Höllkriegelsreuth14PConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -603.9, 3.8147e-06, -389.7 )
+[node name="Höllkriegelsreuth14P SoundWall_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9807.49, 3.8147e-06, 5311.47 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "SoundWall_duplicate"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 290.0
+length = 120.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.2
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P SoundWall_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9910.04, 3.8147e-06, 5363.52 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "SoundWall_duplicate_duplicate"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 405.0
+length = 294.92
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9548.9, 3.8147e-06, 5180.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Trees Befroe Houses"
-attached_rail = "Höllkriegelsreuth14PConnector"
+attached_rail = "Höllkriegelsreuth14P"
 on_rail_position = 0.0
-length = 450.018
+length = 950.079
 mesh = ExtResource( 16 )
-materials = [ ExtResource( 10 ) ]
-sides = 3
+materials = [ ExtResource( 9 ), null ]
+sides = 2
 spawnRate = 0.1
 rows = 7
 distanceLength = 10.0
 distanceRows = 10.0
 shift = 15.0
-height = 3.0
+height = 0.0
 rotationObjects = 0.0
 randomLocation = true
 randomLocationFactor = 0.3
@@ -282,14 +293,98 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
 
-[node name="Höllkriegelsreuth14PConnectorP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -601.9, 3.8147e-06, -393.7 )
+[node name="Höllkriegelsreuth14P trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9816.41, 3.8147e-06, 5315.99 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "trash"
+attached_rail = "Höllkriegelsreuth14P"
+on_rail_position = 300.0
+length = 100.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 26 ), ExtResource( 24 ) ]
+sides = 2
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP Platform_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9818.41, 3.8147e-06, 5311.99 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Platform_duplicate"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 300.0
+length = 100.0
+mesh = ExtResource( 22 )
+materials = [ ExtResource( 17 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 5 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 10.0
+distanceRows = 0.0
+shift = 3.4
+height = 0.6
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9818.41, 3.8147e-06, 5311.99 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Platform_light_double"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 300.0
+length = 100.0
+mesh = ExtResource( 19 )
+materials = [ ExtResource( 7 ), ExtResource( 27 ), ExtResource( 25 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 15.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.0
+rotationObjects = 3.14159
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9550.9, 3.8147e-06, 5176.2 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
-attached_rail = "Höllkriegelsreuth14PConnectorP"
+attached_rail = "Höllkriegelsreuth14PP"
 on_rail_position = 0.0
-length = 449.869
+length = 950.079
 mesh = ExtResource( 11 )
 materials = [ ExtResource( 7 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 12 ) ]
 sides = 2
@@ -309,6 +404,146 @@ placeLast = true
 applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
+
+[node name="Höllkriegelsreuth14PP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9550.9, 3.8147e-06, 5176.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "SoundWall"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 0.0
+length = 290.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP SoundWall_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9809.49, 3.8147e-06, 5307.47 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "SoundWall_duplicate"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 290.0
+length = 120.0
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 5.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP SoundWall_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9912.04, 3.8147e-06, 5359.52 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "SoundWall_duplicate_duplicate"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 405.0
+length = 294.92
+mesh = ExtResource( 21 )
+materials = [ ExtResource( 31 ), ExtResource( 6 ), ExtResource( 7 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 5.0
+distanceRows = 0.0
+shift = 4.0
+height = 0.2
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
+
+[node name="Höllkriegelsreuth14PP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9550.9, 3.8147e-06, 5176.2 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "Trees Befroe Houses"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 0.0
+length = 950.079
+mesh = ExtResource( 16 )
+materials = [ ExtResource( 10 ) ]
+sides = 1
+spawnRate = 0.4
+rows = 1
+distanceLength = 10.0
+distanceRows = 10.0
+shift = 10.0
+height = 3.0
+rotationObjects = 3.14159
+randomLocation = true
+randomLocationFactor = 0.3
+randomRotation = true
+randomScale = true
+randomScaleFactor = 0.2
+placeLast = false
+applySlopeRotation = false
+randomSeed = -700270
+wholeRail = true
+
+[node name="Höllkriegelsreuth14PP trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9818.41, 3.8147e-06, 5311.99 )
+lod_max_distance = 100.0
+script = ExtResource( 2 )
+description = "trash"
+attached_rail = "Höllkriegelsreuth14PP"
+on_rail_position = 300.0
+length = 100.0
+mesh = ExtResource( 23 )
+materials = [ ExtResource( 26 ), ExtResource( 24 ) ]
+sides = 1
+spawnRate = 1.0
+rows = 1
+distanceLength = 40.0
+distanceRows = 0.0
+shift = 4.3
+height = 1.3
+rotationObjects = 0.0
+randomLocation = false
+randomLocationFactor = 0.3
+randomRotation = false
+randomScale = false
+randomScaleFactor = 0.2
+placeLast = true
+applySlopeRotation = false
+randomSeed = 0
+wholeRail = false
 
 [node name="Buildings" type="Spatial" parent="."]
 

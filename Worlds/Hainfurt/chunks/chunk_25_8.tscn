@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Data/Scripts/chunk.gd" type="Script" id=1]
 [ext_resource path="res://Data/Modules/TrackObjects.tscn" type="PackedScene" id=2]
@@ -40,7 +40,6 @@
 [ext_resource path="res://Resources/Objects/Platform-1_no_railings.obj" type="ArrayMesh" id=38]
 [ext_resource path="res://Resources/Objects/SpecialGround.obj" type="ArrayMesh" id=39]
 [ext_resource path="res://Resources/Objects/platform_cube.obj" type="ArrayMesh" id=40]
-[ext_resource path="res://Resources/Materials/Stoneplates_Red.tres" type="Material" id=41]
 [ext_resource path="res://Resources/Objects/office2.obj" type="ArrayMesh" id=42]
 [ext_resource path="res://Resources/Materials/RoofDark.tres" type="Material" id=43]
 [ext_resource path="res://Resources/Materials/Wall_Yellow.tres" type="Material" id=44]
@@ -50,9 +49,6 @@
 [ext_resource path="res://Resources/Objects/house2.obj" type="ArrayMesh" id=48]
 [ext_resource path="res://Resources/Materials/Wall_Grey.tres" type="Material" id=49]
 [ext_resource path="res://Resources/Materials/Wall_White.tres" type="Material" id=50]
-[ext_resource path="res://Resources/Objects/office5.obj" type="ArrayMesh" id=51]
-[ext_resource path="res://Resources/Materials/Red_Plastic.tres" type="Material" id=52]
-[ext_resource path="res://Resources/Materials/GlassHalfInvisible.tres" type="Material" id=53]
 [ext_resource path="res://Resources/Objects/SoundSavingWall.obj" type="ArrayMesh" id=54]
 [ext_resource path="res://Resources/Objects/EasyTree_big.obj" type="ArrayMesh" id=55]
 [ext_resource path="res://Resources/Objects/house6.obj" type="ArrayMesh" id=56]
@@ -70,12 +66,12 @@ script = ExtResource( 1 )
 is_empty = false
 generate_grass = true
 chunk_position = Vector3( 25, 0, 8 )
-rails = [ "Hainfurt", "HainfurtP", "HainfurtPP", "HainfurtPPP", "HainfurtPPPP", "HainfurtP2", "HainfurtP2P", "HainfurtP2P2", "HainfurtP2P3", "HainfurtP3", "Harras2PP3P2P3PPConnector", "HainfurtP3Connector", "HainfurtPP2", "HainfurtPPP2", "HainfurtPPP2Connector", "HainfurtPP2Connector", "HainfurtP4", "HainfurtPP2ConnectorConnector", "HainfurtP4Connector", "HainfurtPP3", "HainfurtPConnector", "HainfurtPP3Connector", "Harras2PP3P2P3PConnector", "HainfurtP2P2Connector", "HainfurtP2P4", "HainfurtP2P5", "HainfurtP2P6", "Hainfurt2", "HainfurtP5", "HainfurtP6", "HainfurtP2Connector", "Hainfurt3Connector", "HainfurtConnector", "HainfurtP6Connector", "Hainfurt4", "HainfurtP2P7", "HainfurtP2P8", "Hainfurt5", "Hainfurt5P", "Hainfurt5PP", "Hainfurt5PPP", "Hainfurt5PPPP", "Hainfurt5P2", "Hainfurt5P2P", "Hainfurt6P", "HainfurtP4Connector2", "Hainfurt6PConnector", "Hainfurt4ConnectorConnector", "Hainfurt6PConnector2", "HainfurtP4Connector3", "Hainfurt5PPConnector", "HainfurtPP3Connector2", "Hainfurt5PPPConnector", "HainfurtPP3Connector3", "Hainfurt5PPPPConnector", "Hainfurt5PPPPP", "Hainfurt5PPPPPP", "HainfurtPPP3", "Hainfurt5PPPPP2", "HainfurtPP3Connector3Connector", "Hainfurt5PPPPP2Connector", "HainfurtPP4", "HainfurtPPP4", "HainfurtPPP4Connector", "Hainfurt5PPPPPPConnector", "HainfurtPP2Connector2", "HainfurtPPP4ConnectorConnector", "HainfurtPPP4Connector2", "HainfurtPPP4Connector3", "HainfurtPPP4ConnectorP", "Hainfurt5PPPPPPConnectorP", "Hainfurt5PPPPPPConnectorPConnector", "HainfurtPPP4Connector3Connector", "Hainfurt7", "Harras2PP3P2P3PPPConnector", "Hainfurt7Connector", "Harras2PP3P2P3PP2", "Harras2PP3P2P3PP2Connector", "HainfurtP2Connector2", "Harras2PP3P2P3PPP2", "Harras2PP3P2P3PPP2P", "Hainfurt6", "Hainfurt4Connector2", "Hainfurt5P2Connector", "HainfurtP6Connector2", "Hainfurt5P2PConnector", "HainfurtP6Connector3", "Hainfurt5P2Connector2", "HainfurtP2P9", "HainfurtP2P10", "HainfurtP2P11", "HainfurtPPPP2", "HainfurtPPPP3Connector", "HainfurtPPPConnector", "HainfurtPPPP3", "HainfurtPPPP3P", "HainfurtPPPP3PP", "HainfurtPP5", "HainfurtP7", "HainfurtPPPP3PPP", "Hainfurt5P3", "HainfurtP2P2Connector2", "Hainfurt5P2PConnector2", "HainfurtP2P12", "Hainfurt4ConnectorConnector3", "HainfurtP6Connector2Connector", "Hainfurt4ConnectorConnector3Connector", "HainfurtP4Connector4", "HainfurtP4Connector4Connector", "HainfurtP6Connector2ConnectorConnector", "HainfurtP4Connector5", "HainfurtP4Connector5Connector", "Hainfurt4Connector", "HainfurtP4Connector5ConnectorConnector", "Hainfurt4ConnectorConnector3Connector2" ]
+rails = [ "Hainfurt", "HainfurtP", "HainfurtPP", "HainfurtPPP", "HainfurtPPPP", "HainfurtP2", "HainfurtP2P", "HainfurtP2P2", "HainfurtP2P3", "HainfurtP3", "Harras2PP3P2P3PPConnector", "HainfurtP3Connector", "HainfurtPP2", "HainfurtPPP2", "HainfurtPPP2Connector", "HainfurtPP2Connector", "HainfurtP4", "HainfurtPP2ConnectorConnector", "HainfurtP4Connector", "HainfurtPP3", "HainfurtPConnector", "HainfurtPP3Connector", "Harras2PP3P2P3PConnector", "HainfurtP2P2Connector", "HainfurtP2P4", "HainfurtP2P5", "HainfurtP2P6", "Hainfurt2", "HainfurtP5", "HainfurtP6", "HainfurtP2Connector", "Hainfurt3Connector", "HainfurtConnector", "HainfurtP6Connector", "Hainfurt4", "HainfurtP2P7", "HainfurtP2P8", "Hainfurt5", "Hainfurt5P", "Hainfurt5PP", "Hainfurt5PPP", "Hainfurt5P2", "Hainfurt5P2P", "Hainfurt6P", "HainfurtP4Connector2", "Hainfurt6PConnector", "Hainfurt4ConnectorConnector", "Hainfurt6PConnector2", "HainfurtP4Connector3", "Hainfurt5PPConnector", "HainfurtPP3Connector2", "Hainfurt5PPPConnector", "HainfurtPP3Connector3", "Hainfurt5PPPPConnector", "HainfurtPPP3", "HainfurtPP3Connector3Connector", "Hainfurt5PPPPP2Connector", "HainfurtPP4", "HainfurtPPP4", "HainfurtPPP4Connector", "Hainfurt5PPPPPPConnector", "HainfurtPP2Connector2", "HainfurtPPP4ConnectorConnector", "HainfurtPPP4Connector2", "HainfurtPPP4ConnectorP", "Hainfurt5PPPPPPConnectorP", "Hainfurt7", "Harras2PP3P2P3PPPConnector", "Hainfurt7Connector", "Harras2PP3P2P3PP2", "Harras2PP3P2P3PP2Connector", "HainfurtP2Connector2", "Harras2PP3P2P3PPP2", "Harras2PP3P2P3PPP2P", "Hainfurt6", "Hainfurt4Connector2", "Hainfurt5P2Connector", "HainfurtP6Connector2", "Hainfurt5P2PConnector", "HainfurtP6Connector3", "Hainfurt5P2Connector2", "HainfurtP2P9", "HainfurtP2P10", "HainfurtP2P11", "HainfurtPPPP2", "HainfurtPPPConnector", "HainfurtPP5", "HainfurtP7", "HainfurtP2P2Connector2", "Hainfurt5P2PConnector2", "Hainfurt4ConnectorConnector3", "HainfurtP6Connector2Connector", "Hainfurt4ConnectorConnector3Connector", "HainfurtP4Connector4", "HainfurtP4Connector4Connector", "HainfurtP6Connector2ConnectorConnector", "HainfurtP4Connector5", "HainfurtP4Connector5Connector", "Hainfurt4Connector", "HainfurtP4Connector5ConnectorConnector", "Hainfurt4ConnectorConnector3Connector2" ]
 
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Hainfurt2 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 176.199, 3.8147e-06, 407.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4176.2, 3.8147e-06, 407.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_14m"
@@ -103,7 +99,7 @@ randomSeed = 809539
 wholeRail = false
 
 [node name="Hainfurt2 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 183.961, 3.8147e-06, 401.095 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4183.96, 3.8147e-06, 401.095 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -131,7 +127,7 @@ randomSeed = 14247
 wholeRail = false
 
 [node name="Hainfurt2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 183.961, 3.8147e-06, 401.095 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4183.96, 3.8147e-06, 401.095 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -159,7 +155,7 @@ randomSeed = -644114
 wholeRail = false
 
 [node name="Hainfurt4 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 401.349, 3.8147e-06, 224.58 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4401.35, 3.8147e-06, 224.58 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_20m"
@@ -187,7 +183,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt4Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 373.461, 3.8147e-06, 247.195 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4373.46, 3.8147e-06, 247.195 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -215,7 +211,7 @@ randomSeed = -644114
 wholeRail = false
 
 [node name="Hainfurt4Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 409.1, 3.8147e-06, 218.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4409.1, 3.8147e-06, 218.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -243,7 +239,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt4ConnectorConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 370.301, 3.8147e-06, 249.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4370.3, 3.8147e-06, 249.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -271,7 +267,7 @@ randomSeed = -644114
 wholeRail = false
 
 [node name="Hainfurt4ConnectorConnector3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 339.301, 3.8147e-06, 275 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4339.3, 3.8147e-06, 275 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -299,7 +295,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="Hainfurt4ConnectorConnector3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 308.253, 3.8147e-06, 300.22 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4308.25, 3.8147e-06, 300.22 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -327,7 +323,7 @@ randomSeed = -590168
 wholeRail = false
 
 [node name="Hainfurt5 Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 494.461, 3.8147e-06, 148.895 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4494.46, 3.8147e-06, 148.895 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bench"
@@ -355,7 +351,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5 DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 490.58, 3.8147e-06, 152.048 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4490.58, 3.8147e-06, 152.048 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatform"
@@ -383,7 +379,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 513.866, 3.8147e-06, 133.133 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4513.87, 3.8147e-06, 133.133 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatformRooofing"
@@ -411,7 +407,7 @@ randomSeed = 134932
 wholeRail = false
 
 [node name="Hainfurt5 InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.747, 3.8147e-06, 129.981 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4517.75, 3.8147e-06, 129.981 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -439,7 +435,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 490.58, 3.8147e-06, 152.048 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4490.58, 3.8147e-06, 152.048 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -467,7 +463,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 486.699, 3.8147e-06, 155.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4486.7, 3.8147e-06, 155.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -495,7 +491,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5 trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 499.895, 3.8147e-06, 144.482 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4499.89, 3.8147e-06, 144.482 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trash"
@@ -523,7 +519,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 520.548, 3.8147e-06, 133.481 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4520.55, 3.8147e-06, 133.481 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -551,7 +547,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 489.5, 3.8147e-06, 158.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4489.5, 3.8147e-06, 158.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -579,7 +575,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2 InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 510.147, 3.8147e-06, 120.68 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4510.15, 3.8147e-06, 120.68 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -607,7 +603,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5P2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 479.1, 3.8147e-06, 145.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4479.1, 3.8147e-06, 145.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -635,7 +631,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 444.1, 3.8147e-06, 182 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4444.1, 3.8147e-06, 182 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -663,7 +659,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2Connector Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 450.335, 3.8147e-06, 174.184 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4450.34, 3.8147e-06, 174.184 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -691,7 +687,7 @@ randomSeed = 14247
 wholeRail = false
 
 [node name="Hainfurt5P2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 444.1, 3.8147e-06, 182 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4444.1, 3.8147e-06, 182 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -719,7 +715,7 @@ randomSeed = -644114
 wholeRail = true
 
 [node name="Hainfurt5P2Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 423.301, 3.8147e-06, 196.1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4423.3, 3.8147e-06, 196.1 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -747,7 +743,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 484.063, 3.8147e-06, 136.095 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4484.06, 3.8147e-06, 136.095 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bench"
@@ -775,7 +771,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 480.182, 3.8147e-06, 139.247 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4480.18, 3.8147e-06, 139.247 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatform"
@@ -803,7 +799,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 487.944, 3.8147e-06, 132.943 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4487.94, 3.8147e-06, 132.943 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatformRooofing"
@@ -831,7 +827,7 @@ randomSeed = 134932
 wholeRail = false
 
 [node name="Hainfurt5P2P InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 507.349, 3.8147e-06, 117.18 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4507.35, 3.8147e-06, 117.18 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -859,7 +855,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5P2P Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 522.873, 3.8147e-06, 104.57 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4522.87, 3.8147e-06, 104.57 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -887,7 +883,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 476.301, 3.8147e-06, 142.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4476.3, 3.8147e-06, 142.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4_duplicate"
@@ -915,7 +911,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2P Office4_duplicate_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 584.192, 3.8147e-06, 54.7617 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4584.19, 3.8147e-06, 54.7617 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4_duplicate_duplicate"
@@ -943,7 +939,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 480.182, 3.8147e-06, 139.247 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4480.18, 3.8147e-06, 139.247 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -971,7 +967,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P Platform_no_railing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 565.563, 3.8147e-06, 69.8935 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4565.56, 3.8147e-06, 69.8935 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_no_railing"
@@ -999,7 +995,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 476.301, 3.8147e-06, 142.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4476.3, 3.8147e-06, 142.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -1027,7 +1023,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2P SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 476.301, 3.8147e-06, 142.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4476.3, 3.8147e-06, 142.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SpecialGround"
@@ -1055,7 +1051,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2P SpecialGround_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 557.801, 3.8147e-06, 76.1984 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4557.8, 3.8147e-06, 76.1984 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SpecialGround_duplicate"
@@ -1083,7 +1079,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 565.563, 3.8147e-06, 69.8935 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4565.56, 3.8147e-06, 69.8935 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "platform_cube"
@@ -1111,7 +1107,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2P trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 489.496, 3.8147e-06, 131.682 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4489.5, 3.8147e-06, 131.682 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trash"
@@ -1139,7 +1135,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5P2PConnector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 420, 3.8147e-06, 192 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4420, 3.8147e-06, 192 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1167,7 +1163,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5P2PConnector2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 420, 3.8147e-06, 192 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4420, 3.8147e-06, 192 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1194,148 +1190,8 @@ applySlopeRotation = false
 randomSeed = -590168
 wholeRail = true
 
-[node name="Hainfurt5P3 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 762.884, -0.999996, 3.26472 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatformRooofing"
-attached_rail = "Hainfurt5P3"
-on_rail_position = 217.0
-length = 83.0
-mesh = ExtResource( 21 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 18 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 134932
-wholeRail = false
-
-[node name="Hainfurt5P3 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 899.699, -0.999996, 171.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Office4_duplicate"
-attached_rail = "Hainfurt5P3"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 34 )
-materials = [ ExtResource( 23 ), ExtResource( 41 ), ExtResource( 36 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 3
-distanceLength = 80.0
-distanceRows = 40.0
-shift = 120.0
-height = 0.0
-rotationObjects = 1.91986
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5P3 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 899.699, -0.999996, 171.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Offices_duplicate"
-attached_rail = "Hainfurt5P3"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 42 )
-materials = [ ExtResource( 43 ), ExtResource( 31 ), ExtResource( 44 ), ExtResource( 36 ), ExtResource( 23 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 2
-distanceLength = 70.0
-distanceRows = 40.0
-shift = 40.0
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 86340
-wholeRail = true
-
-[node name="Hainfurt5P3 SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 899.699, -0.999996, 171.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "SpecialGround"
-attached_rail = "Hainfurt5P3"
-on_rail_position = 0.0
-length = 500.0
-mesh = ExtResource( 39 )
-materials = [ ExtResource( 5 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 4.0
-distanceRows = 0.0
-shift = 45.0
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5P3 platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 761.307, -0.999996, 1.32422 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "platform_cube"
-attached_rail = "Hainfurt5P3"
-on_rail_position = 219.5
-length = 80.5
-mesh = ExtResource( 40 )
-materials = [ ExtResource( 19 ), ExtResource( 20 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Hainfurt5PP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 504.862, 3.8147e-06, 161.695 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4504.86, 3.8147e-06, 161.695 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bench"
@@ -1363,7 +1219,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 500.981, 3.8147e-06, 164.848 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4500.98, 3.8147e-06, 164.848 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatform"
@@ -1391,7 +1247,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 524.266, 3.8147e-06, 145.933 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4524.27, 3.8147e-06, 145.933 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "DoublePlatformRooofing"
@@ -1419,7 +1275,7 @@ randomSeed = 134932
 wholeRail = false
 
 [node name="Hainfurt5PP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 528.147, 3.8147e-06, 142.78 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4528.15, 3.8147e-06, 142.78 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -1447,7 +1303,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5PP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 500.981, 3.8147e-06, 164.848 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4500.98, 3.8147e-06, 164.848 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -1475,7 +1331,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 497.1, 3.8147e-06, 168 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4497.1, 3.8147e-06, 168 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -1503,7 +1359,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PP trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 510.295, 3.8147e-06, 157.282 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4510.29, 3.8147e-06, 157.282 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trash"
@@ -1531,7 +1387,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 436.801, 3.8147e-06, 212.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4436.8, 3.8147e-06, 212.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1559,7 +1415,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 530.948, 3.8147e-06, 146.28 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4530.95, 3.8147e-06, 146.28 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "InformationSystem"
@@ -1587,7 +1443,7 @@ randomSeed = -865052
 wholeRail = false
 
 [node name="Hainfurt5PPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 499.9, 3.8147e-06, 171.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4499.9, 3.8147e-06, 171.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1615,7 +1471,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPPConnector Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 439.699, 3.8147e-06, 216.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4439.7, 3.8147e-06, 216.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -1643,7 +1499,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPPConnector Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 447.945, 3.8147e-06, 210.543 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4447.95, 3.8147e-06, 210.543 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
@@ -1671,7 +1527,7 @@ randomSeed = 14247
 wholeRail = false
 
 [node name="Hainfurt5PPPConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 456.125, 3.8147e-06, 204.791 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4456.13, 3.8147e-06, 204.791 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -1698,204 +1554,8 @@ applySlopeRotation = false
 randomSeed = -540823
 wholeRail = false
 
-[node name="Hainfurt5PPPP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 515.262, 3.8147e-06, 174.495 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bench"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 10.0
-length = 290.0
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 16 ), ExtResource( 5 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 20.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 511.381, 3.8147e-06, 177.647 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatform"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 5.0
-length = 295.0
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 534.667, 3.8147e-06, 158.733 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatformRooofing"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 35.0
-length = 265.0
-mesh = ExtResource( 21 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 18 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 134932
-wholeRail = false
-
-[node name="Hainfurt5PPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 538.548, 3.8147e-06, 155.58 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "InformationSystem"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 40.0
-length = 310.0
-mesh = ExtResource( 25 )
-materials = [ ExtResource( 23 ), ExtResource( 26 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 4.0
-height = 4.5
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = -865052
-wholeRail = false
-
-[node name="Hainfurt5PPPP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 511.381, 3.8147e-06, 177.647 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Platform_light_double"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 5.0
-length = 30.0
-mesh = ExtResource( 27 )
-materials = [ ExtResource( 5 ), ExtResource( 28 ), ExtResource( 29 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 15.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 507.5, 3.8147e-06, 180.8 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_invisible"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 0.0
-length = 300.0
-mesh = ExtResource( 14 )
-materials = [  ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 4.6
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5PPPP trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 520.695, 3.8147e-06, 170.081 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "trash"
-attached_rail = "Hainfurt5PPPP"
-on_rail_position = 17.0
-length = 283.0
-mesh = ExtResource( 30 )
-materials = [ ExtResource( 31 ), ExtResource( 32 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.3
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Hainfurt5PPPPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 443.5, 3.8147e-06, 220.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4443.5, 3.8147e-06, 220.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -1922,120 +1582,8 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
 
-[node name="Hainfurt5PPPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 541.448, 3.8147e-06, 159.08 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "InformationSystem"
-attached_rail = "Hainfurt5PPPPP"
-on_rail_position = 40.0
-length = 260.0
-mesh = ExtResource( 25 )
-materials = [ ExtResource( 23 ), ExtResource( 26 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 4.0
-height = 4.5
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -865052
-wholeRail = false
-
-[node name="Hainfurt5PPPPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 510.4, 3.8147e-06, 184.3 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Hainfurt5PPPPP"
-on_rail_position = 0.0
-length = 300.0
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 7 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 4.5
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5PPPPP2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 474.893, 3.8147e-06, 206.535 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Hainfurt5PPPPP2"
-on_rail_position = 42.0
-length = 0.0
-mesh = ExtResource( 12 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 7 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = -1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPP2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 510.4, 3.8147e-06, 184.3 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Trees Befroe Houses"
-attached_rail = "Hainfurt5PPPPP2"
-on_rail_position = 0.0
-length = 42.0
-mesh = ExtResource( 8 )
-materials = [ ExtResource( 10 ), null ]
-sides = 1
-spawnRate = 0.4
-rows = 1
-distanceLength = 2.0
-distanceRows = 8.0
-shift = 5.0
-height = -5.5
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -540823
-wholeRail = true
-
 [node name="Hainfurt5PPPPP2Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 459.199, 3.8147e-06, 213.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4459.2, 3.8147e-06, 213.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -2062,400 +1610,8 @@ applySlopeRotation = false
 randomSeed = -540823
 wholeRail = true
 
-[node name="Hainfurt5PPPPPP Bench" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 525.662, 3.8147e-06, 187.295 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bench"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 10.0
-length = 290.0
-mesh = ExtResource( 15 )
-materials = [ ExtResource( 16 ), ExtResource( 5 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 20.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 748.431, 3.8147e-06, 6.34384 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bumper"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 297.0
-length = 0.0
-mesh = ExtResource( 45 )
-materials = [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 47 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -10393
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP DoublePlatform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 521.781, 3.8147e-06, 190.447 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatform"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 5.0
-length = 295.0
-mesh = ExtResource( 17 )
-materials = [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 545.067, 3.8147e-06, 171.532 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatformRooofing"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 35.0
-length = 265.0
-mesh = ExtResource( 21 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 18 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 134932
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Houses2_duplicate"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 350.0
-mesh = ExtResource( 48 )
-materials = [ ExtResource( 43 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 16 ), ExtResource( 36 ), ExtResource( 50 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 30.0
-distanceRows = 40.0
-shift = 120.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5PPPPPP InformationSystem" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 548.948, 3.8147e-06, 168.38 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "InformationSystem"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 40.0
-length = 310.0
-mesh = ExtResource( 25 )
-materials = [ ExtResource( 23 ), ExtResource( 26 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 4.0
-height = 4.5
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = -865052
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Office4"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 350.0
-mesh = ExtResource( 34 )
-materials = [ ExtResource( 23 ), ExtResource( 50 ), ExtResource( 36 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 80.0
-distanceRows = 0.0
-shift = 160.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5PPPPPP Office5" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 548.948, 3.8147e-06, 168.38 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Office5"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 40.0
-length = 310.0
-mesh = ExtResource( 51 )
-materials = [ ExtResource( 5 ), ExtResource( 52 ), ExtResource( 18 ), ExtResource( 53 ), ExtResource( 23 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 80.0
-distanceRows = 0.0
-shift = 70.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 521.781, 3.8147e-06, 190.447 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Platform_light_double"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 5.0
-length = 30.0
-mesh = ExtResource( 27 )
-materials = [ ExtResource( 5 ), ExtResource( 28 ), ExtResource( 29 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 15.0
-distanceRows = 0.0
-shift = 6.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 350.0
-mesh = ExtResource( 33 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 7 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 379364
-wholeRail = true
-
-[node name="Hainfurt5PPPPPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "SoundWall"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 300.0
-mesh = ExtResource( 54 )
-materials = [ ExtResource( 49 ), ExtResource( 18 ), ExtResource( 5 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 5.0
-distanceRows = 0.0
-shift = 9.5
-height = 0.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP SpecialGround" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "SpecialGround"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 350.0
-mesh = ExtResource( 39 )
-materials = [ ExtResource( 5 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 4.0
-distanceRows = 0.0
-shift = 95.0
-height = -0.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Hainfurt5PPPPPP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 517.9, 3.8147e-06, 193.6 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Trees Befroe Houses"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 0.0
-length = 300.0
-mesh = ExtResource( 55 )
-materials = [ ExtResource( 10 ), null ]
-sides = 2
-spawnRate = 0.2
-rows = 4
-distanceLength = 10.0
-distanceRows = 8.0
-shift = 14.5
-height = 3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -298968
-wholeRail = false
-
-[node name="Hainfurt5PPPPPP trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 531.096, 3.8147e-06, 182.881 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "trash"
-attached_rail = "Hainfurt5PPPPPP"
-on_rail_position = 17.0
-length = 283.0
-mesh = ExtResource( 30 )
-materials = [ ExtResource( 31 ), ExtResource( 32 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 6.0
-height = 1.3
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Hainfurt5PPPPPPConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 450.6, 3.8147e-06, 229.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4450.6, 3.8147e-06, 229.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -2483,7 +1639,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PPPPPPConnectorP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 451.9, 3.8147e-06, 233.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4451.9, 3.8147e-06, 233.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -2511,7 +1667,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPPPPPConnectorP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 479.811, 3.8147e-06, 222.974 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4479.81, 3.8147e-06, 222.974 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -2539,7 +1695,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PPPPPPConnectorP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 451.9, 3.8147e-06, 233.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4451.9, 3.8147e-06, 233.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -2567,7 +1723,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPPPPPConnectorP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 451.9, 3.8147e-06, 233.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4451.9, 3.8147e-06, 233.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -2595,7 +1751,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt5PPPPPPConnectorP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 451.9, 3.8147e-06, 233.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4451.9, 3.8147e-06, 233.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -2623,7 +1779,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt5PPPPPPConnectorP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 451.9, 3.8147e-06, 233.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4451.9, 3.8147e-06, 233.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -2651,7 +1807,7 @@ randomSeed = -298968
 wholeRail = true
 
 [node name="Hainfurt6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 447.909, 3.8147e-06, 186.676 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4447.91, 3.8147e-06, 186.676 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -2679,7 +1835,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="Hainfurt6P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 431.301, 3.8147e-06, 206 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4431.3, 3.8147e-06, 206 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -2707,7 +1863,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Hainfurt6P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 431.301, 3.8147e-06, 206 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4431.3, 3.8147e-06, 206 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -2735,7 +1891,7 @@ randomSeed = -540823
 wholeRail = true
 
 [node name="HainfurtP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 143.699, 3.8147e-06, 446.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4143.7, 3.8147e-06, 446.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -2763,7 +1919,7 @@ randomSeed = -657583
 wholeRail = false
 
 [node name="HainfurtP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 143.699, 3.8147e-06, 446.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4143.7, 3.8147e-06, 446.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -2791,7 +1947,7 @@ randomSeed = -644114
 wholeRail = false
 
 [node name="HainfurtP2P Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 161.849, 3.8147e-06, 405.58 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4161.85, 3.8147e-06, 405.58 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -2819,7 +1975,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.801, 3.8147e-06, 430.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4130.8, 3.8147e-06, 430.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4_duplicate"
@@ -2847,7 +2003,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.801, 3.8147e-06, 430.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4130.8, 3.8147e-06, 430.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -2875,7 +2031,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 130.801, 3.8147e-06, 430.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4130.8, 3.8147e-06, 430.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -2903,7 +2059,7 @@ randomSeed = -565631
 wholeRail = true
 
 [node name="HainfurtP2P10 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 543.431, 3.8147e-06, 73.1446 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4543.43, 3.8147e-06, 73.1446 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bumper"
@@ -2931,7 +2087,7 @@ randomSeed = -10393
 wholeRail = false
 
 [node name="HainfurtP2P10 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 312.9, 3.8147e-06, 260.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4312.9, 3.8147e-06, 260.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -2959,7 +2115,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P10 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 374.996, 3.8147e-06, 209.961 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4375, 3.8147e-06, 209.961 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices_duplicate"
@@ -2987,7 +2143,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="HainfurtP2P10 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 356.367, 3.8147e-06, 225.093 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4356.37, 3.8147e-06, 225.093 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform"
@@ -3015,7 +2171,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P10 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 356.367, 3.8147e-06, 225.093 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4356.37, 3.8147e-06, 225.093 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -3043,7 +2199,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P10 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 351.71, 3.8147e-06, 228.876 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4351.71, 3.8147e-06, 228.876 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3071,7 +2227,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P10 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 312.9, 3.8147e-06, 260.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4312.9, 3.8147e-06, 260.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3099,7 +2255,7 @@ randomSeed = -540823
 wholeRail = false
 
 [node name="HainfurtP2P11 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 537.32, 3.8147e-06, 66.8684 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4537.32, 3.8147e-06, 66.8684 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bumper"
@@ -3127,7 +2283,7 @@ randomSeed = -10393
 wholeRail = false
 
 [node name="HainfurtP2P11 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 349.481, 3.8147e-06, 219.447 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4349.48, 3.8147e-06, 219.447 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform"
@@ -3155,7 +2311,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P11 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 349.481, 3.8147e-06, 219.447 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4349.48, 3.8147e-06, 219.447 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Platform_light_double"
@@ -3183,7 +2339,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P11 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 345.6, 3.8147e-06, 222.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4345.6, 3.8147e-06, 222.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3211,7 +2367,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P11 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 345.6, 3.8147e-06, 222.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4345.6, 3.8147e-06, 222.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -3239,7 +2395,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P11 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 345.6, 3.8147e-06, 222.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4345.6, 3.8147e-06, 222.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3267,7 +2423,7 @@ randomSeed = -565631
 wholeRail = false
 
 [node name="HainfurtP2P11 trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 358.795, 3.8147e-06, 211.881 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4358.79, 3.8147e-06, 211.881 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "trash"
@@ -3294,92 +2450,8 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = false
 
-[node name="HainfurtP2P12 DoublePlatformRooofing" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 547.335, -1, 65.3858 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "DoublePlatformRooofing"
-attached_rail = "HainfurtP2P12"
-on_rail_position = 12.0
-length = 8.0
-mesh = ExtResource( 21 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 18 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 0.0
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 134932
-wholeRail = false
-
-[node name="HainfurtP2P12 platform_cube" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 551.748, -1, 70.8192 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "platform_cube"
-attached_rail = "HainfurtP2P12"
-on_rail_position = 5.0
-length = 20.0
-mesh = ExtResource( 40 )
-materials = [ ExtResource( 19 ), ExtResource( 20 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 1.2
-height = 1.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="HainfurtP2P12 platform_cube_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 551.748, -1, 70.8192 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "platform_cube_duplicate"
-attached_rail = "HainfurtP2P12"
-on_rail_position = 5.0
-length = 20.0
-mesh = ExtResource( 40 )
-materials = [ ExtResource( 19 ), ExtResource( 20 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 2.2
-height = 1.01
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="HainfurtP2P2 Poles_14m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 208.4, 3.8147e-06, 367.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4208.4, 3.8147e-06, 367.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_14m"
@@ -3407,7 +2479,7 @@ randomSeed = 809539
 wholeRail = false
 
 [node name="HainfurtP2P2 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 332.592, 3.8147e-06, 266.822 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4332.59, 3.8147e-06, 266.822 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_20m"
@@ -3435,7 +2507,7 @@ randomSeed = 809539
 wholeRail = false
 
 [node name="HainfurtP2P2Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 363.6, 3.8147e-06, 241.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4363.6, 3.8147e-06, 241.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3463,7 +2535,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P2Connector2 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 363.6, 3.8147e-06, 241.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4363.6, 3.8147e-06, 241.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3491,7 +2563,7 @@ randomSeed = -590168
 wholeRail = true
 
 [node name="HainfurtP2P3 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 208.4, 3.8147e-06, 367.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4208.4, 3.8147e-06, 367.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -3519,7 +2591,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 208.4, 3.8147e-06, 367.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4208.4, 3.8147e-06, 367.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -3547,7 +2619,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P3 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 208.4, 3.8147e-06, 367.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4208.4, 3.8147e-06, 367.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3575,7 +2647,7 @@ randomSeed = -565631
 wholeRail = true
 
 [node name="HainfurtP2P4 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 265.098, 3.8147e-06, 311.398 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4265.1, 3.8147e-06, 311.398 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices_duplicate"
@@ -3603,7 +2675,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="HainfurtP2P5 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.301, 3.8147e-06, 333 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4244.3, 3.8147e-06, 333 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -3631,7 +2703,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P5 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.301, 3.8147e-06, 333 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4244.3, 3.8147e-06, 333 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3659,7 +2731,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P5 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.301, 3.8147e-06, 333 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4244.3, 3.8147e-06, 333 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -3687,7 +2759,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P5 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 244.301, 3.8147e-06, 333 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4244.3, 3.8147e-06, 333 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3715,7 +2787,7 @@ randomSeed = -565631
 wholeRail = true
 
 [node name="HainfurtP2P6 Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 277, 3.8147e-06, 295.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4277, 3.8147e-06, 295.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -3743,7 +2815,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 277, 3.8147e-06, 295.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4277, 3.8147e-06, 295.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3771,7 +2843,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P6 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 277, 3.8147e-06, 295.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4277, 3.8147e-06, 295.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -3799,7 +2871,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P6 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 277, 3.8147e-06, 295.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4277, 3.8147e-06, 295.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3827,7 +2899,7 @@ randomSeed = -565631
 wholeRail = true
 
 [node name="HainfurtP2P7 Offices_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 312.853, 3.8147e-06, 260.439 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4312.85, 3.8147e-06, 260.439 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Offices_duplicate"
@@ -3855,7 +2927,7 @@ randomSeed = 86340
 wholeRail = false
 
 [node name="HainfurtP2P7 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 312.853, 3.8147e-06, 260.439 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4312.85, 3.8147e-06, 260.439 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3883,7 +2955,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P8 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 309.801, 3.8147e-06, 257.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4309.8, 3.8147e-06, 257.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -3911,7 +2983,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP2P8 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 309.801, 3.8147e-06, 257.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4309.8, 3.8147e-06, 257.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -3939,7 +3011,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P8 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 309.801, 3.8147e-06, 257.4 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4309.8, 3.8147e-06, 257.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -3967,7 +3039,7 @@ randomSeed = -565631
 wholeRail = true
 
 [node name="HainfurtP2P9 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 394.3, 3.8147e-06, 205.518 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4394.3, 3.8147e-06, 205.518 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Bumper"
@@ -3995,7 +3067,7 @@ randomSeed = -10393
 wholeRail = false
 
 [node name="HainfurtP2P9 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 280.199, 3.8147e-06, 298.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4280.2, 3.8147e-06, 298.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4023,7 +3095,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP2P9 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 280.199, 3.8147e-06, 298.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4280.2, 3.8147e-06, 298.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -4051,7 +3123,7 @@ randomSeed = -590168
 wholeRail = true
 
 [node name="HainfurtP3Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 179.4, 3.8147e-06, 411.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4179.4, 3.8147e-06, 411.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4079,7 +3151,7 @@ randomSeed = 587943
 wholeRail = true
 
 [node name="HainfurtP4 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 299, 3.8147e-06, 320.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4299, 3.8147e-06, 320.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4107,7 +3179,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtP4Connector3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 376.6, 3.8147e-06, 257.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4376.6, 3.8147e-06, 257.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4135,7 +3207,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtP4Connector4 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 299, 3.8147e-06, 320.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4299, 3.8147e-06, 320.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4163,7 +3235,7 @@ randomSeed = 587943
 wholeRail = true
 
 [node name="HainfurtP6 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 251, 3.8147e-06, 340.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4251, 3.8147e-06, 340.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4191,7 +3263,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP6 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 251, 3.8147e-06, 340.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4251, 3.8147e-06, 340.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4219,7 +3291,7 @@ randomSeed = -719376
 wholeRail = true
 
 [node name="HainfurtP6Connector2 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 404.469, 3.8147e-06, 212.779 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4404.47, 3.8147e-06, 212.779 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4247,7 +3319,7 @@ randomSeed = 587943
 wholeRail = false
 
 [node name="HainfurtP6Connector3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 367.4, 3.8147e-06, 246.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4367.4, 3.8147e-06, 246.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4275,7 +3347,7 @@ randomSeed = 587943
 wholeRail = true
 
 [node name="HainfurtP7 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 104.889, 3.8147e-06, 478.225 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4104.89, 3.8147e-06, 478.225 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_20m"
@@ -4303,7 +3375,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtP7 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 143.699, 3.8147e-06, 446.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4143.7, 3.8147e-06, 446.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4331,7 +3403,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtP7 Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 143.699, 3.8147e-06, 446.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4143.7, 3.8147e-06, 446.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -4359,7 +3431,7 @@ randomSeed = -644114
 wholeRail = false
 
 [node name="HainfurtPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 146.6, 3.8147e-06, 450.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4146.6, 3.8147e-06, 450.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4387,7 +3459,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPP3Connector2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 379.4, 3.8147e-06, 261 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4379.4, 3.8147e-06, 261 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4415,7 +3487,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPP3Connector3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 379.4, 3.8147e-06, 261 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4379.4, 3.8147e-06, 261 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4443,7 +3515,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPP3Connector3Connector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 443.5, 3.8147e-06, 220.9 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4443.5, 3.8147e-06, 220.9 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -4471,7 +3543,7 @@ randomSeed = -540823
 wholeRail = true
 
 [node name="HainfurtPP5 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 146.6, 3.8147e-06, 450.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4146.6, 3.8147e-06, 450.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4499,7 +3571,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 150.301, 3.8147e-06, 454.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4150.3, 3.8147e-06, 454.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4527,7 +3599,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPPP2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 150.301, 3.8147e-06, 454.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4150.3, 3.8147e-06, 454.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4555,7 +3627,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPPP3 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 228, 3.8147e-06, 391.8 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4228, 3.8147e-06, 391.8 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4583,7 +3655,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPPP4 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 305.6, 3.8147e-06, 328.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4305.6, 3.8147e-06, 328.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4611,7 +3683,7 @@ randomSeed = 448029
 wholeRail = true
 
 [node name="HainfurtPPP4Connector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 383.199, 3.8147e-06, 265.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4383.2, 3.8147e-06, 265.7 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -4639,7 +3711,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPP4Connector2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 450.6, 3.8147e-06, 229.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4450.6, 3.8147e-06, 229.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4666,120 +3738,8 @@ applySlopeRotation = false
 randomSeed = 576259
 wholeRail = true
 
-[node name="HainfurtPPP4Connector3 Bumper" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 750.877, 3.8147e-06, 10.0453 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Bumper"
-attached_rail = "HainfurtPPP4Connector3"
-on_rail_position = 274.0
-length = 6.0
-mesh = ExtResource( 45 )
-materials = [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 47 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -10393
-wholeRail = false
-
-[node name="HainfurtPPP4Connector3 Platform" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 542.08, 3.8147e-06, 179.647 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Platform"
-attached_rail = "HainfurtPPP4Connector3"
-on_rail_position = 5.0
-length = 275.0
-mesh = ExtResource( 59 )
-materials = [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 13 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 10.0
-distanceRows = 0.0
-shift = 3.2
-height = 0.6
-rotationObjects = 3.14159
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="HainfurtPPP4Connector3 Platform_light_double" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 542.08, 3.8147e-06, 179.647 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Platform_light_double"
-attached_rail = "HainfurtPPP4Connector3"
-on_rail_position = 5.0
-length = 275.0
-mesh = ExtResource( 60 )
-materials = [ ExtResource( 5 ), ExtResource( 28 ), ExtResource( 29 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 15.0
-distanceRows = 0.0
-shift = 5.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="HainfurtPPP4Connector3 trash" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 551.395, 3.8147e-06, 172.081 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "trash"
-attached_rail = "HainfurtPPP4Connector3"
-on_rail_position = 17.0
-length = 263.0
-mesh = ExtResource( 30 )
-materials = [ ExtResource( 31 ), ExtResource( 32 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 40.0
-distanceRows = 0.0
-shift = 4.3
-height = 1.3
-rotationObjects = 3.14159
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="HainfurtPPP4ConnectorP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 386, 3.8147e-06, 269.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4386, 3.8147e-06, 269.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -4807,7 +3767,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPP4ConnectorP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 402.138, 3.8147e-06, 257.401 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4402.14, 3.8147e-06, 257.401 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -4835,7 +3795,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtPPP4ConnectorP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 386, 3.8147e-06, 269.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4386, 3.8147e-06, 269.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -4863,7 +3823,7 @@ randomSeed = 576259
 wholeRail = true
 
 [node name="HainfurtPPP4ConnectorP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 386, 3.8147e-06, 269.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4386, 3.8147e-06, 269.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -4891,7 +3851,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPP4ConnectorP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 386, 3.8147e-06, 269.2 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4386, 3.8147e-06, 269.2 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -4919,7 +3879,7 @@ randomSeed = -298968
 wholeRail = true
 
 [node name="HainfurtPPPP Houses2_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_duplicate"
@@ -4947,7 +3907,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPPP Houses6" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses6"
@@ -4975,7 +3935,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPPP Office4" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4"
@@ -5003,7 +3963,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPPP Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_20m"
@@ -5031,7 +3991,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtPPPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -5059,7 +4019,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="HainfurtPPPP Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees Befroe Houses"
@@ -5087,7 +4047,7 @@ randomSeed = -298968
 wholeRail = true
 
 [node name="HainfurtPPPP2 Houses2_Backround" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106.627, 3.8147e-06, 496.129 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4106.63, 3.8147e-06, 496.129 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Houses2_Backround"
@@ -5115,7 +4075,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtPPPP2 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 114.389, 3.8147e-06, 489.824 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4114.39, 3.8147e-06, 489.824 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Office4_duplicate"
@@ -5143,7 +4103,7 @@ randomSeed = 0
 wholeRail = false
 
 [node name="HainfurtPPPP2 Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles_invisible"
@@ -5171,7 +4131,7 @@ randomSeed = -657583
 wholeRail = true
 
 [node name="HainfurtPPPP2 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 153.199, 3.8147e-06, 458.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4153.2, 3.8147e-06, 458.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "SoundWall"
@@ -5198,288 +4158,8 @@ applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
 
-[node name="HainfurtPPPP3 Houses2_Backround" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5996, 3.8147e-06, 521.3 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Houses2_Backround"
-attached_rail = "HainfurtPPPP3"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 48 )
-materials = [ ExtResource( 62 ), ExtResource( 50 ), ExtResource( 63 ), ExtResource( 16 ), ExtResource( 36 ), ExtResource( 50 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 2
-distanceLength = 40.0
-distanceRows = 40.0
-shift = 20.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3 Office4_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.2068, 3.8147e-06, 553.329 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Office4_duplicate"
-attached_rail = "HainfurtPPPP3"
-on_rail_position = 50.0
-length = 950.0
-mesh = ExtResource( 34 )
-materials = [ ExtResource( 23 ), ExtResource( 37 ), ExtResource( 36 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 70.0
-distanceRows = 0.0
-shift = 100.0
-height = -30.0
-rotationObjects = 1.0472
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
-[node name="HainfurtPPPP3 Poles_20m" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5996, 3.8147e-06, 521.3 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_20m"
-attached_rail = "HainfurtPPPP3"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 11 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 7.5
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3 SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5996, 3.8147e-06, 521.3 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "SoundWall"
-attached_rail = "HainfurtPPPP3"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 54 )
-materials = [ ExtResource( 49 ), ExtResource( 18 ), ExtResource( 5 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 5.0
-distanceRows = 0.0
-shift = 4.0
-height = 0.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3P Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.6992, 3.8147e-06, 517.9 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_invisible"
-attached_rail = "HainfurtPPPP3P"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 14 )
-materials = [  ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.1
-distanceRows = 0.0
-shift = 4.6
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3PP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 68.9004, 3.8147e-06, 513.2 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_invisible"
-attached_rail = "HainfurtPPPP3PP"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 14 )
-materials = [  ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.5
-distanceRows = 0.0
-shift = 4.6
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = -219549
-wholeRail = true
-
-[node name="HainfurtPPPP3PPP Poles_invisible" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.0996, 3.8147e-06, 509.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_invisible"
-attached_rail = "HainfurtPPPP3PPP"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 14 )
-materials = [  ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.2
-distanceRows = 0.0
-shift = 4.6
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3PPP SoundWall" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.0996, 3.8147e-06, 509.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "SoundWall"
-attached_rail = "HainfurtPPPP3PPP"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 54 )
-materials = [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 5 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 5.0
-distanceRows = 0.0
-shift = 4.0
-height = 0.2
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="HainfurtPPPP3PPP Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 66.0996, 3.8147e-06, 509.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Trees"
-attached_rail = "HainfurtPPPP3PPP"
-on_rail_position = 0.0
-length = 1000.0
-mesh = ExtResource( 55 )
-materials = [ ExtResource( 9 ), null ]
-sides = 2
-spawnRate = 0.3
-rows = 1
-distanceLength = 10.0
-distanceRows = 10.0
-shift = 10.0
-height = 3.0
-rotationObjects = 0.0
-randomLocation = true
-randomLocationFactor = 0.3
-randomRotation = true
-randomScale = true
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = -698613
-wholeRail = true
-
-[node name="Harras2PP3P2P3 Poles_14m_duplicate" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 65.3715, 3.8147e-06, 476.691 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles_14m_duplicate"
-attached_rail = "Harras2PP3P2P3"
-on_rail_position = 320.0
-length = 80.0
-mesh = ExtResource( 4 )
-materials = [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 5.0
-height = 0.0
-rotationObjects = 0.0
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = false
-
 [node name="Harras2PP3P2P3PPP2P Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.4004, 3.8147e-06, 498.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4048.4, 3.8147e-06, 498.5 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"

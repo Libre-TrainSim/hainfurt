@@ -15,12 +15,12 @@ script = ExtResource( 5 )
 is_empty = false
 generate_grass = true
 chunk_position = Vector3( 4, 0, 21 )
-rails = [ "Rail90", "Rail90P", "Rail111", "Rail111P" ]
+rails = [ "Rail111", "Rail111P" ]
 
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Rail111 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1310.1, 3.8147e-06, -1599.7 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2689.9, 3.8147e-06, 19400.3 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -48,7 +48,7 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Rail111P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1314.5, 3.8147e-06, -1600.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2685.5, 3.8147e-06, 19399.4 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
@@ -71,62 +71,6 @@ randomRotation = false
 randomScale = false
 randomScaleFactor = 0.2
 placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Rail90 Poles4792" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1803, 3.8147e-06, -1415.7 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Rail90"
-on_rail_position = 0.0
-length = 700.0
-mesh = ExtResource( 8 )
-materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ) ]
-sides = 2
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = -1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = true
-applySlopeRotation = false
-randomSeed = 0
-wholeRail = true
-
-[node name="Rail90P Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1798.9, 3.8147e-06, -1417.5 )
-lod_max_distance = 100.0
-script = ExtResource( 3 )
-description = "Poles"
-attached_rail = "Rail90P"
-on_rail_position = 0.0
-length = 700.0
-mesh = ExtResource( 8 )
-materials = [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ) ]
-sides = 1
-spawnRate = 1.0
-rows = 1
-distanceLength = 50.0
-distanceRows = 0.0
-shift = 0.0
-height = 0.0
-rotationObjects = 1.5708
-randomLocation = false
-randomLocationFactor = 0.3
-randomRotation = false
-randomScale = false
-randomScaleFactor = 0.2
-placeLast = false
 applySlopeRotation = false
 randomSeed = 0
 wholeRail = true
