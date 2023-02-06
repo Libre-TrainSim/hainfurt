@@ -22,13 +22,13 @@ rails = [ "Buchenhain3", "Höllkriegelsreuth" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Buchenhain3 Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7154, 3.8147e-06, 3838.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1154, 3.8147e-06, 1838.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "Buchenhain3"
 on_rail_position = 0.0
-length = 400.0
+length = 400.028
 mesh = ExtResource( 14 )
 materials = [ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 15 ) ]
 sides = 1
@@ -50,13 +50,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Buchenhain3 Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7154, 3.8147e-06, 3838.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1154, 3.8147e-06, 1838.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
 attached_rail = "Buchenhain3"
 on_rail_position = 0.0
-length = 400.0
+length = 400.028
 mesh = ExtResource( 17 )
 materials = [ ExtResource( 18 ), null ]
 sides = 3
@@ -78,13 +78,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7475.2, 3.8147e-06, 4075.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1475.2, 3.8147e-06, 2075.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Poles"
 attached_rail = "Höllkriegelsreuth"
 on_rail_position = 0.0
-length = 300.0
+length = 300.045
 mesh = ExtResource( 14 )
 materials = [ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 15 ) ]
 sides = 1
@@ -106,13 +106,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth Trees" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7475.2, 3.8147e-06, 4075.6 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1475.2, 3.8147e-06, 2075.6 )
 lod_max_distance = 100.0
 script = ExtResource( 3 )
 description = "Trees"
 attached_rail = "Höllkriegelsreuth"
 on_rail_position = 0.0
-length = 300.0
+length = 300.045
 mesh = ExtResource( 17 )
 materials = [ ExtResource( 18 ), null ]
 sides = 3

@@ -29,13 +29,13 @@ rails = [ "Höllkriegelsreuth14PConnector", "Höllkriegelsreuth14PConnectorP" ]
 [node name="TrackObjects" type="Spatial" parent="."]
 
 [node name="Höllkriegelsreuth14PConnector Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10396.1, 3.8147e-06, 5610.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 396.1, 3.8147e-06, 610.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Houses"
 attached_rail = "Höllkriegelsreuth14PConnector"
 on_rail_position = 0.0
-length = 450.018
+length = 449.942
 mesh = ExtResource( 11 )
 materials = [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 17 ) ]
 sides = 3
@@ -57,13 +57,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14PConnector Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10396.1, 3.8147e-06, 5610.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 396.1, 3.8147e-06, 610.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Höllkriegelsreuth14PConnector"
 on_rail_position = 0.0
-length = 450.018
+length = 449.942
 mesh = ExtResource( 10 )
 materials = [ ExtResource( 6 ), ExtResource( 16 ), ExtResource( 1 ), ExtResource( 13 ) ]
 sides = 2
@@ -85,13 +85,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14PConnector RailVegetation" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10396.1, 3.8147e-06, 5610.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 396.1, 3.8147e-06, 610.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "RailVegetation"
 attached_rail = "Höllkriegelsreuth14PConnector"
 on_rail_position = 0.0
-length = 450.018
+length = 449.942
 mesh = ExtResource( 9 )
 materials = [ ExtResource( 18 ), null ]
 sides = 2
@@ -113,13 +113,13 @@ randomSeed = 160931
 wholeRail = true
 
 [node name="Höllkriegelsreuth14PConnector Trees Befroe Houses" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10396.1, 3.8147e-06, 5610.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 396.1, 3.8147e-06, 610.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Trees Befroe Houses"
 attached_rail = "Höllkriegelsreuth14PConnector"
 on_rail_position = 0.0
-length = 450.018
+length = 449.942
 mesh = ExtResource( 12 )
 materials = [ ExtResource( 15 ) ]
 sides = 3
@@ -141,13 +141,13 @@ randomSeed = 0
 wholeRail = true
 
 [node name="Höllkriegelsreuth14PConnectorP Poles" type="MultiMeshInstance" parent="TrackObjects" groups=["TrackObject"] instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10398.1, 3.8147e-06, 5606.3 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 398.1, 3.8147e-06, 606.3 )
 lod_max_distance = 100.0
 script = ExtResource( 2 )
 description = "Poles"
 attached_rail = "Höllkriegelsreuth14PConnectorP"
 on_rail_position = 0.0
-length = 449.869
+length = 449.808
 mesh = ExtResource( 10 )
 materials = [ ExtResource( 6 ), ExtResource( 16 ), ExtResource( 1 ), ExtResource( 13 ) ]
 sides = 2
