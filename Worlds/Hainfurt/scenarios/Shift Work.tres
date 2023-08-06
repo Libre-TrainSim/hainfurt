@@ -1,0 +1,2014 @@
+[gd_resource type="Resource" load_steps=217 format=2]
+
+[ext_resource path="res://Data/Scripts/Resources/scenario_route.gd" type="Script" id=1]
+[ext_resource path="res://Data/Scripts/Resources/route_point_station.gd" type="Script" id=2]
+[ext_resource path="res://Data/Scripts/Resources/station_settings.gd" type="Script" id=3]
+[ext_resource path="res://Data/Scripts/Resources/signal_settings.gd" type="Script" id=4]
+[ext_resource path="res://Data/Scripts/Resources/contact_point_settings.gd" type="Script" id=5]
+[ext_resource path="res://Data/Scripts/Resources/track_scenario.gd" type="Script" id=6]
+
+[sub_resource type="Resource" id=66]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=67]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=158]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=160]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=25]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=51]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=64]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=65]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=58]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=59]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=60]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=62]
+script = ExtResource( 5 )
+enabled = false
+affected_signal = ""
+affect_time = 0.1
+new_speed_limit = -1
+new_status = 1
+enable_for_all_trains = true
+specific_train = ""
+
+[sub_resource type="Resource" id=143]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=144]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=22]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=54]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=63]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=142]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=76]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=77]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=23]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=53]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=18]
+script = ExtResource( 4 )
+operation_mode = 1
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=17]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=146]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=150]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=149]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=148]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=145]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=147]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=74]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=75]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=153]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=154]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=70]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=71]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=155]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=156]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=151]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=152]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=157]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=68]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=69]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=72]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=73]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=24]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=52]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=9]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=33]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=35]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=36]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=37]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=38]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=39]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=40]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=41]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=42]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=8]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=43]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=44]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=45]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=46]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=47]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=48]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=49]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=50]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=78]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=79]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=26]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=80]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=81]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=82]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=83]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=84]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=85]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=86]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=87]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=88]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=89]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=27]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=90]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=91]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=92]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=93]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=94]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=95]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=96]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=97]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=98]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=99]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=28]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=100]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=101]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=102]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=103]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=104]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=105]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=106]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=107]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=108]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=109]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=29]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=110]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=111]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=112]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=113]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=114]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=115]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=116]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=117]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=118]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=119]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=30]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=120]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=121]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=122]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=123]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=124]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=125]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=126]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=127]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=128]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=129]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=31]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=135]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=136]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=137]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=138]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=139]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=32]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=140]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=141]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=10]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=11]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=14]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=15]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=16]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=19]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 4 )
+operation_mode = 1
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=21]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=20]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=13]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=12]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=5]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=6]
+script = ExtResource( 4 )
+operation_mode = 0
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=7]
+script = ExtResource( 4 )
+operation_mode = 1
+signal_free_time = -1
+speed = -1
+status = 0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=55]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=159]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=61]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=57]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=56]
+script = ExtResource( 3 )
+assigned_signal_name = ""
+enable_person_system = true
+overwrite = false
+
+[sub_resource type="Resource" id=161]
+script = ExtResource( 2 )
+station_node_name = "Buchenhain"
+station_name = "Buchenhain"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 130
+minimum_halt_time = 15
+planned_halt_time = 60
+signal_time = 0
+stop_type = 2
+leaving_persons = 70
+waiting_persons = 120
+
+[sub_resource type="Resource" id=162]
+script = ExtResource( 2 )
+station_node_name = "BuchenhainSiedlung"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 40
+
+[sub_resource type="Resource" id=163]
+script = ExtResource( 2 )
+station_node_name = "Borsdorf"
+station_name = "Borsdorf"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_borsdorf.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 30
+
+[sub_resource type="Resource" id=164]
+script = ExtResource( 2 )
+station_node_name = "Ostkurve"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_ostkurve.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 30
+
+[sub_resource type="Resource" id=165]
+script = ExtResource( 2 )
+station_node_name = "Mockau"
+station_name = "Mockau"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 40
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 30
+
+[sub_resource type="Resource" id=166]
+script = ExtResource( 2 )
+station_node_name = "Pantzisch"
+station_name = "Pantzisch"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_pantzisch.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 90
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 0
+waiting_persons = 30
+
+[sub_resource type="Resource" id=167]
+script = ExtResource( 2 )
+station_node_name = "Machern"
+station_name = "Machern"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_machern.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 80
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 0
+
+[sub_resource type="Resource" id=168]
+script = ExtResource( 2 )
+station_node_name = "Harras"
+station_name = "Harras"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 80
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 80
+
+[sub_resource type="Resource" id=169]
+script = ExtResource( 2 )
+station_node_name = "Hainfurt_2"
+station_name = "Hainfurt Hauptbahnhof"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_hauptbahnhof.ogg"
+arrival_sound_path = "res://Resources/Sounds/platform_endstation.ogg"
+departure_sound_path = ""
+duration_since_last_station = 140
+minimum_halt_time = 0
+planned_halt_time = 0
+signal_time = 0
+stop_type = 3
+leaving_persons = 100
+waiting_persons = 80
+
+[sub_resource type="Resource" id=170]
+script = ExtResource( 1 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ), SubResource( 165 ), SubResource( 166 ), SubResource( 167 ), SubResource( 168 ), SubResource( 169 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 60
+interval_end = 77100
+interval_start = 15900
+
+[sub_resource type="Resource" id=171]
+script = ExtResource( 2 )
+station_node_name = "Hainfurt_2R"
+station_name = "Hainfurt Hbf"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 30
+signal_time = 0
+stop_type = 2
+leaving_persons = 0
+waiting_persons = 120
+
+[sub_resource type="Resource" id=172]
+script = ExtResource( 2 )
+station_node_name = "HarrasR"
+station_name = "Harras"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 120
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 30
+
+[sub_resource type="Resource" id=173]
+script = ExtResource( 2 )
+station_node_name = "MachernR"
+station_name = "Machern"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_machern.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 40
+
+[sub_resource type="Resource" id=174]
+script = ExtResource( 2 )
+station_node_name = "PantzischR"
+station_name = "Pantzisch"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_pantzisch.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 85
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 10
+
+[sub_resource type="Resource" id=175]
+script = ExtResource( 2 )
+station_node_name = "MockauR"
+station_name = "Mockau"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 85
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 20
+
+[sub_resource type="Resource" id=176]
+script = ExtResource( 2 )
+station_node_name = "OstkurveR"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_ostkurve.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 70
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 20
+
+[sub_resource type="Resource" id=177]
+script = ExtResource( 2 )
+station_node_name = "BorsdorfR"
+station_name = "Borsdorf"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_borsdorf.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 70
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 40
+
+[sub_resource type="Resource" id=178]
+script = ExtResource( 2 )
+station_node_name = "BuchenhainSiedlungR"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 30
+
+[sub_resource type="Resource" id=179]
+script = ExtResource( 2 )
+station_node_name = "Buchenhain2R"
+station_name = "Buchenhain"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 140
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 3
+leaving_persons = 70
+waiting_persons = 80
+
+[sub_resource type="Resource" id=180]
+script = ExtResource( 1 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 171 ), SubResource( 172 ), SubResource( 173 ), SubResource( 174 ), SubResource( 175 ), SubResource( 176 ), SubResource( 177 ), SubResource( 178 ), SubResource( 179 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 60
+interval_end = 78900
+interval_start = 17700
+
+[sub_resource type="Resource" id=181]
+script = ExtResource( 2 )
+station_node_name = "Hainfurt_2R"
+station_name = "Hainfurt Hbf"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 30
+signal_time = 0
+stop_type = 2
+leaving_persons = 0
+waiting_persons = 120
+
+[sub_resource type="Resource" id=182]
+script = ExtResource( 2 )
+station_node_name = "HarrasR"
+station_name = "Harras"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 120
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 30
+
+[sub_resource type="Resource" id=183]
+script = ExtResource( 2 )
+station_node_name = "MachernR"
+station_name = "Machern"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_machern.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 40
+
+[sub_resource type="Resource" id=184]
+script = ExtResource( 2 )
+station_node_name = "PantzischR"
+station_name = "Pantzisch"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_pantzisch.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 85
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 10
+
+[sub_resource type="Resource" id=185]
+script = ExtResource( 2 )
+station_node_name = "MockauR"
+station_name = "Mockau"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 85
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 20
+
+[sub_resource type="Resource" id=186]
+script = ExtResource( 2 )
+station_node_name = "OstkurveR"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_ostkurve.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 70
+minimum_halt_time = 0
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 10
+waiting_persons = 20
+
+[sub_resource type="Resource" id=187]
+script = ExtResource( 2 )
+station_node_name = "BorsdorfR"
+station_name = "Borsdorf"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_borsdorf.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 70
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 40
+
+[sub_resource type="Resource" id=188]
+script = ExtResource( 2 )
+station_node_name = "BuchenhainSiedlungR"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 30
+
+[sub_resource type="Resource" id=189]
+script = ExtResource( 2 )
+station_node_name = "Buchenhain2R"
+station_name = "Buchenhain"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 140
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 70
+waiting_persons = 80
+
+[sub_resource type="Resource" id=190]
+script = ExtResource( 2 )
+station_node_name = "SiemenswerkeR"
+station_name = "Siemenswerke"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_siemenswerke.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 30
+
+[sub_resource type="Resource" id=191]
+script = ExtResource( 2 )
+station_node_name = "KlingentalR"
+station_name = "Klingental"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_klingental.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 50
+waiting_persons = 50
+
+[sub_resource type="Resource" id=192]
+script = ExtResource( 2 )
+station_node_name = "GoldenseeR"
+station_name = "Goldensee"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_goldensee.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 280
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 70
+waiting_persons = 60
+
+[sub_resource type="Resource" id=193]
+script = ExtResource( 2 )
+station_node_name = "SilberbachR"
+station_name = "Silberbach"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_silberbach.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_wolfsfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 160
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 30
+
+[sub_resource type="Resource" id=194]
+script = ExtResource( 2 )
+station_node_name = "Wolfsfurt1R"
+station_name = "Wolfsfurt"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_wolfsfurt.ogg"
+arrival_sound_path = "res://Resources/Sounds/platform_endstation.ogg"
+departure_sound_path = ""
+duration_since_last_station = 220
+minimum_halt_time = 0
+planned_halt_time = 0
+signal_time = 0
+stop_type = 3
+leaving_persons = 100
+waiting_persons = 5
+
+[sub_resource type="Resource" id=195]
+script = ExtResource( 1 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 181 ), SubResource( 182 ), SubResource( 183 ), SubResource( 184 ), SubResource( 185 ), SubResource( 186 ), SubResource( 187 ), SubResource( 188 ), SubResource( 189 ), SubResource( 190 ), SubResource( 191 ), SubResource( 192 ), SubResource( 193 ), SubResource( 194 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 60
+interval_end = 80700
+interval_start = 19500
+
+[sub_resource type="Resource" id=196]
+script = ExtResource( 2 )
+station_node_name = "Wolfsfurt"
+station_name = "Wolfsfurt"
+approach_sound_path = ""
+arrival_sound_path = ""
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 0
+minimum_halt_time = 0
+planned_halt_time = 60
+signal_time = 15
+stop_type = 2
+leaving_persons = 0
+waiting_persons = 100
+
+[sub_resource type="Resource" id=197]
+script = ExtResource( 2 )
+station_node_name = "Silberbach"
+station_name = "Silberbach"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_silberbach.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 220
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 7
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 20
+
+[sub_resource type="Resource" id=198]
+script = ExtResource( 2 )
+station_node_name = "Goldensee"
+station_name = "Goldensee"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_goldensee.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 160
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 30
+
+[sub_resource type="Resource" id=199]
+script = ExtResource( 2 )
+station_node_name = "Klingental"
+station_name = "Klingental"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_klingental.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 280
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 7
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 40
+
+[sub_resource type="Resource" id=200]
+script = ExtResource( 2 )
+station_node_name = "Siemenswerke"
+station_name = "Siemenswerke"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_siemenswerke.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 10
+
+[sub_resource type="Resource" id=201]
+script = ExtResource( 2 )
+station_node_name = "Buchenhain"
+station_name = "Buchenhain"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 130
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 70
+waiting_persons = 120
+
+[sub_resource type="Resource" id=202]
+script = ExtResource( 2 )
+station_node_name = "BuchenhainSiedlung"
+station_name = "Buchenhain Siedlung"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_buchenhain_siedlung.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 40
+
+[sub_resource type="Resource" id=203]
+script = ExtResource( 2 )
+station_node_name = "Borsdorf"
+station_name = "Borsdorf"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_borsdorf.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 20
+waiting_persons = 30
+
+[sub_resource type="Resource" id=204]
+script = ExtResource( 2 )
+station_node_name = "Ostkurve"
+station_name = "Hainfurt Ostkurve"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_ostkurve.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt_hauptbahnhof.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 100
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 30
+
+[sub_resource type="Resource" id=205]
+script = ExtResource( 2 )
+station_node_name = "Mockau"
+station_name = "Mockau"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_mockau.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 40
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 30
+waiting_persons = 30
+
+[sub_resource type="Resource" id=206]
+script = ExtResource( 2 )
+station_node_name = "Pantzisch"
+station_name = "Pantzisch"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_pantzisch.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 90
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 0
+waiting_persons = 30
+
+[sub_resource type="Resource" id=207]
+script = ExtResource( 2 )
+station_node_name = "Machern"
+station_name = "Machern"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_machern.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 80
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 0
+
+[sub_resource type="Resource" id=208]
+script = ExtResource( 2 )
+station_node_name = "Harras"
+station_name = "Harras"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_harras.ogg"
+arrival_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/train_to_hainfurt.ogg"
+departure_sound_path = "res://Resources/Sounds/platform_departure.ogg"
+duration_since_last_station = 80
+minimum_halt_time = 15
+planned_halt_time = 20
+signal_time = 0
+stop_type = 1
+leaving_persons = 40
+waiting_persons = 80
+
+[sub_resource type="Resource" id=209]
+script = ExtResource( 2 )
+station_node_name = "Hainfurt_2"
+station_name = "Hainfurt Hauptbahnhof"
+approach_sound_path = "res://Mods/hainfurt/Resources/Hainfurt/Sounds/next_station_hainfurt_hauptbahnhof.ogg"
+arrival_sound_path = "res://Resources/Sounds/platform_endstation.ogg"
+departure_sound_path = ""
+duration_since_last_station = 140
+minimum_halt_time = 0
+planned_halt_time = 0
+signal_time = 0
+stop_type = 3
+leaving_persons = 100
+waiting_persons = 80
+
+[sub_resource type="Resource" id=210]
+script = ExtResource( 1 )
+rail_logic_settings = {
+}
+route_points = [ SubResource( 196 ), SubResource( 197 ), SubResource( 198 ), SubResource( 199 ), SubResource( 200 ), SubResource( 201 ), SubResource( 202 ), SubResource( 203 ), SubResource( 204 ), SubResource( 205 ), SubResource( 206 ), SubResource( 207 ), SubResource( 208 ), SubResource( 209 ) ]
+activate_only_at_specific_routes = false
+specific_routes = [  ]
+is_playable = true
+train_name = "JFR1_Red"
+description = ""
+interval = 60
+interval_end = 77700
+interval_start = 16500
+
+[resource]
+script = ExtResource( 6 )
+time = 0
+title = ""
+description = ""
+duration = 0
+is_hidden = false
+routes = {
+"S1 Buchenhain - Hainfurt": SubResource( 170 ),
+"S1 Hainfurt - Buchenhain": SubResource( 180 ),
+"S1 Hainfurt - Wolfsfurt": SubResource( 195 ),
+"S1 Wolfsfurt - Hainfurt": SubResource( 210 )
+}
+rail_logic_settings = {
+"Borsdorf": SubResource( 66 ),
+"BorsdorfR": SubResource( 67 ),
+"Buch": SubResource( 158 ),
+"BuchS": SubResource( 160 ),
+"Buchenhain": SubResource( 25 ),
+"Buchenhain2R": SubResource( 51 ),
+"BuchenhainSiedlung": SubResource( 64 ),
+"BuchenhainSiedlungR": SubResource( 65 ),
+"ContactPoint": SubResource( 58 ),
+"ContactPoint2": SubResource( 59 ),
+"ContactPoint3": SubResource( 60 ),
+"ContactPoint4": SubResource( 62 ),
+"Eibach": SubResource( 143 ),
+"EibachR": SubResource( 144 ),
+"Goldensee": SubResource( 22 ),
+"GoldenseeR": SubResource( 54 ),
+"Hainfurt_2": SubResource( 63 ),
+"Hainfurt_2R": SubResource( 142 ),
+"Harras": SubResource( 76 ),
+"HarrasR": SubResource( 77 ),
+"Klingental": SubResource( 23 ),
+"KlingentalR": SubResource( 53 ),
+"Klingental_A1": SubResource( 18 ),
+"Klingental_E": SubResource( 17 ),
+"Lauertal": SubResource( 146 ),
+"LauertalR": SubResource( 150 ),
+"Ludwigsstadt1": SubResource( 149 ),
+"Ludwigsstadt2": SubResource( 148 ),
+"Ludwigsstadt3": SubResource( 145 ),
+"Ludwigsstadt4": SubResource( 147 ),
+"Machern": SubResource( 74 ),
+"MachernR": SubResource( 75 ),
+"Messerstadt": SubResource( 153 ),
+"MesserstadtR": SubResource( 154 ),
+"Mockau": SubResource( 70 ),
+"MockauR": SubResource( 71 ),
+"Muehlstetten": SubResource( 155 ),
+"MuelstettenR": SubResource( 156 ),
+"Neunkirchen": SubResource( 151 ),
+"NeunkirchenR": SubResource( 152 ),
+"Neustadt1": SubResource( 157 ),
+"Ostkurve": SubResource( 68 ),
+"OstkurveR": SubResource( 69 ),
+"Pantzisch": SubResource( 72 ),
+"PantzischR": SubResource( 73 ),
+"Siemenswerke": SubResource( 24 ),
+"SiemenswerkeR": SubResource( 52 ),
+"Signal": SubResource( 9 ),
+"Signal10": SubResource( 33 ),
+"Signal11": SubResource( 34 ),
+"Signal12": SubResource( 35 ),
+"Signal13": SubResource( 36 ),
+"Signal14": SubResource( 37 ),
+"Signal15": SubResource( 38 ),
+"Signal16": SubResource( 39 ),
+"Signal17": SubResource( 40 ),
+"Signal18": SubResource( 41 ),
+"Signal19": SubResource( 42 ),
+"Signal2": SubResource( 8 ),
+"Signal20": SubResource( 43 ),
+"Signal21": SubResource( 44 ),
+"Signal22": SubResource( 45 ),
+"Signal23": SubResource( 46 ),
+"Signal24": SubResource( 47 ),
+"Signal25": SubResource( 48 ),
+"Signal26": SubResource( 49 ),
+"Signal27": SubResource( 50 ),
+"Signal28": SubResource( 78 ),
+"Signal29": SubResource( 79 ),
+"Signal3": SubResource( 26 ),
+"Signal30": SubResource( 80 ),
+"Signal31": SubResource( 81 ),
+"Signal32": SubResource( 82 ),
+"Signal33": SubResource( 83 ),
+"Signal34": SubResource( 84 ),
+"Signal35": SubResource( 85 ),
+"Signal36": SubResource( 86 ),
+"Signal37": SubResource( 87 ),
+"Signal38": SubResource( 88 ),
+"Signal39": SubResource( 89 ),
+"Signal4": SubResource( 27 ),
+"Signal40": SubResource( 90 ),
+"Signal41": SubResource( 91 ),
+"Signal42": SubResource( 92 ),
+"Signal43": SubResource( 93 ),
+"Signal44": SubResource( 94 ),
+"Signal45": SubResource( 95 ),
+"Signal46": SubResource( 96 ),
+"Signal47": SubResource( 97 ),
+"Signal48": SubResource( 98 ),
+"Signal49": SubResource( 99 ),
+"Signal5": SubResource( 28 ),
+"Signal50": SubResource( 100 ),
+"Signal51": SubResource( 101 ),
+"Signal52": SubResource( 102 ),
+"Signal53": SubResource( 103 ),
+"Signal54": SubResource( 104 ),
+"Signal55": SubResource( 105 ),
+"Signal56": SubResource( 106 ),
+"Signal57": SubResource( 107 ),
+"Signal58": SubResource( 108 ),
+"Signal59": SubResource( 109 ),
+"Signal6": SubResource( 29 ),
+"Signal60": SubResource( 110 ),
+"Signal61": SubResource( 111 ),
+"Signal62": SubResource( 112 ),
+"Signal63": SubResource( 113 ),
+"Signal64": SubResource( 114 ),
+"Signal65": SubResource( 115 ),
+"Signal66": SubResource( 116 ),
+"Signal67": SubResource( 117 ),
+"Signal68": SubResource( 118 ),
+"Signal69": SubResource( 119 ),
+"Signal7": SubResource( 30 ),
+"Signal70": SubResource( 120 ),
+"Signal71": SubResource( 121 ),
+"Signal72": SubResource( 122 ),
+"Signal73": SubResource( 123 ),
+"Signal74": SubResource( 124 ),
+"Signal75": SubResource( 125 ),
+"Signal76": SubResource( 126 ),
+"Signal77": SubResource( 127 ),
+"Signal78": SubResource( 128 ),
+"Signal79": SubResource( 129 ),
+"Signal8": SubResource( 31 ),
+"Signal80": SubResource( 130 ),
+"Signal81": SubResource( 131 ),
+"Signal82": SubResource( 132 ),
+"Signal83": SubResource( 133 ),
+"Signal84": SubResource( 134 ),
+"Signal85": SubResource( 135 ),
+"Signal86": SubResource( 136 ),
+"Signal87": SubResource( 137 ),
+"Signal88": SubResource( 138 ),
+"Signal89": SubResource( 139 ),
+"Signal9": SubResource( 32 ),
+"Signal90": SubResource( 140 ),
+"Signal91": SubResource( 141 ),
+"SignalSTK3": SubResource( 10 ),
+"SignalSTK4": SubResource( 11 ),
+"SignalSTK5": SubResource( 14 ),
+"SignalSTK6": SubResource( 15 ),
+"SignalSTK7": SubResource( 16 ),
+"SignalSTK8": SubResource( 19 ),
+"SignalSilberbach_A1": SubResource( 3 ),
+"SignalSilberbach_E1": SubResource( 4 ),
+"Signal_BuchenhainA1": SubResource( 21 ),
+"Signal_BuchenhainE": SubResource( 20 ),
+"Signal_Goldensee_A1": SubResource( 13 ),
+"Signal_Goldensee_E": SubResource( 12 ),
+"Signal_STK1": SubResource( 5 ),
+"Signal_STK2": SubResource( 6 ),
+"Signal_Wolfsfurt_A3": SubResource( 7 ),
+"Silberbach": SubResource( 2 ),
+"SilberbachR": SubResource( 55 ),
+"Station": SubResource( 159 ),
+"Wolfsfurt": SubResource( 1 ),
+"Wolfsfurt1R": SubResource( 61 ),
+"Wolfsfurt2": SubResource( 57 ),
+"Wolfsfurt2R": SubResource( 56 )
+}
